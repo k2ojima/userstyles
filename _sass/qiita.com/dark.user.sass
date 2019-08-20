@@ -1,0 +1,95 @@
+/*! ==UserStyle==
+ * @name        Qiita Dark
+ * @namespace   StylusThemes
+ * @version     1.1.11
+ * @homepageURL https://github.com/xentok/userstyles/blob/master/qiita.com/dark.user.css
+ * @updateURL   https://github.com/xentok/userstyles/blob/master/qiita.com/dark.user.css
+ * @license     MIT https://github.com/peaceiris/contents/blob/master/docs/qiita/3635e9e08c4f1f7f2dc6/qiita_dark.user.css
+ * @author      peaceiris (arranged by xentok)
+ * ==/UserStyle== */
+
+@charset "utf8"
+
+@-moz-document domain("qiita.com")
+    /* general */
+    body
+        background-color: #333333
+
+    /* post */
+    .p-items_wrapper
+        background-color: #444444
+        .p-items_article
+            background-color: #333333
+
+    .it-Header_authorName, .it-Header_title
+        color: white
+
+    .it-MdContent
+        p, td
+            color: silver
+        tr:nth-child(odd)
+            background-color: #444444
+
+    .p-items_wrapper
+        h1, h2
+            color: white
+        h3
+            color: white
+            margin-top: 2rem
+            margin-bottom: 1rem
+            padding-left: 0.5em
+            border-left: solid 4px limegreen
+        h4, h5, h6
+            color: white
+        ul, ol
+            color: silver
+
+    .it-MdContent
+        code
+            color: silver
+            background-color: #555555
+        .MathJax_Display
+            color: silver
+
+    .p-items_wrapper
+        summary
+            color: white
+        a:visited
+            color: orange
+
+    span.logly-lift-ad-title
+        color: silver !important
+    .comment_content
+        background-color: #444444
+    .ai-User_name, .ai-User_urlname, .ai-Organization_name
+        color: silver
+
+    /* draft list */
+    .draftsPreviewContent_header
+        background-color: #333333
+    .draftsPreviewContent_title, .draftsSidebarItems_itemTitle
+        color: silver
+    .it-MdContent a:visited
+        color: orange
+
+    /* editor */
+    .editorMarkdown_textarea, .editorPreview_article
+        background-color: #333333
+        color: silver
+    .editorTitle
+        input
+            background-color: #3e3e3e;
+            color: #bcbcbc;
+
+    .it-MdContent
+        h1, h2, h3, h4, h5, h6
+            color: white
+
+    /* user page */
+    .st-Header
+        background-color: #3e3e3e;
+        &_stock-label
+            color: white
+
+    .userActivityChart_stat, .newUserPageProfile_info_body, .newUserPageProfile_info_heading, .ItemLink__info, .tableList_cell p
+        color: silver

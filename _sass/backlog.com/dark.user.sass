@@ -1,0 +1,3686 @@
+/*! ==UserStyle==
+ * @name Backlog Dark
+ * @namespace StylusThemes
+ * @version 2.0
+ * @homepageURL https://github.com/xentok/userstyles/blob/master/backlog.com/dark.user.css
+ * @updateURL   https://github.com/xentok/userstyles/blob/master/backlog.com/dark.user.css
+ * @license     MIT https://github.com/peaceiris/contents/blob/master/docs/qiita/3635e9e08c4f1f7f2dc6/qiita_dark.user.css
+ * @author      (arranged by xentok)
+ * ==/UserStyle== */
+
+@charset "utf8"
+
+@-moz-document domain("backlog.com")
+body
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) left top #222 !important
+  color: #ccc !important
+
+.content-footer__copyright a
+  color: #888
+  &:hover
+    color: #888
+
+.start-message-info__item.is_finished p
+  color: #888
+
+.project-list__item
+  border-top: 1px solid #424242
+  border-right: 1px solid #3d3d3d
+  border-left: 1px solid #3d3d3d
+  &:first-child
+    border-top-color: #3d3d3d
+  &:last-child
+    border-bottom: 1px solid #3d3d3d
+  &:hover
+    .project-list__key, .project-list__name
+      color: #000
+  &.is_archived
+    border-top-color: #424242
+    border-right-color: #3d3d3d
+    border-left-color: #3d3d3d
+    &:first-child
+      border-top-color: #3d3d3d
+    &:last-child
+      border-bottom-color: #3d3d3d
+    .project-list__link
+      background-color: #1a1a1a
+    .project-list__key, .project-list__name
+      color: #666
+      &:hover
+        color: #666
+    .project-list__settings-button svg.icon
+      fill: #444 !important
+    &:hover
+      background-color: #1a1a1a !important
+      + .project-list__item
+        border-top-color: #424242
+      .project-launch-menu__text
+        color: #666 !important
+        &::after
+          background-color: rgba(255, 255, 255, 0.1) !important
+
+.project-list__wrapper
+  color: #ddd
+
+.project-list__link
+  background-color: #000
+
+.project-list__name
+  color: #eee
+
+.project-list__key
+  color: #888
+
+.project-list__settings-button svg.icon
+  fill: #000
+
+.project-list.-list-view
+  .project-list__item:hover .project-launch-menu__text
+    color: #000
+  .project-launch-menu__text:hover, .project-list__item:hover .project-launch-menu__text::after
+    background-color: rgba(0, 0, 0, 0.2)
+  .project-launch-menu__text
+    color: #00836b
+    &::after
+      background-color: #424242
+
+.project-list__item:hover
+  background-color: #4caf93
+
+.dashboard-announce__wrap
+  background-color: #2c9a7a
+
+.dashboard-announce__text
+  color: #000
+  a
+    color: #000
+
+.dashboard-announce__gorilla::after
+  border-top: 20px solid #2c9a7a
+
+.dashboard-space-infomation
+  border: 1px solid #525252
+  background-color: #000
+  &::after, &::before
+    border-top: 14px solid #525252
+  &::after
+    border-top: 14px solid #000
+
+.dashboard-deadline__title > span
+  color: #15d3ff
+
+.start-message-info
+  border: 1px solid #3d3d3d
+
+.start-message-info__item
+  background-color: #030521
+  &.is_finished
+    background-color: #1a1a1a
+    .start-message-info__item-icon
+      background-color: #444
+    a
+      color: #888
+  &:first-child
+    border-right: 1px solid #3d3d3d
+  &:last-child
+    border-left: 1px solid #3d3d3d
+
+.start-message-info__item-icon svg.icon
+  fill: #000
+
+.Page--find-file
+  b.rnd
+    background: 0 #000
+  .rno
+    color: #fff
+    background: 0 #052e9c
+    .rnd1, .rnd2
+      color: #fff
+      background: 0 #052e9c
+  .erno
+    color: #000
+    background: 0 #6ff
+    .rnd1, .rnd2
+      color: #000
+      background: 0 #6ff
+
+@media print
+  .input-radio:checked + label::after
+    border-color: #00836b
+  .input-checkbox:checked + label
+    &::before
+      background-color: #000
+    &::after
+      border-bottom-color: #00836b
+      border-left-color: #00836b
+  body
+    background-color: #000 !important
+  .data-table--default
+    &.-no-bottom-border
+      border-bottom: 1px solid #3d3d3d !important
+    &.-no-top-border
+      border-top: 1px solid #3d3d3d !important
+  .my-issues-table, .my-pull-request-table
+    border-top: 1px solid #3d3d3d !important
+
+.git-path-bar__branch-switch
+  background-color: #000
+
+[class^=Page--git]
+  .no-data-info
+    border-bottom: 1px solid #424242
+  .dependent-issue-summary.is_error
+    color: #15d3ff
+
+.repository-list__description:not(:empty)
+  border-top: 1px solid #424242
+
+.repository-list__urls-input
+  color: #888
+
+.Page--git-repository .stream-update__text span
+  &.Commit, &.GitPushed
+    background: #797348
+  &.AddPullRequest, &.AddPullRequestComment, &.UpdatePullRequest
+    background: #1f8465
+
+.Page--git-network
+  .git-network
+    border: 1px solid #424242
+    background-color: #000
+  .git-network-content
+    border-top: 1px solid #424242
+    border-bottom: 1px solid #424242
+  .git-network-wrapper__mask
+    background: #0f0f0f
+
+.Page--git-branch .pull-req-number
+  border-right: 1px dashed #424242
+
+.Page--git-list-pullRequest .pull-req-number
+  color: #00836b
+  border-right: 1px dashed #424242
+
+.Page--git-view-pullRequest
+  .inline-comment-section
+    border-top: 1px solid #424242
+    border-bottom: 1px solid #424242
+    background-color: #090909
+    .comment-item__inner
+      border: 1px solid #424242
+      background-color: #000
+    .loom
+      background-color: #000
+  .line-comment-warapper .commentable.is_selected
+    td
+      background-color: #0c0c0c
+    &.Code-table_content_separator td, &.Code-table_content_unchanged .Line-src
+      background-color: #0f0f0f
+    &.Code-table_content_deleted .Line-src
+      background-color: #062d20
+    &.Code-table_content_added .Line-src
+      background-color: #3d1528
+  .shooting-star svg.icon
+    fill: #1259d5
+  .tab-loading-wrapper__mask::after
+    background-color: #0f0f0f
+  .ticket__properties.pull-request .pull-request--description
+    border-bottom: 1px solid #2c2c2c
+
+.child-issues-table tbody tr.is_current td .icon.-child-issue, .user-actions-link.is_opened svg.icon, .watch-list__note-area:hover svg.icon
+  fill: #2c9a7a
+
+.Page--find-issue .project-select-loadings__mask
+  background-color: #000
+
+.find-issue-table tr
+  &.odd > td
+    background-color: #090909
+  &.child-issue-row > td, &.is_child-issues-opened > td
+    background-color: #120b0f
+
+.child-issue-trigger__icon::after
+  border-left: 7px solid #7f7f7f
+
+.child-issue-trigger:hover .child-issue-trigger__icon::after
+  border-left-color: #2c9a7a
+
+.is_child-issues-opened .child-issue-trigger .child-issue-trigger__icon::after
+  border-top: 7px solid #2c9a7a
+
+.parent-issue-card__placeholder
+  color: #888
+
+.parent-issue-card__summary.is_error
+  color: #15d3ff
+
+.Page--view-issue.embed
+  background-color: #000
+
+.pull-request-summary-list__link:hover
+  color: #00836b
+
+.pull-request-summary-list__summary
+  color: #ddd
+  &:hover
+    color: #ddd
+
+.child-issues-table-wrapper .see-all.-has-more
+  &::after
+    background-color: rgba(255, 255, 255, 0.17)
+    box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.4)
+  .see-all__link
+    border-right: 1px solid #424242
+    border-left: 1px solid #424242
+    background-color: #000
+
+.child-issues-table
+  td.cell-child--issue-icon .icon.-child-issue
+    fill: #666
+  thead > tr > th
+    border-top: 1px solid #424242
+    &:first-child
+      border-left: 1px solid #424242
+    &:last-child
+      border-right: 1px solid #424242
+  tbody tr
+    &[data-row-index='0'] td::after
+      background-color: #424242
+    td
+      &:first-child
+        border-left: 1px solid #424242
+      &:last-child
+        border-right: 1px solid #424242
+    &:last-child td
+      border-bottom: 1px solid #424242
+    &.is_current
+      td
+        border-top: 1px solid #2c9a7a
+        background-color: #120b0f
+        &:first-child
+          border-left: 1px solid #2c9a7a
+        &:last-child
+          border-right: 1px solid #2c9a7a
+      + tr td
+        border-top: 1px solid #2c9a7a
+      &:last-child td
+        border-bottom: 1px solid #2c9a7a
+  &.-has-more-issue-rows tbody tr:last-child.is_current td.cell-child--issue-icon
+    border-bottom: 1px solid #2c9a7a
+  tbody tr.is_current.is_selected >
+    td, th
+      background-color: #030521
+
+.Page--multipleIssue .highlight
+  background-color: #002cff
+
+.multiple-issues-header
+  background-color: #120b0f
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.18)
+
+.multiple-issues-header__back:hover svg.icon
+  fill: #2c9a7a
+
+.multiple-issues-toolbar
+  background-color: #000
+
+.multiple-issues-toolbar__edit-btn
+  &:hover .multiple-issues-toolbar__edit-btn-badge
+    color: #000
+    background-color: #2c9a7a
+  &.is_disabled .multiple-issues-toolbar__edit-btn-badge
+    color: #888 !important
+    background-color: #000 !important
+
+.multiple-issues-mask::after
+  background-color: #000
+
+.multiple-issues-table-view
+  border-top: 1px solid #525252
+
+.multiple-issues-table-view__body
+  border-bottom: 1px solid #525252
+
+.multiple-issues-table, .multiple-issues-table-header
+  border-color: #424242
+
+.multiple-issues-table .is_selected
+  background-color: #030521
+  &:hover > td
+    background-color: #060a40 !important
+
+.multiple-issues-divide
+  background-color: #525252
+  &:hover
+    background-color: #7f7f7f
+  &::after, &::before
+    background-color: #000
+
+.multiple-issues-thumbnail-view
+  background-color: #000
+
+.multiple-issues-thumbnail-view__inner
+  border-top: 1px solid #525252
+  border-right: 1px solid #525252
+  border-bottom: 1px solid #525252
+  &.is_help-view
+    background-color: #0c0c0c
+
+.multiple-issues-wizard__content.-update-list .multiple-issues-wizard__content-header
+  background-color: #0c0c0c
+
+.multiple-issues-help .data-table--general
+  td
+    background-color: #000
+  th
+    background-color: #121212
+
+.multiple-issues-wizard__content-header
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15)
+
+.multiple-issues-wizard__content
+  &.-update-list
+    background-color: #000
+    .multiple-issues-wizard__content-inner
+      border-right: 1px solid #424242
+    .update-list-table .cell-summary .is_error
+      color: #15d3ff
+  &.-editor
+    background-color: #0c0c0c
+    .multiple-issues-wizard__content-header
+      background-color: #1a1a1a
+
+.icon-multiple-issues-checked::after
+  border-bottom: 3px solid #2c9a7a
+  border-left: 3px solid #2c9a7a
+
+@media print
+  .input-radio:checked + label::after
+    border-color: #00836b
+  .input-checkbox:checked + label
+    &::before
+      background-color: #000
+    &::after
+      border-bottom-color: #00836b
+      border-left-color: #00836b
+
+.project-home-milestone-list__trigger
+  border-top: 1px solid #424242
+
+.project-home-no-issue
+  border: 1px solid #3d3d3d
+  background-color: #030521
+
+.project-home-no-issue__item-icon
+  background-color: rgba(136, 73, 91, 0.6)
+  svg.icon
+    fill: #000
+
+.Page--upload-users .user-preview-table.-body td.Check.is_ok
+  background-color: #1c1117
+
+.calendar__combo
+  .label-IEfix.is_hilite, .label.is_hilite
+    background-color: #1c1117
+
+.Page--settings-project .result-set__mask::after, .Page--settings-space .result-set__mask::after, .Page--settings-user .result-set__mask::after, .Popup--icon-chooser form
+  background-color: #000
+
+.star-button:hover .star-button__number
+  color: #000
+
+[class*=Page--settings] .contract-select-table tr.in-use
+  td .input-radio[disabled] + label, &:hover td .input-radio[disabled] + label
+    color: #000
+
+.Page--issuePostMail-setting .issue-post-mail-log-table td.cell-result .error-icon svg, .Page--upload-users .user-preview-table.-body td.Check.is_error .error-icon svg.icon, .Page--webhook-setting .web-hook-history-table td.cell-result .error-icon svg, .changeset-limit-error__icon svg.icon
+  fill: #15d3ff
+
+.Page--add-user .join-project-list li label > span, .global-header__user-actions .user-profile .dropdown-menu .project-settings-link__pj-name
+  color: #888
+
+[class*=Page--settings]
+  .-notice
+    &.settings-section__heading, &.settings-title
+      color: #0bd7a7
+  .contract-select-table tr td.blank .selected-info, .notice span
+    color: #0bd7a7
+  .settings-section
+    &.-under-any-section, &:not(:first-of-type)
+      border-top: 1px solid #424242
+  fieldset
+    border-top: 1px solid #424242
+  .Required
+    color: #15d3ff
+  .contract-select-table tr
+    &.in-use
+      td, &:hover td
+        color: #000
+        background-color: #77b6a4
+      td .input-radio:checked + label, &:hover td .input-radio:checked + label
+        color: #000
+      td .input-radio:checked + label::before, &:hover td .input-radio:checked + label::before
+        border-color: #00836b
+      td .input-radio:checked + label::after, &:hover td .input-radio:checked + label::after
+        border-color: #000
+        background-color: #00836b
+    &.is_selected
+      td, &:hover td
+        background-color: #120b0f
+  .simulate-table tr.is_selected td
+    background-color: #120b0f
+  .simulate-arrow__icon::after
+    border-top: 20px solid #1c1117
+  .changed-simulate-summary__label
+    color: #999
+  .simulate-table-result__price
+    border: 3px solid #2c9a7a
+  .confirm-field
+    border-top: 1px solid #424242
+    border-bottom: 1px solid #424242
+
+.Page--theme-setting
+  .select-icon-list li
+    &.is_current, &:hover
+      background-color: #080961
+  .select-theme-list li
+    &.is_current, &:hover
+      background-color: #080961
+
+.Page--version-setting .list-version-table tr.Archived td
+  color: #888 !important
+  a
+    color: #888 !important
+
+.Page--attribute-setting.is-editing
+  #attribute_preview
+    h4
+      color: #000
+      background-color: #c46242
+    .inner
+      border: 1px solid #c46242
+      .alfa table
+        th
+          border: 1px solid #333
+          background-color: #0f1126
+        td
+          border: 1px solid #333
+  #attribute_input_preview textarea, #attribute_preview .inner table td input[type=text]
+    border: 1px solid #423827
+
+.Page--git-settings
+  .repository-list__item.is_movable .card
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.4)
+  .repository-list__description:not(:empty)
+    border-top: 1px solid #424242
+    border-bottom: 1px solid #424242
+  .repository-list__urls-input
+    color: #888
+  .add-repository-url-tip
+    background: #a6a6a6
+  .add-repository-url-tip__item:before
+    border-bottom-color: #a6a6a6
+  .add-repository-url-tip__list
+    color: #000
+  .add-repository-url-tip__label
+    color: #eee
+    background: #000
+  .modal-backdrop
+    background-color: #000
+
+.Page--webhook-setting
+  .webhook-list__event, .webhook-list__hook-data, .webhook-list__status, .webhook-list__url
+    border-top: 1px solid #424242
+  .webhook-list__event-list-item, .webhook-list__status-list-item
+    border-right: 1px solid #525252
+
+.Page--view-capacity
+  .used-information .summary
+    color: #0bd7a7
+  .graph-outer
+    .graph
+      border: 1px solid #525252
+      background-color: #0c0c0c
+    .graph__line-y
+      background: #525252
+    .graph__bar
+      &.-issue
+        background-color: #4caf93
+      &.-wiki
+        background-color: #1259d5
+      &.-file
+        background-color: #1788a7
+      &.-svn
+        background-color: #4f41c3
+      &.-git
+        background-color: #797348
+      &.-pull-request
+        background-color: #1f8465
+
+.Page--payment-history .payment-history-table td.cell-date .pill.billing-type-1
+  background-color: #4caf93
+
+.Page--view-capacity
+  .graph-legend__item
+    &.-issue .box
+      background-color: #4caf93
+    &.-wiki .box
+      background-color: #1259d5
+    &.-file .box
+      background-color: #1788a7
+    &.-svn .box
+      background-color: #4f41c3
+    &.-git .box
+      background-color: #797348
+    &.-pull-request .box
+      background-color: #1f8465
+    &.-empty .box
+      border-color: #424242
+      background-color: #0c0c0c
+  .current-plan
+    border-top: 2px solid #424242
+    background-color: #0c0c0c
+
+.Popup--icon-chooser
+  .pager
+    &:first-of-type
+      border-bottom: 1px solid #424242
+    &:last-of-type
+      border-top: 1px solid #424242
+  .icons-table__item
+    color: #ddd
+    &:hover
+      background-color: #080961
+
+.Page--upload-users
+  .user-preview-table
+    td, th
+      border-bottom: 1px solid #424242
+    &.-header th
+      border-bottom: 2px solid #424242
+    &.-body td.is_error
+      color: #15d3ff
+      background-color: #001b23
+  .upload-users-button__icon::after
+    border-bottom: 3px solid #000
+    border-left: 3px solid #000
+  .upload-users-button:hover
+    .upload-users-button__badge
+      color: #000
+      background-color: #2c9a7a
+    .upload-users-button__icon::after
+      border-bottom-color: #2c9a7a
+      border-left-color: #2c9a7a
+  .step-list li::before
+    color: #000
+    background-color: #2c9a7a
+
+.Page--add-project .form-element__description span, .Page--list-project .attention-list
+  color: #0bd7a7
+
+.Page--payment-history
+  .payment-history-table
+    td.cell-date .pill
+      &.billing-type-2
+        background-color: #c46242
+      &.billing-type-3
+        background-color: #1788a7
+      &.billing-type-4
+        background-color: #4f41c3
+    tr.is_current
+      .arrow .icon
+        fill: #2c9a7a
+      td
+        background-color: #120b0f
+  .Error td.cell-notes
+    color: #15d3ff
+
+.Page--activate-licence .Complete
+  h3
+    color: #ccc
+  p.Ask
+    color: #ccc
+    span
+      color: #3ff
+
+.Page--edit-plan .plan-table__item
+  border: 1px solid #6a6a6a
+  .plan-header
+    color: #000
+  &.basic
+    background-color: #6f3882
+  &.premium
+    background-color: #833e85
+  &.max
+    background-color: #884276
+    .plan-header__name span
+      border: 1px solid #000
+  &.platinum
+    background-color: #8a4761
+  .plan-article
+    background-color: #000
+  .plan-article__list li
+    color: #999
+    border-top: 1px solid #1c1c1c
+  .other-function-list
+    background-color: #0d0d0d
+
+.Page--invoice #wrapper table .List table
+  border-bottom: 3px solid #2c9a7a
+  thead th
+    border-bottom: 3px solid #2c9a7a
+  td
+    border-bottom: 1px dashed #333
+  .Even
+    background: #0c0c0c
+    td
+      background: #0c0c0c
+
+.Page--credit-card
+  .credit-card-form-table
+    border-top: 1px solid #424242
+    td, th
+      border-bottom: 1px solid #424242
+    .card-ok
+      color: #f49ab5
+      background-color: #1c1117
+      .icon-checked::after
+        border-bottom: 3px solid #2c9a7a
+        border-left: 3px solid #2c9a7a
+  .payment-processing__mask
+    background-color: #000
+
+.Page--change-payment.is-confirm
+  #PGIOscreen
+    border: 1px solid #3d228d
+  #opa_form_title
+    background-color: #3d228d
+  #opa_form_content
+    background-color: #000
+  #opa_form_captcha input[type=text]
+    border: 1px solid #423827
+  #opa_form_command
+    background-color: #000
+    input[type=button]
+      color: #ccc
+      border: 1px solid #555
+      background-image: linear-gradient(to top, #111, #2b2b2b 100%)
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4)
+      text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0
+      &:hover
+        border: 1px solid #3e3e3e
+        background-image: linear-gradient(to top, #0b0b0b, #202020 100%)
+      &:active
+        border: 1px solid #3e3e3e
+        background-image: linear-gradient(to top, #323232, #111 100%)
+
+.Page--delete-space .questionnaire-outlinebox
+  border-bottom: 1px solid #525252
+
+.Page--edit-profile .user-icon-choices
+  &::after
+    border: 1px solid #525252
+  &.is_active::after
+    border: 3px solid #2c9a7a
+
+.Page--edit-mail
+  .edit-mail-table
+    th.is_archived
+      color: #888
+    thead
+      th
+        border: 1px solid #525252
+      .Row4 th, .Row6 th
+        border-top-color: #666
+      .Row1 th, .Row2 th
+        color: #eee
+      .Row1 th.ColIssue, .Row2 th
+        background-color: rgba(179, 80, 108, 0.4)
+      .Row1 th
+        &.ColProject
+          background-color: rgba(79, 65, 195, 0.4)
+        &.ColSvnGit
+          background-color: rgba(121, 115, 72, 0.4)
+        &.ColNotified
+          background-color: rgba(31, 132, 101, 0.4)
+      .Row2 th.ColNotified
+        background-color: rgba(31, 132, 101, 0.4)
+      .Row1 th.ColWiki
+        background-color: rgba(18, 89, 213, 0.4)
+      .Row3 th
+        &.ColAllIssue, &.ColAssignedIssue, &.ColComment, &.ColCreatedIssue, &.ColIssue
+          background-color: rgba(179, 80, 108, 0.2)
+      .Row5 td
+        &.ColAllIssue, &.ColAssignedIssue, &.ColComment, &.ColCreatedIssue, &.ColIssue
+          background-color: rgba(179, 80, 108, 0.2)
+      .Row3 th.ColWiki, .Row5 td.ColWiki
+        background-color: rgba(18, 89, 213, 0.2)
+      .Row3 th.ColNotified, .Row5 td.ColNotified
+        background-color: rgba(31, 132, 101, 0.2)
+      .Row3 th.ColSummary, .Row5 td.ColSummary
+        background-color: rgba(79, 65, 195, 0.2)
+      .Row3 th.ColSvnGit
+        background-color: rgba(121, 115, 72, 0.2)
+      .Row5
+        td.ColSvnGit
+          background-color: rgba(121, 115, 72, 0.2)
+        th.ColProjectName
+          background-color: #0c0c0c
+      .Row4 th
+        background-color: #1a1a1a
+      .Row6 th
+        background-color: #120b0f
+      th.Blank
+        background-color: #000
+      td
+        border-right: 1px solid #525252
+        border-left: 1px solid #525252
+    tbody
+      td
+        border-right: 1px solid #525252
+        border-bottom: 1px solid #525252
+        border-left: 1px solid #525252
+      th
+        border-right: 1px solid #525252
+        border-bottom: 1px solid #525252
+        border-left: 1px solid #525252
+        &.ColProjectName
+          background-color: #0c0c0c
+      td
+        &.ColAllIssue, &.ColAssignedIssue, &.ColComment, &.ColCreatedIssue, &.ColIssue
+          background-color: rgba(179, 80, 108, 0.075)
+        &.ColWiki
+          background-color: rgba(18, 89, 213, 0.075)
+        &.ColNotified
+          background-color: rgba(31, 132, 101, 0.075)
+        &.ColSummary
+          background-color: rgba(79, 65, 195, 0.075)
+        &.ColSvnGit
+          background-color: rgba(121, 115, 72, 0.075)
+        &.ColDelete
+          background-color: #000
+    td
+      &.ColComment, &.ColCreatedIssue, &.ColDelete, &.ColNotified, &.ColSummary, &.ColSvnGit, &.ColWiki
+        border-right: 1px solid #525252
+  .project-mail-table-scroll
+    &::after, &::before
+      background-color: #525252
+
+.Page--edit-nulab-account
+  .connected-cont__user
+    border: 2px solid #8b8a74
+    background-color: #000
+    &.-backlog
+      border-color: #b34264
+  .connected-icons::after
+    background-color: #1259d5
+
+@keyframes yellowfade
+  0%
+    background-color: #080961
+
+
+body
+  background-color: #0f0f0f
+
+a
+  color: #00836b
+
+mark
+  color: #fff
+  background: #00f
+
+fieldset
+  border: 1px solid #3f3f3f
+
+textarea
+  border: 1px solid #333
+
+body
+  &.Page--find-issue-print, &.Page--login-default, &.Page--multipleIssue, &.Page--release-note, &.Page--settings-project, &.Page--settings-space, &.Page--settings-user, &.Popup--icon-chooser
+    background-color: #000
+
+\:-ms-input-placeholder
+  color: #666
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+  color: #000
+  border: 1px solid #ef96d8
+
+.ui-state-default a
+  color: #000
+  &:link, &:visited
+    color: #000
+
+.ui-state-focus, .ui-state-hover
+  color: #ddd
+  border: 1px solid #ef96d8
+
+.ui-widget-content
+  .ui-state-focus, .ui-state-hover
+    color: #ddd
+    border: 1px solid #ef96d8
+
+.ui-widget-header
+  .ui-state-focus, .ui-state-hover
+    color: #ddd
+    border: 1px solid #ef96d8
+
+.ui-state-hover a
+  color: #ddd
+  &:hover
+    color: #ddd
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active
+  color: #ef96d8
+  border: 1px solid #140f20
+
+.ui-state-active a
+  color: #ef96d8
+  &:link, &:visited
+    color: #ef96d8
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight
+  color: #c9c9c9
+  border: 1px solid #03f
+
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a
+  color: #c9c9c9
+
+.ui-state-error, .ui-widget-content .ui-state-error, .ui-widget-header .ui-state-error
+  border: 1px solid #15d3ff
+  background-color: #04171d
+
+.ui-state-error a, .ui-state-error-text
+  color: #15d3ff
+
+.ui-widget-content
+  .ui-state-error a, .ui-state-error-text
+    color: #15d3ff
+
+.ui-widget-header
+  .ui-state-error a, .ui-state-error-text
+    color: #15d3ff
+
+.ui-widget-overlay
+  background-color: #000
+
+.ui-selectable-helper
+  border: 1px dotted #fff
+
+.ui-dialog
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.65)
+  -ms-box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.65)
+  -o-box-shadow: 0 0 6px 6px rgba(255, 255, 255, 0.65)
+  .ui-dialog-titlebar-close
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.2)
+    -ms-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.2)
+    -o-box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.2)
+  .ui-dialog-buttonpane
+    .ui-dialog-buttonset, button
+      color: #000
+
+._trigger-text
+  color: #00836b
+
+.core-wrapper.-settings
+  background-color: #0f0f0f
+  .content-footer, .content-wrapper
+    border-left: 1px solid #3d3d3d
+    background-color: #000
+
+.badge
+  color: #000
+  background-color: #111
+
+.badge--notification
+  background-color: #0bd7a7
+
+.badge--default
+  background-color: #2c9a7a
+
+.badge--weak
+  color: #888
+  background-color: #1a1a1a
+
+.badge--inverse
+  color: #ddd
+  background-color: #000
+  &.-theme-color
+    color: #2c9a7a
+
+.breadcrumbs__delimiters
+  color: #666
+
+.button--primary
+  color: #000
+  border: 2px solid #2c9a7a
+  background-color: #2c9a7a
+  svg.icon
+    fill: #000
+  &:focus, &:hover
+    color: #2c9a7a
+    border-color: #2c9a7a
+    background-color: #000
+
+.button--default
+  &:focus svg.icon, &:hover svg.icon
+    fill: #2c9a7a
+
+.button--primary
+  &:focus svg.icon, &:hover svg.icon
+    fill: #2c9a7a
+
+.button--weak
+  &:focus svg.icon, &:hover svg.icon
+    fill: #2c9a7a
+
+.button--primary
+  &.is_disabled, &[disabled]
+    color: #888
+    border: 2px solid #1a1a1a
+    background-color: #1a1a1a
+  &.-with-icon-left
+    &.is_disabled svg.icon, &[disabled] svg.icon
+      fill: #7f7f7f !important
+  &.-with-icon-right
+    &.is_disabled svg.icon, &[disabled] svg.icon
+      fill: #7f7f7f !important
+
+.button--default
+  color: #00836b
+  border: 2px solid #525252
+  background-color: #000
+  svg.icon
+    fill: #7f7f7f
+
+.button--weak svg.icon, .icon-button--default svg.icon
+  fill: #7f7f7f
+
+.button--default
+  &:focus, &:hover
+    color: #00836b
+    border-color: #2c9a7a
+    background-color: #120b0f
+  &.is_disabled, &[disabled]
+    color: #1a1a1a
+    border-color: #1a1a1a
+    background-color: #000
+  &.-with-icon-left
+    &.is_disabled svg.icon, &[disabled] svg.icon
+      fill: #222 !important
+  &.-with-icon-right
+    &.is_disabled svg.icon, &[disabled] svg.icon
+      fill: #222 !important
+
+.button--weak
+  color: #ddd
+  border: 1px solid #666
+
+.Page--multipleIssue .button--weak, .Page--settings-project .button--weak, .Page--settings-space .button--weak, .Page--settings-user .button--weak
+  background-color: #1a1a1a
+
+.button--weak
+  background-color: #1a1a1a
+  &.-on-card-base
+    background-color: #1a1a1a
+
+.card--default .button--weak, .comment-editor.-fixed-footer .button--weak, .comment-item .button--weak, .global-header .button--weak, .modal__content .button--weak, .timeline .button--weak
+  background-color: #1a1a1a
+
+.Page--multipleIssue .button--weak
+  &:focus, &:hover
+    background-color: #0a0a0a
+
+.Page--settings-project .button--weak
+  &:focus, &:hover
+    background-color: #0a0a0a
+
+.Page--settings-space .button--weak
+  &:focus, &:hover
+    background-color: #0a0a0a
+
+.Page--settings-user .button--weak
+  &:focus, &:hover
+    background-color: #0a0a0a
+
+.button--weak.-on-card-base
+  &:focus, &:hover
+    background-color: #0a0a0a
+
+.card--default .button--weak
+  &:focus, &:hover
+    background-color: #0a0a0a
+
+.comment-editor.-fixed-footer .button--weak
+  &:focus, &:hover
+    background-color: #0a0a0a
+
+.comment-item .button--weak
+  &:focus, &:hover
+    background-color: #0a0a0a
+
+.global-header .button--weak
+  &:focus, &:hover
+    background-color: #0a0a0a
+
+.modal__content .button--weak
+  &:focus, &:hover
+    background-color: #0a0a0a
+
+.timeline .button--weak
+  &:focus, &:hover
+    background-color: #0a0a0a
+
+.button--weak
+  &:focus, &:hover
+    color: #ddd
+    background-color: #0f0f0f
+  &.is_disabled, &[disabled]
+    color: #888
+    border-color: #1a1a1a
+    background-color: #1a1a1a
+  &.is_toggled
+    background-color: #1c1117
+    &:hover
+      background-color: #0c0c0c
+
+.button-group
+  background-color: #000
+
+.button-group__item
+  border: 1px solid #525252
+
+.global-header .button-group__item
+  border-color: #424242
+
+.button-group__link
+  color: #ddd
+
+.Page--settings-project .button-group__link, .Page--settings-space .button-group__link, .Page--settings-user .button-group__link, .global-header .button-group__link
+  background-color: rgba(55, 55, 55, 0.1)
+
+.button-group__link
+  &:hover
+    color: #ddd
+    background-color: rgba(211, 101, 133, 0.075)
+  &.is_active
+    color: #000
+    background-color: #2c9a7a
+
+.icon-button
+  &.-floating
+    box-shadow: 0 2px 10px 0 rgba(251, 255, 255, 0.35)
+  .iconic-text
+    color: #888
+
+.icon-button--default
+  border: 1px solid #525252
+  background-color: #000
+
+.Page--multipleIssue .icon-button--default, .Page--settings-project .icon-button--default, .Page--settings-space .icon-button--default, .Page--settings-user .icon-button--default
+  border-color: #424242
+  background-color: #0a0a0a
+
+.card--default
+  .icon-button--default, .loom .markdown-body code.loom_inner_code
+    border-color: #424242
+    background-color: #0a0a0a
+
+.comment-editor .icon-button--default, .comment-item .icon-button--default, .content-header__inner .icon-button--default, .global-header .icon-button--default, .icon-button--default.-on-card-base, .modal__content .icon-button--default, .timeline .icon-button--default
+  border-color: #424242
+  background-color: #0a0a0a
+
+.icon-button--default
+  &.-floating
+    background-color: #000
+  &.is_active, &:focus, &:hover
+    border-color: #2c9a7a
+    background-color: #2c9a7a
+
+.icon-button-textlink
+  &.is_active .icon-button--default, &:focus .icon-button--default, &:hover .icon-button--default
+    border-color: #2c9a7a
+    background-color: #2c9a7a
+
+.icon-button--default
+  &.is_active svg.icon, &:focus svg.icon, &:hover svg.icon
+    fill: #000
+
+.icon-button-textlink
+  &.is_active .icon-button--default svg.icon, &:focus .icon-button--default svg.icon, &:hover .icon-button--default svg.icon
+    fill: #000
+
+.icon-button--default
+  &.is_active .iconic-text, &:focus .iconic-text, &:hover .iconic-text
+    color: #000
+  &.is_disabled, &[disabled]
+    border-color: #1a1a1a
+    background-color: #0c0c0c
+  &.is_disabled svg.icon, &[disabled] svg.icon
+    fill: #222
+
+.icon-button--inverse
+  svg.icon
+    fill: #7f7f7f
+  &:focus svg.icon, &:hover svg.icon
+    fill: #2c9a7a
+
+.icon-button-textlink
+  &.is_active .icon-button--inverse svg.icon, &:focus .icon-button--inverse svg.icon, &:hover .icon-button--inverse svg.icon
+    fill: #2c9a7a
+
+.icon-button--inverse
+  &.is_active
+    background-color: #2c9a7a
+    svg.icon
+      fill: #000
+  &.is_disabled svg.icon, &[disabled] svg.icon
+    fill: #222
+
+.icon-button--black
+  background-color: #c6c6c6
+  svg.icon
+    fill: #222
+  &:focus, &:hover
+    background-color: #fff
+  &:focus svg.icon, &:hover svg.icon
+    fill: #000
+  &.is_active
+    background-color: #fff
+    svg.icon
+      fill: #000
+  &.is_disabled svg.icon, &[disabled] svg.icon
+    fill: #222
+
+.icon-button-textlink:hover
+  color: #00836b
+
+.card--default
+  border: 1px solid #3d3d3d
+  background-color: #000
+
+.Page--multipleIssue .card--default, .Page--settings-project .card--default, .Page--settings-space .card--default, .Page--settings-user .card--default, .modal__content .card--default
+  border-color: #424242
+  background-color: #0c0c0c
+
+.card--default.is_error
+  background-color: #001b23
+
+.card--info
+  border: 1px solid rgba(211, 101, 133, 0.4)
+  background-color: #120b0f
+
+.card--line
+  border: 1px solid #424242
+
+.card--default.is_error, .card--line.is_error
+  border: 1px solid rgba(21, 211, 255, 0.15)
+
+.data-table
+  &.-has-handle tr.ui-sortable-helper >
+    td, th
+      border-bottom: 1px solid #424242
+      background-color: #030521
+  td
+    border-top: 1px solid #424242
+    .text-icon-set__preview-button
+      svg.icon
+        fill: #444
+      &:hover svg.icon
+        fill: #7f7f7f
+
+.data-table--default
+  border: 1px solid #3d3d3d
+  background-color: #000
+
+.Page--settings-project .data-table--default, .Page--settings-space .data-table--default, .Page--settings-user .data-table--default, .modal__content .data-table--default
+  border-bottom-color: #424242
+
+.data-table--default thead > tr > th
+  border-bottom: 1px solid #424242
+
+.data-list:not(.-no-row-hover) .data-list__item
+  &.is_hover, &:hover
+    background-color: #030521
+
+.data-table--default
+  tbody tr.is_selected td
+    background-color: #030521
+  &:not(.-no-row-hover) tbody tr:hover >
+    td, th
+      background-color: #030521
+  &.-no-top-border thead tr:first-child
+    td, th
+      border-bottom: 2px solid #424242
+  &.-history td.cell-updated
+    color: #888
+
+.data-table--simple
+  border-bottom: 1px solid #424242
+  td
+    border-top: 1px solid #424242
+  th
+    border-top: 1px solid #424242
+    color: #888
+
+.data-table--general
+  border-top: 1px solid #424242
+  border-left: 1px solid #424242
+  td
+    border-right: 1px solid #424242
+    border-bottom: 1px solid #424242
+  th
+    border-right: 1px solid #424242
+    border-bottom: 1px solid #424242
+    background-color: #0c0c0c
+
+.data-controller-box
+  border: 1px solid #3d3d3d
+  background-color: #090909
+
+.sort
+  color: #00836b
+  a:hover, &:hover
+    color: #00836b
+    background-color: #1c1117
+  &.-dropdown
+    &.is_active, &:hover
+      color: #00836b
+    &::after
+      background-color: #2c9a7a
+    .sort__icon::after
+      border-top: 7px solid #7f7f7f
+  &.is_sort-up .sort__icon::after
+    border-bottom: 7px solid #2c9a7a
+  &.is_sort-down .sort__icon::after
+    border-top: 7px solid #2c9a7a
+
+.data-list
+  &.-top-border, &.-top-btm-border
+    border-top: 1px solid #424242
+  &.-btm-border .data-list__item, &.-top-btm-border .data-list__item
+    border-bottom: 1px solid #424242
+  &.-pull-request-fixed .data-list__text-sub
+    color: #888
+
+.data-list__item
+  border-bottom: 1px solid #424242
+
+.data-list__link
+  color: #ddd
+  &:hover
+    color: #ddd
+
+.input-password, .input-text, .textarea
+  border: 1px solid #666
+  background-color: #000
+
+.input-password:focus, .input-text:focus, .textarea:focus
+  border-color: #00836b
+  background-color: #030521
+  box-shadow: 0 0 3px #00836b
+
+.-no-focus
+  &.input-password:focus, &.input-text:focus, &.textarea:focus
+    background-color: #000
+
+.is_disabled
+  &.input-password, &.input-text, &.textarea
+    border-color: #666
+    background-color: #111
+
+[disabled]
+  &.input-password, &.input-text, &.textarea
+    border-color: #666
+    background-color: #111
+
+.errInput
+  &.input-password, &.input-text, &.textarea
+    border-color: #15d3ff
+    background-color: #001b23
+
+.is_error
+  &.input-password, &.input-text, &.textarea
+    border-color: #15d3ff
+    background-color: #001b23
+
+.input-text.-error
+  background: #001b23
+  &:-webkit-autofill
+    -webkit-box-shadow: 0 0 0 1000px #001b23 inset
+
+.input-radio
+  + label
+    &::after, &::before
+      border: 2px solid #444
+      background-color: #000
+    &::after
+      border: 2px solid #000
+      background-color: #00836b
+  &:checked + label::before
+    border-color: #00836b
+  &[disabled]
+    + label
+      color: #888
+      &::before
+        background-color: #111
+    &:checked + label
+      &::before
+        border-color: #525252
+      &::after
+        background-color: #525252
+  &.is_error
+    + label
+      color: #15d3ff
+      &::before
+        border-color: #15d3ff
+        background-color: #001b23
+    &:checked + label::after
+      border-color: #001b23
+
+.input-checkbox
+  + label
+    &::before
+      border: 2px solid #444
+      background-color: #000
+    &::after
+      border-bottom: 3px solid #000
+      border-left: 3px solid #000
+  &:checked + label::before
+    border-color: #00836b
+    background-color: #00836b
+  &[disabled]
+    + label
+      color: #888
+      &::before
+        background-color: #111
+    &:checked + label
+      &::before
+        border-color: #525252
+        background-color: #111
+      &::after
+        border-bottom-color: #7f7f7f
+        border-left-color: #7f7f7f
+  &.is_error
+    + label
+      color: #15d3ff
+      &::before
+        border-color: #15d3ff
+        background-color: #001b23
+    &:checked + label::after
+      border-bottom-color: #00836b
+      border-left-color: #00836b
+
+.selectbox
+  border: 1px solid #666
+  &.errInput, &.is_error
+    border-color: #15d3ff
+  &.errInput .selectbox__item, &.is_error .selectbox__item
+    background-color: #001b23
+
+.selectbox__item
+  background-color: #000
+  &:focus
+    background-color: #000
+  &.is_disabled, &[disabled]
+    background-color: #111
+  &.-pseudo-selectbox
+    color: #ddd
+    .selectbox__item-sub-label
+      color: #888
+
+.selectbox::after
+  border-top: 7px solid #7f7f7f
+
+.chosen-wrapper
+  .chzn-container-active .chzn-single.chzn-single-with-drop::after, .chzn-container-single .chzn-single:hover::after
+    border-top-color: #2c9a7a
+
+.selectbox:hover::after
+  border-top-color: #2c9a7a
+
+.selectbox--multiple.is_error .selectbox--multiple__wrapper
+  border-color: #15d3ff
+  background-color: #001b23
+
+.selectbox--multiple__wrapper
+  border: 1px solid #666
+  background-color: #000
+
+.chosen-wrapper .chzn-container .chzn-results li.active-result
+  &.highlighted, &.is_selected, &.result-selected, &:hover
+    background-color: #1c1117
+
+.selectbox--multiple__item
+  &.is_selected
+    background-color: #1c1117
+    &:hover
+      background-color: #1c1117
+  &:hover
+    background-color: #1c1117
+  &.is_disabled, &[disabled]
+    background-color: #111
+    &:hover
+      background-color: #111
+
+.chzn-container-single
+  .chzn-single div
+    border-left: 1px solid #555
+    background: #333
+  .chzn-search input
+    border: 1px solid #555
+
+.chzn-container-multi .chzn-choices
+  border: 1px solid #423827
+  background-color: #000
+  .search-field input
+    color: #999
+  .search-choice
+    color: #ccc
+    border: 1px solid #4b4b4b
+    background-color: #1b1b1b
+
+.chzn-container .chzn-results li em
+  background: #010021
+
+.chzn-container-active
+  .chzn-single
+    border: 1px solid #a76804
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3)
+  .chzn-single-with-drop
+    border: 1px solid #555
+    background-color: #111
+    box-shadow: 0 1px 0 #000 inset
+  .chzn-choices
+    border: 1px solid #a76804
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3)
+    .search-field input
+      color: #eee !important
+
+.chzn-rtl .chzn-single div
+  border-right: 1px solid #555
+
+.chosen-wrapper
+  .chzn-container-multi .chzn-choices, .chzn-container-single .chzn-single
+    color: #ddd
+    border: 1px solid #666
+    background-color: #000
+  &.is_error
+    .chzn-container-multi .chzn-choices, .chzn-container-single .chzn-single
+      border-color: #15d3ff
+      background-color: #001b23
+  .chzn-container
+    .chzn-drop
+      border: 1px solid #424242
+      background: #000
+      box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.35)
+    .chzn-results
+      li.active-result
+        color: #ddd
+      .no-results
+        background: #1a1a1a
+      .group-result
+        color: #888
+  .chzn-container-multi .chzn-choices
+    .search-field input.default
+      color: #888
+    .search-choice
+      color: #ddd
+      background-color: #1c1117
+      &.search-choice-focus
+        background: #1a1a1a
+      .search-choice-close
+        &::after, &::before
+          background-color: #7f7f7f
+  .chzn-container-single
+    .chzn-single__item .chzn-default
+      color: #888
+    .chzn-single::after
+      border-top: 7px solid #7f7f7f
+    .chzn-search input
+      border: 1px solid #666
+  .chzn-container-active
+    .chzn-single.chzn-single-with-drop
+      border: 1px solid #00836b
+      box-shadow: 0 0 3px #00836b
+    &.-upper .chzn-single.chzn-single-with-drop::after
+      border-bottom-color: #2c9a7a
+    .chzn-choices
+      border: 1px solid #00836b
+      box-shadow: 0 0 3px #00836b
+
+.select2-wrapper .select2-container.select2-container-multi
+  &.select2-container-active .select2-choices
+    border: 1px solid #00836b
+    box-shadow: 0 0 3px #00836b
+  .select2-choices
+    color: #ddd
+    border: 1px solid #666
+    background-color: #000
+    .select2-search-choice
+      color: #ddd
+      background: #1c1117
+    .select2-search-field input
+      color: #999
+      background: #1a1a1a
+
+.select2-drop.select2-drop-multi
+  border: 1px solid #424242
+  background: #000
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.35)
+  .select2-results .select2-result
+    &.select2-result-selectable
+      color: #ddd
+      &.select2-highlighted, &:hover
+        background-color: #1c1117
+    &.select2-result-unselectable .select2-result-label
+      color: #888
+
+.form-element__item + .form-element__item.-has-border
+  border-top: 1px solid #424242
+
+.form-element__label
+  .required, &.-required::after
+    color: #15d3ff
+
+.form-element__description
+  color: #888
+
+#intercom-container
+  .intercom-launcher-button
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.35) !important
+  .intercom-conversations-item
+    border-bottom: 1px solid #424242
+
+.icon
+  fill: #7f7f7f
+  &.-gantt-icon
+    fill: #1788a7
+  &.-priority-2
+    fill: #0bd7a7
+  &.-priority-3
+    fill: #bb773a
+  &.-priority-4
+    fill: #a14a59
+
+.icon--close
+  &::after, &::before
+    background-color: #7f7f7f
+  &.-inverse
+    &::after, &::before
+      background-color: #000
+
+.icon-button--default:hover .icon--close
+  &::after, &::before
+    background-color: #000
+
+.icon--arrow-up::before
+  border-top: 2px solid #7f7f7f
+  border-right: 2px solid #7f7f7f
+
+.button--primary:hover .icon--arrow-left::before
+  border-top-color: #2c9a7a
+  border-right-color: #2c9a7a
+
+.calendar__button.-nav:hover .icon--arrow-left
+  &.-double::after, &::before
+    border-top-color: #2c9a7a
+    border-right-color: #2c9a7a
+
+.comment-editor__attach-file-button:hover
+  .icon--arrow-down::before, .icon--arrow-up::before
+    border-top-color: #2c9a7a
+    border-right-color: #2c9a7a
+
+.comment-editor__expand-button:hover .icon--arrow-up::before
+  border-top-color: #2c9a7a
+  border-right-color: #2c9a7a
+
+.see-all__link:hover
+  .icon--arrow-down::before, .icon--arrow-up::before
+    border-top-color: #2c9a7a
+    border-right-color: #2c9a7a
+
+.title-group__inline-title.-clickable:hover
+  .icon--arrow-down::before, .icon--arrow-up::before
+    border-top-color: #2c9a7a
+    border-right-color: #2c9a7a
+
+.title-group__title.-clickable:hover
+  .icon--arrow-down::before, .icon--arrow-up::before
+    border-top-color: #2c9a7a
+    border-right-color: #2c9a7a
+
+.icon--arrow-down::before, .icon--arrow-left::before, .icon--arrow-right::before
+  border-top: 2px solid #7f7f7f
+  border-right: 2px solid #7f7f7f
+
+.button--primary .icon--arrow-left::before
+  border-top-color: #000
+  border-right-color: #000
+
+.icon-button--black
+  &:hover .icon--arrow-left::before
+    border-top-color: #000
+    border-right-color: #000
+  .icon--arrow-left::before
+    border-top-color: #222
+    border-right-color: #222
+
+.button--primary.is_disabled .icon--arrow-left::before
+  border-top-color: #888
+  border-right-color: #888
+
+.icon--arrow-left.-double::after
+  border-top: 2px solid #7f7f7f
+  border-right: 2px solid #7f7f7f
+
+.button--primary
+  .icon--arrow-right::before
+    border-top-color: #000
+    border-right-color: #000
+  &:hover .icon--arrow-right::before
+    border-top-color: #2c9a7a
+    border-right-color: #2c9a7a
+
+.calendar__button.-nav:hover .icon--arrow-right
+  &.-double::after, &::before
+    border-top-color: #2c9a7a
+    border-right-color: #2c9a7a
+
+.icon-button--black
+  .icon--arrow-right::before
+    border-top-color: #222
+    border-right-color: #222
+  &:hover .icon--arrow-right::before
+    border-top-color: #000
+    border-right-color: #000
+
+.button--primary.is_disabled .icon--arrow-right::before
+  border-top-color: #888
+  border-right-color: #888
+
+.icon--arrow-right.-double::after
+  border-top: 2px solid #7f7f7f
+  border-right: 2px solid #7f7f7f
+
+.icon--success
+  background-color: #4caf93
+  &::after
+    border-bottom: 3px solid #000
+    border-left: 3px solid #000
+
+.loom
+  h1, h2, h3, h4, h5, h6
+    color: #ccc
+  h1
+    border-bottom: 3px solid #4caf93
+  h2
+    border-bottom: 1px solid #4caf93
+  a.deadlink
+    color: #888
+  table
+    tr:first-child
+      td, th
+        border-top: 1px solid #424242 !important
+    td:first-child, th:first-child
+      border-left: 1px solid #424242 !important
+    td
+      background-color: rgba(0, 0, 0, 0.8)
+    th
+      background-color: rgba(179, 80, 108, 0.175)
+    td, th
+      border-right: 1px solid #424242 !important
+      border-bottom: 1px solid #424242 !important
+  blockquote
+    color: #999
+    border-left: 3px solid #333
+  .markdown-body
+    hr
+      border-bottom-color: #424242
+    code.loom_inner_code
+      border: 1px solid #424242
+      background-color: #0c0c0c
+  pre.loom_code
+    border: 1px solid #424242
+    background-color: #0a0a0a
+
+.loom_code_java_string
+  color: #d6ff00
+
+.loom_code_java_reserved
+  color: #84ffad
+
+.loom_code_java_blockcomment, .loom_code_java_linecomment
+  color: #c682a5
+
+.loom_code_java_javadoccomment
+  color: #c6a242
+
+.loom_code_cs_string
+  color: #5ceaea
+
+.loom_code_cs_reserved
+  color: #ff0
+
+.loom_code_cs_blockcomment, .loom_code_cs_linecomment
+  color: #080
+
+.loom_code_cs_csdoccomment
+  color: #7f7f7f
+
+.loom
+  ol .checklist-checked > .checklist-content, ul .checklist-checked > .checklist-content
+    color: #888
+  ol .checklist-unchecked > .checklist-content, ul .checklist-unchecked > .checklist-content
+    color: #ddd
+
+.loading--circle
+  border: 2px solid #00836b
+
+.loading--bar
+  background-color: #424242
+  &::before
+    background-color: #2c9a7a
+
+.dropdown-link
+  color: #ddd
+  &::after
+    border-top: 7px solid #7f7f7f
+  &.is_active, &.is_opened, &:hover
+    color: #00836b
+  &.is_active::after, &.is_opened::after, &:hover::after
+    border-top-color: #2c9a7a
+
+.dropdown-menu
+  border: 1px solid #424242
+  background-color: #000
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.35)
+
+.dropdown-menu__item.is_border
+  border-bottom: 1px solid #424242
+
+.dropdown-menu__link
+  color: #ddd
+  &:hover
+    color: #ddd
+    background-color: #1c1117
+  &.-checkable
+    &.is_active, &:hover
+      background-color: #1c1117
+    &.is_active::after
+      border-bottom: 3px solid #2c9a7a
+      border-left: 3px solid #2c9a7a
+
+.dropdown-box
+  background-color: #000
+  box-shadow: 0 2px 10px 0 rgba(251, 255, 255, 0.35)
+  &::before
+    border-bottom: 8px solid #2c9a7a
+
+.dropdown-box__header
+  background-color: #2c9a7a
+
+.dropdown-box__title
+  color: #000
+
+.stamp-box .stamp-list + .stamp-list::after
+  background-color: #424242
+
+.list-menu
+  &.-global-nav-project .list-menu__link
+    color: #888
+    &:hover
+      color: #ddd
+  &.-repository-list
+    border-top: 1px solid #424242
+    border-bottom: 1px solid #424242
+  &.-error-page .list-menu__item::after
+    background-color: #525252
+
+.list-menu__item::after
+  background-color: #424242
+
+.list-menu__link.-weak
+  color: #888
+  &:hover
+    color: #ddd
+
+.modal--default, .modal--flex__wrapper
+  background-color: #000
+  box-shadow: 0 2px 10px 0 rgba(251, 255, 255, 0.35)
+
+.modal--full-screen
+  background-color: #000
+
+.modal__header
+  background-color: #2c9a7a
+
+.modal__title
+  color: #000
+  svg.icon
+    fill: #120b0f
+
+.slide-in__title svg.icon
+  fill: #120b0f
+
+.modal__sub-title
+  color: #1c1117
+
+.modal__fixed-button-area
+  background-color: #000
+  box-shadow: 0 -1px 2px 0 rgba(255, 255, 255, 0.3)
+
+.modal
+  &.-issue-dialog
+    .modal__actions-button
+      color: #000
+    .modal__content
+      background-color: #000
+      box-shadow: 0 2px 10px 0 rgba(251, 255, 255, 0.35)
+  &.-branch-switch-dialog .modal__content .branch-switch-dialog-filter, &.-find-issue-dialog .modal__content .find-issue-dialog-status-filter
+    background-color: #000
+  &.-wiki-cacoo-dialog .modal__content
+    background-color: #06071c
+    .cacoo-dialog-step
+      color: #000
+      background-color: #00836b
+
+.modal-membrane
+  background-color: #fff
+
+.view-issue-file-upload__drag-area
+  border: 3px dotted #4caf93
+
+.view-issue-file-upload__tooltip
+  color: #000
+  background-color: rgba(238, 238, 238, 0.8)
+  &:after
+    border-top-color: rgba(238, 238, 238, 0.8)
+  &.-error
+    background-color: rgba(21, 211, 255, 0.8)
+    &:after
+      border-top-color: rgba(21, 211, 255, 0.8)
+
+.slide-in
+  background-color: #000
+  box-shadow: -2px 0 10px 0 rgba(251, 255, 255, 0.23)
+  &.-notifications, &.-watch-list
+    background-color: #0c0c0c
+
+.slide-in__header
+  background-color: #2c9a7a
+
+.slide-in__title
+  color: #000
+  svg.icon
+    fill: #1c1117
+
+.slide-in__sub-title
+  color: #1c1117
+
+.pager--simple
+  &.-global-nav
+    border-top: 1px solid #424242
+  &.-head-line-pager
+    border-bottom: 1px solid #424242
+  &.-inverse
+    a
+      color: #000
+    .pager__prev::after
+      border-right-color: #000
+    .pager__next::after
+      border-left-color: #000
+    .pager__info
+      color: #000
+
+.pager--numbers
+  .pager__prev:hover::after
+    border-right: 6px solid #000
+  .pager__next:hover::after
+    border-left: 6px solid #000
+
+.pager__prev::after
+  border-right: 6px solid #7f7f7f
+
+.pager__next::after
+  border-left: 6px solid #7f7f7f
+
+.pager__ellipsis
+  color: #888
+
+.pager__partition::after
+  background-color: #424242
+
+.pager__link
+  color: #ddd
+  background-color: #000
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2)
+
+.card--default .pager__link, .comment-item .pager__link, .data-table .pager__link, .timeline .pager__link
+  background-color: #0c0c0c
+
+.pager__link
+  &.is_current, &:hover
+    color: #000
+    background-color: #4caf93
+
+.page-link::after
+  border-left: 6px solid #7f7f7f
+
+.pill
+  color: #000
+  background-color: #444
+
+.pill--primary
+  color: #000
+  background-color: #4caf93
+  &:hover
+    color: #000
+
+.pill--default
+  color: #ddd
+  background-color: #120b0f
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1)
+  &:hover
+    color: #ddd
+
+.card--default .pill--default, .comment-item .pill--default, .data-table .pill--default, .timeline .pill--default
+  background-color: #1c1117
+
+.pill--updated-A
+  color: #ffc2df
+  background-color: #4a142e
+
+.pill--updated-M
+  color: #d4d389
+  background-color: #372704
+
+.pill--updated-D
+  color: #63fefe
+  background-color: #07261b
+
+.pill--issue-type-1
+  background-color: #15d3ff
+
+.pill--issue-type-2
+  background-color: #1788a7
+
+.pill--issue-type-3
+  background-color: #1f8465
+
+.pill--issue-type-4
+  background-color: #797348
+
+.pill--issue-type-5
+  background-color: #c46242
+
+.pill--issue-type-6
+  background-color: #4caf93
+
+.pill--issue-type-7
+  background-color: #4f41c3
+
+.pill--issue-type-8
+  background-color: #1259d5
+
+.pill--issue-type-9
+  background-color: #0bd7a7
+
+.pill--issue-type-10
+  background-color: #c6c6c6
+
+.tab--primary__link
+  border-bottom: 3px solid #424242
+  color: #666
+  &::after
+    background-color: #2c9a7a
+  &.is_active, &:hover
+    color: #eee
+
+.tab--default
+  border-bottom: 1px solid #666
+
+.Page--settings-project .tab--default, .Page--settings-space .tab--default, .Page--settings-user .tab--default, .modal__content .tab--default, .tab--default.-pull-request-fixed
+  border-bottom-color: #424242
+
+.Page--settings-project .tab--default .tab--default__link, .Page--settings-space .tab--default .tab--default__link, .Page--settings-user .tab--default .tab--default__link, .modal__content .tab--default .tab--default__link
+  border-color: #424242
+  background-color: #0c0c0c
+
+.tab--default
+  &.-pull-request-fixed .tab--default__link, &.-with-tab-content-wrapper .tab--default__link
+    border-color: #424242
+    background-color: #0c0c0c
+
+.Page--settings-project .tab--default .tab--default__link
+  &.is_active, &:hover
+    background-color: #000
+
+.Page--settings-space .tab--default .tab--default__link
+  &.is_active, &:hover
+    background-color: #000
+
+.Page--settings-user .tab--default .tab--default__link
+  &.is_active, &:hover
+    background-color: #000
+
+.modal__content .tab--default .tab--default__link
+  &.is_active, &:hover
+    background-color: #000
+
+.tab--default
+  &.-pull-request-fixed .tab--default__link
+    &.is_active, &:hover
+      background-color: #000
+  &.-with-tab-content-wrapper .tab--default__link
+    &.is_active, &:hover
+      background-color: #000
+
+.Page--settings-project .tab--default .tab--default__link.is_active, .Page--settings-space .tab--default .tab--default__link.is_active, .Page--settings-user .tab--default .tab--default__link.is_active, .modal__content .tab--default .tab--default__link.is_active
+  border-bottom-color: #000
+
+.tab--default
+  &.-pull-request-fixed .tab--default__link.is_active, &.-with-tab-content-wrapper .tab--default__link.is_active
+    border-bottom-color: #000
+
+.tab--default__link
+  color: #ddd
+  border: 1px solid #666
+  background-color: #1a1a1a
+  &.is_active
+    border-bottom-color: #0f0f0f
+
+.tab-content-wrapper
+  border: 1px solid #3d3d3d
+  background-color: #000
+
+[data-tooltip]
+  &.simptip-position-top
+    &:before
+      border-top-color: rgba(238, 238, 238, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(238, 238, 238, 0.8)
+  &.simptip-position-bottom
+    &:before
+      border-bottom-color: rgba(238, 238, 238, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(238, 238, 238, 0.8)
+  &.simptip-position-left
+    &:before
+      border-left-color: rgba(238, 238, 238, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(238, 238, 238, 0.8)
+  &.simptip-position-right
+    &:before
+      border-right-color: rgba(238, 238, 238, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(238, 238, 238, 0.8)
+  &.simptip-position-bottom.half-arrow:before, &.simptip-position-top.half-arrow:before
+    border-right: 6px solid #eee
+  &.-no-opacity
+    &:before
+      border-top-color: #fff
+    &:after
+      background-color: #fff
+
+.simptip-position-right.half-arrow:before
+  border-right: 6px solid #eee
+
+.simptip-position-left.half-arrow:before
+  border-left: 6px solid #eee
+
+.half-arrow
+  &.simptip-position-bottom:before, &.simptip-position-top:before
+    border-right: 6px solid #eee
+
+.simptip-success
+  &.simptip-position-top
+    &:before
+      border-top-color: rgba(179, 80, 108, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(179, 80, 108, 0.8)
+  &.simptip-position-bottom
+    &:before
+      border-bottom-color: rgba(179, 80, 108, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(179, 80, 108, 0.8)
+  &.simptip-position-left
+    &:before
+      border-left-color: rgba(179, 80, 108, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(179, 80, 108, 0.8)
+  &.simptip-position-right
+    &:before
+      border-right-color: rgba(179, 80, 108, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(179, 80, 108, 0.8)
+  &.simptip-position-bottom.half-arrow:before, &.simptip-position-top.half-arrow:before
+    border-right: 6px solid #4caf93
+
+.simptip-info
+  &.simptip-position-top
+    &:before
+      border-top-color: rgba(196, 98, 66, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(196, 98, 66, 0.8)
+  &.simptip-position-bottom
+    &:before
+      border-bottom-color: rgba(196, 98, 66, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(196, 98, 66, 0.8)
+  &.simptip-position-left
+    &:before
+      border-left-color: rgba(196, 98, 66, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(196, 98, 66, 0.8)
+  &.simptip-position-right
+    &:before
+      border-right-color: rgba(196, 98, 66, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(196, 98, 66, 0.8)
+  &.simptip-position-bottom.half-arrow:before, &.simptip-position-top.half-arrow:before
+    border-right: 6px solid #c46242
+
+.simptip-danger
+  &.simptip-position-top
+    &:before
+      border-top-color: rgba(21, 211, 255, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(21, 211, 255, 0.8)
+  &.simptip-position-bottom
+    &:before
+      border-bottom-color: rgba(21, 211, 255, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(21, 211, 255, 0.8)
+  &.simptip-position-left
+    &:before
+      border-left-color: rgba(21, 211, 255, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(21, 211, 255, 0.8)
+  &.simptip-position-right
+    &:before
+      border-right-color: rgba(21, 211, 255, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(21, 211, 255, 0.8)
+  &.simptip-position-bottom.half-arrow:before, &.simptip-position-top.half-arrow:before
+    border-right: 6px solid #15d3ff
+
+.simptip-warning
+  &.simptip-position-top
+    &:before
+      border-top-color: rgba(18, 89, 213, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(18, 89, 213, 0.8)
+  &.simptip-position-bottom
+    &:before
+      border-bottom-color: rgba(18, 89, 213, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(18, 89, 213, 0.8)
+  &.simptip-position-left
+    &:before
+      border-left-color: rgba(18, 89, 213, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(18, 89, 213, 0.8)
+  &.simptip-position-right
+    &:before
+      border-right-color: rgba(18, 89, 213, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(18, 89, 213, 0.8)
+  &.simptip-position-bottom.half-arrow:before, &.simptip-position-top.half-arrow:before
+    border-right: 6px solid #1259d5
+
+.simptip-error
+  &.simptip-position-top
+    &:before
+      border-top-color: rgba(11, 215, 167, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(11, 215, 167, 0.8)
+  &.simptip-position-bottom
+    &:before
+      border-bottom-color: rgba(11, 215, 167, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(11, 215, 167, 0.8)
+  &.simptip-position-left
+    &:before
+      border-left-color: rgba(11, 215, 167, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(11, 215, 167, 0.8)
+  &.simptip-position-right
+    &:before
+      border-right-color: rgba(11, 215, 167, 0.8)
+    &:after
+      color: #000
+      background-color: rgba(11, 215, 167, 0.8)
+  &.simptip-position-bottom.half-arrow:before, &.simptip-position-top.half-arrow:before
+    border-right: 6px solid #0bd7a7
+
+.balloontip__item
+  background: #000
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.4)
+  -ms-box-shadow: 0 0 4px rgba(255, 255, 255, 0.4)
+  -o-box-shadow: 0 0 4px rgba(255, 255, 255, 0.4)
+
+.ImageAttachmentBubble
+  background: #000
+  box-shadow: 0 2px 10px 0 rgba(251, 255, 255, 0.2)
+
+.title
+  color: #ccc
+  &.-with-line
+    border-bottom: 1px solid #424242
+
+.title__sub-line svg.icon
+  fill: #444
+
+.comment-editor--full.-fixed-footer.is_comment-all-collapsed .comment-editor__expand-button:hover .comment-editor__expand-button-icon svg.icon, .title__sub-line svg.icon:hover
+  fill: #2c9a7a
+
+.text.-weak, .title__sub-line.-with-colon::before
+  color: #888
+
+.text
+  &.-notice
+    color: #0bd7a7
+  &.-error, &.-required
+    color: #15d3ff
+
+.calendar
+  background-color: #000
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.35)
+
+.calendar__title
+  color: #000
+
+.calendar__button .today-button
+  color: #00836b
+
+.calendar__head--row-1
+  background-color: #2c9a7a
+
+.calendar__head--row-2
+  background-color: #1c1117
+
+.calendar__day
+  color: #ddd
+  &.is_hilite
+    color: #ddd
+  &.is_active::after, &.is_hilite::after, &.is_selected::after
+    background-color: #1c1117
+  &.is_active, &.is_selected
+    color: #000 !important
+  &.is_active::after, &.is_selected::after
+    background-color: #2c9a7a
+  &.is_disabled
+    color: #888
+  &.-weekend
+    color: #35d5b1
+  background-color: #000
+
+.calendar__emptycell
+  background-color: #000
+
+.calendar table
+  color: #ddd
+
+.calendar__ttip
+  color: #ddd
+  border-top: 5px solid #000
+  background-color: #0c0c0c
+
+.calendar__combo
+  border: 1px solid #424242
+  background-color: #000
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.35)
+  .label
+    color: #ddd
+  .label-IEfix
+    color: #ddd
+    &.is_hilite
+      background-color: #1c1117
+  .label.is_hilite
+    background-color: #1c1117
+  .label-IEfix.is_active, .label.is_active
+    color: #000
+    background-color: #2c9a7a
+
+.code-view-set__legend-item
+  &.-deleted
+    color: #63fefe
+    background-color: #07261b
+  &.-added
+    color: #ffc2df
+    background-color: #4a142e
+  &.-changed
+    color: #d4d389
+    background-color: #372704
+
+.code-view
+  border: 1px solid #3d3d3d
+
+.card--default .code-view, .code-view.-comment-item
+  border-color: #424242
+
+.code-view__header
+  background-color: #000
+
+.card--default .code-view__header
+  background-color: #0a0a0a
+
+.code-view__content
+  border-top: 1px solid #424242
+
+.code-view .loom
+  border-top: 1px solid #424242
+  background-color: #000
+
+.code-view__mask
+  background: #000
+
+.Code-table .Line-number
+  border-right: 1px solid #424242
+  background-color: #000
+
+.card--default .Code-table .Line-number
+  background-color: #0a0a0a
+
+.Code-table
+  .Line-number
+    span
+      color: #888
+    a:hover span
+      color: #ddd
+  .Code-table_content_separator
+    color: #888
+    background-color: #0a0a0a
+    td
+      background-color: #0c0c0c
+  .Code-table_content_added .Line-src, .Code-table_content_deleted .Line-src
+    background-color: #021911
+  .Code-table_content_added .Line-src
+    background-color: #280817
+  .Code-table_content_changed .Line-src
+    background-color: #271800
+  .Code-table_content_blank td
+    background-color: #000
+  .Code-table_content_unchanged .Line-src
+    background-color: #000
+    &.highlight
+      background-color: #07072c
+  .Code-table_content_blank th
+    color: #888
+    background-color: #0c0c0c
+
+.Not-shown
+  color: #888
+  background-color: #0c0c0c
+
+.comment-list
+  border: 1px solid #3d3d3d
+  background-color: #000
+
+.comment-list__mask
+  background-color: #000
+
+.comment-list
+  &.is_not-yet-comment .comment-list__first-info
+    border-top: 1px solid #525252
+  &.-multiple-issues
+    border-top: 1px solid #424242
+
+.comment-item.-multiple-issues .comment-item__created-time
+  color: #888
+
+.comment-item__inner
+  border-top: 1px solid #424242
+
+.comment-item
+  &.is_preview
+    border: 1px solid #77b6a4
+    background-color: rgba(136, 73, 91, 0.1)
+  &.is_new
+    background-color: #030521
+  &.is_collapsed .comment-item__header .comment-item__collapsed-summary
+    color: #ddd
+  &.is_minimum
+    border-top: 1px solid #424242
+    .comment-item__minimize-trigger
+      border-bottom: 1px solid #424242
+
+.comment-changelog__item::after
+  border: 2px solid #525252
+  background-color: #000
+
+.comment-changelog__arrow
+  &::after
+    background-color: #525252
+  &::before
+    border-left: 5px solid #525252
+
+.comment-changelog__file-size
+  color: #888
+
+.comment-notified-users__check-mark
+  background-color: #b34264
+  box-shadow: 0 0 0 1px #000
+
+.comment-editor--default .comment-editor__attach-file-button
+  color: #ddd
+  border-bottom: 1px solid #424242
+
+.comment-editor--full
+  .comment-editor__emoticon-panel.is_opened
+    border: 1px solid #424242
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.35)
+  .comment-editor__attach-file-button
+    &:focus svg, &:hover svg
+      fill: #000
+  &.-fixed-footer
+    background-color: #000
+    box-shadow: 0 -1px 2px 0 rgba(255, 255, 255, 0.3)
+    .comment-editor__pinch
+      border-top: 1px solid #636363
+      &:after, &:before
+        background: #555
+    &.is_comment-preview:before
+      background: #000
+      box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.28)
+    &.is_comment-all-collapsed .comment-editor__expand-button
+      &::after
+        background-color: #424242
+      .comment-editor__expand-button-text
+        color: #ddd
+
+.comment-editor__preview-wrapper
+  border: 1px solid #666
+  background-color: #000
+  &.is_foucs
+    border-color: #00836b
+    background-color: #030521
+    box-shadow: 0 0 3px #00836b
+  &.is_error
+    border-color: #15d3ff
+    background-color: #001b23
+
+.comment-editor.is_preview .comment-editor__preview-wrapper
+  border-color: rgba(102, 102, 102, 0.4)
+  background-color: #030521
+  .comment-editor__action-wrapper
+    border-top-color: rgba(66, 66, 66, 0.4)
+
+.comment-editor__action-wrapper
+  border-top: 1px solid #424242
+  background-color: #090909
+
+.Page--settings-project .comment-editor__action-wrapper, .Page--settings-space .comment-editor__action-wrapper, .Page--settings-user .comment-editor__action-wrapper, .card--default .comment-editor__action-wrapper, .comment-editor.-fixed-footer .comment-editor__action-wrapper, .comment-item .comment-editor__action-wrapper, .modal__content .comment-editor__action-wrapper, .timeline .comment-editor__action-wrapper
+  background-color: #0a0a0a
+
+.comment-editor__preview-menu-item
+  color: #bbb !important
+  border: 1px solid #666
+  background-color: #000
+  &:hover
+    color: #00836b
+    border-color: #2c9a7a
+    background-color: #120b0f
+
+.comment-editor__emoticon-panel
+  border: 2px solid #424242
+  background-color: #000
+  img
+    border: 2px solid #000
+    &:hover
+      border: 2px solid #00836b
+    &:active
+      border: 2px solid #424242
+
+.comment-editor__tools .icon-button
+  &:focus svg
+    fill: #666
+  &.is_active
+    svg, &:focus svg, &:hover svg
+      fill: #2c9a7a
+  &:active svg
+    fill: #2c9a7a
+
+.copy-trigger:hover svg.icon, .file-upload__add-drag-area.is_drag-enter svg.icon
+  fill: #2c9a7a
+
+.comment-editor__mask
+  background-color: #0f0f0f
+
+.comment-editor__radio-input:checked + .comment-editor__radio-label .comment-editor__radio-text
+  color: #000
+  &.-status-1
+    background-color: #127f88
+  &.-status-2
+    background-color: #bb773a
+  &.-status-3
+    background-color: #a14a59
+  &.-status-4
+    background-color: #4f41c3
+
+.comment-editor__radio-label
+  border: 1px solid #666
+  &:hover .comment-editor__radio-text
+    color: #000
+    &.-status-1
+      background-color: rgba(18, 127, 136, 0.8)
+    &.-status-2
+      background-color: rgba(187, 119, 58, 0.8)
+    &.-status-3
+      background-color: rgba(161, 74, 89, 0.8)
+    &.-status-4
+      background-color: rgba(79, 65, 195, 0.8)
+
+.comment-editor__radio-text
+  background-color: #000
+
+.condition-list__term
+  color: #888
+
+.condition-list__delimiters
+  color: #525252
+
+.icon-button--default .copy-trigger:hover
+  fill: #000 !important
+
+.copy-trigger.hover-wrapper
+  background-color: #030521
+
+.file-upload__add-drag-area
+  border: 3px dotted #525252
+  background-color: #000
+  &.is_drag-enter
+    border-color: #00836b
+    background-color: #120b0f
+
+.file-upload__info
+  color: #888
+
+.file-upload__attention
+  color: #15d3ff
+
+.upload-item-list__info
+  color: #888
+
+.upload-item
+  &.-simple
+    .upload-item__image-wrapper::before
+      border: 3px solid #4caf93
+    .upload-item__error
+      color: #000
+      svg.icon
+        fill: #15d3ff
+    &:hover
+      .upload-item__name
+        color: #ddd
+      &.is_error
+        .upload-item__image-wrapper::before
+          border-color: #15d3ff !important
+        .upload-item__name
+          color: #15d3ff
+    &.-no-action .upload-item__name
+      color: #888 !important
+  &.-stamp-box
+    &:hover .upload-item__overlay svg.icon
+      fill: #000
+    .upload-item__delete
+      color: #000
+
+.upload-item__image-wrapper
+  background-color: #1a1a1a
+
+.modal__content .upload-item__image-wrapper
+  background-color: #0c0c0c
+
+.upload-item__name
+  color: #888
+
+.upload-item__overlay
+  background-color: #ccc
+  &.-error:before
+    background-color: rgba(0, 253, 253, 0.25)
+
+.upload-item__progress-bar
+  background-color: #424242
+
+.upload-item__progress-bar-status
+  background-color: #b34264
+
+.upload-item.is_error
+  .upload-item__name
+    color: #15d3ff
+  .upload-item__progress-bar, .upload-item__progress-bar-status
+    background-color: #15d3ff
+  &::after
+    background-color: rgba(21, 211, 255, 0.8)
+  &::before
+    border-top-color: rgba(21, 211, 255, 0.8)
+
+.filter-nav.-wiki-tag .filter-nav__link
+  background-color: #000
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05)
+  &.is_active, &:hover
+    background-color: #4caf93
+
+.filter-nav__link
+  &.is_active, &:hover
+    color: #000
+    background-color: #4caf93
+  &.is_active .filter-nav__num, &:hover .filter-nav__num
+    color: #000
+
+.filter-nav__num
+  color: #888
+
+.graph--bar__fig-bar
+  &.-status-1
+    background-color: rgba(18, 127, 136, 0.8)
+  &.-status-2
+    background-color: rgba(187, 119, 58, 0.8)
+  &.-status-3
+    background-color: rgba(161, 74, 89, 0.8)
+  &.-status-4
+    background-color: rgba(79, 65, 195, 0.8)
+
+.graph--bar__info-item
+  color: #ddd
+  &:hover
+    color: #ddd
+  &:nth-child(1) .graph--bar__info-number
+    background-color: #127f88
+  &:nth-child(2) .graph--bar__info-number
+    background-color: #bb773a
+  &:nth-child(3) .graph--bar__info-number
+    background-color: #a14a59
+  &:nth-child(4) .graph--bar__info-number
+    background-color: #4f41c3
+
+.message--success
+  color: #f49ab5
+  border: 1px solid rgba(179, 80, 108, 0.25)
+  background-color: #1c1117
+  .message__icon svg.icon
+    fill: #4caf93
+  a:not(.button)
+    color: #f49ab5
+    &:hover
+      color: #f49ab5
+
+.message--warning
+  color: #82abee
+  border: 1px solid rgba(18, 89, 213, 0.4)
+  background-color: #07072c
+  .message__icon svg.icon
+    fill: #1259d5
+  a:not(.button)
+    color: #82abee
+    &:hover
+      color: #82abee
+
+.message--error
+  color: #7cc9ee
+  border: 1px solid rgba(21, 211, 255, 0.15)
+  background-color: #001b23
+  .message__icon svg.icon
+    fill: #15d3ff
+  a:not(.button)
+    color: #7cc9ee
+    &:hover
+      color: #7cc9ee
+
+#blg_status_bar_text, .flash-message__text
+  color: #000
+
+#blg_status_bar_bg, .flash-message__bg
+  background-color: #00836b
+
+#blg_status_bar_bg.failure, .flash-message__bg.is_failure
+  background-color: #15d3ff
+
+.over-due
+  color: #0bd7a7
+  span:first-child
+    color: #0bd7a7 !important
+
+.over-due__icon
+  fill: #0bd7a7
+
+.over-due .input-text
+  color: #ddd
+
+.open-issue-dialog-trigger
+  &:hover svg.icon
+    fill: #2c9a7a
+  &.-notification-list, &.-watch-list, &.hover-wrapper
+    background-color: #030521
+
+.result-set__mask::after
+  background-color: #0f0f0f
+
+.Page--settings-project .result-set__mask::after, .Page--settings-space .result-set__mask::after, .Page--settings-user .result-set__mask::after
+  background-color: #000
+
+.search-box__input
+  color: #888
+  border: 1px solid #525252
+  background-color: #000
+  &:focus
+    color: #ddd
+    border-color: #00836b
+    background-color: #030521
+    box-shadow: 0 0 3px #00836b
+  &.is_disabled, &[disabled]
+    background-color: #111
+
+.search-box
+  &.is_opened .search-box__input
+    color: #ddd
+    border-color: #00836b
+    background-color: #030521
+    box-shadow: 0 0 3px #00836b
+    &.is_noinput
+      color: #888
+  &.-open-fixed .search-box__input
+    &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder
+      color: #888
+
+.star-button__icon
+  &::before
+    background-color: #0bd7a7
+  &::after
+    background-color: #4caf93
+
+.stream-update.-issue span.Action
+  background-color: #4caf93
+
+.star-button__icon-inner
+  &::before
+    background-color: #89b868
+  &::after
+    background-color: #c46242
+
+.star-button__icon-inner-2::before, .stream-update.-wiki span.Action
+  background-color: #1259d5
+
+.star-button__icon-inner-2::after
+  border: 1px solid #0bd7a7
+
+.star-button__number
+  color: #888
+
+.star-button:hover .star-button__number
+  color: #000
+
+.star-button--1-over
+  svg.icon
+    fill: #1259d5
+  .star-button__number
+    color: #1259d5
+  &:hover
+    border-color: #1259d5 !important
+    background-color: #1259d5 !important
+
+.star-button--10-over
+  svg.icon
+    fill: #4f41c3
+  .star-button__number
+    color: #4f41c3
+  &:hover
+    border-color: #4f41c3 !important
+    background-color: #4f41c3 !important
+
+.star-button--20-over
+  svg.icon
+    fill: #4caf93
+  .star-button__number
+    color: #4caf93
+  &:hover
+    border-color: #4caf93 !important
+    background-color: #4caf93 !important
+
+.star-button--30-over
+  svg.icon
+    fill: #15d3ff
+  .star-button__number
+    color: #15d3ff
+  &:hover
+    border-color: #15d3ff !important
+    background-color: #15d3ff !important
+
+.star-button--40-over
+  svg.icon
+    fill: #c6c6c6
+  .star-button__number
+    color: #c6c6c6
+  &:hover
+    border-color: #c6c6c6 !important
+    background-color: #c6c6c6 !important
+
+.star-list__inner
+  background-color: #000
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.35)
+
+.star-list__star
+  .star-user-image
+    box-shadow: 0 0 15px 2px rgba(221, 221, 221, 0.4) inset
+  &.is_deletable:hover::after
+    border: 2px solid #000
+    background-color: #7f7f7f
+
+.star-list__star-tooltip
+  background-color: #000
+  box-shadow: 0 2px 10px 0 rgba(251, 255, 255, 0.35)
+  &::after, &::before
+    border-top: 8px dashed #111
+  &::after
+    border-top: 7px dashed #000
+
+.star-list__star-tooltip-comment
+  &::after, &::before
+    color: #444
+
+.status
+  color: #000
+
+.status--1
+  background-color: #127f88
+
+.status--2
+  background-color: #bb773a
+
+.status--3
+  background-color: #a14a59
+
+.status--4
+  background-color: #4f41c3
+
+.status--git-1
+  background-color: #127f88
+
+.status--git-2
+  background-color: #7f7f7f
+
+.status--git-3
+  background-color: #a14a59
+
+.status-label
+  color: #000
+
+.status-label--1
+  background-color: #127f88
+
+.status-label--2
+  background-color: #bb773a
+
+.status-label--3
+  background-color: #a14a59
+
+.status-label--4
+  background-color: #4f41c3
+
+.step-flow.-wiki-cacco-dialog .step-flow__item
+  background-color: #141432
+  &::after
+    border-color: #06071c #06071c #06071c #141432
+  + .step-flow__item:before
+    border-top-color: #141432
+    border-right-color: #141432
+    border-bottom-color: #141432
+  &.is_active::before
+    border-top-color: #77b6a4
+    border-right-color: #77b6a4
+    border-bottom-color: #77b6a4
+
+.step-flow--arrow .step-flow__item
+  color: #fff
+  background-color: #1c1117
+  &::after
+    border: 20px solid #000
+    border-left-color: #1c1117
+  + .step-flow__item:before
+    border-top-color: #1c1117
+    border-right-color: #1c1117
+    border-bottom-color: #1c1117
+  &.is_active
+    color: #000
+    background-color: #77b6a4
+    &::before
+      border-top-color: #77b6a4
+      border-right-color: #77b6a4
+      border-bottom-color: #77b6a4
+    &::after
+      border-left-color: #77b6a4
+
+.subtasking-summary
+  border-color: rgba(211, 101, 133, 0.3)
+
+.subtasking-wrapper::before
+  background-color: rgba(211, 101, 133, 0.3)
+
+.subtasking-wrapper__first-item
+  &::before
+    background-color: rgba(211, 101, 133, 0.3)
+  &::after
+    border-color: rgba(211, 101, 133, 0.4)
+    background-color: #000
+
+.tab-buttons.is_not-active-all
+  border: 1px solid #3d3d3d
+
+.tab-buttons__link
+  color: #ddd
+  &:hover
+    color: #ddd
+  &.is_active svg.icon, &:hover svg.icon
+    fill: #2c9a7a
+  &::after
+    border-color: #3d3d3d
+    background-color: #000
+  &.is_active
+    color: #ddd
+
+.tab-button-content
+  border-color: #3d3d3d
+  background-color: #000
+
+.ticket__header.-pull-request
+  .pull-req-id
+    border-right: 1px dashed #525252
+  .pull-req-id__number
+    color: #ccc
+  .merge-direction__branch
+    border: 1px solid rgba(211, 101, 133, 0.5)
+    background-color: #120b0f
+
+.ticket__date-item > span
+  color: #888
+
+.ticket__title
+  color: #ccc
+
+.ticket.is_description-collapsed .ticket__article-header .ticket__collapsed-summary
+  color: #ddd
+
+.ticket__properties-item
+  border-bottom: 1px solid #424242
+  &:nth-child(-n+2)
+    border-top: 1px solid #424242
+
+.ticket__properties-label
+  color: #888
+  .required
+    color: #15d3ff
+
+.ticket__mask::after
+  background-color: #0f0f0f
+
+.title-group
+  &.-repository-list .title-group__info, &.-webhook-list .title-group__info
+    color: #888
+  &.-gantt
+    border-top: 2px solid #525252
+    border-right: 1px solid #3d3d3d
+    border-bottom: 1px solid #3d3d3d
+    border-left: 1px solid #3d3d3d
+    background-color: #000
+    .title-group__date
+      color: #888
+
+.title-group__number
+  color: #888
+
+.timeline__fixed-header
+  background-color: #0f0f0f
+
+.timeline__date, .timeline__stream
+  background-color: #000
+
+.timeline__date
+  border: 1px solid #3d3d3d
+
+.timeline.-git .timeline__stream
+  border-top: 1px solid #3d3d3d
+
+.timeline__stream
+  border-right: 1px solid #3d3d3d
+  border-bottom: 1px solid #3d3d3d
+  border-left: 1px solid #3d3d3d
+
+.timeline__stream-item
+  + .timeline__stream-item .stream-update__wrap
+    border-top: 1px solid #424242
+  &.is_notification::after
+    background-color: #0bd7a7
+  &.is_new
+    background-color: #030521
+    &:hover
+      background-color: #030521
+  &.is_deleted
+    background-color: #0a0a0a
+
+.timeline__see-updated
+  border-right: 1px solid #3d3d3d
+  border-bottom: 1px solid #3d3d3d
+  border-left: 1px solid #3d3d3d
+  > a
+    color: #82abee
+    background-color: #030521
+    &:hover
+      color: #82abee
+      background-color: #060a40
+
+.stream-update
+  span.Action
+    color: #000
+  &.-files span.Action
+    background-color: #1788a7
+  &.-git span.Action, &.-svn span.Action
+    background-color: #797348
+  &.-pull-request span.Action
+    background-color: #1f8465
+  &.-project span.Action
+    background-color: #0bd7a7
+
+.stream-update__summary
+  color: rgba(221, 221, 221, 0.7)
+  .Key
+    color: rgba(0, 131, 107, 0.6)
+  &.is_new
+    color: #ddd
+    .Key
+      color: #00836b
+
+.stream-update__content
+  .file-name.is_deleted, span.update-value
+    color: #888
+
+.stream-update__summary .Project-user-updates .OutOfProjectUsers
+  color: #888
+
+.stream-update__content span.Notification
+  color: #fff
+  background-color: #000956
+
+.add-comment-area__meta
+  color: #888
+
+.add-comment-area__name
+  color: #eee
+
+.add-comment-area__content.is_deleted
+  color: #888
+
+.user-icon-set__text
+  color: #ddd
+  &.-link
+    color: #00836b
+
+.user-icon-set__name
+  color: #ccc
+
+.user-icon-set__sub-line
+  color: #888
+
+.user-icon-set__sub-line-anchor
+  color: #888
+  &:hover
+    color: #ddd
+
+.updated-list
+  border: 1px solid #3d3d3d
+  background-color: #000
+
+.card--default .updated-list
+  border-top-color: #424242
+  border-bottom-color: #424242
+  .updated-list__menu-brackets
+    color: #424242
+
+.updated-list__item
+  border-bottom: 1px solid #424242
+
+.updated-list__menu-brackets
+  color: #424242
+
+.changeset-limit-error
+  color: #15d3ff
+
+.changeset-limit-error__icon svg.icon
+  fill: #15d3ff
+
+span
+  &.global-search-keyword-highlight, &.star-comment-highlight
+    color: #eee
+    background-color: #080961
+
+.global-header
+  background-color: #120b0f
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.23)
+
+.global-header__user-actions
+  .switch-ui-button__inner
+    color: #bbb
+    border: 1px solid #525252
+  .switch-ui-button:hover .switch-ui-button__inner
+    color: #000
+    border-color: #2c9a7a
+    background-color: #2c9a7a
+  .user-profile .dropdown-menu .project-settings-link__pj-name, .user-profile__name
+    color: #888
+
+.global-launch-box::before
+  background-color: #424242
+
+.global-nav__link
+  color: #eee
+  &.is_opened, &:hover
+    color: #00836b
+
+.global-nav-content
+  .is_copied
+    background-color: #120b0f
+  .copyMsg
+    color: #00836b
+
+.watch-list-link
+  .watch-badge
+    background-color: #b34264
+  &.is_opened
+    background-color: #2c9a7a
+    svg.icon, &:hover svg.icon
+      fill: #120b0f
+
+.watch-list__item
+  border-bottom: 1px solid #424242
+  background-color: #000
+  &.is_new
+    background-color: #030521
+    &:hover
+      background-color: #030521
+  &:hover
+    background-color: #030521
+  &.is_exists-unchecked .watch-list__icon
+    &::after
+      background-color: #0bd7a7
+    &::before
+      background-color: #000
+
+.watch-list__link
+  color: #ddd
+  &:hover
+    color: #ddd
+
+.watch-list__key
+  color: #888
+
+.watch-list__summary
+  color: #eee
+
+.watch-list__note-area
+  svg.icon
+    fill: #7f7f7f
+  &:hover
+    background-color: #0c0f3f
+    .watch-list__note.-none
+      color: #ddd
+
+.user-actions-link.is_opened svg.icon, .watch-list__note-area:hover svg.icon
+  fill: #2c9a7a
+
+.watch-list__note
+  color: #0bd7a7
+
+.watch-list__delete, .watch-list__note.-none, .watch-list__time
+  color: #888
+
+.watch-list__delete:hover
+  color: #ddd
+
+.notifications-link.is_opened
+  background-color: #2c9a7a
+  svg.icon, &:hover svg.icon
+    fill: #120b0f
+
+.notification-list__item
+  border-bottom: 1px solid #424242
+  background-color: #000
+  &.is_new
+    background-color: #030521
+    &:hover
+      background-color: #030521
+  &:hover
+    background-color: #030521
+  &.is_read
+    border-left-color: #101010
+    background-color: #1a1a1a
+    &:hover
+      background-color: #030521
+
+.notification-list__link
+  color: #ddd
+  &:hover
+    color: #ddd
+
+.notification-list__time
+  color: #888
+
+.notification-list__info
+  &.-change-assigner .reason, &.-comment .reason, &.-create .reason, &.-update .reason
+    color: #4caf93
+  &.-attach-file .reason
+    color: #1788a7
+  &.-add-project-user .reason
+    color: #0bd7a7
+  &.-other .reason
+    color: #c6c6c6
+  &.-change-pull-request-assigner .reason, &.-pull-request-comment .reason, &.-pull-request-create .reason, &.-pull-request-update .reason
+    color: #1f8465
+
+.notification-list__title
+  color: #888
+
+.notification-list__comment
+  color: #eee
+
+.notification-list__summary
+  color: #888
+
+.core-wrapper
+  &.-profile .content-header, &.-project .content-header, &.-settings .content-header
+    background-color: #000
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.18)
+
+.content-header
+  &.-pull-request-fixed, &.-view-issue-fixed
+    box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.3) !important
+  &.-pull-request-fixed .content-header__pull-req-summary .content-header__pull-req-number
+    border-right: 1px dashed #424242
+
+.header-icon-set__name
+  color: #ccc
+
+.core-wrapper.-project .header-icon-set
+  .header-icon-set__key, .header-icon-set__name
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.65)
+
+.project-user-list::after
+  border-right: 1px dashed #424242
+
+.project-user-modal__edit-permisstion
+  background-color: #000
+
+.project-user-modal__punctuation
+  color: #888
+
+.project-user-modal-list__item
+  border-bottom: 1px solid #424242
+
+.content-footer__copyright
+  color: #888
+  a
+    color: #888
+    &:hover
+      color: #888
+
+.content-footer__product-list a
+  svg.icon
+    fill: #444
+  &:hover svg.icon
+    fill: #7f7f7f
+
+.project-nav__back
+  background-color: #4caf93
+
+.trigger-icon .trigger-icon__inner
+  .trigger-icon__line, &::after, &::before
+    background-color: #000
+
+.project-nav-list__link
+  &.is_active, &:hover
+    color: #2c9a7a
+    background-color: #0f0f0f
+
+.project-nav-help__icon:hover svg.icon
+  fill: #4caf93
+
+.project-nav-list__link
+  &.is_active .project-nav-list__icon, &:hover .project-nav-list__icon
+    fill: #4caf93
+  &.is_active .project-nav-list__text, &:hover .project-nav-list__text
+    color: #2c9a7a
+
+.project-nav-list__icon
+  fill: #000
+
+.project-nav-list__text
+  color: #000
+
+.project-nav-help__icon
+  border: 1px solid rgba(0, 0, 0, 0.7)
+  svg.icon
+    fill: rgba(0, 0, 0, 0.7)
+  &:hover
+    border-color: #000
+    background-color: #000
+
+.settings-nav
+  border-right: 1px solid #3d3d3d
+  background-color: #0f0f0f
+
+.settings-nav__title
+  color: #888
+
+.settings-nav__menu li
+  a
+    color: #ddd
+  &:not(.is_disabled)
+    &.is_active a, &:hover a
+      color: #eee
+      border-color: #3d3d3d
+      background-color: #000
+  &.is_disabled a
+    color: #666
+
+.Page--edit-wiki .wiki-tag-list__count, .Page--find-wiki .wiki-tag-list__count, .Page--view-wiki .wiki-tag-list__count, [class^=Page--wiki] .wiki-tag-list__count
+  color: #888
+
+.wiki-page-list li a
+  color: #00836b
+  &:hover
+    color: #00836b
+    background-color: #1c1117
+
+.jqtree-toggler
+  .jqtree-toggler-icon
+    border-top-color: #4caf93
+  &.jqtree-closed > .jqtree-toggler-icon
+    border-left-color: #4caf93
+
+.jqtree-element:hover, .jqtree-selected > .jqtree-element
+  background-color: rgba(211, 101, 133, 0.12)
+
+.jqtree-element
+  .wiki-link
+    color: #00836b
+    &:hover
+      color: #00836b
+  .not-link
+    color: #ddd
+    &:hover
+      color: #ddd
+
+.Page--view-wiki
+  .wiki-content
+    border: 1px solid #3d3d3d
+    background-color: #000
+  .file-attach
+    border-top: 1px solid #525252
+    border-bottom: 1px solid #525252
+  .wikiquickedit-table
+    td, th
+      border: 1px solid #424242
+    td.header
+      background-color: #0c0c0c
+    tr
+      &.drop-bottom td
+        border-bottom: 2px solid #aaa !important
+      &.drop-top td
+        border-top: 2px solid #aaa !important
+
+.Page--edit-wiki
+  .editWiki-toolbar
+    border-bottom: 1px solid #424242
+  .editWiki-toolbar__tools.-has-separator::after
+    background-color: #333
+
+.Page--wiki-version .editer p
+  border-bottom: 1px dashed #666
+
+@media print
+  .input-radio:checked + label::after
+    border-color: #00836b
+  .input-checkbox:checked + label
+    &::before
+      background-color: #000
+    &::after
+      border-bottom-color: #00836b
+      border-left-color: #00836b
+  body
+    background-color: #000 !important
+  .data-table--default
+    &.-no-bottom-border
+      border-bottom: 1px solid #3d3d3d !important
+    &.-no-top-border
+      border-top: 1px solid #3d3d3d !important
+
+#cboxOverlay
+  background: #fff
+
+.cboxIframe
+  background: #000
+
+#cboxError
+  border: 1px solid #333
+
+#cboxTitle
+  color: #000
+
+#cboxNext:hover .icon-button, #cboxPrevious:hover .icon-button
+  background-color: #fff
+
+#cboxNext .icon-button, #cboxPrevious .icon-button
+  background-color: rgba(255, 255, 255, 0.4)
+
+#cboxNext .icon-button .icon--arrow-right::before, #cboxPrevious .icon-button .icon--arrow-left::before
+  border-top-color: rgba(0, 0, 0, 0.9)
+  border-right-color: rgba(0, 0, 0, 0.9)
+
+#cboxCurrent
+  color: #000
+
+#cboxLoadingGraphic .loading--circle
+  border-color: #000
+
+#launchbox
+  a, h1, h2, h3, h4, h5, h6, p
+    color: #8b8a74
+  a:hover
+    color: #0d9add
+  textarea
+    border: 1px solid #333
+  .launchbox-btn
+    background-color: #8b8a74
+    color: #000
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3)
+    &:hover
+      background-color: #819b37
+      color: #000
+  .launchbox-btn-primary
+    background-color: #8b8a74
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5)
+    &:hover
+      background-color: #81b937
+  .launchbox-btn-danger
+    background-color: #25cada
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5)
+    &:hover
+      background-color: #0d9add
+  .launchbox-btn-light-green
+    background-color: #453c5c
+    &:hover
+      background-color: #938da0
+  i.dot
+    &.light-green
+      background-color: #5e576f
+    &.green
+      background-color: #938da0
+  background-color: #000
+  border: 1px solid #0d0d0d
+  box-shadow: 0 0 8px 0 rgba(255, 254, 255, 0.3)
+  &:after
+    border-color: transparent transparent #000
+  &:before
+    border-color: rgba(127, 127, 127, 0)
+    border-bottom-color: #0d0d0d
+  .launchbox-header
+    background-color: #000
+    .launchbox-name
+      color: #8b8a74
+  .launchbox-header-unsigned .launchbox-desc
+    color: #8b8a74
+  .launchbox-message.launchbox-message-warning
+    color: #25cada
+    background-color: #00021e
+  .launchbox-apps
+    background-color: #000
+    .launchbox-app
+      .launchbox-app-link
+        background-color: #060606
+        color: #8b8a74
+      &.even .launchbox-app-link
+        background-color: #0d0d0d
+      &.launchbox-app-new
+        .launchbox-app-link
+          background-color: #8b8a74
+          color: #000
+        &.active:after
+          border-color: #000
+  .launchbox-apps-option-a .launchbox-app .launchbox-app-link .launchbox-app-desc
+    color: #8b8a74
+  .launchbox-apps-option-b .launchbox-app .launchbox-app-tooltip
+    background-color: #000
+    border: 1px solid #373737
+    box-shadow: 0 0 5px 0 rgba(255, 254, 255, 0.2)
+    &:after
+      border-color: transparent transparent #000
+    &:before
+      border-color: rgba(127, 127, 127, 0)
+      border-bottom-color: #373737
+  .launchbox-connect-panel
+    .launchbox-connect-space, .launchbox-connect-title
+      color: #8b8a74
+    .launchbox-connect-space
+      .launchbox-backlog-domain
+        background-color: #000
+        color: #8b8a74
+        border: 1px solid #8b8a74
+        &:hover
+          border-color: #8b8a74
+        &:focus
+          border-color: #8b8a74
+          background-color: #060606
+      .launchbox-backlog-site-select-wrap
+        &:before
+          background-color: #000
+          color: #000
+        &:after
+          border-top-color: #8b8a74
+        .launchbox-backlog-site-select
+          background-color: #000
+          color: #8b8a74
+      .launchbox-connect-btn
+        background-color: #8b8a74
+        &:hover
+          background-color: #819b37
+  .launchbox-footer
+    background-color: #060606
+  .launchbox-footer-unsigned
+    .launchbox-signup-btn
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5)
+    .launchbox-signin
+      color: #000
+      .launchbox-signin-link
+        color: #000
+
+span.launchbox-tooltip-top
+  color: #000
+  background-color: #aaa
+  &:after
+    border-top-color: #aaa
+
+.pln
+  color: #fff
+
+@media screen
+  .str
+    color: #080
+  .kwd
+    color: #ff7
+  .com
+    color: #7ff
+  .typ
+    color: #9f9
+  .lit
+    color: #f99
+  .clo, .opn, .pun
+    color: #99f
+  .tag
+    color: #ff7
+  .atn
+    color: #9f9
+  .atv
+    color: #080
+  .dec, .var
+    color: #9f9
+  .fun
+    color: #0ff
+
+@media print, projection
+  .str
+    color: #f9f
+  .kwd
+    color: #ff9
+  .com
+    color: #9ff
+  .typ
+    color: #bfb
+  .lit
+    color: #fbb
+  .clo, .opn, .pun
+    color: #bbf
+  .tag
+    color: #ff9
+  .atn
+    color: #bfb
+  .atv
+    color: #f9f
+
+pre.prettyprint
+  border: 1px solid #777
+
+li
+  &.L1, &.L3, &.L5, &.L7, &.L9
+    background: #111
+
+#sb-counter a
+  color: #000
+
+div.sb-message a
+  &:link, &:visited
+    color: #000
