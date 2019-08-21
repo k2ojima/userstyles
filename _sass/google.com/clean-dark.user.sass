@@ -1,0 +1,6224 @@
+/*! ==UserStyle==
+ * @name        Google Clean Dark Customized
+ * @namespace   StylusThemes
+ * @version     2.0.0
+ * @homepageURL https://github.com/xentok/userstyles/
+ * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/google.com/clean-dark.user.css
+ * @license     MIT
+ * @author       Seishiin - arranged by xentok
+ * ==/UserStyle== */
+
+@charset "utf8"
+
+//colors
+$color_shark_approx: #252525
+$color_gray_nurse_approx: #e8e8e8
+$color_rangoon_green_approx: #1b1b1b
+$color_mine_shaft_approx: #333
+$color_masala_approx: #3a3a3a
+$color_stack_approx: #8a8a8a
+$color_silver_chalice_approx: #adadad
+$color_royal_purple_approx: #7547a5
+$color_bunker_approx: #151515
+$color_hunter_green_approx: #171717
+$color_coral_red_approx: #ff2b44
+$color_tundora_approx: #444
+$white: #fff
+$color_curious_blue_approx: #3296c8
+$color_tapa_approx: #777
+$color_mountain_mist_approx: #909090
+$color_alto_approx: #dedede
+$color_pumice_approx: #c7c7c7
+$color_amethyst_approx: #9558d6
+$color_gray_nurse_87_approx: rgba(234, 234, 234, 0.87)
+$color_dove_gray_87_approx: rgba(108, 108, 108, 0.87)
+$color_celeste_approx: #ccc
+$color_guardsman_red_approx: #c00
+$color_west_side_approx: #fb940b
+$yellow: #ff0
+$color_green_approx: #0c0
+$color_robins_egg_blue_approx: #03c0c6
+$blue: #00f
+$color_carnation_pink_approx: #ff98bf
+$black: #000
+$color_bull_shot_approx: #885418
+$color_fuscous_gray_approx: #555
+$black_80: rgba(0, 0, 0, 0.8)
+$color_tuatara_approx: #383838
+$red: #f00
+$black_20: rgba(0,0,0,0.2)
+$color_pink_swan_approx: #bbb
+$black_40: rgba(0, 0, 0, 0.4)
+$color_chateau_green_approx: #30b35a
+$color_stack_54_approx: rgba(138, 138, 138, 0.54)
+$color_alizarin_crimson_approx: #e31b33
+$color_celeste_87_approx: rgba(206, 206, 206, 0.87)
+$color_silver_approx: #bfbfbf
+$black_50: rgba(0, 0, 0, 0.5)
+$color_royal_blue_approx: #4285f4
+$black_10: rgba(0,0,0,0.1)
+$color_mine_shaft_87_approx: rgba(51, 51, 51, 0.87)
+$color_pumice_87_approx: rgba(199, 199, 199, 0.87)
+$color_suva_gray_approx: #878787
+$color_silver_87_approx: rgba(189, 189, 189, 0.87)
+$color_star_dust_54_approx: rgba(158, 158, 158, 0.54)
+$color_shady_lady_approx: #a7a7a7
+$color_gravel_approx: #484848
+$white_54: rgba(255, 255, 255, 0.54)
+$color_dodger_blue_approx: #2879ff
+$color_emerald_approx: #47c770
+$white_87: rgba(255, 255, 255, 0.87)
+$color_medium_purple_approx: #7a6eff
+$white_57: rgba(255, 255, 255, 0.57)
+$black_90: rgba(0,0,0,.9)
+$black_100: rgba(0,0,0,1)
+$white_40: rgba(255, 255, 255, 0.4)
+$white_90: rgba(255, 255, 255, 0.9)
+$color_mountain_mist_10_approx: rgba(150, 150, 150, 0.1)
+$color_scooter_approx: #3fd1e4
+$black_60: rgba(0,0,0,0.6)
+$color_storm_dust_approx: rgb(98, 98, 98)
+$color_rangoon_green_50_approx: rgba(29, 29, 29, 0.5)
+$black_30: rgba(0, 0, 0, 0.3)
+$black_15: rgba(0, 0, 0, 0.15)
+$color_cod_gray_approx: #0c0c0c
+$color_shady_lady_87_approx: rgba(169, 169, 169, 0.87)
+$gray_54: rgba(128, 128, 128, 0.54)
+$white_100: rgba(255, 255, 255, 1)
+$color_pumice_54_approx: rgba(199, 199, 199, 0.54)
+$color_nobel_approx: #b5b5b5
+$color_bon_jour_approx: #e0e0e0
+$color_wild_sand_approx: whitesmoke
+$color_bon_jour_54_approx: rgba(224, 224, 224, 0.54)
+$white_70: rgba(255, 255, 255, 0.7)
+$color_delta_approx: #a2a2a2
+$color_cornflower_blue_approx: #4d90fe
+$color_fiord_approx: #3c5071
+$color_log_cabin_approx: #222
+$color_mercury_approx: #e6e6e6
+$color_baltic_sea_approx: #2b2b2b
+$color_bunker_50_approx: rgba(19, 19, 19, 0.5)
+$color_woodsmoke_approx: #111
+$black_5: rgba(0,0,0,0.05)
+$color_cerulean_approx: #00aeee
+$color_screamin_green_approx: #75ff39
+$white_5: rgba(255, 255, 255, 0.05)
+$color_heavy_metal_approx: #2d2d2d
+$color_froly_approx: rgb(255, 120, 120)
+$color_fuscous_gray_35_approx: rgba(85, 85, 85, 0.35)
+$color_chicago_approx: #5a5a5a
+
+
+@-moz-document regexp("https?://(www|encrypted|images|translate|accounts|books|photos).google.(com|([a-z]{2}))(.[a-z]{2})?/(?!mobile|flights|intl|alerts|finance|calendar|nexus|contacts|services|voice|business|maps|dashboard|settings|android|adsense|analytics|doodles|chrome|fonts|patents|translate_p|recaptcha|u/\d/recaptcha).*")
+    //@extend-elements
+    //original selectors
+    //.jhp input[type="submit"], .sbdd_a input, .gbqfba, .gb_Fa, .ab_button, #smb, #gbw >div >div >div.gb_yc.gb_xg.gb_R >div.gb_hb.gb_3c.gb_xg.gb_R.gb_g >div.gb_rb.gb_fa.gb_g >div.gb_Eb >div:nth-child(1) >a, #gb_71, .gb_Fa, #gb a.gb_Fa.gb_Fa, .gb_Ha
+    %extend_1
+        background-image: -moz-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -webkit-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -o-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -ms-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-color: transparent!important
+        border: none!important
+        color: $color_stack_approx!important
+        cursor: pointer!important
+
+
+    //original selectors
+    //.jhp input[type="submit"]:hover, .sbdd_a input:hover, .gbqfba:hover, .gb_Fa:hover, .ab_button:hover, #smb:hover, #gbw >div >div >div.gb_yc.gb_xg.gb_R >div.gb_hb.gb_3c.gb_xg.gb_R.gb_g >div.gb_rb.gb_fa.gb_g >div.gb_Eb >div:nth-child(1) >a:hover, #gb_71:hover, .gb_Fa:hover, #gb a.gb_Fa.gb_Fa:hover, .gb_Ha:hover
+    %extend_2
+        background-image: -moz-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -webkit-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -o-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -ms-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        cursor: pointer!important
+
+
+    //original selectors
+    //#qbdp, #qbup
+    %extend_3
+        background: $color_shark_approx!important
+        border-color: $color_mine_shaft_approx!important
+        color: $color_gray_nurse_approx!important
+
+
+    //original selectors
+    //.gb_fa, .gb_Lb
+    %extend_4
+        background: $color_shark_approx!important
+        border-color: $color_mine_shaft_approx!important
+        color: $color_stack_approx!important
+
+
+    //original selectors
+    //#hdtb-msb .hdtb-tl-sel, #hdtb-msb .hdtb-tl-sel:hover, #hdtb-tls:hover
+    %extend_5
+        background: transparent!important
+        border-color: transparent!important
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: none!important
+
+
+    //original selectors
+    //.qbtbp, .qbtbha.sl
+    %extend_6
+        background: $color_shark_approx!important
+        border-color: $color_mine_shaft_approx!important
+        color: $color_stack_approx!important
+
+
+    //original selectors
+    //._BMn, ._sBg, ._l0o
+    %extend_7
+        background-color: $color_shark_approx!important
+        border-color: $color_shark_approx!important
+        color: $color_gray_nurse_approx!important
+
+
+    //original selectors
+    //.LNn04b, .vXQmIe
+    %extend_8
+        background-color: $color_shark_approx!important
+        border-color: $color_mine_shaft_approx!important
+        color: $color_celeste_approx!important
+
+
+    //original selectors
+    //.o2ji6GoAIDp__menu, .kxctl-dd
+    %extend_9
+        background-color: $color_shark_approx!important
+        color: $color_stack_approx!important
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 1.5px 1px 0 $color_rangoon_green_50_approx!important
+
+
+    //original selectors
+    //.goog-toolbar-button-hover, .goog-toolbar-menu-button-hover, .goog-toolbar-button-selected, .goog-toolbar-button-checked, .goog-toolbar-menu-button-open
+    %extend_10
+        background: $color_mine_shaft_approx!important
+        border-color: transparent!important
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: none!important
+
+
+    //original selectors
+    //.jfk-button-standard.jfk-button-checked, .jfk-button-standard.jfk-button-clear-outline.jfk-button-checked, .jfk-button-mini, .stt__tool ._ahq
+    %extend_11
+        background-image: -moz-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -webkit-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -o-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -ms-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-color: transparent!important
+        border: none!important
+        color: $color_stack_approx!important
+        cursor: pointer!important
+
+
+    //original selectors
+    //.jfk-button-standard, .goog-flat-menu-button
+    %extend_12
+        background-image: -moz-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -webkit-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -o-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -ms-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-color: transparent!important
+        border: none!important
+        color: $color_stack_approx!important
+        cursor: pointer!important
+
+
+    //original selectors
+    //.jfk-button-standard.jfk-button-hover, .jfk-button-standard.jfk-button-clear-outline.jfk-button-hover
+    %extend_13
+        background-image: -moz-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -webkit-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -o-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -ms-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-color: transparent!important
+        cursor: pointer!important
+
+
+    //original selectors
+    //.epu-dt .gt-lc.gt-lc-mobile .gt-cd-cl, .epu-dt .gt-lc.gt-lc-mobile .gt-cd-ncl, .ft-icon-oval, .phrasebook-container .language-chip, .gt-lc.gt-lc-mobile .gt-cd-cl, .gt-lc.gt-lc-mobile .gt-cd-ncl
+    %extend_14
+        background-color: $color_tundora_approx!important
+        border-color: $color_mine_shaft_approx!important
+        color: $color_celeste_approx!important
+
+
+    //original selectors
+    //.select-file-page .select-file-section .button, .swap-wrap, .ls-wrap .sugg-fade
+    %extend_15
+        background-image: -moz-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -webkit-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -o-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -ms-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-color: transparent!important
+        border: none!important
+        color: $color_stack_approx!important
+        cursor: pointer!important
+
+
+    //original selectors
+    //.select-file-page .select-file-section .button:hover, .swap-wrap:hover
+    %extend_16
+        background-image: -moz-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -webkit-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -o-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -ms-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-color: transparent!important
+        cursor: pointer!important
+
+
+    //original selectors
+    //.cwrb-tpl, .cwdb-tpl
+    %extend_17
+        background: $color_tuatara_approx!important
+        color: $color_stack_approx!important
+        border: none!important
+
+
+    //original selectors
+    //.lr-fy-tb, .lr-fy-ub.lr-fy-in
+    %extend_18
+        border-color: $color_mine_shaft_approx!important
+        color: $color_celeste_approx!important
+        background: $color_shark_approx!important
+
+
+    //original selectors
+    //.fE5Rge, .Ak3kIe
+    %extend_19
+        background-image: -moz-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -webkit-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -o-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -ms-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        border: none!important
+        color: $color_stack_approx!important
+        cursor: pointer!important
+
+
+    //original selectors
+    //.fE5Rge:hover, .Ak3kIe:hover
+    %extend_20
+        background-image: -moz-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -webkit-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -o-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: -ms-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        background-image: linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+        cursor: pointer!important
+
+
+
+    body
+        background: $color_shark_approx!important
+        color: $color_gray_nurse_approx!important
+        > div
+            &.ita-kd-inputtools-div.ita-kd-statusbar > table > tbody > tr > td:nth-child(1) > a > span
+                filter: invert(1)!important
+
+            &.bottom-wrapper > div.Mza7yc > form > div:nth-child(3) > div:nth-child(5) > div.jYcx0e > div > div:nth-child(2)
+                color: $color_stack_approx!important
+
+            &.about.default.section-intro > section.about__hero > div > div > article.about__text--available > a.cta-button.cta-button--win
+                color: $white!important
+
+            &.eula-modal.visible > footer > a.cta-button.cta-button--confirm
+                color: $white!important
+
+
+        &.displaying-history-page .history-page
+            background-color: $color_mine_shaft_approx!important
+
+        > section > div > section > div.download__panel
+            &.personal > a.maia-button.button-download.download__button
+                color: $white!important
+
+            &.business > a
+                color: $white!important
+
+
+        > span > header > nav > ul > li.mobile-is-hidden.float-in > a
+            color: $white!important
+
+
+    html
+        background: $color_shark_approx!important
+        color: $color_gray_nurse_approx!important
+
+    .footerInner
+        background: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .gbqfba
+        @extend %extend_1
+        &:hover
+            @extend %extend_2
+
+
+    .gb_Fa
+        @extend %extend_1
+        @extend %extend_1
+        &:hover
+            @extend %extend_2
+            @extend %extend_2
+
+
+    .ab_button
+        @extend %extend_1
+        background: transparent!important
+        &:hover
+            @extend %extend_2
+            background: transparent!important
+
+
+    #smb
+        @extend %extend_1
+        &:hover
+            @extend %extend_2
+
+
+    #gb_71
+        @extend %extend_1
+        &:hover
+            @extend %extend_2
+
+
+    #gb
+        &#gb
+            a.gb_P
+                color: $color_gray_nurse_approx!important
+
+            span.gb_P
+                color: $color_gray_nurse_approx!important
+
+
+        a.gb_Fa.gb_Fa
+            @extend %extend_1
+            &:hover
+                @extend %extend_2
+
+
+        .gb_xb a.gb_Db.gb_Db
+            color: $white!important
+
+        > div.gb_Sd.gb_qe.gb_1d.gb_0d > div.gb_wb.gb_ba.gb_g
+            border-color: $color_mine_shaft_approx!important
+
+
+    .gb_Ha
+        @extend %extend_1
+        &:hover
+            @extend %extend_2
+
+
+    .ddl-melies-b
+        background: transparent!important
+
+    .ddl-melies-c
+        background: transparent!important
+
+    .sbib_a
+        background: $color_rangoon_green_approx!important
+
+    .sbsb_a
+        background: $color_rangoon_green_approx!important
+
+    .RNNXgb
+        background: $color_rangoon_green_approx!important
+        border-color: transparent!important
+        //If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+        border-radius: 2px!important
+
+    .aajZCb
+        background: $color_rangoon_green_approx!important
+        //If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+        border-radius: 2px
+
+    .ac-renderer
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_rangoon_green_approx!important
+
+    .ac-active
+        background-color: $color_mine_shaft_approx!important
+
+    .sbibod
+        background-color: $color_rangoon_green_approx!important
+        border-color: transparent!important
+
+    .gsfi
+        color: $color_gray_nurse_approx!important
+        background: $color_rangoon_green_approx!important
+
+    .lst
+        color: $color_gray_nurse_approx!important
+        background: $color_rangoon_green_approx!important
+
+    .sbdd_b
+        color: $color_silver_chalice_approx!important
+        border-color: $color_mine_shaft_approx!important
+        background: $color_rangoon_green_approx!important
+
+    .sben_a
+        color: $color_silver_chalice_approx!important
+
+    .sbl1
+        color: $color_silver_chalice_approx!important
+
+    .sbsb_d
+        background: $color_shark_approx!important
+
+    .sbhl
+        background: $color_shark_approx!important
+
+    .sbpqs_a
+        color: $color_royal_purple_approx
+
+    #qbi
+        filter: invert(0.8)!important
+
+    ._Fnc
+        filter: invert(0.9)!important
+
+    #qbdp
+        @extend %extend_3
+
+    #qbup
+        @extend %extend_3
+
+    .spell-diff-red
+        color: $color_coral_red_approx!important
+
+    .gb_ga
+        background-color: $color_shark_approx!important
+        color: $color_gray_nurse_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .gb_Mb
+        background-color: $color_shark_approx!important
+        color: $color_gray_nurse_approx!important
+        &:hover
+            background-color: $color_mine_shaft_approx!important
+
+
+    .gb_Ea
+        background: $color_mine_shaft_approx
+        border-color: $color_mine_shaft_approx
+
+    .gb_Eb
+        background: transparent!important
+        border-color: $color_mine_shaft_approx!important
+        color: $color_stack_approx!important
+        .gb_Db:hover
+            background: $color_tundora_approx
+            border-color: $color_tundora_approx
+            cursor: pointer!important
+
+
+    .gb_yb
+        background: $color_shark_approx!important
+
+    .gb_ia
+        background: $color_shark_approx!important
+
+    .gb_jb
+        border-bottom-color: $color_shark_approx!important
+
+    .gb_qb
+        border-bottom-color: $color_shark_approx!important
+
+    .gb_kb
+        border-bottom-color: $color_mine_shaft_approx!important
+
+    .gb_rb
+        border-bottom-color: $color_mine_shaft_approx!important
+
+    .gb_ja
+        background: $color_shark_approx!important
+
+    .RAYh1e
+        background: $color_shark_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .gb_ka
+        background: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+        background: $color_mine_shaft_approx!important
+
+    .gb_Fb
+        background: $color_rangoon_green_approx!important
+
+    .VmOpGe
+        background: $color_rangoon_green_approx!important
+
+    .gb_Z
+        color: $color_celeste_approx!important
+        &:hover
+            .gb_3
+                background: $color_mine_shaft_approx!important
+
+            a
+                border: 1px solid $color_mine_shaft_approx!important
+
+
+
+    .gb_Nb
+        background-color: $color_shark_approx!important
+        &:hover
+            background: $color_mine_shaft_approx!important
+
+
+    .gb_3
+        color: $color_curious_blue_approx!important
+
+    .gb_la
+        border-bottom: 1px solid $color_masala_approx!important
+
+    .gb_4b
+        &.gb_b
+            filter: invert(1)!important
+
+        &.gb_Fc.gb_Ec
+            filter: invert(1)!important
+
+
+    .dU0W2d
+        border-color: $color_mine_shaft_approx!important
+
+    .gb_lb
+        border-bottom-color: $color_mine_shaft_approx!important
+
+    .b5sWd
+        border-color: $color_mine_shaft_approx!important
+
+    .gb_fa
+        @extend %extend_4
+        background: $color_shark_approx!important
+        border-color: $color_mine_shaft_approx!important
+        color: $color_stack_approx!important
+        border-color: $color_log_cabin_approx!important
+
+    .gb_Lb
+        @extend %extend_4
+
+    .gb_Ab
+        color: $color_gray_nurse_approx!important
+
+    .gb_Wb
+        color: $color_gray_nurse_approx!important
+
+    .gb_Xb
+        color: $color_gray_nurse_approx!important
+
+    .gb_pb
+        border-bottom-color: $color_mine_shaft_approx!important
+
+    .sfbgg
+        background: $color_shark_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .sfbgx
+        background-color: $color_shark_approx!important
+        border-bottom: 1px solid $color_rangoon_green_approx!important
+
+    .flyr-o
+        background-color: transparent!important
+
+    .flyr-w
+        background-color: transparent!important
+
+    #hdtb
+        background: $color_shark_approx!important
+        border-bottom: 1px solid $color_shark_approx!important
+        &.hdtba #hdtbMenus
+            background: $color_shark_approx!important
+            border-bottom: 1px solid $color_shark_approx!important
+
+        .hdtb-mitem a
+            color: $color_tapa_approx!important
+            &:hover
+                color: $color_gray_nurse_approx!important
+
+
+        &.notl div
+            color: $color_tapa_approx !important
+
+
+    #hdtbSum
+        background: $color_shark_approx!important
+
+    #appbar
+        background: $color_rangoon_green_approx!important
+
+    ._dMq
+        background: $color_rangoon_green_approx!important
+
+    .hdtb-mn-o
+        background: $color_rangoon_green_approx!important
+        border: none!important
+        border-color: transparent!important
+
+    .hdtb-mn-c
+        background: $color_rangoon_green_approx!important
+        border-color: transparent!important
+
+    .hdtbItm
+        background: $color_rangoon_green_approx!important
+        a:hover
+            background-color: $color_shark_approx!important
+            background-color: $color_shark_approx!important
+
+        .sc:hover
+            background: $red!important
+
+
+    .mn-dwn-arw
+        border-color: $color_mountain_mist_approx transparent!important
+
+    .cdr_sep
+        border-top: 1px solid $color_masala_approx!important
+
+    a
+        &:link
+            color: $color_curious_blue_approx!important
+            .mrtk8YeO1fr__container
+                color: $color_celeste_approx!important
+
+
+        &:visited
+            color: $color_amethyst_approx
+            .mrtk8YeO1fr__container
+                color: $color_celeste_approx!important
+
+
+        &.options
+            background-color: $color_rangoon_green_approx!important
+            border-color: $color_rangoon_green_approx!important
+
+        &.Sjzt1b
+            background-color: transparent!important
+
+        &:hover h3.LC20lb
+            color: $color_curious_blue_approx!important
+
+        &._dkf .luhcb__click-to-open-new-tab-icon
+            background-color: $color_mine_shaft_approx!important
+
+
+    ._Iqg
+        color: $color_curious_blue_approx!important
+
+    ._Fqg
+        color: $color_curious_blue_approx!important
+
+    .rtng
+        color: $color_curious_blue_approx!important
+
+    .lr_dct_more_btn
+        color: $color_curious_blue_approx!important
+
+    .jMtmC
+        color: $color_curious_blue_approx!important
+
+    .a
+        color: $color_alto_approx!important
+
+    cite
+        color: $color_alto_approx!important
+        a
+            &:link
+                color: $color_alto_approx!important
+
+            &:visited
+                color: $color_alto_approx!important
+
+
+
+    .cite
+        color: $color_alto_approx!important
+        &:link
+            color: $color_alto_approx!important
+
+
+    .s
+        color: $color_pumice_approx!important
+        .st em
+            color: $color_silver_chalice_approx!important
+
+
+    ._Rm
+        padding-right: 8px!important
+
+    .ktf
+        color: $color_gray_nurse_87_approx!important
+        background-color: $color_rangoon_green_approx!important
+        border: 1px solid $color_rangoon_green_approx!important
+        border-top: 1px solid $color_rangoon_green_approx!important
+        &.mini
+            color: $color_gray_nurse_approx !important
+
+
+    .fYWO0d
+        filter: invert(1)
+
+    .lr_dct_spkr_off
+        filter: invert(1)
+
+    .th
+        border-color: $color_mine_shaft_approx!important
+
+    ._zMk
+        color: $color_dove_gray_87_approx
+        &._BZt:visited
+            color: $color_dove_gray_87_approx
+
+
+    .klic
+        background-color: transparent!important
+
+    .m7VU0c
+        background-color: $color_shark_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .ab_dropdown
+        background-color: $color_shark_approx!important
+
+    .aR1mEe
+        background-color: $color_rangoon_green_approx!important
+        border-bottom-color: transparent!important
+
+    .uais2d
+        background-color: $color_shark_approx!important
+
+    .V7X3Je
+        color: $color_celeste_approx!important
+
+    #gsr
+        a._ZR[href]:active
+            color: $color_curious_blue_approx!important
+
+        > div:nth-child(n)
+            border-color: $color_mine_shaft_approx!important
+            > div
+                border-bottom-color: $color_mine_shaft_approx!important
+                > div
+                    border-top-color: $color_mine_shaft_approx!important
+
+
+
+
+    #qbp
+        background: $color_rangoon_green_approx!important
+        color: $color_stack_approx!important
+
+    #qbut
+        .qbctnt
+            background: $color_rangoon_green_approx!important
+
+        .qbptr
+            border-bottom-color: $color_rangoon_green_approx!important
+
+        .qbptr-back
+            border-bottom-color: $color_hunter_green_approx!important
+
+
+    #qbft
+        .qbctnt
+            background: $color_rangoon_green_approx!important
+
+        .qbptr
+            border-bottom-color: $color_rangoon_green_approx!important
+
+        .qbptr-back
+            border-bottom-color: $color_hunter_green_approx!important
+
+
+    .qbtbp
+        @extend %extend_6
+
+    .qbtbha
+        &.sl
+            @extend %extend_6
+
+        .qbtbtxt.qbclr
+            color: $color_stack_approx!important
+
+
+    .qbh
+        filter: invert(0.8)!important
+
+    #qbx
+        filter: invert(0.8)!important
+
+    ._OQi
+        border-color: $color_mine_shaft_approx!important
+
+    .EPLo7b
+        border-color: $color_mine_shaft_approx!important
+
+    .irc_bg
+        background-color: $color_shark_approx!important
+
+    .irc_c
+        background-color: $color_mine_shaft_approx!important
+
+    #irc_bgl
+        background-color: $color_mine_shaft_approx!important
+
+    .ll0QOb
+        background-color: $color_mine_shaft_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .THL2l
+        background-color: transparent!important
+
+    .SOS87c
+        background-color: $color_tundora_approx!important
+        border-color: $color_fuscous_gray_approx!important
+        &:hover
+            background-color: $color_fuscous_gray_approx!important
+
+
+    #irc-cl
+        border-color: $color_mine_shaft_approx!important
+
+    #irc-pc
+        .RAEeCc
+            fill: $color_mine_shaft_approx!important
+
+        .byznQ
+            stroke: $color_mine_shaft_approx!important
+
+
+    .mVDMnf
+        color: $color_silver_chalice_approx!important
+
+    .irc_hd
+        color: $color_silver_chalice_approx!important
+
+    .irc_bimg
+        color: $color_silver_chalice_approx!important
+        .Af3fH
+            color: $color_tapa_approx!important
+
+
+    .yJbeqd
+        color: $color_silver_chalice_approx!important
+
+    .rg_anbg
+        background-color: #000000e6!important
+        color: $white!important
+
+    .rg_ilmbg
+        background-color: #000000e6!important
+        color: $white!important
+
+    .iKjWAf
+        background-color: transparent!important
+
+    #irc_cc
+        background-color: $color_shark_approx!important
+        a:hover
+            background-color: $color_mine_shaft_approx!important
+
+
+    .irc_m
+        background-color: $color_shark_approx!important
+
+    .irc_b
+        background-color: $color_mine_shaft_approx!important
+
+    .irc_asc
+        color: $color_celeste_approx!important
+
+    .exybg
+        background: $black_80!important
+
+    .cdr_bg
+        background: $black_80!important
+
+    .exydlg
+        background: $color_shark_approx!important
+        border: none!important
+
+    .cF4V5c
+        background: $color_shark_approx!important
+        border: none!important
+
+    .exyttl
+        color: $color_gray_nurse_approx !important
+
+    .exymml
+        color: $color_gray_nurse_approx !important
+
+    .exypx
+        color: $color_gray_nurse_approx !important
+
+    .exyhlt
+        background-color: $color_tuatara_approx!important
+
+    #exygo
+        color: $color_silver_chalice_approx!important
+
+    .ksb
+        background-color: $color_tuatara_approx!important
+        background-image: -moz-linear-gradient(top,$color_tundora_approx,$color_tuatara_approx)!important
+        background-image: -webkit-linear-gradient(top,$color_tundora_approx,$color_tuatara_approx)!important
+        background-image: -o-linear-gradient(top,$color_tundora_approx,$color_tuatara_approx)!important
+        background-image: -ms-linear-gradient(top,$color_tundora_approx,$color_tuatara_approx)!important
+        background-image: linear-gradient(top,$color_tundora_approx,$color_tuatara_approx)!important
+        cursor: pointer!important
+        border: none!important
+        border: 1px solid $color_mine_shaft_approx!important
+        color: $color_stack_approx!important
+        &.ksbs
+            color: $color_gray_nurse_approx!important
+
+
+    .sc
+        background: $color_rangoon_green_approx!important
+
+    .cdr_dlg
+        background: $color_shark_approx!important
+        border: none!important
+        .goog-date-picker
+            background-color: $color_tuatara_approx!important
+
+
+    .cdr_mml
+        color: $color_gray_nurse_approx!important
+
+    .cdr_highl
+        background-color: $color_tuatara_approx!important
+
+    .rg_fbl
+        border: 1px solid $color_mine_shaft_approx!important
+        &:hover
+            background: $black_20!important
+            box-shadow: none !important
+
+
+    .rg_bb_layout
+        background: transparent!important
+
+    .rg_bb_label
+        color: $color_pink_swan_approx!important
+
+    #ifbd
+        background: $color_mine_shaft_approx!important
+
+    .prp
+        background: $black!important
+
+    .Qi9Fd
+        background: $black!important
+
+    .u7UD5c
+        background: $black!important
+
+    ._ado
+        border-top-color: $color_mine_shaft_approx!important
+
+    div
+        &.EETcFd
+            background-color: $color_rangoon_green_approx!important
+
+        &.rl_feature
+            background: $color_rangoon_green_approx!important
+
+        &.gt-baf-sep
+            border-color: $color_mine_shaft_approx!important
+
+        &.bubble
+            background-color: $color_mine_shaft_approx!important
+            p
+                color: $color_celeste_approx!important
+
+            .pointer
+                filter: invert(0.799)!important
+
+
+        &#about
+            border-color: $color_mine_shaft_approx!important
+
+        &.Qy8Xkb
+            border-color: $color_mine_shaft_approx!important
+
+        &.lOTAE
+            color: $color_stack_approx!important
+
+        &._hWr
+            display: none!important
+
+        &.gVqDn
+            display: none!important
+
+        &.nnbOwe a
+            color: $color_curious_blue_approx!important
+
+        &.imso_mh__pre-m-stts.imso-hide-overflow > jsl > span > jsl > span > span > jsl
+            color: $color_cerulean_approx!important
+
+        > div > div.imso-ani.tb_cbg > div
+            background-color: $color_shark_approx!important
+
+        &.otByu div.cwqNnb span.BFlQMb
+            color: $color_celeste_approx!important
+
+        &.kFX8M > div > table.ts > tbody > tr > td > div > div > span > svg
+            background: $color_shark_approx!important
+
+
+    .Hrg3ab
+        background: $color_shark_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .tG5i7d
+        filter: invert(0.85)!important
+
+    .WbxHpf
+        color: $color_celeste_approx!important
+
+    .af7Ejf
+        color: $color_celeste_approx!important
+
+    ._PHs
+        color: $color_chateau_green_approx!important
+
+    .e8fRJf
+        color: $color_chateau_green_approx!important
+
+    .cJzOGc
+        color: $color_chateau_green_approx!important
+        &.Fuybue:visited
+            color: $color_chateau_green_approx!important
+
+
+    .wqg8ad
+        color: $color_chateau_green_approx!important
+
+    ._hJs
+        color: $color_tapa_approx!important
+
+    .gG0TJc
+        color: $color_stack_approx!important
+
+    ._pk
+        color: $color_stack_approx!important
+
+    ._F1k
+        color: $color_stack_approx!important
+
+    ._aMb
+        color: $color_stack_approx!important
+
+    ._Zlr
+        color: $color_stack_approx!important
+
+    ._bCn
+        ._Tcr
+            color: $color_stack_approx!important
+
+        ._Ucr
+            color: $color_stack_54_approx!important
+
+
+    ._pfi
+        color: $color_stack_approx!important
+
+    ._N2n
+        color: $color_stack_approx!important
+
+    ._e9n
+        color: $color_stack_approx!important
+
+    .y8Jpof
+        .LrzXr
+            color: $color_stack_approx!important
+
+        &:hover
+            background: $color_mine_shaft_approx!important
+
+
+    .Eegi6c
+        color: $color_stack_approx!important
+
+    .jyC4xe
+        color: $color_stack_approx!important
+
+    .EUjJDc
+        color: $color_stack_approx!important
+
+    .i29hTd
+        .kR7nSc
+            color: $color_stack_approx!important
+
+        .qLLird
+            color: $color_stack_approx!important
+
+
+    .C9iYEe
+        color: $color_stack_approx!important
+
+    .H1ccWd
+        color: $color_stack_approx!important
+
+    .IZACzd
+        color: $color_stack_approx!important
+
+    .Qynugf
+        color: $color_stack_approx!important
+
+    .CAaTrb
+        color: $color_stack_approx!important
+
+    .aXUuyd
+        color: $color_stack_approx!important
+
+    .LWyAN
+        color: $color_stack_approx!important
+
+    .Y28wmf
+        color: $color_stack_approx!important
+
+    .eJ7tvc
+        color: $color_stack_approx!important
+
+    .IKQu9e
+        color: $color_stack_approx!important
+
+    .o5Wcxb
+        color: $color_stack_approx!important
+
+    .JGV0Y
+        color: $color_stack_approx!important
+
+    ._tmr
+        color: $color_stack_54_approx!important
+
+    ._Sxr
+        color: $color_stack_54_approx!important
+
+    ._vri
+        border-color: $color_mine_shaft_approx!important
+        color: $color_stack_54_approx!important
+
+    .XOKJuc
+        background-color: $black!important
+
+    ._Adb
+        color: $color_stack_approx
+        color: $color_stack_approx!important
+
+    .P4cfIb
+        background-color: $color_mine_shaft_approx!important
+        border-color: $color_mine_shaft_approx!important
+        color: $color_celeste_approx
+
+    .BTP3Ac
+        border-color: $color_curious_blue_approx transparent!important
+
+    ._tX
+        color: $color_curious_blue_approx!important
+
+    ._PXi
+        color: $color_curious_blue_approx!important
+
+    ._Mft
+        color: $color_curious_blue_approx!important
+
+    ._CSo
+        color: $color_curious_blue_approx!important
+
+    .xXEKkb
+        color: $color_curious_blue_approx!important
+
+    .SDZsVb
+        color: $color_curious_blue_approx!important
+
+    .SW5pqf
+        color: $color_curious_blue_approx!important
+
+    .wUrVib
+        color: $color_curious_blue_approx!important
+
+    .EZRelc
+        color: $color_curious_blue_approx!important
+
+    .DTgFX
+        color: $color_curious_blue_approx!important
+
+    ._wD
+        &:hover
+            background: $color_tuatara_approx!important
+
+        ._Xbe
+            color: $color_suva_gray_approx!important
+
+
+    .kp-blk
+        background: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+        .xpdclose
+            ._wle
+                border-color: $color_mine_shaft_approx!important
+
+            .farUxc
+                border-color: $color_mine_shaft_approx!important
+
+
+        .xpdopen
+            ._xle
+                border-color: $color_mine_shaft_approx!important
+
+            .mJ2Mod
+                border-color: $color_mine_shaft_approx!important
+
+
+        a
+            color: $color_stack_approx!important
+            background: $color_rangoon_green_approx!important
+
+
+    .EDOqlf
+        background: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .AYBNrd
+        background: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+        td
+            background: $color_rangoon_green_approx!important
+            border-color: $color_mine_shaft_approx!important
+
+
+    .yyjhs
+        background: $color_rangoon_green_approx!important
+
+    .HIf9ae
+        background-color: transparent!important
+
+    .kno-ecr-pt
+        color: $color_celeste_87_approx!important
+
+    .garHBe
+        color: $color_celeste_87_approx!important
+
+    .Ss2Faf
+        color: $color_celeste_87_approx!important
+
+    .Z0LcW
+        color: $color_celeste_87_approx!important
+
+    .webanswers-webanswers_table__webanswers-table
+        th
+            color: $color_celeste_87_approx!important
+
+        tr
+            border-color: $color_mine_shaft_approx!important
+
+
+    .KMdzJ
+        color: $color_celeste_87_approx!important
+
+    .HXw9bb
+        color: $color_celeste_87_approx!important
+
+    ._W5e
+        color: $color_stack_approx!important
+
+    .tuHUkb
+        color: $color_stack_approx!important
+
+    .KJXbRb
+        color: $color_stack_approx!important
+
+    .Id2KGe
+        border-color: $color_mine_shaft_approx!important
+
+    .ccBEnf
+        border-color: $color_mine_shaft_approx!important
+
+    .ksSzJd
+        .TZahnb
+            border-color: $color_mine_shaft_approx!important
+
+        .NY3LVe
+            border-color: $color_mine_shaft_approx!important
+
+
+    .tGgE5d
+        border-color: $color_mine_shaft_approx!important
+
+    .XQvBOc
+        border-color: $color_mine_shaft_approx!important
+
+    .ytJVH
+        border-color: $color_mine_shaft_approx!important
+
+    .IKKnpb
+        border-color: $color_mine_shaft_approx!important
+
+    .r3tGed
+        border-color: $color_mine_shaft_approx!important
+
+    .tsp-tlc
+        border-color: $color_mine_shaft_approx!important
+
+    .tsp-tz
+        border-color: $color_mine_shaft_approx!important
+        color: $color_stack_approx!important
+
+    .u80vZ
+        border-color: $color_mine_shaft_approx!important
+        background-color: $color_rangoon_green_approx!important
+
+    .cRXWJb
+        border-color: $color_mine_shaft_approx!important
+
+    .cv2VAd
+        border-color: $color_mine_shaft_approx!important
+
+    .vk_c
+        border-color: $color_mine_shaft_approx!important
+        background-color: $color_rangoon_green_approx!important
+
+    .vk_cxp
+        border-color: $color_mine_shaft_approx!important
+        background-color: $color_rangoon_green_approx!important
+
+    #rhs
+        .fIcnad
+            border-color: $color_mine_shaft_approx!important
+
+        .kp-blk
+            color: $color_stack_approx!important
+
+        .cVqrTe
+            border-color: $color_mine_shaft_approx!important
+
+        ._mbr
+            border-color: $color_mine_shaft_approx!important
+
+        .commercial-unit-desktop-rhs.rhsvw
+            display: none!important
+
+
+    .cbphWd
+        border-color: $color_mine_shaft_approx!important
+
+    .oRYXbe
+        border-color: transparent!important
+
+    .mlo-c
+        //If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+        border-radius: 0!important
+        background-color: $color_shark_approx!important
+
+    ._Rsi
+        color: $color_tapa_approx!important
+
+    ._Jw
+        color: $color_stack_approx!important
+
+    ._xdb
+        color: $color_stack_approx!important
+        .fl
+            color: $color_stack_approx!important
+            color: $color_stack_approx!important
+
+
+    .cwUqwd
+        color: $color_stack_approx!important
+
+    .pVFdhc
+        background: $color_mine_shaft_approx!important
+
+    .rl_item
+        background-color: transparent!important
+        border-color: $color_mine_shaft_approx!important
+        .title
+            color: $color_silver_approx!important
+
+
+    ._Ejf
+        color: $color_tapa_approx!important
+
+    ._Kjg
+        color: $color_tapa_approx!important
+
+    .vk_arc
+        border-color: $color_mine_shaft_approx!important
+
+    .xpdclose
+        .a84NUc:not(:empty)
+            border-color: $color_mine_shaft_approx!important
+
+        ._T1i:not(:empty)
+            border-color: $color_mine_shaft_approx!important
+
+
+    .xpdopen
+        .CQKTwc:not(:empty)
+            border-color: $color_mine_shaft_approx!important
+
+        ._U1i:not(:empty)
+            border-color: $color_mine_shaft_approx!important
+
+
+    .w3RMhb
+        .zFsEvf
+            color: $color_stack_approx!important
+
+        &:hover
+            background-color: $color_mine_shaft_approx!important
+
+        &.rlf__ami
+            filter: invert(.9)!important
+            color: $black
+
+
+    ._xk
+        background-color: $color_mine_shaft_approx!important
+
+    .E6Cqjb
+        background-color: $color_mine_shaft_approx!important
+
+    .DHcWmd
+        background-color: $color_mine_shaft_approx!important
+
+    .lr_dct_trns_sel
+        background-color: $color_shark_approx!important
+        border-color: $color_shark_approx!important
+        color: $color_stack_approx!important
+
+    .czHJJ
+        background-color: $color_shark_approx!important
+        border-color: $color_shark_approx!important
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 1.5px 1px 0 $black_50!important
+
+    #tl_select
+        color: $color_stack_approx!important
+
+    .cU5Wo
+        color: $color_stack_approx!important
+
+    ._Uoj
+        background: $color_shark_approx!important
+        li:hover
+            background: $black_10!important
+
+
+    .lubh-sel
+        background: transparent!important
+
+    ._ndv
+        background-image: linear-gradient($color_mine_shaft_approx 1px,rgba(255,255,255,0) 0)!important
+        border-color: $color_mine_shaft_approx!important
+        .lubh-sel
+            background: $color_royal_blue_approx!important
+
+        > div
+            border-color: $color_mine_shaft_approx!important
+
+
+    ._Toj
+        border: none!important
+
+    ._kjk
+        border: none!important
+
+    ._pnn
+        color: $color_stack_approx!important
+
+    ._bXm
+        border-color: $color_mine_shaft_approx!important
+
+    ._zUj
+        color: $color_tapa_approx!important
+
+    .gws-local-map__map-expando
+        background-color: $color_mine_shaft_87_approx!important
+
+    ._UIf
+        ._SIf
+            border-color: $color_mine_shaft_approx!important
+
+        ._hvg
+            border-color: $color_mine_shaft_approx!important
+
+
+    ._Vxn
+        border-color: $color_mine_shaft_approx!important
+
+    .x6smaf
+        border-color: $color_mine_shaft_approx!important
+
+    ._tvg
+        color: $color_pumice_87_approx!important
+
+    .price
+        color: $color_silver_approx!important
+
+    .N74d8e
+        color: $color_silver_approx!important
+
+    ._cXm
+        filter: invert(0.5)!important
+
+    ._M9b
+        filter: invert(.9)!important
+
+    .Kw7SHd
+        filter: invert(.9)!important
+
+    .JOmIqc
+        filter: invert(.9)!important
+
+    .i8Msie
+        filter: invert(.9)!important
+
+    .XCKyNd
+        filter: invert(.9)!important
+
+    .JP8rKe
+        filter: invert(.9)!important
+
+    #lr_dct_img_use
+        filter: invert(.895)hue-rotate(190deg)!important
+
+    [id^='lr_dct_img_origin_']
+        filter: invert(.895)hue-rotate(190deg)!important
+
+    .s8pPhe
+        background-color: $color_shark_approx!important
+
+    .QkBmNb
+        color: $color_curious_blue_approx!important
+
+    .r31AP
+        color: $color_celeste_approx!important
+
+    .APpJqf
+        color: $color_mountain_mist_approx!important
+
+    ._che
+        background-color: $color_mine_shaft_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    ._uUs
+        ._h2g
+            color: $color_tapa_approx!important
+
+        ._i2g
+            color: $color_tapa_approx!important
+
+
+    ._j2g
+        background-color: $color_mine_shaft_approx!important
+
+    .lr_dct_lbl_box
+        background-color: $color_shark_approx!important
+        color: $color_silver_approx!important
+
+    .knowledge-webanswers_table__webanswers-table
+        th
+            color: $color_gray_nurse_approx!important
+
+        tr
+            border-bottom: 1px solid $color_mine_shaft_approx!important
+
+
+    .xrIqbe
+        color: $color_gray_nurse_approx!important
+
+    .K7Ltle
+        color: $color_gray_nurse_approx!important
+
+    .DRolee
+        color: $color_gray_nurse_approx!important
+
+    .gXgTfd
+        color: $color_gray_nurse_approx!important
+
+    .DubFFd
+        color: $color_gray_nurse_approx!important
+
+    ._VBr
+        color: $color_curious_blue_approx!important
+        span
+            color: $color_curious_blue_approx!important
+
+
+    ._ahs
+        color: $color_curious_blue_approx!important
+        &:visited
+            color: $color_curious_blue_approx!important
+
+
+    .nRfCwb
+        color: $color_curious_blue_approx!important
+
+    .ubF8Rd
+        color: $color_curious_blue_approx!important
+
+    .GtMhHe
+        color: $color_curious_blue_approx!important
+
+    ._vap
+        border-color: $color_curious_blue_approx transparent!important
+
+    ._yhs
+        color: $color_silver_87_approx!important
+
+    ._Oqt
+        color: $color_star_dust_54_approx!important
+
+    ._Y8r
+        color: $color_star_dust_54_approx!important
+
+    ._XWk
+        color: $color_shady_lady_approx!important
+
+    ._T5r
+        border-color: $color_mine_shaft_approx!important
+
+    ._cvd
+        border-color: $color_mine_shaft_approx!important
+
+    .uUgsp
+        border-color: $color_mine_shaft_approx!important
+
+    .lcht-hldr
+        .line-c98
+            stroke: $color_gravel_approx!important
+
+        .highlight-line
+            stroke: $color_mine_shaft_approx!important
+
+        text.outline
+            stroke: $color_rangoon_green_approx!important
+
+        &.lcht-pw .bandaid
+            fill: transparent!important
+            stroke: transparent!important
+
+
+    .fac-hc
+        border-color: $color_mine_shaft_approx!important
+        background: $color_shark_approx!important
+
+    .fac-nb
+        border-top: 7px solid $color_mine_shaft_approx!important
+
+    .fac-nt
+        border-top: 6px solid $color_shark_approx!important
+
+    .highlight-line
+        border-color: $color_stack_approx!important
+
+    ._yX
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+        td
+            border-color: $color_mine_shaft_approx!important
+
+
+    ._she
+        background-color: $color_shark_approx!important
+        padding: 3px 2px 2px 3px!important
+
+    ._RXc
+        border-color: $color_mine_shaft_approx!important
+
+    ._Mqe
+        color: $color_curious_blue_approx!important
+
+    ._Gzg
+        color: $color_curious_blue_approx!important
+
+    ._KJf
+        color: $color_silver_87_approx
+
+    .i3YBTb
+        color: $color_silver_87_approx
+
+    ._R6g
+        &._aeh
+            background: $black!important
+
+        &._Obq g-fab
+            background-color: $color_rangoon_green_approx!important
+
+
+    ._S6g
+        &._aeh
+            background: $black!important
+
+        &._Obq g-fab
+            background-color: $color_rangoon_green_approx!important
+
+
+    ._jer
+        background-color: $color_rangoon_green_approx!important
+
+    .vzRMeAg4Oi8__kltc
+        background-color: $color_rangoon_green_approx!important
+
+    .lhpr__unified-partner-reviews-div
+        background-color: $color_rangoon_green_approx!important
+
+    .pla-hovercard-container
+        background-color: $color_rangoon_green_approx!important
+
+    ._nzt
+        .gws-local-riddler__banner-shown
+            border-color: $color_mine_shaft_approx!important
+
+        &.gws-local-riddler__banner-shown
+            border-color: $color_mine_shaft_approx!important
+
+
+    ._qS
+        border-color: $color_mine_shaft_approx!important
+
+    ._xrb
+        border-color: $color_mine_shaft_approx!important
+
+    #_IAg
+        border-color: $color_mine_shaft_approx!important
+
+    ._Owu
+        border-color: $color_mine_shaft_approx!important
+
+    ._Z8p
+        border-color: $color_mine_shaft_approx!important
+
+    .NYcQFd
+        border-color: $color_shark_approx!important
+
+    ._DSo
+        color: $color_stack_approx!important
+
+    .wob_ds
+        background-color: $color_mine_shaft_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    ._cYm
+        color: $color_gray_nurse_approx!important
+
+    ._NLn
+        color: $color_gray_nurse_approx!important
+
+    ._EHq
+        color: $color_gray_nurse_approx!important
+
+    ._oJt
+        color: $color_gray_nurse_approx!important
+
+    ._sdl
+        color: $color_gray_nurse_approx!important
+
+    .date-picker-button
+        border-color: $color_mine_shaft_approx!important
+        span.lxhdrtxt
+            color: $color_gray_nurse_approx!important
+
+
+    ._FQr
+        color: $color_gray_nurse_approx!important
+
+    ._a9p
+        color: $color_gray_nurse_approx!important
+
+    ._Uaj
+        color: $color_gray_nurse_approx!important
+
+    ._Saj
+        color: $color_gray_nurse_approx!important
+
+    ._lnn
+        color: $color_stack_approx!important
+
+    ._bSq
+        color: $color_stack_approx!important
+
+    ._PXm
+        color: $color_stack_approx!important
+
+    ._cun
+        color: $color_stack_approx!important
+
+    ._Tnk
+        color: $color_stack_approx!important
+
+    .double-date-picker-container
+        color: $color_stack_approx!important
+
+    ._OYh
+        color: $color_stack_approx!important
+
+    ._E8p
+        color: $color_stack_approx!important
+
+    ._pbj
+        color: $color_stack_approx!important
+
+    ._FHq
+        border-color: $color_gray_nurse_approx transparent!important
+
+    ._BMn
+        @extend %extend_7
+
+    ._sBg
+        @extend %extend_7
+
+    ._l0o
+        @extend %extend_7
+
+    ._aSq
+        background-color: $color_dodger_blue_approx!important
+        border-color: $color_rangoon_green_approx!important
+
+    ._Rf
+        &._ALu
+            border-color: $color_mine_shaft_approx!important
+            &.rlf__applied
+                background-color: $color_mine_shaft_approx!important
+
+            &.rlf__open
+                background-color: $color_mine_shaft_approx!important
+
+
+        &.rlf__open:not(.rlf__applied)
+            color: $color_gray_nurse_approx!important
+            ._mx
+                border-color: $color_pink_swan_approx transparent!important
+
+
+        &:not(.rlf__applied):hover
+            color: $color_gray_nurse_approx!important
+            ._mx
+                border-color: $color_pink_swan_approx transparent!important
+
+
+
+    ._wTg
+        border-color: $color_mine_shaft_approx!important
+
+    ._pUv
+        border-color: $color_mine_shaft_approx!important
+        color: $white!important
+
+    ._ECh
+        border-color: $color_mine_shaft_approx!important
+
+    ._Fzg
+        border-color: $color_mine_shaft_approx!important
+
+    ._Cvm
+        border-color: $color_mine_shaft_approx!important
+
+    .kpd-ex
+        border-color: $color_mine_shaft_approx!important
+
+    .kpd-mt
+        border-color: $color_mine_shaft_approx!important
+        td
+            border-color: $color_mine_shaft_approx!important
+
+
+    ._xYl
+        background-color: $color_mine_shaft_approx!important
+
+    ._b5m
+        background-color: $color_mine_shaft_approx!important
+
+    ._Czg
+        filter: invert(1)!important
+
+    ._jug
+        filter: invert(1)!important
+
+    ._Ixg
+        filter: invert(1)!important
+
+    .vzRMeAg4Oi8__kl-review-stars
+        filter: invert(1)!important
+
+    ._n7t
+        filter: invert(1)!important
+
+    .hrfEoc
+        color: $color_curious_blue_approx!important
+
+    ._mB
+        background-color: $black!important
+        color: $color_emerald_approx!important
+        border-color: $black!important
+
+    ._Zel
+        background-color: $color_shark_approx!important
+        border-color: $color_shark_approx!important
+
+    ._G8p
+        background-color: $color_shark_approx!important
+
+    span
+        &.double-date-picker-cal
+            filter: invert(0.5)
+
+        &._Ezj
+            filter: invert(0.85)!important
+
+
+    ._v4r
+        filter: invert(0.5)
+
+    ._Fij
+        color: $white_87
+        a
+            color: $white_87
+
+
+    ._TJu
+        color: $white_87
+
+    .w
+        color: $color_medium_purple_approx
+
+    ._tdv
+        background: transparent!important
+
+    ._tdv::before
+        background: $color_mine_shaft_approx!important
+
+    ._odv
+        > div::before
+            background: $color_mine_shaft_approx!important
+
+        > div::after
+            background: $color_mine_shaft_approx!important
+
+
+    ._vdv
+        filter: invert(.9)
+
+    ._udv
+        filter: invert(.9)
+
+    .kN9UDnqLeMg__dismiss-button
+        filter: invert(.9)
+
+    ._pdv
+        background: $color_shark_approx!important
+        li:hover
+            background: $color_mine_shaft_approx!important
+
+
+    .kN9UDnqLeMg__carousel-caption
+        color: $white_57!important
+
+    .BlOseb
+        &.SkGIjd
+            background-color: $black_90!important
+            border-color: transparent!important
+
+        &.Oom88b g-fab
+            background-color: $black_90!important
+            border-color: transparent!important
+            &:hover
+                background-color: $black_100!important
+                color: $white!important
+
+
+        &.eSq3C g-fab
+            background-color: $black_90!important
+            border-color: transparent!important
+
+
+    .k2Oeod
+        &.SkGIjd
+            background-color: $black_90!important
+            border-color: transparent!important
+
+        &.Oom88b g-fab
+            background-color: $black_90!important
+            border-color: transparent!important
+            &:hover
+                background-color: $black_100!important
+                color: $white!important
+
+
+        &.eSq3C g-fab
+            background-color: $black_90!important
+            border-color: transparent!important
+
+
+    .Z98Wse
+        background-color: $black_100!important
+        color: $white!important
+
+    .yOo6xe
+        background-color: $color_rangoon_green_approx!important
+
+    .g-bbl-container
+        background-color: $color_rangoon_green_approx!important
+
+    .NWO1Pd
+        color: $color_gray_nurse_approx!important
+
+    .u2tuje
+        .xjT6He
+            color: $color_gray_nurse_approx!important
+
+        .iGBaJe
+            color: $color_stack_approx!important
+
+
+    .dbg0pd
+        color: $color_gray_nurse_approx!important
+
+    .Ndq8Rb
+        color: $color_gray_nurse_approx!important
+
+    .Z3DVab
+        color: $color_stack_approx!important
+
+    .LmREXd
+        color: $color_stack_approx!important
+
+    .KpG9if
+        color: $color_stack_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .sSf5xf
+        color: $color_stack_approx!important
+
+    .piVJ4d
+        color: $color_stack_approx!important
+
+    .GEIdOb
+        border-color: $color_mine_shaft_approx!important
+
+    .sCXuv
+        border-color: $color_mine_shaft_approx!important
+
+    .wYWDAd
+        border-color: $color_mine_shaft_approx!important
+
+    .zkIadb
+        border-color: $color_mine_shaft_approx!important
+
+    .yPHXsc
+        background-image: linear-gradient($color_mine_shaft_approx 1px,rgba(255,255,255,0) 0)
+        border-color: $color_mine_shaft_approx!important
+        > div
+            border-color: $color_mine_shaft_approx!important
+
+        .lubh-sel
+            background: $color_royal_blue_approx!important
+
+
+    .FjdPod
+        filter: invert(.9)!important
+
+    .BTtC6e
+        filter: invert(.9)!important
+
+    .QeuQGc
+        filter: invert(.9)!important
+
+    .Lrszfb
+        filter: invert(.9)!important
+
+    .A9x0mb
+        filter: invert(.9)!important
+
+    .g-bbl-triangle-fg
+        border-bottom-color: $color_rangoon_green_approx!important
+
+    .g-bbl-triangle-bg
+        border-bottom-color: $color_hunter_green_approx!important
+
+    .WKrsIc
+        color: $white_40!important
+        &:hover
+            color: $white_90!important
+
+
+    .LNn04b
+        @extend %extend_8
+
+    .vXQmIe
+        @extend %extend_8
+
+    .orgdxf
+        background-color: transparent!important
+
+    .orgdxf::before
+        background: $color_mine_shaft_approx!important
+
+    .ChZgtd
+        > div::before
+            background: $color_mine_shaft_approx!important
+
+        > div::after
+            background: $color_mine_shaft_approx!important
+
+
+    .ZXb90b
+        border-bottom: 1px solid $color_mountain_mist_10_approx!important
+
+    .QhOZ7e
+        background: $color_shark_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .ed-sug
+        border-color: $color_mine_shaft_approx!important
+
+    .hxpXRb
+        border-color: $color_mine_shaft_approx!important
+        img
+            filter: invert(0.89)!important
+
+        &.gws-plugins-local-jslayout-mode_selector__selected a img
+            background-color: $color_scooter_approx!important
+
+
+    .lFfDUb
+        background: $black_90!important
+
+    .gws-plugins-local-jslayout-mode_selector__selector
+        background-color: $color_rangoon_green_approx!important
+
+    .aCBg7
+        filter: invert(0.89)!important
+
+    .IxBI8c
+        border-color: $color_mine_shaft_approx!important
+        background: $color_shark_approx!important
+
+    .R9zNe
+        border-color: $color_mine_shaft_approx!important
+        background: $color_shark_approx!important
+
+    .uWmgv
+        border-color: $color_mine_shaft_approx!important
+        background: $color_shark_approx!important
+
+    .J8cLR
+        border-color: $color_mine_shaft_approx!important
+        background: $color_shark_approx!important
+
+    .Hg3mWc
+        border-color: $color_mine_shaft_approx!important
+        background: $color_shark_approx!important
+        color: $color_stack_approx!important
+        &:focus
+            color: $color_stack_approx!important
+
+
+    #knowledge-currency__chart
+        filter: invert(0.899)!important
+
+    .NIUoNb
+        color: $color_stack_approx!important
+
+    .lyLwlc
+        color: $color_gray_nurse_approx!important
+
+    .fw-ch-sel
+        color: $white!important
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 18px 0 -16px $color_celeste_approx!important
+        .KWk7r.qUjgX
+            color: $color_curious_blue_approx!important
+            background-color: $color_tundora_approx!important
+
+
+    .exp-button
+        background: $black_60!important
+        &:hover
+            background: $black_100!important
+
+
+    g-fab
+        background: $black_60!important
+        &:hover
+            background: $black_100!important
+
+        > span > svg
+            filter: invert(1)!important
+
+
+    .daicon
+        filter: invert(1)!important
+
+    .sxIvj
+        background-color: $color_rangoon_green_approx!important
+
+    .ecRggb
+        background-color: $color_rangoon_green_approx!important
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: none!important
+
+    .fa1VEe
+        border-color: $color_mine_shaft_approx!important
+
+    .jA1nid
+        border-color: $color_mine_shaft_approx!important
+
+    .KjyTCd
+        border-color: $color_mine_shaft_approx!important
+
+    .qmv19b
+        border-color: $color_mine_shaft_approx!important
+
+    .tb_l
+        border-left-color: $color_mine_shaft_approx!important
+
+    .WZ8Tjf
+        color: $color_celeste_approx!important
+
+    .HF3S5b
+        color: $color_celeste_approx!important
+
+    .MBoHTc
+        color: $color_celeste_approx!important
+
+    .RJ3lSb
+        color: $color_celeste_approx!important
+
+    .dAb3Zd
+        color: $color_celeste_approx!important
+
+    .H0Ytud
+        fill: $color_tapa_approx!important
+        stroke: none!important
+        &:hover
+            fill: $color_celeste_approx!important
+
+
+    .xpLNBf
+        fill: $color_tapa_approx!important
+        stroke: none!important
+        &:hover
+            fill: $color_celeste_approx!important
+
+
+    .eaoWNe
+        color: $color_stack_approx!important
+
+    .mFI2Qb
+        color: $color_stack_approx!important
+
+    .lr_c_stnl
+        color: $color_stack_approx!important
+
+    .std-li-a
+        color: $color_stack_approx!important
+
+    .gkToze
+        color: $color_stack_approx!important
+
+    .vf0Wf
+        color: $color_stack_approx!important
+
+    .wcluHf
+        color: $color_curious_blue_approx!important
+
+    .lr_c_tf
+        background-color: $color_mine_shaft_approx!important
+
+    .yQ8gDb
+        background-color: $color_mine_shaft_approx!important
+
+    .GVLnMb
+        filter: invert(.895)!important
+
+    .zSDfmd
+        filter: invert(.895)!important
+
+    .WZBD7d
+        background-color: $black!important
+
+    .fAwjXaCTMo5__content
+        background-color: $color_rangoon_green_approx!important
+        &.mr5vfb
+            border-color: $color_mine_shaft_approx!important
+            //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            box-shadow: none!important
+
+
+    .sKh8Yb
+        background-color: $color_rangoon_green_approx!important
+        color: $color_celeste_approx!important
+
+    .OFZAnd
+        color: $color_celeste_approx!important
+
+    .URjEMe
+        color: $color_celeste_approx!important
+
+    .irZWYd
+        border-color: $color_mine_shaft_approx!important
+
+    .t7iPNCE6YvC__nav-right
+        border-color: $color_mine_shaft_approx!important
+
+    .ac-row
+        border-color: $color_mine_shaft_approx!important
+
+    .h7eyVe
+        border-color: $color_mine_shaft_approx!important
+
+    .bKi57NPaiJ5__tab-carousel
+        background-color: $color_rangoon_green_approx!important
+
+    .kojJ7d
+        color: $color_curious_blue_approx!important
+
+    .cx2SY
+        color: $color_celeste_approx!important
+
+    .eYvkic
+        color: $color_celeste_approx!important
+
+    .DiHeCb
+        color: $color_celeste_approx!important
+
+    .ocv3cf
+        border-color: $color_mine_shaft_approx!important
+
+    .gx4n6c
+        background: $color_rangoon_green_approx!important
+        color: $color_celeste_approx
+
+    .QcYZxe
+        border-color: $color_mine_shaft_approx!important
+
+    .NprOob
+        color: $white!important
+
+    .NDTw3e
+        color: $color_celeste_approx!important
+
+    .OiIFo
+        color: $color_celeste_approx!important
+
+    .knFDje
+        color: $color_celeste_approx!important
+
+    .TgMHGc
+        color: $color_celeste_approx!important
+
+    .CVIh4c
+        color: $color_celeste_approx!important
+
+    .JgXcPd
+        color: $color_celeste_approx!important
+
+    .knowledge-finance-wholepage-chart__hover-card-value
+        color: $color_celeste_approx!important
+
+    .qFiidc
+        color: $color_celeste_approx!important
+
+    .iyjjgb
+        color: $color_stack_approx!important
+
+    .knowledge-finance-wholepage-chart__hover-card-time
+        color: $color_stack_approx!important
+
+    .fw-ch-svg
+        color: $color_celeste_approx!important
+        fill: $color_celeste_approx!important
+
+    .msyb7
+        fill: $color_celeste_approx!important
+        stroke: transparent!important
+
+    .z1asCe
+        fill: $color_celeste_approx!important
+        stroke: transparent!important
+
+    .qa__svg-icon
+        fill: $color_celeste_approx!important
+        stroke: transparent!important
+
+    .knowledge-finance-wholepage-chart__highlight-line
+        background-image: linear-gradient($color_storm_dust_approx 50%,rgba(255,255,255,0) 0)
+
+    .CedBdc
+        background: $color_shark_approx!important
+
+    .knowledge-finance-wholepage-chart__hover-card
+        background: $color_mine_shaft_approx!important
+
+    .xf5BMb
+        border-color: $color_mine_shaft_approx!important
+        background-color: $color_shark_approx!important
+        color: $color_celeste_approx!important
+
+    .ZINbbc
+        background-color: transparent!important
+
+    .mRUW9b
+        background-color: $color_rangoon_green_approx!important
+
+    .qWfpFe
+        color: $color_curious_blue_approx!important
+        svg
+            color: $color_curious_blue_approx!important
+
+
+    .aRH6Qe
+        color: $color_celeste_approx!important
+
+    .XO51F
+        color: $color_celeste_approx!important
+
+    .eUrIee
+        color: $color_stack_approx!important
+
+    .ATPAKc
+        color: $color_stack_approx!important
+
+    .QHTnWc
+        color: $color_emerald_approx!important
+
+    hr
+        border-color: $color_mine_shaft_approx!important
+
+    .c8dxme
+        background-color: $black!important
+
+    ._U5o
+        color: $white_54!important
+
+    ._A2o
+        background-color: $color_rangoon_green_approx!important
+
+    ._S5o
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    g-inner-card
+        background: $color_rangoon_green_approx!important
+        background-color: $color_shark_approx!important
+
+    .fmZxJd
+        background-color: $color_rangoon_green_approx!important
+
+    ._Lbe
+        color: $color_tapa_approx!important
+
+    .kappbar
+        background: $color_rangoon_green_approx!important
+
+    .klbar
+        border-bottom: 1px solid $color_mine_shaft_approx!important
+
+    .o2ji6GoAIDp__menu
+        @extend %extend_9
+
+    .kxctl-dd
+        @extend %extend_9
+
+    .klitem
+        &:hover
+            background: $color_shark_approx!important
+
+        &.selected
+            background: $color_shark_approx!important
+
+
+    .rlc__slider-page
+        background: $color_rangoon_green_approx!important
+        ._Iho:hover
+            //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            box-shadow: 0 3px 10px 0 $black_30, 0 0 10px 4px $black_15!important
+
+
+    .kltat
+        color: $color_gray_nurse_approx!important
+
+    .klfact
+        color: $color_gray_nurse_approx!important
+
+    .rlc__slider
+        background: $color_rangoon_green_approx!important
+
+    .rl_center
+        border-color: $color_mine_shaft_approx!important
+
+    ._cNr
+        color: $color_shady_lady_87_approx!important
+
+    ._lhs
+        color: $gray_54!important
+
+    ._Nar
+        color: $color_star_dust_54_approx!important
+
+    .LhCR5d
+        color: $white_100!important
+        background: $black_60!important
+        &:hover
+            color: $white_100!important
+            background: $black_100!important
+
+
+    .tsp-wi
+        border-right-color: $color_fuscous_gray_approx!important
+
+    .vk_ard
+        opacity: 0.2!important
+
+    .vk_aru
+        opacity: 0.2!important
+
+    .cd-exp-ar
+        opacity: 0.2!important
+
+    #gt-text-c
+        background: $color_shark_approx!important
+
+    .gb_ke
+        background: $color_shark_approx!important
+
+    .gb_hf
+        background: $color_shark_approx!important
+
+    .gb_jf
+        background: $color_shark_approx!important
+
+    .gb_kf
+        background: $color_shark_approx!important
+
+    .gb_lf
+        background: $color_shark_approx!important
+
+    .gb_mf
+        background: $color_shark_approx!important
+
+    .gb_of
+        background: $color_shark_approx!important
+
+    .gb_pf
+        background: $color_shark_approx!important
+
+    .gb_T
+        .gb_og
+            background: $color_shark_approx!important
+
+        .gb_lb
+            background: $color_shark_approx!important
+
+
+    .gb_uf
+        background: $color_shark_approx!important
+
+    .gb_yf
+        background: $color_shark_approx!important
+
+    .gb_zf
+        background: $color_shark_approx!important
+
+    .gb_R
+        background: $color_shark_approx!important
+
+    .gb_Bf
+        background: $color_shark_approx!important
+
+    .gb_Ef
+        background: $color_shark_approx!important
+
+    .file-selected-section
+        .file-holder
+            background: $color_shark_approx!important
+
+        .file-label
+            color: $color_gray_nurse_approx!important
+
+
+    .gb_oc
+        background: $color_shark_approx!important
+
+    #gt-appbar
+        background: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    #gt-apb-main
+        background: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .gt-hl-layer
+        background-color: transparent!important
+        border: none!important
+
+    #gt-src-wrap
+        border-color: $color_mine_shaft_approx!important
+        background: $color_mine_shaft_approx!important
+
+    #gt-res-wrap
+        border: 1px solid $color_mine_shaft_approx!important
+        background: $color_mine_shaft_approx!important
+        &.full-edit
+            border-color: $color_mine_shaft_approx!important
+            background: $color_mine_shaft_approx!important
+
+
+    #newu
+        border-color: $color_mine_shaft_approx!important
+        background: $color_mine_shaft_approx!important
+
+    #gt-pb-sb
+        border-color: $color_mine_shaft_approx!important
+        background: $color_mine_shaft_approx!important
+
+    #source
+        color: $color_gray_nurse_approx!important
+        &.short_text
+            color: $color_gray_nurse_approx!important
+
+
+    .trans-verified-button
+        filter: invert(.9)!important
+        .jfk-button-img
+            filter: invert(1)!important
+
+
+    .gt-src-cc-normal
+        color: $color_pumice_54_approx!important
+
+    .goog-toolbar-button-hover
+        @extend %extend_10
+
+    .goog-toolbar-menu-button-hover
+        @extend %extend_10
+
+    .goog-toolbar-button-selected
+        @extend %extend_10
+
+    .goog-toolbar-button-checked
+        @extend %extend_10
+
+    .goog-toolbar-menu-button-open
+        @extend %extend_10
+
+    .jfk-tooltip
+        border: 1px solid $color_mine_shaft_approx!important
+
+    .gt-cc-t
+        border-color: $color_mine_shaft_approx transparent!important
+        background-color: $color_mine_shaft_approx!important
+
+    #result_box
+        color: $color_gray_nurse_approx!important
+
+    .gt-baf-word-clickable
+        color: $color_silver_approx!important
+
+    .gt-ct-text
+        color: $color_silver_approx!important
+
+    .gt-syn-span
+        color: $color_tapa_approx!important
+        color: $color_silver_chalice_approx!important
+
+    .gt-ex-text
+        color: $color_tapa_approx!important
+        color: $color_silver_chalice_approx!important
+
+    .gt-rw-span
+        color: $color_nobel_approx!important
+
+    .gt-card-ttl-txt
+        color: $color_nobel_approx!important
+
+    .gt-def-row
+        color: $color_nobel_approx!important
+
+    .gt-baf-hl
+        color: $color_gray_nurse_approx!important
+
+    .jfk-button-standard
+        @extend %extend_12
+        &.jfk-button-checked
+            @extend %extend_11
+
+        &.jfk-button-clear-outline
+            &.jfk-button-checked
+                @extend %extend_11
+
+            &.jfk-button-hover
+                @extend %extend_13
+
+
+        &.jfk-button-hover
+            @extend %extend_13
+
+        &.jfk-button-disabled
+            background-color: transparent!important
+            cursor: default!important
+            .jfk-button-img
+                cursor: default!important
+                opacity: .1!important
+
+
+        .jfk-button-img
+            filter: invert(.9)!important
+
+
+    .jfk-button-mini
+        @extend %extend_11
+
+    .goog-flat-menu-button
+        @extend %extend_12
+
+    .goog-menuseparator
+        border-color: $color_mine_shaft_approx!important
+
+    .sh-sr__shop-result-group
+        border-color: $color_mine_shaft_approx!important
+
+    .goog-menu
+        background: $color_rangoon_green_approx!important
+        &.round-trip-content
+            color: $color_celeste_approx!important
+
+
+    .goog-menuitem-emphasize-highlight
+        background: $color_rangoon_green_approx!important
+        color: $color_bon_jour_approx!important
+
+    .goog-menuitem
+        color: $color_stack_approx!important
+
+    .goog-tristatemenuitem
+        color: $color_stack_approx!important
+
+    .goog-filterobsmenuitem
+        color: $color_stack_approx!important
+
+    .goog-menuitem-highlight
+        background: $black_20!important
+        border: none!important
+        .goog-menuitem-content
+            color: $color_bon_jour_approx!important
+
+
+    #pb-tb-c
+        border-color: $color_mine_shaft_approx!important
+
+    #pb-tool
+        border-color: $color_mine_shaft_approx!important
+        background-color: $color_rangoon_green_approx!important
+
+    .goog-toolbar-separator
+        border-color: $color_mine_shaft_approx!important
+
+    .goog-toolbar-menu-button
+        color: $color_stack_approx!important
+
+    #pb-empty
+        color: $color_stack_approx!important
+
+    .gt-is
+        background-color: $color_shark_approx!important
+
+    .gt-is-tr-on
+        border: 1px solid $color_mine_shaft_approx!important
+        .gt-is-ld
+            border-color: $color_mine_shaft_approx!important
+
+        .gt-is-ld-top
+            border-color: $color_mine_shaft_approx!important
+
+        .gt-is-sg
+            color: $color_wild_sand_approx!important
+
+
+    .gt-is-tr
+        color: $color_bon_jour_54_approx!important
+
+    .gt-is-itm-hover
+        background-color: $black_20!important
+        border-color: $color_mine_shaft_approx!important
+        background-color: $color_mine_shaft_approx!important
+
+    .gt-related-suggest-message
+        color: $color_tapa_approx!important
+        background-color: $color_mine_shaft_approx!important
+
+    .gt-revert-correct-message
+        color: $color_tapa_approx!important
+
+    .tw-data-text
+        color: $color_nobel_approx!important
+
+    #tw-source-text-ta
+        color: $color_nobel_approx!important
+
+    ._wYb
+        background-color: $color_mine_shaft_approx!important
+
+    .tw-lang-selector
+        color: $color_tapa_approx!important
+        background: $color_rangoon_green_approx!important
+
+    .tw-menu-btn
+        color: $color_bon_jour_54_approx!important
+        &:hover .tw-menu-btn-image:first-child
+            background-color: $color_rangoon_green_approx!important
+            border-color: $color_rangoon_green_approx!important
+
+
+    .tw-lang-selector-wrapper
+        border-color: $color_mine_shaft_approx!important
+        padding-left: 3px!important
+        &:after
+            border-color: $color_delta_approx transparent!important
+
+
+    .tw-bilingual-translation
+        color: $color_tapa_approx!important
+
+    .tw-bilingual-entry
+        color: $color_tapa_approx!important
+
+    .tw-bilingual-pos
+        color: $color_stack_approx!important
+
+    .gt-rw-div
+        color: $color_stack_approx!important
+
+    .gb_6b
+        &.gb_b
+            filter: invert(.9)!important
+
+        &.gb_Ic.gb_Hc
+            filter: invert(.9)!important
+
+
+    .fTKmHE99XE4__star-s
+        filter: invert(.9)!important
+
+    .gt-baf-word-selected
+        background-color: transparent!important
+        > span
+            color: $color_royal_blue_approx!important
+
+
+    .TYiug
+        color: $color_royal_blue_approx!important
+
+    .ita-kd-inputtools-div
+        background-color: transparent!important
+        &:hover .ita-kd-icon-button
+            background: $color_mine_shaft_approx!important
+
+
+    .ita-kd-menuitem-inputtool-icon
+        filter: brightness(2)!important
+
+    .ita-kd-dropdown-menu
+        background: $color_shark_approx!important
+
+    .vk-btn
+        background: $color_shark_approx!important
+        color: $color_celeste_approx!important
+        &.vk-sf-h
+            background: $color_fuscous_gray_approx!important
+            border-color: $color_fuscous_gray_approx!important
+
+        &.vk-sf-s
+            background: $color_fuscous_gray_approx!important
+            border-color: $color_fuscous_gray_approx!important
+
+        &.vk-sf-a
+            background: $color_tapa_approx!important
+            border-color: $color_tapa_approx!important
+            color: $white!important
+
+
+    .ita-kd-menuitem
+        color: $color_celeste_approx!important
+
+    .ita-kd-menuitem-hover
+        background-color: $color_mine_shaft_approx!important
+        color: $color_celeste_approx!important
+
+    .vk-box
+        background-color: $color_rangoon_green_approx!important
+
+    .ita-kd-separator
+        border-color: $color_mine_shaft_approx!important
+
+    .vk-t-btn
+        filter: invert(1)!important
+
+    .ita-hwt-ime
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .ita-hwt-buttons
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .ita-hwt-candidates
+        border-color: $color_mine_shaft_approx!important
+        background-color: $color_shark_approx!important
+
+    .ita-hwt-candidate
+        border-color: $color_mine_shaft_approx!important
+        color: $color_celeste_approx!important
+
+    .ita-hwt-candidate-hover
+        background-color: $color_mine_shaft_approx!important
+
+    .ita-hwt-jfk-standard
+        background: $color_shark_approx!important
+        border-color: $color_mine_shaft_approx!important
+        color: $color_celeste_approx!important
+        cursor: pointer!important
+        &:hover
+            background-color: $color_mine_shaft_approx!important
+
+
+    .ita-hwt-close
+        filter: invert(.895)!important
+
+    .ita-hwt-enter-img-dark
+        filter: invert(.895)!important
+
+    .ita-hwt-backspace-img
+        filter: invert(.895)!important
+
+    #gt-pb-tb
+        border-color: transparent!important
+        color: $color_celeste_approx!important
+        tr
+            background-color: $color_shark_approx!important
+            border-color: $color_mine_shaft_approx!important
+            &.checked
+                background-color: $color_mine_shaft_approx!important
+
+
+
+    .trans-edit
+        background-color: $color_fuscous_gray_approx!important
+        border-color: $color_fuscous_gray_approx!important
+        color: $white!important
+        //If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+        border-radius: 5px!important
+        background-color: $color_fiord_approx!important
+
+    .epu-dt
+        .frame
+            background-color: $color_rangoon_green_approx!important
+
+        .history-top-header
+            background-color: $color_mine_shaft_approx!important
+            border-color: $color_tundora_approx!important
+            .close-button
+                filter: invert(.9)!important
+
+            .history-top-bar
+                border-color: $color_tundora_approx!important
+
+            .title
+                color: $color_celeste_approx!important
+
+
+        .history-container
+            background-color: $color_mine_shaft_approx!important
+            .info-bar
+                background-color: $color_mine_shaft_approx!important
+                color: $color_silver_chalice_approx!important
+
+            .empty-placeholder .placeholder-title
+                color: $color_celeste_approx!important
+
+            .history-features .delete-all-button
+                color: $color_silver_chalice_approx!important
+
+
+        .history-entry
+            border-color: $color_tundora_approx!important
+            &.browsed
+                background-color: $color_mine_shaft_approx!important
+
+            &:focus-within
+                background-color: $color_mine_shaft_approx!important
+
+            .tl-input
+                color: $color_celeste_approx!important
+
+            .tl-output
+                color: $color_silver_chalice_approx!important
+
+
+        .st-stp1-epu-text
+            background-color: $color_mine_shaft_approx!important
+
+        .gt-lc
+            &.gt-lc-mobile
+                &.show-as-one-card
+                    background-color: $color_mine_shaft_approx!important
+                    border-color: $color_mine_shaft_approx!important
+                    .gt-cc
+                        border-color: $color_mine_shaft_approx!important
+
+
+                .gt-cd
+                    border-color: $color_mine_shaft_approx!important
+
+                .gt-def-synonym-title
+                    color: $color_celeste_approx!important
+
+                .gt-cd-cl
+                    @extend %extend_14
+
+                .gt-cd-ncl
+                    @extend %extend_14
+
+
+            &.show-as-one-card
+                .gt-cc-r
+                    border-color: $color_mine_shaft_approx!important
+
+                .gt-cc-l
+                    border-color: $color_tundora_approx!important
+
+
+
+        .gt-cc-t
+            background-color: $color_mine_shaft_approx!important
+
+        .language_list_item_wrapper
+            &:hover
+                filter: brightness(2)!important
+
+            &.item-emphasized:not(.item-selected) .language_list_item_icon
+                filter: invert(.9)!important
+
+
+        .gt-cd-pos-pop
+            color: $color_silver_chalice_approx!important
+
+        .gt-lc-mobile
+            .gt-baf-hl
+                background: $color_tundora_approx!important
+                color: $color_celeste_approx!important
+
+            .gt-baf-word-clickable:hover
+                background: $color_tundora_approx!important
+                color: $color_celeste_approx!important
+
+
+        &.displaying-history-page .history-page
+            background-color: $color_mine_shaft_approx!important
+
+        .main-header.long-text .st-stp1-epu-text
+            background-color: $color_tundora_approx!important
+            color: $color_celeste_approx!important
+
+        .copybutton .jfk-button-img
+            filter: invert(.9)!important
+
+        .empty.gt-score-dot
+            background-color: $color_storm_dust_approx!important
+
+
+    .language-list-toolbar
+        background-color: $color_rangoon_green_approx!important
+        .searchbutton-image
+            background-color: $color_rangoon_green_approx!important
+
+        .language-list-label
+            color: $color_celeste_approx!important
+
+
+    .language-list-search-box
+        background-color: $color_rangoon_green_approx!important
+
+    #sl_list-search-box
+        background-color: $color_rangoon_green_approx!important
+        color: $color_celeste_approx!important
+
+    #tl_list-search-box
+        background-color: $color_rangoon_green_approx!important
+        color: $color_celeste_approx!important
+
+    .language-list
+        background-color: $color_shark_approx!important
+
+    .language_list_item_wrapper
+        background-color: $color_shark_approx!important
+        &.item-emphasized:not(.item-selected) .language_list_item_icon
+            filter: invert(.9)!important
+
+
+    .language_list_sl_list
+        background-color: $color_shark_approx!important
+
+    .language_list_tl_list
+        background-color: $color_shark_approx!important
+
+    .language_list_section
+        background-color: $color_shark_approx!important
+
+    .phrasebook-container
+        background-color: $color_mine_shaft_approx!important
+        .search-box
+            background-color: $color_shark_approx!important
+            color: $color_celeste_approx!important
+
+        .nav-bar
+            background-color: $color_mine_shaft_approx!important
+            color: $color_silver_chalice_approx!important
+            .page-nav-button
+                opacity: 1!important
+                filter: brightness(1.25)!important
+
+
+        .search-bar
+            background-color: $color_mine_shaft_approx!important
+
+        .phrasebook-features
+            .goog-option-selected
+                background-color: $color_mine_shaft_approx!important
+
+            .export-button-container
+                border-color: $color_tundora_approx!important
+
+
+        .language-chip
+            @extend %extend_14
+
+        &:not(.empty-search-query) .phrasebook-entry.browsed
+            background-color: $color_mine_shaft_approx!important
+
+        .empty-placeholder .placeholder-title
+            color: $color_celeste_approx!important
+
+
+    .phrasebook-delete-all-dialog
+        background-color: $color_shark_approx!important
+
+    .gb_qe
+        background-color: $color_shark_approx!important
+
+    .gb_vc
+        background-color: $color_shark_approx!important
+        svg
+            color: $color_celeste_approx!important
+
+
+    .gb_yc
+        background-color: $color_shark_approx!important
+
+    .gt-lc
+        &.gt-lc-mobile
+            .gt-cc-r-i
+                background-color: $color_shark_approx!important
+
+            .gt-cd
+                background-color: $color_mine_shaft_approx!important
+                border-color: $color_mine_shaft_approx!important
+
+            &.show-as-one-card
+                background-color: $color_mine_shaft_approx!important
+                border-color: $color_tundora_approx!important
+                .gt-cc
+                    border-color: $color_tundora_approx!important
+
+
+            .gt-ex-quote
+                filter: invert(.9)!important
+
+            .gt-def-num
+                color: $color_mountain_mist_approx!important
+                border-color: $color_mountain_mist_approx!important
+
+            .gt-def-example
+                color: $color_celeste_approx!important
+
+            .cd-expand-label
+                color: $color_celeste_approx!important
+
+            .gt-def-synonym-title
+                color: $color_celeste_approx!important
+
+            .gt-cd-cl
+                @extend %extend_14
+
+            .gt-cd-ncl
+                @extend %extend_14
+
+            .cd-expand-button
+                border-color: $color_log_cabin_approx!important
+
+
+        &.show-as-one-card .gt-cc-r
+            border-color: $color_tundora_approx!important
+
+
+    .gt-lc-mobile
+        .gt-baf-hl
+            background-color: $color_shark_approx!important
+
+        .gt-baf-word-clickable:hover
+            background-color: $color_shark_approx!important
+
+        .gt-card-expanded:not(:last-child) .gt-syn-row
+            border-color: $color_tundora_approx!important
+
+        div.gt-baf-translations
+            color: $color_silver_chalice_approx!important
+
+
+    .gb_Fc
+        background-color: $color_shark_approx!important
+
+    .source-input
+        background-color: $color_mine_shaft_approx!important
+
+    .orig
+        background-color: $color_mine_shaft_approx!important
+
+    .source-wrap
+        background-color: $color_mine_shaft_approx!important
+
+    .results-container
+        background-color: $color_mine_shaft_approx!important
+        background-color: $color_mine_shaft_approx!important
+        &:not(.empty) .placeholder
+            color: $color_celeste_approx!important
+
+
+    .result
+        background-color: $color_mine_shaft_approx!important
+        background-color: $color_mine_shaft_approx!important
+        .unstarred > .jfk-button-img
+            filter: invert(.9)!important
+
+
+    .gt-edit
+        background-color: $color_mine_shaft_approx!important
+        background-color: $color_mine_shaft_approx!important
+
+    .select-file-page
+        background-color: $color_mine_shaft_approx!important
+        .select-file-section .button
+            @extend %extend_15
+            &:hover
+                @extend %extend_16
+
+
+
+    .phrasebook-top-header
+        background-color: $color_mine_shaft_approx!important
+        border-color: $color_tundora_approx!important
+        .close-button
+            filter: invert(.9)!important
+
+        .phrasebook-top-bar
+            border-color: $color_tundora_approx!important
+
+        .title
+            color: $color_celeste_approx!important
+
+
+    .phrasebook-entry
+        border-color: $color_tundora_approx!important
+        &.focus-within
+            background-color: $color_mine_shaft_approx!important
+
+        &:focus-within
+            background-color: $color_mine_shaft_approx!important
+
+        .tl-input
+            color: $color_celeste_approx!important
+
+        .tl-output
+            color: $color_silver_chalice_approx!important
+
+
+    .gt-spell-correct-message
+        background-color: $color_mine_shaft_approx!important
+        color: $color_silver_chalice_approx!important
+
+    .contribute-target
+        background-color: $color_mine_shaft_approx!important
+        color: $color_celeste_approx!important
+
+    .history-container
+        background-color: $color_mine_shaft_approx!important
+        .info-bar
+            background-color: $color_mine_shaft_approx!important
+            color: $color_silver_chalice_approx!important
+
+        .empty-placeholder .placeholder-title
+            color: $color_celeste_approx!important
+
+        .history-features .delete-all-button
+            color: $color_silver_chalice_approx!important
+
+
+    .history-top-header
+        background-color: $color_mine_shaft_approx!important
+        .close-button
+            filter: invert(.9)!important
+
+        .title
+            color: $color_celeste_approx!important
+
+
+    .trans-target-highlight
+        background-color: $color_fiord_approx!important
+
+    .gt-is-mobile
+        border-color: $color_mine_shaft_approx!important
+        .gt-is-ca
+            filter: invert(.9)!important
+
+        .gt-is-sg
+            color: $color_celeste_approx!important
+
+        .gt-is-ld
+            border-color: $color_mine_shaft_approx!important
+
+
+    .input
+        border-right: 1px solid $color_log_cabin_approx!important
+
+    .homepage
+        &.translate-text .input-button.text-icon
+            border-color: $color_mine_shaft_approx!important
+
+        &.translate-docs .input-button.documents-icon
+            border-color: $color_mine_shaft_approx!important
+
+
+    .header-button
+        border-color: $color_mine_shaft_approx!important
+        background-color: $color_mine_shaft_approx
+
+    .select-file-section
+        .choose-document-prompt
+            color: $color_celeste_approx!important
+
+        .upload-filetypes-prompt
+            color: $color_silver_chalice_approx!important
+
+
+    .ft-icon-txt
+        color: $color_celeste_approx!important
+
+    .phrasebook-delete-all-dialog-title-text
+        color: $color_celeste_approx!important
+
+    .gt-baf-previous-word-mobile
+        color: $color_celeste_approx!important
+
+    .history-entry
+        .tl-input
+            color: $color_celeste_approx!important
+
+        .tl-output
+            color: $color_silver_chalice_approx!important
+
+        &.browsed
+            background: $color_tundora_approx!important
+            color: $color_celeste_approx!important
+
+        &:focus-within
+            background: $color_tundora_approx!important
+            color: $color_celeste_approx!important
+
+
+    .language_list_item_language_name
+        color: $color_silver_chalice_approx!important
+
+    .gt-cd-pos-pop
+        color: $color_silver_chalice_approx!important
+
+    .translation-gender-indicator
+        color: $color_silver_chalice_approx!important
+
+    .gendered-translations-header
+        color: $color_silver_chalice_approx!important
+
+    .result-transliteration-container
+        .transliteration-content
+            color: $color_silver_chalice_approx!important
+
+        .truncate-link
+            color: $color_silver_chalice_approx!important
+
+
+    .ft-icon-oval
+        @extend %extend_14
+
+    .ls-wrap
+        background-image: -moz-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -webkit-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -o-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -ms-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-color: transparent!important
+        .sugg-fade
+            @extend %extend_15
+
+        .sl-sugg .goog-inline-block.jfk-button:focus
+            filter: brightness(1.5)!important
+            background-color: $color_mine_shaft_approx!important
+
+        .tl-sugg .goog-inline-block.jfk-button:focus
+            filter: brightness(1.5)!important
+            background-color: $color_mine_shaft_approx!important
+
+        .sl-more:focus
+            filter: brightness(1.5)!important
+            background-color: $color_mine_shaft_approx!important
+
+        .tl-more:focus
+            filter: brightness(1.5)!important
+            background-color: $color_mine_shaft_approx!important
+
+        .lang-btn:focus-within
+            filter: brightness(1.5)!important
+            background-color: $color_mine_shaft_approx!important
+
+        .swap:focus
+            filter: brightness(1.5)!important
+            background-color: $color_mine_shaft_approx!important
+
+
+    .swap-wrap
+        @extend %extend_15
+        &:hover
+            @extend %extend_16
+
+
+    .sl-more
+        cursor: pointer!important
+        &:hover
+            filter: brightness(2)!important
+
+
+    .tl-more
+        cursor: pointer!important
+        &:hover
+            filter: brightness(2)!important
+
+
+    .cwtlwm
+        background-color: $color_rangoon_green_approx!important
+
+    .vk_bk
+        color: $color_stack_approx!important
+        &.sol-tmp
+            color: $color_stack_approx !important
+
+
+    ._Ohf
+        background-color: $color_shark_approx!important
+        border: 1px solid $color_mine_shaft_approx!important
+        color: $color_stack_approx!important
+
+    ._eif
+        border: 1px solid $color_mine_shaft_approx!important
+        border-top: 1px solid $color_mine_shaft_approx!important
+        color: $color_mercury_approx!important
+        background: $color_baltic_sea_approx!important
+
+    .cwcot
+        color: $color_gray_nurse_approx!important
+
+    .cwtlb
+        border-color: $color_mine_shaft_approx!important
+        color: $color_gray_nurse_approx!important
+
+    .cwdrsba
+        filter: invert(0.9)!important
+
+    .cwrb-tpl
+        @extend %extend_17
+
+    .cwdb-tpl
+        @extend %extend_17
+
+    .cwdgb-tpl
+        background-image: -moz-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -webkit-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -o-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -ms-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        border: none!important
+        color: $color_stack_approx!important
+        cursor: pointer!important
+        &:hover
+            background-image: -moz-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+            background-image: -webkit-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+            background-image: -o-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+            background-image: -ms-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+            background-image: linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+            cursor: pointer!important
+
+
+    .cwlgb-tpl
+        background-image: -moz-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -webkit-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -o-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: -ms-linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        background-image: linear-gradient(top,$color_masala_approx,$color_mine_shaft_approx)!important
+        border: none!important
+        color: $color_stack_approx!important
+        cursor: pointer!important
+        &:hover
+            background-image: -moz-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+            background-image: -webkit-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+            background-image: -o-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+            background-image: -ms-linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+            background-image: linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
+            cursor: pointer!important
+
+
+    .lr-fy-eq-elem
+        color: $color_celeste_approx!important
+        border-color: $color_celeste_approx!important
+        background: transparent!important
+
+    .lr-fy-i-w
+        fill: $color_rangoon_green_approx!important
+
+    .lr-fy-tb
+        @extend %extend_18
+
+    .lr-fy-eq-add
+        background-color: $color_celeste_approx!important
+
+    ._qgo
+        background-color: $color_shark_approx!important
+        border-top: 1px solid $color_mine_shaft_approx!important
+
+    ._xe
+        background: $color_rangoon_green_approx!important
+
+    ._Db
+        color: $white_54!important
+        &:hover
+            background-color: $color_baltic_sea_approx!important
+
+        &:active
+            background-color: $color_baltic_sea_approx!important
+            background-color: $color_masala_approx!important
+
+
+    ._rl
+        color: $color_gray_nurse_approx!important
+
+    ._qJg
+        border-color: $color_mine_shaft_approx!important
+
+    ._P4k
+        border-color: $color_mine_shaft_approx!important
+
+    ._M4k
+        border-color: $color_mine_shaft_approx!important
+
+    ._wx
+        border-color: $color_mine_shaft_approx!important
+
+    ._vx
+        background-color: $color_shark_approx!important
+        border-color: $color_mine_shaft_approx!important
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 1.5px 1px 0 $color_bunker_50_approx!important
+
+    ._ae
+        &:hover
+            background: $color_rangoon_green_approx!important
+
+        ._SDf
+            color: $color_tapa_approx!important
+
+
+    ._zft
+        color: $color_gray_nurse_approx!important
+
+    .dw-sb-cont
+        background: $color_shark_approx!important
+        .dw-sbi
+            color: $color_stack_approx!important
+            border-color: $color_shark_approx!important
+            background: $color_shark_approx!important
+
+        .dw-sb-btn
+            border: none!important
+            background: $color_shark_approx!important
+            color: $color_royal_blue_approx
+
+        .dw-sbs
+            color: $color_stack_approx!important
+
+
+    #dw-siw
+        background: $color_shark_approx!important
+
+    #rllhd__fldhc
+        border-bottom: none!important
+        background-color: $color_rangoon_green_approx!important
+
+    ._o2o
+        background-color: $color_baltic_sea_approx!important
+
+    ._MKp
+        color: $white_54!important
+
+    ._lTo
+        color: $white_87!important
+
+    ._T5o
+        border-top: 1px solid $color_mine_shaft_approx!important
+
+    .rllt__local-item-selected
+        background-color: $color_masala_approx!important
+
+    ._FOl
+        filter: invert(1)!important
+
+    .stt-uf
+        filter: invert(1)!important
+
+    .sect
+        color: $color_silver_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .subsect
+        color: $color_stack_approx!important
+
+    .UVgjof
+        color: $color_stack_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .sllabel
+        color: $color_pumice_approx!important
+
+    .appbar
+        border-color: $color_mine_shaft_approx!important
+
+    .slmarker
+        border-color: $color_fuscous_gray_approx!important
+
+    .goog-slider-thumb
+        background: $color_tundora_approx!important
+        border-color: $color_tundora_approx!important
+
+    .LJtPoc
+        color: $color_gray_nurse_approx!important
+        background: $color_shark_approx!important
+
+    .VYMape
+        background: $color_shark_approx!important
+        visibility: hidden
+
+    .ncFHed
+        background: $color_mine_shaft_approx!important
+        .MocG8c.KKjvXb
+            background-color: $color_gravel_approx!important
+
+
+    .vRMGwf
+        color: $color_pumice_approx!important
+
+    .gssb_m
+        color: $color_gray_nurse_approx!important
+        background: $color_rangoon_green_approx!important
+
+    .gssb_i
+        background: $color_mine_shaft_approx!important
+
+    .kcb
+        border-color: $color_mine_shaft_approx!important
+        &:active
+            background: $color_silver_chalice_approx!important
+
+        &.checked::after
+            filter: invert(1)!important
+
+
+    ._FEt
+        border-color: $color_mine_shaft_approx!important
+
+    .sh-dtt__sort-by
+        border-color: $color_mine_shaft_approx!important
+
+    ._wed
+        border-color: $color_mine_shaft_approx!important
+
+    .sh-sp__line
+        border-color: $color_mine_shaft_approx!important
+
+    .d23fMb
+        border-color: $color_mine_shaft_approx!important
+
+    ._-dN
+        border-color: $color_mine_shaft_approx!important
+
+    ._-d0
+        border-color: $color_mine_shaft_approx!important
+
+    .IxCT4b
+        border-color: $color_mine_shaft_approx!important
+
+    ._-kb
+        border-color: $color_mine_shaft_approx!important
+
+    .sr__filled
+        background: $color_silver_chalice_approx!important
+
+    .gko-add
+        ._-bq
+            filter: invert(1)!important
+
+        ._-bi
+            filter: invert(1)!important
+
+
+    ._-J
+        background-color: $color_rangoon_green_approx!important
+        border: 1px solid $black_20!important
+
+    ._-I
+        color: $color_stack_approx!important
+        &:hover
+            background: $black_20!important
+
+
+    .CV7Lzb
+        color: $color_stack_approx!important
+
+    .goog-modalpopup-bg
+        background: $black!important
+
+    .modal-dialog-bg
+        background: $black!important
+
+    .goog-modalpopup
+        background: $color_shark_approx!important
+
+    .modal-dialog
+        background: $color_shark_approx!important
+
+    .modal-dialog-content
+        background: $color_shark_approx!important
+
+    .modal-dialog-title
+        background-color: $color_shark_approx!important
+        color: $color_gray_nurse_approx!important
+
+    .jfk-textinput
+        border: none!important
+        background: $color_rangoon_green_approx!important
+        color: $color_gray_nurse_approx
+
+    .LfUe1b
+        padding: 3px!important
+        background: $color_rangoon_green_approx!important
+        border: 1px solid $color_mine_shaft_approx!important
+        color: $color_gray_nurse_approx!important
+        &:hover
+            background: $color_mine_shaft_approx!important
+
+
+    .sh-dp__cont
+        border-color: $color_mine_shaft_approx!important
+
+    ._-du
+        border-color: $color_mine_shaft_approx!important
+
+    .sh-gs__rs-sep
+        border-color: $color_mine_shaft_approx!important
+
+    .HUZACb
+        border-color: $color_mine_shaft_approx!important
+
+    ._-g6
+        border-color: $color_mine_shaft_approx!important
+
+    ._-hg
+        border-color: $color_mine_shaft_approx!important
+
+    ._-j9
+        border-color: $color_mine_shaft_approx!important
+
+    ._-ki
+        border-color: $color_mine_shaft_approx!important
+
+    ._-do
+        filter: invert(1)!important
+
+    .jfk-bubble-closebtn
+        filter: invert(1)!important
+
+    ._-O
+        filter: invert(1)!important
+
+    ._-j7
+        filter: invert(0.85)!important
+
+    ._-j
+        color: $color_nobel_approx!important
+
+    .sh-gc__c-st
+        color: $color_nobel_approx!important
+
+    ._Fet
+        color: $color_nobel_approx!important
+
+    .sh-sr__shop-result-header
+        color: $color_nobel_approx!important
+
+    .gbqfif
+        color: $color_nobel_approx!important
+
+    .gbqfsf
+        color: $color_nobel_approx!important
+
+    .ELcVZ
+        color: $color_nobel_approx!important
+
+    ._-g9
+        color: $color_nobel_approx!important
+
+    ._-dd
+        color: $color_nobel_approx!important
+
+    .jfk-bubble
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .sh-gc__c-sa
+        color: $color_curious_blue_approx!important
+
+    .jfk-bubble-arrowdown
+        .jfk-bubble-arrowimplafter
+            border-color: $color_rangoon_green_approx transparent!important
+
+        .jfk-bubble-arrowimplbefore
+            border-color: $color_mine_shaft_approx transparent!important
+
+
+    .jfk-bubble-arrowup
+        .jfk-bubble-arrowimplafter
+            border-color: $color_rangoon_green_approx transparent!important
+
+        .jfk-bubble-arrowimplbefore
+            border-color: $color_mine_shaft_approx transparent!important
+
+
+    ._jvs
+        background-color: transparent!important
+
+    ._ivs
+        background-color: transparent!important
+        color: $color_stack_approx
+
+    .plRs9b
+        background-color: transparent!important
+        color: $color_gray_nurse_approx
+
+    ._-dU
+        color: $color_stack_approx
+
+    ._avs
+        color: $color_gray_nurse_approx
+
+    .O8U6h
+        color: $color_gray_nurse_approx
+
+    ._-bN
+        color: $color_gray_nurse_approx
+
+    ._-dQ
+        color: $color_gray_nurse_approx
+
+    ._-cm
+        color: $color_gray_nurse_approx
+
+    ._-c-
+        color: $color_gray_nurse_approx
+
+    ._-fU
+        color: $color_gray_nurse_approx
+
+    ._-dX
+        color: $color_gray_nurse_approx
+
+    ._-de
+        color: $color_gray_nurse_approx
+
+    ._-iA
+        color: $color_gray_nurse_approx
+
+    ._-d2
+        color: $color_gray_nurse_approx
+
+    ._-dZ
+        color: $color_gray_nurse_approx
+
+    .sh-dp__arrow::before
+        border-bottom-color: $color_shark_approx!important
+
+    .sh-dp__arrow
+        border-bottom-color: $color_mine_shaft_approx!important
+
+    .sh-mo__more
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .sg-m__zoom-fab
+        background-color: $color_woodsmoke_approx!important
+
+    .U3NcLd
+        border-color: transparent!important
+
+    .sh-rso__modal
+        background-color: $black!important
+
+    .sh-rso__header
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .sh-rso__content
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .sh-mv__media
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    ._-ex
+        color: $color_celeste_approx!important
+
+    .pp-content
+        input
+            color: $color_celeste_approx!important
+
+        td
+            color: $color_celeste_approx!important
+
+
+    .sh-rso__overlay-inner
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 0 15px $black
+
+    ._-j3
+        filter: invert(.9)!important
+
+    .sh-rso__close
+        filter: invert(1)!important
+
+    .sg-m__media-item
+        border-color: $color_mine_shaft_approx!important
+
+    .sg-m__selected
+        border-color: $color_mountain_mist_approx!important
+
+    #prodbar
+        background-color: $color_rangoon_green_approx!important
+
+    .shop__a
+        color: $color_curious_blue_approx!important
+
+    .WcWt5e
+        color: $color_curious_blue_approx!important
+
+    #pp-section-links
+        border-color: $color_mine_shaft_approx!important
+
+    .LS81yb
+        border-color: $color_mine_shaft_approx!important
+
+    .os-grid-hover-last
+        border-color: $color_mine_shaft_approx!important
+        border-color: $color_mine_shaft_approx!important
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 0 16px $color_hunter_green_approx!important
+
+    .os-grid-hover-first
+        border-color: $color_mine_shaft_approx!important
+        border-color: $color_mine_shaft_approx!important
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 0 16px $color_hunter_green_approx!important
+
+    .ESCbSb
+        border-color: $color_mine_shaft_approx!important
+
+    .os-main-table
+        td
+            border-color: $color_mine_shaft_approx!important
+
+        th
+            background-color: $color_log_cabin_approx!important
+            border-color: $color_mine_shaft_approx!important
+
+
+    .UwNDwc
+        border-color: $color_mine_shaft_approx!important
+
+    ._-jX
+        border-color: $color_mine_shaft_approx!important
+
+    ._-jl
+        border-color: $color_mine_shaft_approx!important
+
+    .VtUh7b
+        border-color: $color_mine_shaft_approx!important
+
+    #bb-os-list
+        background-color: $color_shark_approx!important
+        border-color: $color_mine_shaft_approx!important
+        li
+            border-color: $color_mine_shaft_approx!important
+
+
+    .vs-image
+        border-color: $color_mine_shaft_approx!important
+
+    .AMbILe
+        border-color: $color_mine_shaft_approx!important
+
+    .l8TH0e
+        border-color: $color_mine_shaft_approx!important
+
+    .HJKaGb
+        border-color: $color_mine_shaft_approx!important
+
+    #os-sellers-information
+        background-color: $color_shark_approx!important
+
+    .os-grid-hover
+        border-color: $color_mine_shaft_approx!important
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 0 16px $color_hunter_green_approx!important
+
+    .l7AxXb
+        color: $color_celeste_approx!important
+
+    .qW8nDe
+        color: $color_celeste_approx!important
+
+    .rwZNDd
+        color: $color_celeste_approx!important
+
+    .hWE0y
+        color: $color_celeste_approx!important
+
+    .HLIorb
+        border-left-color: $color_mine_shaft_approx!important
+        background-color: $color_mine_shaft_approx!important
+
+    .shop__secondary
+        color: $color_stack_approx!important
+        &:link
+            color: $color_stack_approx!important
+
+        &:visited
+            color: $color_stack_approx!important
+
+
+    .e2q0ib
+        color: $color_stack_approx!important
+
+    .NA0ooc
+        background-color: $black!important
+
+    .pYBuhc
+        .NYCmxf:hover
+            background-color: $color_mine_shaft_approx!important
+            color: $color_celeste_approx!important
+
+        &.IVdU7b .NYCmxf
+            border-color: $color_fuscous_gray_approx!important
+            opacity: .25!important
+
+
+    .bb-shop-link
+        &:link
+            color: $white!important
+            cursor: pointer!important
+
+        &:visited
+            color: $white!important
+            cursor: pointer!important
+
+        &:hover
+            color: $white!important
+            cursor: pointer!important
+
+        &:focus
+            color: $white!important
+            cursor: pointer!important
+
+        &:active
+            color: $white!important
+            cursor: pointer!important
+
+
+    .Y7cTJe
+        &.s4ihlb
+            background-color: $color_shark_approx!important
+            border-color: $color_mine_shaft_approx!important
+
+        &.CX5tRe
+            background-color: $color_mine_shaft_approx!important
+
+        &:hover
+            background-color: $color_mine_shaft_approx!important
+
+
+    .Fz4Yrd
+        background-color: $color_mine_shaft_approx!important
+
+    .thWgNb
+        color: $color_chateau_green_approx!important
+        a
+            color: $color_chateau_green_approx!important
+
+
+    ._-fw
+        color: $color_chateau_green_approx!important
+        a
+            color: $color_chateau_green_approx!important
+
+
+    .bb-seller
+        color: $color_chateau_green_approx!important
+
+    .gb_je
+        background-color: $color_shark_approx!important
+
+    .FWhH7
+        color: $color_mountain_mist_approx!important
+
+    .qGLKQ
+        color: $color_mountain_mist_approx!important
+
+    .Bgqawf
+        color: $color_mountain_mist_approx!important
+
+    .eEcGhd
+        color: $color_mountain_mist_approx!important
+
+    .zLYYOe
+        color: $color_mountain_mist_approx!important
+
+    .e2CuFe
+        border-color: #ffffff4d transparent!important
+
+    .Uo6gve
+        background-color: transparent!important
+
+    g-tabs
+        background-color: $color_shark_approx!important
+
+    .vCQYxb
+        background-color: $color_shark_approx!important
+
+    .mMbopd
+        background-color: $color_rangoon_green_approx!important
+
+    .QEsAKd
+        background-color: $color_rangoon_green_approx!important
+
+    .EEmK6c
+        background-color: $color_rangoon_green_approx!important
+
+    .KIdUu
+        background-color: $color_rangoon_green_approx!important
+        color: $color_celeste_approx!important
+
+    .gstl_50
+        .sbdd_b
+            background-color: $color_rangoon_green_approx!important
+
+        &.sbdd_a
+            background-color: $color_rangoon_green_approx!important
+            border-color: $color_mine_shaft_approx!important
+
+        .sbsb_b li .fisb_c
+            border-color: $color_mine_shaft_approx!important
+
+
+    .PyJv1b
+        color: $color_celeste_approx!important
+
+    .ojzJac
+        color: $color_celeste_approx!important
+
+    .CCb0ac
+        color: $color_celeste_approx!important
+        a
+            color: $color_celeste_approx!important
+
+
+    .azqZUd
+        color: $color_celeste_approx!important
+
+    .knowledge-finance-wholepage__compare-item
+        color: $color_celeste_approx!important
+        .knowledge-finance-wholepage__additional-info
+            color: $color_stack_approx!important
+
+
+    .doAFBe
+        color: $color_celeste_approx!important
+
+    .aZa4J
+        color: $color_celeste_approx!important
+
+    .qfx13b
+        color: $color_celeste_approx!important
+
+    .RNiAwf
+        color: $color_celeste_approx!important
+
+    .eskLAf
+        color: $color_celeste_approx!important
+
+    .wx62f
+        color: $color_stack_approx!important
+
+    .wfbQZb
+        color: $color_stack_approx!important
+
+    .kVLSDc
+        color: $color_stack_approx!important
+
+    .TNcMZc
+        color: $color_stack_approx!important
+
+    .E4K4Td
+        color: $color_stack_approx!important
+
+    .WuDkNe
+        color: $color_stack_approx!important
+
+    .QOsNac
+        border-color: $color_mine_shaft_approx!important
+
+    .tiM5gc
+        border-color: $color_mine_shaft_approx!important
+
+    .BBHxge
+        border-color: $color_mine_shaft_approx!important
+
+    .BwZUW
+        border-color: $color_mine_shaft_approx!important
+
+    .yW8WD
+        border-color: $color_mine_shaft_approx!important
+
+    .VDl3z
+        color: $color_curious_blue_approx!important
+
+    .JwgTNb
+        color: $color_curious_blue_approx!important
+
+    .LTTD0
+        color: $color_curious_blue_approx!important
+
+    .u8H8Fd
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 1px 0 $color_mine_shaft_approx
+        border-color: $color_mine_shaft_approx!important
+
+    .bKi57NPaiJ5__standalone-carousel
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .px4tKd
+        color: $color_celeste_approx!important
+
+    .amFhOb
+        color: $color_celeste_approx!important
+
+    .fHujJ
+        color: $color_chateau_green_approx!important
+
+    .YPgUJe
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: none!important
+
+    .imspo_mt__match-sc
+        color: $color_celeste_approx!important
+
+    .YIikAd
+        color: $color_celeste_approx!important
+
+    .gnhc
+        color: $color_celeste_approx!important
+
+    .st-hc
+        color: $color_celeste_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .imspo_mt__pm-inf
+        color: $color_celeste_approx!important
+
+    .imso_mh__tm-nm
+        color: $color_celeste_approx!important
+
+    .imso_mh__vs-at-sep
+        color: $color_celeste_approx!important
+
+    .qJnhT
+        color: $color_celeste_approx!important
+        background-color: $color_shark_approx!important
+
+    .imspo_mt__lg-st-c-np
+        color: $color_celeste_approx!important
+
+    .imspo_mt__lg-st-c
+        color: $color_celeste_approx!important
+
+    .nGqo8b
+        color: $color_celeste_approx!important
+
+    .Oo683d
+        color: $color_celeste_approx!important
+
+    .imso-btst
+        color: $color_celeste_approx!important
+
+    .imso_mh__l-tm-sc
+        color: $color_celeste_approx!important
+
+    .imso_mh__r-tm-sc
+        color: $color_celeste_approx!important
+
+    .imso_gf__fh-ttl
+        color: $color_celeste_approx!important
+
+    .imso_gf__pl-nm
+        color: $color_celeste_approx!important
+
+    .imso_gf__pl-info
+        color: $color_celeste_approx!important
+
+    .liveresults-sports-immersive__lr-imso-ss-wp
+        color: $color_celeste_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .ss-ms-cs
+        color: $color_celeste_approx!important
+
+    .imso_mh__ft-mtch
+        color: $color_celeste_approx!important
+
+    .imso_mh__post-match-status
+        color: $color_celeste_approx!important
+
+    .tsp-lgh
+        color: $color_celeste_approx!important
+
+    .imso_scr_sum__nm-cell
+        color: $color_celeste_approx!important
+
+    .imso_scr_sum__score-summary-table
+        color: $color_celeste_approx!important
+
+    .imspo_tps__pnm
+        color: $color_celeste_approx!important
+
+    .imspo_tps__stat-val
+        color: $color_celeste_approx!important
+
+    .S7TGef
+        color: $color_celeste_approx!important
+
+    .BpGBNe
+        color: $color_celeste_approx!important
+
+    .imspo_mt__cmd
+        color: $color_stack_approx!important
+
+    .escM3kbeJJz__dlg-c
+        color: $color_stack_approx!important
+
+    .SXBRcc
+        color: $color_stack_approx!important
+
+    .SXRxaf
+        color: $color_stack_approx!important
+
+    .imso_gf__xtxt
+        color: $color_stack_approx!important
+
+    .liveresults-sports-immersive__lr-imso-ss-wp-dp
+        color: $color_stack_approx!important
+
+    .lr-imso-ss-wdt
+        color: $color_stack_approx!important
+
+    .ss-ms-gn
+        color: $color_stack_approx!important
+
+    .gnUJCb
+        color: $color_stack_approx!important
+
+    .imso_gf__lbl-na
+        color: $color_stack_approx!important
+
+    .tsp-ftlg
+        color: $color_stack_approx!important
+
+    .imso_scr_sum__ttl-cell
+        color: $color_stack_approx!important
+
+    .imspo_tps__hc
+        color: $color_stack_approx!important
+
+    .imspo_tps__pnb
+        color: $color_stack_approx!important
+
+    .g6Emdf
+        color: $color_stack_approx!important
+
+    .BslMec
+        color: $color_stack_approx!important
+
+    .imspo_mt__dt-t
+        color: $white!important
+
+    .section-title
+        color: $white!important
+
+    .liveresults-sports-immersive__tabless-title
+        color: $white!important
+
+    .imso_mh__tm-wlr
+        color: $white!important
+
+    .imspo_tps__st
+        color: $white!important
+
+    .imspo_mt__lt-t
+        color: $color_suva_gray_approx!important
+
+    .AqEFvb
+        color: $color_suva_gray_approx!important
+
+    .SNooqf
+        color: $color_suva_gray_approx!important
+
+    .sQjzEd
+        color: $color_suva_gray_approx!important
+
+    .HA4Wwf
+        color: $color_suva_gray_approx!important
+
+    .R1ZKVe
+        color: $color_suva_gray_approx!important
+
+    .str-dc
+        color: $color_mountain_mist_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .imso_mh__mh-bd
+        color: $color_mountain_mist_approx!important
+
+    .eGNEZ
+        border-color: $color_mine_shaft_approx!important
+
+    .MoyuKc
+        border-color: $color_mine_shaft_approx!important
+
+    .nkwcCf
+        border-color: $color_mine_shaft_approx!important
+
+    .stGnAf
+        border-color: $color_mine_shaft_approx!important
+        background-color: $color_rangoon_green_approx!important
+
+    .lr-imso-ss-bb
+        border-color: $color_mine_shaft_approx!important
+
+    .tsp-lbh
+        border-color: $color_mine_shaft_approx!important
+        background-color: $color_rangoon_green_approx!important
+
+    .tsp-lacs
+        border-color: $color_mine_shaft_approx!important
+        background-color: $color_rangoon_green_approx!important
+
+    .st-ic
+        background-color: $color_log_cabin_approx!important
+
+    .imspo_mt__vs-c
+        background: linear-gradient(to bottom,$color_mine_shaft_approx 0,$color_mine_shaft_approx 12.5%,$black_5 12.5%,$black_5 87.5%,$color_mine_shaft_approx 87.5%,$color_mine_shaft_approx 100%)!important
+
+    .jTw2d
+        background-color: $color_rangoon_green_approx!important
+
+    .imso-fpm
+        background-color: $color_rangoon_green_approx!important
+
+    .tb_c
+        background-color: $color_rangoon_green_approx!important
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: none!important
+
+    .QV2qd
+        background-color: $color_rangoon_green_approx!important
+
+    .v3Iwj88yxmA__leaderboard
+        background-color: $color_rangoon_green_approx!important
+
+    .imso_gf__gf-itm
+        background-color: $color_rangoon_green_approx!important
+
+    .CIGBuc
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .tsp-dht
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 3px 2px $color_bunker_approx!important
+        .tb_st
+            border-bottom-color: $color_fuscous_gray_approx
+
+        .tb_l:hover
+            background-color: $color_mine_shaft_approx!important
+
+
+    .str-rs-cl
+        background: $color_shark_approx!important
+
+    .nGzje
+        background-color: $color_shark_approx!important
+
+    .jjcxe
+        background-color: $color_shark_approx!important
+
+    .imso_gf__bg-on
+        background-color: $color_shark_approx!important
+
+    .imso_gf__bg-off
+        background-color: $color_mine_shaft_approx!important
+
+    .aPv3Gd
+        background-color: $color_mine_shaft_approx!important
+
+    .gnUJCb[data-s="1"]
+        background-color: $color_mine_shaft_approx!important
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 0 0 1px $color_mine_shaft_approx!important
+        color: $color_celeste_approx!important
+
+    .hfQmnb
+        background-color: $color_mine_shaft_approx!important
+
+    td
+        &.imspo_mt__rg > svg > polygon
+            fill: $color_celeste_approx!important
+
+        &:last-of-type .irc_but
+            display: none!important
+
+
+    .imspo_mff__mff-fv-lc
+        color: $color_cerulean_approx!important
+
+    .imso-loa
+        color: $color_cerulean_approx!important
+
+    .imspo_mff__mff-fk
+        color: $color_screamin_green_approx!important
+
+    .imspo_mff__mff
+        background-color: $color_shark_approx!important
+        color: $color_celeste_approx!important
+
+    .ci5JwCXEOqA__menu-item
+        background-color: $color_shark_approx!important
+        color: $color_celeste_approx!important
+        &:visited
+            background-color: $color_shark_approx!important
+            color: $color_celeste_approx!important
+
+
+    .Z8r5Gb
+        background-color: $color_shark_approx!important
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 1px 3px $color_cod_gray_approx
+
+    .Qx67ob
+        background-color: $color_shark_approx!important
+
+    .hMYuh
+        background-color: $color_shark_approx!important
+
+    .LyicNe
+        background-color: $color_shark_approx!important
+
+    .lvBKV
+        background-color: $color_shark_approx!important
+
+    .ArtaNd
+        background-color: $color_shark_approx!important
+
+    .C3jFOe
+        background-color: $color_shark_approx!important
+
+    .tsp-led
+        background-color: $color_rangoon_green_approx!important
+
+    .tsp-ldt
+        background-color: $color_rangoon_green_approx!important
+
+    .hvDKEe
+        background-color: $color_rangoon_green_approx!important
+
+    .gx824b
+        color: $color_celeste_approx!important
+
+    .Bgg9M
+        color: $color_celeste_approx!important
+
+    .mbWiBb
+        color: $color_celeste_approx!important
+
+    .Q90CF
+        background-color: $color_rangoon_green_approx!important
+
+    .lr-imso-ls-wodt
+        background-color: $color_rangoon_green_approx!important
+
+    .imso-shw
+        background-color: $color_rangoon_green_approx!important
+
+    .XpE13c
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .Hr51pb
+        .tb_st
+            border-bottom-color: $color_cerulean_approx!important
+
+        &.tb_h.TbbqEc
+            border-color: $color_mine_shaft_approx!important
+            background: $color_shark_approx!important
+
+        .tb_l:hover
+            background-color: $color_mine_shaft_approx!important
+
+
+    .lr-imso-ls-wodti
+        filter: invert(0.9)!important
+
+    .DzwRh
+        filter: invert(0.9)!important
+
+    .imso_gf__pl-hd-tl
+        background-color: transparent!important
+
+    .VbpWle
+        fill: $color_celeste_approx!important
+
+    .imso_gf__bg-to-off
+        background: $color_tundora_approx!important
+
+    .imso_gf__bg-to-on
+        background: $color_tundora_approx!important
+
+    .imso_gf__fdiv-hr
+        background: $white_5!important
+
+    .imso_gf__hdr-div
+        background: $color_mountain_mist_10_approx!important
+
+    .umKbnSRcB4Q__section-league-selector
+        background-color: $color_log_cabin_approx!important
+        border-bottom-color: $color_mine_shaft_approx!important
+
+    #div_for_graph
+        color: $color_celeste_approx!important
+        stroke: $color_mountain_mist_approx!important
+        > div
+            > div
+                > svg
+                    background: $color_heavy_metal_approx!important
+                    > g > g
+                        > rect
+                            fill: $color_fuscous_gray_approx!important
+
+                        > g > rect
+                            fill: $color_fuscous_gray_approx!important
+                            stroke: $color_celeste_approx!important
+
+
+
+                > div
+                    //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+                    box-shadow: $color_fuscous_gray_approx 0 0 0 2px inset!important
+                    > img
+                        filter: invert(.8)!important
+
+                    > table > tbody > tr
+                        > td
+                            background-color: $color_heavy_metal_approx!important
+                            border-color: $color_tundora_approx!important
+
+                        &:nth-child(1) > td
+                            color: $color_celeste_approx!important
+
+                        &:nth-child(2) > td
+                            color: $color_froly_approx!important
+
+                        &:nth-child(3) > td
+                            color: $color_screamin_green_approx!important
+
+                        &:nth-child(4) > td
+                            color: $color_cornflower_blue_approx!important
+
+
+                    > div > img
+                        filter: invert(.8)!important
+
+
+
+            &:nth-child(2) > div > div:nth-child(3)
+                background-color: $color_mine_shaft_approx!important
+                border: none!important
+                color: $color_celeste_approx!important
+
+
+
+    .tips
+        fill: $color_celeste_approx
+
+    input
+        &.query
+            background: $color_rangoon_green_approx!important
+            color: $color_celeste_approx!important
+            border-color: $color_rangoon_green_approx!important
+
+        &.checkbox
+            border-color: $color_fuscous_gray_approx!important
+            &:checked::after
+                filter: invert(0.799)!important
+
+
+
+    .ci5JwCXEOqA__content
+        background-color: $color_mine_shaft_approx!important
+
+    .ci5JwCXEOqA__content-text
+        color: $color_celeste_approx!important
+
+    h1
+        border-color: $color_mine_shaft_approx!important
+
+    .info_warning
+        background-color: #ffcccc4d!important
+
+    .p83fR
+        color: $color_gray_nurse_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .Loxgyb
+        color: $color_gray_nurse_approx!important
+        cursor: pointer!important
+
+    .bYhoud
+        color: $color_gray_nurse_approx!important
+        background-color: $color_log_cabin_approx!important
+
+    .lAqhed
+        color: $color_gray_nurse_approx!important
+
+    .spiqle
+        color: $color_gray_nurse_approx!important
+
+    .NC4yhe
+        color: $color_gray_nurse_approx!important
+
+    .Dto7td
+        color: $color_gray_nurse_approx!important
+
+    .QKLM0d
+        color: $color_gray_nurse_approx!important
+        cursor: pointer!important
+
+    .B7A8m
+        color: $color_stack_approx!important
+
+    .MGCMLc
+        color: $color_stack_approx!important
+
+    .pTGxbb
+        color: $color_stack_approx!important
+
+    .Km0Gdb
+        fill: $color_gray_nurse_approx!important
+
+    .hHVcJ
+        fill: $color_gray_nurse_approx!important
+        cursor: pointer!important
+
+    .oGE0Pb
+        background-color: $color_rangoon_green_approx!important
+
+    .cbjjnc
+        background-color: $color_log_cabin_approx!important
+
+    .iD3Ij
+        border-color: $color_mine_shaft_approx!important
+
+    .xbKDQe
+        border-color: $color_mine_shaft_approx!important
+
+    .oyUhj
+        border-color: $color_mine_shaft_approx!important
+
+    .knowledge-verticals-internetspeedtest__status-indicator
+        border-color: $color_mine_shaft_approx!important
+
+    .apRX7
+        border-color: $color_mine_shaft_approx!important
+
+    .gb_ce
+        background-color: $color_shark_approx!important
+
+    .g3VIld
+        background-color: $color_shark_approx!important
+        .qRUolc
+            color: $color_celeste_approx!important
+
+        .oJeWuf
+            color: $color_celeste_approx!important
+
+        .whsOnd
+            color: $color_celeste_approx!important
+
+        .AxOyFc
+            color: $color_celeste_approx!important
+
+
+    .CMzTNd
+        border-color: $color_mine_shaft_approx!important
+
+    .gb_Ta
+        color: $color_celeste_approx!important
+        svg
+            color: $white
+
+
+    .fDYku
+        color: $color_celeste_approx!important
+
+    .DPLgS
+        color: $color_celeste_approx!important
+
+    .F7Z4id
+        color: $color_stack_approx!important
+
+    .gwGW9e
+        border-color: $color_mine_shaft_approx!important
+        background-color: $color_mine_shaft_approx!important
+
+    .b2hzT
+        display: none!important
+
+    #fbar
+        border-color: transparent!important
+        background: transparent!important
+
+    #fsett
+        background: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .gb_Qf
+        background-color: $color_shark_approx!important
+
+    .gb_Of
+        background-color: $color_shark_approx!important
+
+    .appbar_b
+        border-color: $color_mine_shaft_approx!important
+
+    #LbWifd
+        background-color: $color_rangoon_green_approx!important
+        color: $color_celeste_approx!important
+
+    #YVHI4d
+        background-color: $color_rangoon_green_approx!important
+        color: $color_celeste_approx!important
+
+    .LbWifd
+        background-color: $color_rangoon_green_approx!important
+        color: $color_celeste_approx!important
+
+    .YVHI4d
+        background-color: $color_rangoon_green_approx!important
+        color: $color_celeste_approx!important
+
+    .wT0vNe
+        background-color: $color_rangoon_green_approx!important
+        color: $color_celeste_approx!important
+
+    .uS8HNe
+        background-color: $color_rangoon_green_approx!important
+        color: $color_chateau_green_approx!important
+
+    #solitaire-mode-dialog
+        .container
+            background-color: $color_shark_approx!important
+
+        .option
+            color: $color_celeste_approx!important
+
+
+    .Wi8Cwb
+        background-color: $color_rangoon_green_approx!important
+        color: $color_celeste_approx!important
+
+    .UaHyCe
+        background-color: $color_rangoon_green_approx!important
+
+    .llwhWe
+        background-color: $color_mine_shaft_approx!important
+
+    .w7HGmc
+        background-color: $color_mine_shaft_approx!important
+
+    .qLf5y
+        background-color: $color_rangoon_green_approx!important
+        color: $color_celeste_approx!important
+        .hFJ9Ve
+            stroke: $color_celeste_approx
+
+
+    .R1smN
+        background: $color_mine_shaft_approx!important
+
+    .oLMvxj8HcwN__selected
+        filter: invert(0.9)!important
+
+    .HekT2e
+        background-color: transparent!important
+
+    .DUon9b
+        color: $color_celeste_approx
+        background-color: transparent!important
+
+    .FiHGpc
+        background: $color_rangoon_green_approx!important
+        color: $color_celeste_approx!important
+
+    .QunXQ
+        background-color: $color_rangoon_green_approx!important
+
+    .yQOdGb
+        background-color: $color_rangoon_green_approx!important
+
+    .DRBylb
+        background-color: $color_shark_approx!important
+
+    .FSmObf
+        border-color: $color_shark_approx transparent!important
+
+    .aBRoh
+        border-top-color: transparent!important
+
+    .sW6dbe
+        color: $color_celeste_approx!important
+
+    .EikfZ
+        color: $color_celeste_approx!important
+
+    .Mw2I7
+        background-color: $color_mine_shaft_approx!important
+        border-color: $color_mine_shaft_approx!important
+        &.LPW6zd
+            background-color: $color_fuscous_gray_approx!important
+            .a4prAd
+                filter: brightness(2)!important
+
+
+        span.dtviD
+            color: $color_celeste_approx!important
+
+
+    .gb_de
+        background-color: $color_shark_approx!important
+
+    .W0Rk3
+        border-color: $color_mine_shaft_approx!important
+
+    .lBTQKc
+        border-color: $color_mine_shaft_approx!important
+
+    .etbnYc
+        border-color: $color_mine_shaft_approx!important
+
+    .Kibyc
+        filter: invert(.9)!important
+
+    #flt-sponsored-link
+        filter: invert(.9)!important
+
+    .Sjzt1b
+        background-color: transparent!important
+
+    .kFX8M
+        background-color: $color_rangoon_green_approx!important
+
+    .WyBc1
+        background-color: $color_shark_approx!important
+
+    .t70XDb
+        border-left-color: $color_mine_shaft_approx!important
+        &.uji8Lzn94dn__unselected
+            color: $color_celeste_approx!important
+
+
+    .UbmFK
+        color: $color_celeste_approx!important
+
+    .ZCLkpe
+        color: $white!important
+
+    .ndq6eb
+        background-color: $color_mine_shaft_approx!important
+
+    .uL1L0
+        background-color: $color_mine_shaft_approx!important
+
+    .Yhekq
+        background-color: $color_rangoon_green_approx
+        border-color: $color_mine_shaft_approx
+
+    [class*='gws-csf-metronome__mtn-bar']
+        background: transparent!important
+
+    .act-tim-fs-cnt
+        border-color: $color_mine_shaft_approx!important
+        &:-webkit-full-screen
+            background-color: $color_rangoon_green_approx!important
+
+
+    .act-tim-txt-cnt
+        color: $white!important
+
+    .act-inactive-tab
+        .act-inactive-timer-icon
+            filter: invert(.9)!important
+
+        .act-inactive-stopwatch-icon
+            filter: invert(.9)!important
+
+
+    .fE5Rge
+        @extend %extend_19
+        &:hover
+            @extend %extend_20
+
+
+    .Ak3kIe
+        @extend %extend_19
+        &:hover
+            @extend %extend_20
+
+
+    .whsOnd
+        color: $color_celeste_approx!important
+
+    .fKz7Od
+        filter: invert(.9)!important
+
+    .i9lrp
+        background-color: $color_mine_shaft_approx!important
+
+    .wob_t
+        color: $color_stack_approx !important
+
+    .LUnGP
+        color: $color_celeste_approx
+
+    .rzb2cc
+        color: $color_celeste_approx
+
+    .download__panel
+        background-color: $color_rangoon_green_approx!important
+
+    .nav-dark
+        .header
+            background-color: $color_rangoon_green_approx!important
+            &:before
+                background-color: $color_rangoon_green_approx!important
+
+
+        nav a
+            color: $color_celeste_approx!important
+            &:visited
+                color: $color_celeste_approx!important
+
+
+
+    #maia-footer-local
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+        .maia-cols.first
+            border-color: $color_mine_shaft_approx!important
+
+
+    #maia-footer-global
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .backup-page
+        .sync
+            background-color: $color_rangoon_green_approx!important
+
+        &.win .about__hero
+            background-color: $color_rangoon_green_approx!important
+
+        &.linux .about__hero
+            background-color: $color_rangoon_green_approx!important
+
+        &.cros .about__hero
+            background-color: $color_rangoon_green_approx!important
+
+
+    .eula-modal
+        background-color: $color_rangoon_green_approx!important
+
+    .lockup-brand
+        color: $white!important
+
+    .signature-wrapper
+        display: none!important
+
+    .sbdd_a[dir=ltr]
+        .sbsb_j
+            display: none!important
+
+        .sbpqs_b
+            display: none!important
+
+
+    .irc_ft
+        display: none!important
+
+    .rmd_ft
+        display: none!important
+
+    #ab_ctls
+        display: none!important
+
+    .exycls
+        display: none!important
+
+    .cdr_cls
+        display: none!important
+
+    .cdr_ttl
+        display: none!important
+
+    #_x9b
+        display: none!important
+
+    .nwd
+        display: none!important
+
+    ._vOc
+        display: none!important
+
+    .kno-ftr
+        display: none!important
+        &.rhsvw
+            display: none!important
+
+
+    .duf3
+        display: none!important
+
+    ._vpj
+        display: none!important
+
+    ._jjk
+        display: none!important
+
+    #gt-ft-res
+        display: none!important
+
+    .gt-ft-promos
+        display: none!important
+
+    #select_document
+        display: none!important
+
+    #gt-res-edit
+        display: none!important
+
+    #gt-res-undo
+        display: none!important
+
+    #topstuff
+        .sh-sp__list
+            display: none!important
+
+        .sh-sp__pswtr
+            display: none!important
+
+
+    .shpd
+        display: none!important
+
+    .stp
+        display: none!important
+
+    ._mCh
+        display: none!important
+
+    #irl_r_a
+        display: none!important
+
+    ._RWp
+        display: none!important
+
+    .gt-hats
+        display: none!important
+
+    .gsc_b
+        display: none!important
+
+    ._Pdv
+        display: none!important
+
+    ::-webkit-scrollbar
+        width: 10px!important
+        height: 10px!important
+
+    ::-webkit-scrollbar-button
+        width: 0!important
+        height: 0!important
+
+    ::-webkit-scrollbar-thumb
+        background: $color_gravel_approx!important
+        border: none!important
+        //If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+        border-radius: 0!important
+        &:hover
+            background: $color_chicago_approx!important
+
+        &:active
+            background: $color_chicago_approx!important
+
+
+    ::-webkit-scrollbar-track
+        background: $color_mine_shaft_approx!important
+        border: none!important
+        //If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+        border-radius: 0!important
+        &:hover
+            background: $color_mine_shaft_approx!important
+
+        &:active
+            background: $color_mine_shaft_approx!important
+
+
+    ::-webkit-scrollbar-corner
+        background: transparent!important
+
+    *
+        scrollbar-width: thin
+        scrollbar-color: $color_mine_shaft_approx $color_rangoon_green_approx
+
+    .jhp input[type="submit"]
+        @extend %extend_1
+        &:hover
+            @extend %extend_2
+
+
+    .sbdd_a input
+        @extend %extend_1
+        &:hover
+            @extend %extend_2
+
+
+    #gbw > div > div > div.gb_yc.gb_xg.gb_R > div
+        &.gb_hb.gb_3c.gb_xg.gb_R.gb_g > div
+            &.gb_rb.gb_fa.gb_g > div.gb_Eb > div:nth-child(1) > a
+                @extend %extend_1
+                &:hover
+                    @extend %extend_2
+
+
+            &.gb_Kc.gb_jb.gb_xg.gb_R > div
+                &.gb_pb
+                    border-bottom-color: $color_shark_approx!important
+
+                &.gb_qb
+                    border-bottom-color: $color_mine_shaft_approx!important
+
+
+
+        &.gb_Hc.gb_3c.gb_R.gb_Ic.gb_g > div.gb_Kc > div
+            &.gb_pb
+                border-bottom-color: $color_shark_approx!important
+
+            &.gb_qb
+                border-bottom-color: $color_mine_shaft_approx!important
+
+
+
+    .minidiv .sfbg
+        background: $color_shark_approx!important
+
+    .w8qArf .fl
+        color: $color_gray_nurse_approx!important
+
+    .sbct:first-child
+        .sbtc
+            border-color: $color_bunker_approx!important
+
+        .suggestions-inner-container
+            border-color: $color_hunter_green_approx!important
+
+
+    #tsf > div:nth-child(2) > div > div.UUbT9 > div.aajZCb > a
+        visibility: hidden!important
+        display: none!important
+
+    .vdLsw span
+        visibility: hidden!important
+        display: none!important
+
+    .FPFGmf > .znIWoc
+        &:after
+            border-color: $color_mine_shaft_approx!important
+
+        &:only-child:before
+            border-color: $color_mine_shaft_approx!important
+
+
+    .vR13fe[role="button"]:hover
+        background-color: $color_mine_shaft_approx!important
+
+    .vR13fe[role="link"]:hover
+        background-color: $color_mine_shaft_approx!important
+
+    .zW5vrf .to0cd
+        color: $color_silver_chalice_approx!important
+
+    #gbwa > div.gb_Kc > div
+        &.gb_pb
+            border-bottom-color: $color_shark_approx!important
+
+        &.gb_qb
+            border-bottom-color: $color_mine_shaft_approx!important
+
+
+    #gbsfw.gb_Ic
+        background: $color_mine_shaft_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .gb_da .gb_b
+        filter: invert(0.9)!important
+
+    #hdtb-more-mn a:hover
+        color: $color_gray_nurse_approx!important
+        background-color: $color_shark_approx!important
+
+    .hdtb-mn-hd:hover
+        color: $color_gray_nurse_approx!important
+
+    #hdtb-more:hover
+        color: $color_gray_nurse_approx!important
+
+    #hdtb-tls:hover
+        color: $color_gray_nurse_approx!important
+        @extend %extend_5
+
+    #hdtb-msb .hdtb-tl-sel
+        @extend %extend_5
+        &:hover
+            @extend %extend_5
+
+
+    #cdrlnk:hover
+        background-color: $color_shark_approx!important
+
+    .TbwUpd a.fl
+        color: $color_curious_blue_approx!important
+
+    #_bGc > i
+        color: $color_alto_approx!important
+
+    .bc a:link
+        color: $color_alto_approx!important
+
+    .st.s.std em
+        color: $color_silver_chalice_approx!important
+
+    #brs .med
+        color: $color_gray_nurse_approx!important
+
+    .mblink:visited
+        color: $color_amethyst_approx
+
+    #foot #navcnt .cur
+        color: $color_gray_nurse_87_approx!important
+
+    ._ayg span
+        filter: invert(1)
+
+    ._Jxg span
+        filter: invert(1)
+
+    .action-menu-item:hover
+        background-color: $color_mine_shaft_approx
+
+    .irc_rimask.irc_rist
+        outline: 2px solid $color_curious_blue_approx!important
+
+    ._ZR[href]:hover
+        color: $color_curious_blue_approx!important
+        span
+            color: $color_curious_blue_approx!important
+
+
+    .irc_but:hover
+        color: $color_curious_blue_approx!important
+
+    #sl0:hover
+        background: $color_guardsman_red_approx!important
+
+    #sl1:hover
+        background: $color_west_side_approx!important
+
+    #sl2:hover
+        background: $yellow!important
+
+    #sl3:hover
+        background: $color_green_approx!important
+
+    #sl4:hover
+        background: $color_robins_egg_blue_approx!important
+
+    #sl5:hover
+        background: $blue!important
+
+    #sl6:hover
+        background: $color_royal_purple_approx!important
+
+    #sl7:hover
+        background: $color_carnation_pink_approx!important
+
+    #sl8:hover
+        background: $white!important
+
+    #sl9:hover
+        background: $color_mountain_mist_approx!important
+
+    #sl10:hover
+        background: $black!important
+
+    #sl11:hover
+        background: $color_bull_shot_approx!important
+
+    .eg084e .NDcgDe
+        background-color: $color_tundora_approx!important
+        border-color: $color_fuscous_gray_approx!important
+        &:hover
+            background-color: $color_fuscous_gray_approx!important
+
+        span
+            color: $color_silver_chalice_approx!important
+
+
+    .irc_land .irc_sep
+        background-color: $color_fuscous_gray_approx!important
+
+    #irc_ccbc > svg
+        > circle
+            stroke: $color_mine_shaft_approx!important
+            fill: $color_mine_shaft_approx!important
+
+        > polygon
+            fill: $color_celeste_approx!important
+            stroke: $color_celeste_approx!important
+
+
+    .nJGrxf.FnqxG
+        color: $color_tapa_approx!important
+
+    .p1gTQb span
+        color: $color_celeste_approx!important
+
+    .rg_bb_i:after
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: $black_40 0 2px 7px!important
+
+    .r-iDg_0RU_KyPQ > ._xdb > .fl
+        color: $color_stack_approx!important
+
+    ._Fpi ._uii
+        color: $color_stack_approx!important
+
+    ._gee .fl
+        color: $color_stack_approx!important
+
+    .u2sJ0e .lA0GG
+        color: $color_stack_approx!important
+
+    ._O8i > .rhsvw._wD > ._Z3 > .ellip._tX._Qqb
+        color: $color_curious_blue_approx!important
+
+    .mod._tN:nth-of-type(2) > div > ._O8i > .rhsvw._wD > ._Z3 > .ellip._tX._Qqb
+        color: $color_curious_blue_approx!important
+
+    .xTXVLb.ugc-sel .WKrsIc
+        color: $color_chateau_green_approx!important
+
+    .dfOive.ugc-sel .WKrsIc
+        color: $color_alizarin_crimson_approx!important
+
+    .rreh .BbbuR
+        color: $color_celeste_87_approx!important
+
+    .scrt tr td
+        border-color: $color_mine_shaft_approx!important
+
+    ._G4n td
+        border-color: $color_mine_shaft_approx!important
+
+    .j9AJ5d li
+        border-color: $color_mine_shaft_approx!important
+
+    .wlqJjf.gws-local-riddler__banner-shown
+        border-color: $color_mine_shaft_approx!important
+
+    .jktSrf td
+        border-color: $color_mine_shaft_approx!important
+
+    .iT3aZd + div
+        border-color: $color_mine_shaft_approx!important
+
+    .i4J0ge > div > div > div
+        border-color: $color_mine_shaft_approx!important
+
+    .juTIF .tb_l
+        border-left-color: $color_mine_shaft_approx!important
+
+    .xTick line
+        stroke: $color_mine_shaft_approx!important
+
+    .rhstc3 ._cgc
+        color: $color_stack_approx!important
+
+    .kno-fb-ctx._mr > ._xdb > .fl
+        color: $color_stack_approx!important
+
+    .r-i96jUJVHUvrI.kno-rdesc
+        color: $color_tapa_approx!important
+
+    ._wtf svg
+        filter: invert(0.5)!important
+
+    .tPhRLe span
+        filter: invert(.9)!important
+
+    .xpdxpnd > div:nth-of-type(2) > g-img
+        filter: invert(.895)hue-rotate(190deg)!important
+
+    ._Y0c td
+        color: $color_stack_approx!important
+
+    ._OJ li
+        border-color: $color_mine_shaft_approx!important
+
+    .fac-ch .pclose rect
+        fill: $color_shark_approx!important
+
+    .yTick line
+        stroke: $color_mine_shaft_approx!important
+
+    .FfKHB .KbpByd
+        color: $color_curious_blue_approx!important
+
+    #rcnt [role=button]:hover
+        stroke: $white!important
+        color: $white_70
+        color: $color_royal_blue_approx
+
+    ._Rtn div
+        color: $white_54!important
+
+    ._DLu:focus
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: none!important
+
+    g-more-button > g-fab
+        background-color: $black_90!important
+        border-color: transparent!important
+
+    .Lu0opc.eSq3C:hover g-fab
+        background-color: $black_100!important
+        color: $white!important
+
+    .YsiKr:hover
+        background-color: $black_100!important
+        color: $white!important
+
+    .rllt__details > div
+        color: $color_stack_approx!important
+
+    .EBe2gf span
+        filter: invert(.9)!important
+
+    .uMdZh:hover
+        background-color: $color_mine_shaft_approx!important
+
+    .LXtP0 .ZXb90b
+        background: transparent!important
+        color: $color_celeste_approx!important
+
+    .cu-container .mnr-c
+        background-color: $color_rangoon_green_approx!important
+
+    .CNf3nf .PUDfGe
+        filter: invert(1)!important
+
+    .Xz5tfb.fAwjXaCTMo5__visible
+        background-color: $black!important
+
+    .yvg0ob span
+        background: $color_rangoon_green_approx!important
+        color: $color_celeste_approx
+
+    .gFL1Fb > div
+        background-color: $color_rangoon_green_approx!important
+
+    .pIpgAc.KZCcaf
+        color: $color_celeste_approx!important
+
+    .EDUkIb:hover
+        background-color: $color_mine_shaft_approx!important
+
+    ._W6g._Dbj
+        background: $color_rangoon_green_approx!important
+
+    #rhs_block > div.g.rhsvw.kno-kp.mnr-c.g-blk > div.kp-blk.knowledge-panel.Wnoohf.OJXvsb > div > div.ifM9O > div:nth-child(n) > div:nth-child(n) > div > div > div
+        stroke: none!important
+
+    .kxbcl .kxbc:hover
+        color: $color_stack_approx!important
+
+    .lx_ctl .ksb.ab_button
+        color: $color_pumice_approx!important
+        border: 1px solid transparent
+
+    ._GCg:hover
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 3px 10px 0 $black_30, 0 0 10px 4px $black_15!important
+
+    ._uqh._jAg
+        background: $color_cod_gray_approx!important
+
+    .gb_wc:not(:last-child)
+        border-color: $color_mine_shaft_approx!important
+
+    .pb-tgt-td textarea
+        border-color: $color_mine_shaft_approx!important
+        background: $color_mine_shaft_approx!important
+
+    .main-header.long-text
+        .contribute-target
+            color: $color_gray_nurse_approx!important
+            background-color: transparent!important
+
+        .trans-verified-button
+            filter: invert(.9)!important
+
+        .results-container:not(.empty) .placeholder
+            color: $color_gray_nurse_approx!important
+
+        .result-dict-wrapper .translation
+            color: $color_gray_nurse_approx!important
+
+        #st-buttons .jfk-button
+            color: $color_gray_nurse_approx!important
+
+        .result .unstarred > .jfk-button-img
+            filter: invert(.9)!important
+
+        .copybutton .jfk-button-img
+            filter: invert(.9)!important
+
+        .ttsbutton-res .jfk-button-img
+            filter: invert(.9)!important
+
+
+    .loading-or-translating-file-section .translating-file-caption
+        color: $color_gray_nurse_approx!important
+
+    .trans-listen-button .jfk-button-img
+        filter: invert(1)!important
+
+    .speech-button .jfk-button-img
+        filter: invert(1)!important
+
+    .clear-button .jfk-button-img
+        filter: invert(1)!important
+
+    .copy-button .jfk-button-img
+        filter: invert(1)!important
+
+    .trans-swap-button .jfk-button-img
+        filter: invert(1)!important
+
+    .prev-button .jfk-button-img
+        filter: invert(1)!important
+
+    .next-button .jfk-button-img
+        filter: invert(1)!important
+
+    .big-clear-button .jfk-button-img
+        filter: invert(1)!important
+
+    .share-button .jfk-button-img
+        filter: invert(1)!important
+
+    .jfk-tooltip-arrowdown .jfk-tooltip-arrowimplbefore
+        border-color: $color_mine_shaft_approx transparent!important
+
+    .jfk-tooltip-arrowup .jfk-tooltip-arrowimplbefore
+        border-color: $color_mine_shaft_approx transparent!important
+
+    #trans-onebar-feedback > a > span
+        color: $color_silver_approx!important
+
+    .stt__tool ._ahq
+        @extend %extend_11
+
+    .goog-flat-menu-button-hover .goog-flat-menu-button-dropdown
+        border-color: $white transparent!important
+
+    #gt-sl-gms-menu .goog-menuitem-group .goog-option-selected
+        background: $color_rangoon_green_approx!important
+        color: $color_bon_jour_approx!important
+
+    #gt-tl-gms-menu .goog-menuitem-group .goog-option-selected
+        background: $color_rangoon_green_approx!important
+        color: $color_bon_jour_approx!important
+
+    .goog-option-selected .goog-menuitem-content
+        color: $color_bon_jour_approx!important
+
+    #tw-target-text > span
+        color: $color_nobel_approx!important
+
+    .gb_Qe.gb_Uc svg
+        filter: invert(.9)!important
+
+    #itamenu > span > div > a.ita-kd-icon-button.ita-kd-inputtool-icon.ita-kd-small.ita-kd-left > span
+        filter: brightness(2)!important
+
+    .ita-kd-icon-button.ita-kd-selected
+        &.ita-kd-dropdown
+            background: $color_mine_shaft_approx!important
+
+        &.ita-kd-inputtool-icon
+            background: $color_mine_shaft_approx!important
+
+
+    .vk-cap.vk-sf-b
+        filter: invert(1)!important
+
+    .ita-hwt-ltr .ita-hwt-grip
+        filter: invert(.895)!important
+
+    .pbexp-button .jfk-button-img
+        filter: invert(.895)!important
+
+    .pbdel-button .jfk-button-img
+        filter: invert(.895)!important
+
+    .pbback-button .jfk-button-img
+        filter: invert(.895)!important
+
+    .pb-sw .jfk-button-img
+        filter: invert(.895)!important
+
+    canvas.ita-hwt-canvas
+        cursor: url(https://i.imgur.com/sjZV2eI.png) 0 10,auto!important
+
+    .e_md #gt-pb-sb
+        color: $color_celeste_approx!important
+
+    .alt-menu .gt-edit-menuitem
+        background: $color_cornflower_blue_approx
+        color: $black!important
+
+    #contribute-target.short_text
+        color: $color_gray_nurse_approx!important
+
+    .trans-pb-button .jfk-button-img
+        filter: invert(.5)brightness(2)!important
+
+    .displaying-saved-page .phrasebook-page
+        background-color: $color_mine_shaft_approx!important
+
+    .src-tts .jfk-button-img
+        filter: invert(.9)!important
+
+    .clear .jfk-button-img
+        filter: invert(.9)!important
+
+    .swap > .jfk-button-img
+        filter: invert(.9)!important
+
+    .ttsbutton-res .jfk-button-img
+        filter: invert(.9)!important
+
+    .copybutton .jfk-button-img
+        filter: invert(.9)!important
+
+    .gb_Dc:not(:last-child)
+        border-color: $color_mine_shaft_approx!important
+
+    .gb_Hc:not(:last-child)
+        border-color: $color_mine_shaft_approx!important
+
+    .gb_Oc:not(:last-child)
+        border-color: $color_mine_shaft_approx!important
+
+    .gendered-translations .result-dict-wrapper:not(:last-of-type)::after
+        border-color: $color_tundora_approx!important
+
+    .detect_language .language_list_item
+        color: $color_celeste_approx!important
+
+    .result-dict-wrapper .translation
+        color: $color_celeste_approx!important
+
+    #st-buttons .jfk-button
+        color: $color_celeste_approx!important
+
+    .gb_Wa svg
+        color: $color_celeste_approx!important
+
+    .source-transliteration-container .transliteration-content
+        color: $color_silver_chalice_approx!important
+
+    .lr-fy-ub.lr-fy-in
+        @extend %extend_18
+
+    .lr-fy-ol .lr-fy-dd
+        border-color: $color_mountain_mist_approx transparent
+
+    #lr-fy-ofl > div > div.eiuJYe.lr-fy-eq-elem > div.lr-fy-eq-elem.lr-fy-eq-add
+        background-color: transparent!important
+
+    .rllt__action-button:active
+        background-color: $color_baltic_sea_approx!important
+
+    .rllt__link:active
+        background-color: $color_baltic_sea_approx!important
+
+    .cMjHbjVt9AZ__button:active
+        background-color: $color_baltic_sea_approx!important
+
+    .goog-slider li
+        color: $color_pumice_approx!important
+
+    .goog-slider-horizontal .goog-slider-scale
+        border-color: $color_fuscous_gray_approx!important
+
+    .mitem:hover
+        background-color: $color_mine_shaft_approx!important
+
+    .TnvOCe:hover
+        background: $color_mine_shaft_approx!important
+
+    .Ulgu9 .MocG8c.KKjvXb
+        color: $color_pumice_approx!important
+
+    #gko-sp.gko-open
+        border-color: $color_mine_shaft_approx!important
+
+    .gko-itms-e .gko-i
+        border-color: $color_mine_shaft_approx!important
+
+    #rso .psgi
+        border-color: $color_mine_shaft_approx!important
+
+    .sh-gs__rs-sl:hover
+        background: $black_20!important
+
+    .gko-cl.gko-sn-d.modal-dialog > .modal-dialog-buttons > button:nth-of-type(2)
+        background: $color_rangoon_green_approx!important
+        color: $color_stack_approx!important
+
+    .modal-dialog-buttons button
+        &:hover
+            border: 1px solid $color_mine_shaft_approx!important
+
+        &:active
+            border: 1px solid $color_mine_shaft_approx!important
+
+
+    ._-b9 a
+        border-color: $color_mine_shaft_approx!important
+
+    .gko-rs-current .gko-rs-sl-cm
+        filter: invert(1)!important
+
+    .pspo-popout .gko-add .gko-a-lbl
+        color: $color_nobel_approx!important
+
+    ._-fV b
+        color: $color_gray_nurse_approx
+
+    ._-ey b
+        color: $color_celeste_approx!important
+
+    .spons-res#os-sellers-content
+        border-color: $color_mine_shaft_approx!important
+
+    .mGutte a
+        border-color: $color_mine_shaft_approx!important
+
+    ._-jk._-ji .sh-va__vp-inner-color
+        border-color: $color_mine_shaft_approx!important
+
+    .gDcsOd.s4ihlb .LXZCld
+        border-color: $color_mine_shaft_approx!important
+
+    .CX5tRe .LXZCld
+        border-color: $color_fuscous_gray_approx!important
+
+    .ONmnr:hover .LXZCld
+        border-color: $color_fuscous_gray_approx!important
+
+    .section-inner h3
+        color: $color_celeste_approx!important
+
+    .cuLox b
+        color: $color_celeste_approx!important
+
+    .bb-offer:hover
+        background-color: $color_mine_shaft_approx!important
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: 0 0 7px 0 $color_woodsmoke_approx!important
+        .bb-price
+            color: $white!important
+
+
+    .ChlgHf .HnYYW
+        background-color: $color_rangoon_green_approx!important
+        color: $color_celeste_approx!important
+
+    .jtEFhd .KYeOtb
+        color: $color_celeste_approx!important
+        &:link
+            color: $color_celeste_approx!important
+
+        &:visited
+            color: $color_celeste_approx!important
+
+
+    .iF8z4d td
+        color: $color_celeste_approx!important
+        border-color: $color_mine_shaft_approx!important
+
+    .fw-price-nc.IsqQVc
+        color: $color_celeste_approx!important
+
+    #sh_uid_0 > g-tabs > div > div > a
+        border-color: $color_curious_blue_approx!important
+
+    .imso-btte.imso-btttbd
+        color: $color_celeste_approx!important
+
+    #sports-app > div.iDYYme.iwDak14M0E6Y-WJhYXr2KTgo.OiT5Ue.r-i3edUuRKC0IU > div.imso-loa.imso-lhof.QMSMXe.Wrsj9b > div > div > div
+        &.GLbw8e.imso-ani > div > div.S9Uogc > div.ofy7ae
+            color: $white!important
+
+        &.S2ILnf.nCzB3b > span
+            color: $white!important
+
+
+    .m114nf.fAwjXaCTMo5__visible
+        background-color: #000000b3!important
+
+    .imso-hov:hover
+        background-color: $color_mine_shaft_approx!important
+
+    .tsp-hbd:hover
+        background-color: $color_mine_shaft_approx!important
+
+    .zDBTmf > div
+        background-color: $color_rangoon_green_approx!important
+
+    #ires .Hr51pb .tb_l
+        color: $color_celeste_approx!important
+
+    .axis text
+        fill: $color_celeste_approx
+
+    #query > div.query_dcs_line > select
+        background-color: $color_rangoon_green_approx!important
+        border-color: $color_rangoon_green_approx!important
+        color: $color_celeste_approx!important
+
+    #container > center
+        &:nth-child(42) > table > tbody > tr > td
+            background-color: $color_shark_approx!important
+            border: 1px solid $color_mine_shaft_approx!important
+
+        &:nth-child(75) > table > tbody > tr > td
+            background-color: $color_shark_approx!important
+            border: 1px solid $color_mine_shaft_approx!important
+
+        &:nth-child(112) > table > tbody > tr > td
+            background-color: $color_shark_approx!important
+            border: 1px solid $color_mine_shaft_approx!important
+
+
+    .gb_lc svg
+        color: $white
+
+    .Rj2Mlf:not(:disabled)
+        border-color: $color_mine_shaft_approx!important
+        background-color: $color_mine_shaft_approx!important
+
+    .VfPpkd-LgbsSe-OWXEXe-INsAgc:disabled
+        border-color: $color_fuscous_gray_35_approx
+        color: $color_fuscous_gray_35_approx
+
+    .KT6Tgd .CxtIIb[aria-selected=true]
+        background-color: $color_alto_approx!important
+        filter: invert(.8)!important
+
+    .fmulti #fsl
+        display: none!important
+
+    #footer a
+        color: $color_storm_dust_approx!important
+
+    .cih3D .mhPjTc
+        background-color: $color_rangoon_green_approx!important
+        color: $color_chateau_green_approx!important
+
+    .upnG2b h2
+        color: $color_celeste_approx!important
+
+    .uBQC5b g-raised-button
+        color: $color_celeste_approx!important
+
+    .dLXLrf .byDAwb
+        border-color: $color_celeste_approx transparent!important
+
+    .het5x .m6cn6
+        background-color: $color_mine_shaft_approx!important
+        .b3CYFf
+            color: $color_celeste_approx!important
+
+        .nm8ICe
+            filter: invert(0.8)hue-rotate(150deg)!important
+
+
+    .ZfSAad .m6cn6
+        .b3CYFf
+            color: $color_celeste_approx!important
+
+        .nm8ICe
+            filter: invert(0.8)hue-rotate(150deg)!important
+
+
+    .k9GNzc .dEPbOe
+        color: $color_chateau_green_approx!important
+
+    #rg_s > div > a
+        background-color: transparent!important
+
+    li.sbsb_c:first-child
+        border-color: $color_mine_shaft_approx!important
+
+    .lDtMlf .flt-input
+        border-color: $color_mine_shaft_approx!important
+        background-color: $color_shark_approx!important
+        color: $color_celeste_approx!important
+
+    #act-timer-section > div > div > div
+        background-color: $color_rangoon_green_approx!important
+
+    #act-stopwatch-section > div > div > div
+        background-color: $color_rangoon_green_approx!important
+
+    .act-tab-link.act-inactive-tab:hover
+        color: $white!important
+
+    .act-timer-section .act-tim-paused .act-tim-txt-cnt
+        border-bottom-color: $color_mine_shaft_approx!important
+
+    .act-btn-row.act-tim-btn-cnt
+        border-color: $color_storm_dust_approx!important
+
+    .act-tim-digit.act-tim-cursor
+        border-color: $color_storm_dust_approx!important
+
+    .act-tim-mute-lbl img
+        filter: invert(.9)!important
+
+    .act-tim-unmute-lbl img
+        filter: invert(.9)!important
+
+    .act-tim-fullscreen-lbl img
+        filter: invert(.9)!important
+
+    .act-tim-cancel-fullscreen-lbl img
+        filter: invert(.9)!important
+
+    .BwGU8e:focus
+        //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+        box-shadow: none!important
+
+    .dDoNo.vk_bk
+        color: $color_stack_approx !important
+
+    .maia-locales select
+        background: $color_mine_shaft_approx!important
+        color: $color_celeste_approx!important
+        border: 1px solid $color_mine_shaft_approx!important
+        padding: 2px!important
+
+    .sbsb_c[dir=ltr] .sbfl_a
+        display: none!important
+
+    #pnnext > span:nth-of-type(2)
+        display: none!important
+
+    ._RMl .flt-actionblock
+        display: none!important
