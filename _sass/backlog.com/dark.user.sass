@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name Backlog Dark
  * @namespace StylusThemes
- * @version 2.1.0
+ * @version 2.1.1
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/backlog.com/dark.user.css
  * @license     MIT
@@ -2580,6 +2580,10 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, pink: #c36d
     &:active svg
       fill: #2c9a7a
 
+  .comment-editor__textarea
+    &:focus
+      background-color: #2f1a06
+
   .copy-trigger:hover svg.icon, .file-upload__add-drag-area.is_drag-enter svg.icon
     fill: #2c9a7a
 
@@ -2697,6 +2701,7 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, pink: #c36d
 
   .filter-nav.-wiki-tag .filter-nav__link
     background-color: #000
+    color: #79d2c2
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05)
     &.is_active, &:hover
       background-color: #4caf93
