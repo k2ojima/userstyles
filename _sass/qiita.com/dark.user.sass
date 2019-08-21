@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Qiita Dark
  * @namespace   StylusThemes
- * @version     2.1.0
+ * @version     2.2.0
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/qiita.com/dark.user.css
  * @license     MIT
@@ -25,6 +25,9 @@
         color: white
 
     .it-MdContent
+        color: #ddd
+        th
+            background-color: #111
         p, td
             color: silver
         tr:nth-child(odd)
@@ -91,5 +94,12 @@
         &_stock-label
             color: white
 
-    .userActivityChart_stat, .newUserPageProfile_info_body, .newUserPageProfile_info_heading, .ItemLink__info, .tableList_cell p
+    .userActivityChart_stat, .newUserPageProfile_info_body, .newUserPageProfile_info_heading, .ItemLink__info, .tableList_cell p,
         color: silver
+
+    .references_header,
+    #logly-lift-widget-header > span
+        color: #ccc
+
+    .ai-User_description
+        color: #bbb
