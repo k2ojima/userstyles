@@ -1,0 +1,283 @@
+/*! ==UserStyle==
+ * @name        Pinterest Dark
+ * @namespace   StylusThemes
+ * @version     2.0.0
+ * @homepageURL https://github.com/xentok/userstyles/blob/master/pinterest.com/dark.user.css
+ * @updateURL   https://github.com/xentok/userstyles/blob/master/pinterest.com/dark.user.css
+ * @license     MIT
+ * @author       (arranged by xentok)
+ * ==/UserStyle== */
+
+@charset "utf8"
+
+@-moz-document url-prefix("https://www.pinterest.com"), regexp("^https?:\\/\\/(www|[a-z]{2})\\.pinterest\\.(com(\\.(au|mx))?|(co\\.uk)|ca|se|jp|fr|de|es|ch|dk|nz|ch|ie|pt|ru)\\/.*")
+    \:root
+    --bg1: rgb(28, 28, 28)
+    --bg1alpha: rgb(28, 28, 28, 0.86)
+    /* should match bg1 + any alpha */
+    --bg2: rgb(22, 22, 22)
+    --bgheader: rgb(34, 34, 34)
+    --bgheader_border: rgb(41, 41, 41)
+    --bgsearchbox: rgb(19, 19, 19)
+    --bgcontrol: rgb(40, 40, 40)
+    --bgcontrol_selected: rgb(150, 150, 150)
+    --bgcontrol_alpha: rgba(40, 40, 40, 0.5)
+    /* should match bgcontrol + any alpha */
+    --bgcontrol_hover: rgb(60, 60, 60)
+    --bgcontrol_border: rgb(61, 61, 61)
+    --bgpin_button: rgba(0, 0, 0, 0.66)
+    --bgfooter_button: rgba(0, 0, 0, 0.66)
+    --text0: #ddd
+    --text1: #ccc
+    --text2: #999
+    --text3: #666
+
+    html, body
+        background-color: var(--bg1) !important
+        color: var(--text2) !important
+
+    /* header and some large backgrounds */
+
+    .qJc
+        background-color: var(--bgheader) !important
+
+    /* user profile background */
+
+    .UserProfileContent [style*="background-color"]
+    background-color: var(--bg1) !important
+
+    /* user profile sticky header */
+
+    .fixedHeader
+    background-color: var(--bg1alpha) !important
+
+    /* header bottom border */
+
+    .uNu
+    border-top: 1px solid var(--bgheader_border) !important
+
+    /* text color #333 */
+
+    .pBj, .pinHashtag, .SearchBoxInput, .Typeahead .sendToEmail .title, .sharePrompt, h3[style*="color"]
+    color: var(--text1) !important
+
+    /* text color #711717 */
+
+    a, .pinWrapper .pBj
+    color: var(--text2) !important
+
+    .Typeahead
+    .socialConnect .title, &.userSelect .typeaheadName
+        color: var(--text2) !important
+
+    /* text color #8e8e8e */
+
+    .B9u
+        color: var(--text3) !important
+
+    /* text color #444 */
+
+    .AggregatedCloseupCard .pinActivityContainer .pinActivity .userActivity a
+        color: var(--text2) !important
+
+    /* closeup background */
+
+    .Closeup
+    [style*="linear-gradient"], ~ * .qJc
+        background: var(--bg1) !important
+
+    .reactCloseupScrollContainer > [style*="background-color"]
+        background: var(--bg1) !important
+
+    /* closeup shadow */
+
+    .closeupContainer [style*="box-shadow: rgb(238, 238, 238) 0px 4px 4px"]
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 4px !important
+        box-shadow: none !important
+
+    /* buttons */
+
+    .gpV
+        background-color: var(--bgcontrol) !important
+
+    button
+    [style*="background-color: rgb(239, 239, 239)"], &.lightGrey
+        background-color: var(--bgcontrol) !important
+    [style*="background-color: lightgray"], [style*="background-color: rgb(226, 226, 226)"]
+        background-color: var(--bgcontrol_hover) !important
+
+    /* button hover */
+
+    /* footer buttons */
+
+    .Button.footerIcon, .App .footerButtons .nonEuPrivacyPolicy
+        background-color: var(--bgfooter_button) !important
+
+    /* popup triangle border */
+
+    .YDx.MIw[style*="stroke: rgb(239, 239, 239)"]
+        stroke: var(--bgcontrol_border) !important
+
+    /* popup triangle (inner) */
+
+    .erh.BR9
+        color: var(--bgcontrol) !important
+
+    /* popup border */
+
+    .odN
+        color: var(--bgcontrol_border) !important
+
+    /* notification item hover */
+
+    .newsHubItem
+    &:hover, &:focus
+        background-color: var(--bgcontrol_hover) !important
+
+    /* search box drop down menu */
+
+    .Typeahead
+        background-color: var(--bgcontrol) !important
+        li a:hover
+            background-color: var(--bgcontrol_hover) !important
+
+    /* search box hovered menu item */
+
+    /* circular avatar */
+    /* TODO: make this a lighter gray maybe */
+
+    .INd
+        &[style*="box-shadow"], &[style*="border: 2px solid white"]
+            box-shadow: none !important
+            border: none !important
+
+    /* empty pin */
+
+    .emptyBoard .emptyPinWrapper
+        background-color: var(--bgcontrol) !important
+
+    /* search category suggestions bar */
+
+    .SearchImprovementsBar-OuterScrollContainer
+        background: var(--bg1) !important
+
+    /* left gradient on search improvementment, and featured art collection */
+    /* TODO: too generic? */
+
+    [style*="linear-gradient(to left"]
+        background-image: linear-gradient(to left, transparent 0%, var(--bg1) 90%) !important
+
+    /* right gradient on search improvementment, and featured art collection */
+
+    [style*="linear-gradient(to right"]
+        background-image: linear-gradient(to right, transparent 0%, var(--bg1) 90%) !important
+
+    /* remove mouseover dimming of pins */
+
+    .pinWrapper [style*="background-color: rgb(0, 0, 0); opacity: 0.3"]
+        opacity: 0 !important
+
+    /* move pin mouseover background further below */
+
+    .Pin.summary .pinWrapper::before
+        z-index: -1 !important
+        background: var(--bg2) !important
+
+    /* pin mouseover surrounding background */
+
+    /* background of circular avatar (fixes anti-aliasing) */
+
+    .INd [style*="background-color: rgb(239, 239, 239)"]
+        background-color: var(--bg1) !important
+
+    /* organize board pin border */
+
+    .pinSelectionBorder
+        border-color: rgba(255, 255, 255, 0.2) !important
+        box-shadow: none !important
+        &.selected
+            border-color: #e60023 !important
+            box-shadow: none !important
+
+    /* organize board selected pin border */
+    /* TODO: make CSS variable for color? */
+
+    /* secret board icon */
+
+    [data-test-id="secretBoardIcon"] > .gfP
+        background-color: var(--bgcontrol) !important
+
+    /* search page background behind suggestion categories */
+
+    .SearchPage .qJc
+        background-color: var(--bg1) !important
+
+    /* various borders */
+
+    [style*="border-left: 1px solid rgb(216, 216, 216)"], [role="button"] [style*="2px solid white"]
+        border-color: var(--bg1) !important
+
+    /* various borders */
+
+    .Typeahead.userSelect
+    li
+        border-color: var(--bgcontrol_border) !important
+        border-color: var(--bgcontrol_border) !important
+
+    #pickerSearchField, .Modal .formFooter, .ReactModal__Content .formFooter
+        border-color: var(--bgcontrol_border) !important
+
+    /* fix white fringe on email icon */
+
+    .icon.typingEmail > em
+        filter: invert(90%) !important
+
+    /* hovered item on "new message" popup */
+
+    .Typeahead.userSelect
+        .highlighted a, a:hover, .socialConnectItem:hover
+            background-color: var(--bgcontrol_hover) !important
+
+    /* notification mini grid background */
+
+    .miniPinGridItem
+        background-color: var(--bgcontrol) !important
+
+    /* pin save category drop down */
+
+    .PinBetterSave__Dropdown
+        background-color: var(--bgcontrol) !important
+        &:hover
+            background-color: var(--bgcontrol_hover) !important
+
+    /* pin save category drop down */
+
+    /* background fade (opacity used, instead of alpha) */
+
+    .BsF
+        background-color: var(--bg1) !important
+        background-color: #000 !important
+
+    /* various popups */
+
+    .SendObjectBase, .browserButtonUpsellModal, .Modal .formFooter, .ReactModal__Content .formFooter, [data-test-id="signup"][style*="background-color"], [data-test-id="login"][style*="background-color"], .boardLinkWrapper [style*="background-color: rgb(239, 239, 239)"], .item [style*="background-color: rgb(239, 239, 239)"]
+        background-color: var(--bgcontrol) !important
+
+    /* logged out signup/login popup */
+
+    .fgH, .MDo, .HQE, .qJc [style*="border: 1px solid rgb(142, 142, 142)"]
+        border-color: var(--bgcontrol_border) !important
+
+    .BsF
+        background-color: var(--bgcontrol_selected) !important
+
+    .qJc
+        textarea
+            background-color: transparent !important
+        [style*="background-color: rgb(239, 239, 239)"]
+            background-color: var(--bgcontrol) !important
+        [style*="border: 2px dashed rgb(218, 218, 218)"]
+            border-color: var(--bgcontrol_selected) !important
+
+    .ExpandingTextArea__enabled
+        color: var(--text1) !important
