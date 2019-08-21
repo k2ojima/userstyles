@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name Backlog Dark
  * @namespace StylusThemes
- * @version 2.0.3
+ * @version 2.1.0
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/backlog.com/dark.user.css
  * @license     MIT
@@ -10,10 +10,27 @@
 
 @charset "utf8"
 
+$theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, pink: #c36d80, orange: #d89380, black: #70bfb1)
+
 @-moz-document domain("backlog.com")
   body
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) left top #222 !important
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) left top #0f0f0f !important
     color: #ccc !important
+  code, kbd, pre, samp
+    font-family: "Menlo", Consolas, "Liberation Mono", Menlo, Courier, monospace !important
+
+  a
+    color: #79d2c2
+
+  mark
+    color: #fff
+    background: #00f
+
+  fieldset
+    border: 1px solid #3f3f3f
+
+  textarea
+    border: 1px solid #333
 
   .content-footer__copyright a
     color: #888
@@ -587,6 +604,8 @@
         border-bottom: 1px solid #424242
       &:last-of-type
         border-top: 1px solid #424242
+      &__next, &__prev
+        color: #79d2c2
     .icons-table__item
       color: #ddd
       &:hover
@@ -819,23 +838,6 @@
     0%
       background-color: #080961
 
-
-  body
-    background-color: #0f0f0f
-
-  a
-    color: #00836b
-
-  mark
-    color: #fff
-    background: #00f
-
-  fieldset
-    border: 1px solid #3f3f3f
-
-  textarea
-    border: 1px solid #333
-
   body
     &.Page--find-issue-print, &.Page--login-default, &.Page--multipleIssue, &.Page--release-note, &.Page--settings-project, &.Page--settings-space, &.Page--settings-user, &.Popup--icon-chooser
       background-color: #000
@@ -922,6 +924,9 @@
 
   ._trigger-text
     color: #00836b
+
+  .project-header
+    background-color: #222
 
   .core-wrapper.-settings
     background-color: #0f0f0f
@@ -1113,6 +1118,9 @@
       box-shadow: 0 2px 10px 0 rgba(251, 255, 255, 0.35)
     .iconic-text
       color: #888
+    &.-with-text
+      ._assistive-text
+        color: #dcdcdc
 
   .icon-button--default
     border: 1px solid #525252
@@ -1280,13 +1288,13 @@
     background-color: #090909
 
   .sort
-    color: #00836b
+    color: #79d2c2
     a:hover, &:hover
-      color: #00836b
+      color: #79d2c2
       background-color: #1c1117
     &.-dropdown
       &.is_active, &:hover
-        color: #00836b
+        color: #79d2c2
       &::after
         background-color: #2c9a7a
       .sort__icon::after
@@ -1550,6 +1558,10 @@
         border: 1px solid #00836b
         box-shadow: 0 0 3px #00836b
 
+  .select2-wrapper .select2-container .select2-choice
+    color: #ddd
+    border: 1px solid #666
+    background-color: #000
   .select2-wrapper .select2-container.select2-container-multi
     &.select2-container-active .select2-choices
       border: 1px solid #00836b
@@ -1743,6 +1755,7 @@
         border: 1px solid #424242
         background-color: #0c0c0c
     pre.loom_code
+      font-family: "Menlo", Consolas, "Liberation Mono", Menlo, Courier, monospace !important
       border: 1px solid #424242
       background-color: #0a0a0a
 
@@ -2317,7 +2330,7 @@
     color: #000
 
   .calendar__button .today-button
-    color: #00836b
+    color: #79d2c2
 
   .calendar__head--row-1
     background-color: #2c9a7a
@@ -3114,7 +3127,7 @@
     &.is_new
       color: #ddd
       .Key
-        color: #00836b
+        color: #79d2c2
 
   .stream-update__content
     .file-name.is_deleted, span.update-value
@@ -3411,9 +3424,9 @@
     color: #888
 
   .wiki-page-list li a
-    color: #00836b
+    color: #6fada1
     &:hover
-      color: #00836b
+      color: #6fada1
       background-color: #1c1117
 
   .jqtree-toggler
@@ -3427,9 +3440,9 @@
 
   .jqtree-element
     .wiki-link
-      color: #00836b
+      color: #6fada1
       &:hover
-        color: #00836b
+        color: #6fada1
     .not-link
       color: #ddd
       &:hover
@@ -3625,13 +3638,22 @@
       border-top-color: #aaa
 
   .pln
-    color: #fff
+    color: #e1e1e1
+
+  .loom
+    code.prettyprint span,
+    pre.loom_code .pln,
+    >div>p>code span,
+    >p>code span
+      color: #e1e1e1 !important
+    a
+      color: #6fada1
 
   @media screen
     .str
       color: #080
     .kwd
-      color: #ff7
+      color: #c1983b
     .com
       color: #7ff
     .typ
@@ -3641,7 +3663,7 @@
     .clo, .opn, .pun
       color: #99f
     .tag
-      color: #ff7
+      color: #b3b347
     .atn
       color: #9f9
     .atv
@@ -3655,7 +3677,7 @@
     .str
       color: #f9f
     .kwd
-      color: #ff9
+      color: #c1983b
     .com
       color: #9ff
     .typ
@@ -3665,7 +3687,7 @@
     .clo, .opn, .pun
       color: #bbf
     .tag
-      color: #ff9
+      color: #b3b347
     .atn
       color: #bfb
     .atv
@@ -3684,3 +3706,24 @@
   div.sb-message a
     &:link, &:visited
       color: #000
+
+  /* Customize each theme */
+  @each $code, $color in $theme-colors
+    .theme-#{$code}
+      .data-list__link
+        color: #ddd !important
+      ._trigger-text, a,
+      .sort
+        color: $color
+      .icon-button-textlink
+        &:hover
+          color: $color
+      .sort.-dropdown
+        &:hover
+          color: $color
+      .wiki-page-list
+        li a
+          color: $color
+      @if $code == black
+        .project-nav-list__text
+          color: #cecece
