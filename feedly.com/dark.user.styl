@@ -1,0 +1,827 @@
+/* ==UserStyle==
+@name           Feedly dark Customized
+@namespace      github.com/xentok/userstyles
+@version        2.0.0
+@preprocessor   stylus
+@author         #Ahad - arranged by xentok
+@license        MIT
+@updateURL      https://raw.githubusercontent.com/xentok/userstyles/master/feedly.com/dark.user.styl
+@homepageURL    https://github.com/xentok/userstyles/
+==/UserStyle== */
+
+@-moz-document domain("feedly.com")
+    body
+        &.home
+            color #ccc!important
+    body:not(#intercom-container-body), #feedlyFrame, #feedlyPageHolderFX, #mainBarFX, #feedlyPageFX.container.centered, #feedlyPart0
+        background #2E3337!important
+    .main.site-content, .site-content, body.home.blog, body.api
+        background #fff!important
+    [src="/images/login-devices@2x
+        &.png"]
+            display none!important
+    #feedlyBanner
+        margin-top 60px!important
+    .home #feedlyPageHolderFX.fx.page-landing #feedlyPageFX, #feedlyPageHolderFX.fx.page-landing .landing .header
+        background #171B1F!important
+    .landing-old .backgrounded.under-screenshot, .section-features
+        background #171B1F!important
+        border-top-color #171B1F!important
+    #blackfriday-header
+        &::after
+            background #2E3337!important
+    .landing-old .passion.dark, #feedlyPageFX.container.centered .landing .background-accent
+        background #272B2F!important
+        border-top-color #111111!important
+        border-bottom-color #111111!important
+    .page-pro-hero
+        &::after
+            background-color #40494F!important
+    .home .col-xs-12.col-md-6 h1, #feedlyPageFX.container.centered .background-accent h2,
+    .page-pro .page-pro-footer .list-people h1,
+    .landing-old .section.top h1, .landing-old .passion.dark h1,
+    .home .col-xs-12.col-md-6 div.sub,
+    .landing-old .featureGrid .links b
+        color #fff!important
+    #feedlyPageHolderFX.fx.page-landing h2, .landing-old .backgrounded h1, .landing-old .backgrounded.under-screenshot h1,
+    .page-pro .header.row h1,
+    #feedlyPageHolderFX.fx.page-landing h2 div.sub
+        color #ddd!important
+    .landing .kicker, .landing-old .backgrounded.under-screenshot .h1Intro, .landing-old .featureGrid .links a
+        color #757575!important
+    .page-pro
+        .price-table-column
+            background-color #40494F!important
+            border-color #202020!important
+            box-shadow none!important
+            .price-table-header
+                h2
+                    color #050505!important
+    .price-table-column
+        &:nth-child(2)
+            border-top-color #2BB24C!important
+    .fx .feature .item-header, .fx .list-people .people .item-header, .landing-old .feature .label,
+    .page-pro .price-table-column .price-table-header, .page-pro .price-table-column .price-table-features b
+        color #ddd!important
+    .fx .feature .description, .fx .list-people .people .description, .landing-old .feature .description,
+    .page-pro .price-table-column .price-table-description, .page-pro .price-table-column .price-table-features
+        color #bbb!important
+    #feedlyBlocked strong,
+    .price-table-explaination
+        color #999999!important
+    #searchBarFX
+        .profile-bubble
+            .picture
+                &.placeholder
+                    background-color rgba(255,255,255,0.2)!important
+                    color #aaa!important
+            .picture[style*='background-image']
+                background-color rgba(255,255,255,0.2)!important
+                -webkit-filter grayscale(90%) invert(2%)!important
+                filter grayscale(90%) invert(2%)!important
+        .feedly-logo
+            background-color #E1DBD7!important
+        .accent
+            &.primary
+                &.small
+                    box-shadow 0 0 2px 1px rgba(0,0,0,0.3)!important
+    .fx
+        .profile-bubble-menu
+            .user
+                &.item-with-visuals
+                    background-color #333333!important
+        .entry
+            &.u0
+                background transparent!important
+                border-top 1px solid rgba(255,255,255,0.03)!important
+                &:hover
+                    background rgba(0,0,0,0.05)!important
+                .save-for-later
+                    background-color transparent!important
+                .source
+                    &:hover
+                        color #aaa!important
+            &.unread
+                &.u0
+                    .title
+                        color #ddd!important
+                &.u5
+                    .title
+                        color #ddd!important
+            &.read
+                &.u0
+                    .title
+                        color #888888!important
+                &.u5
+                    .title
+                        color #888888!important
+            &.selected
+                &.u5
+                    border-color #505050!important
+                    box-shadow 0 0 3px 1px #222222!important
+            &.u5
+                .icon[class*="md-black"]
+                    -webkit-filter invert(0)!important
+                    filter invert(0)!important
+        button
+            &.giant-mark-as-read
+                background-color #1E2428!important
+                color #aaa!important
+                border-color #1E2428!important
+                border-radius 5px!important
+                padding-left 0!important
+                padding-right 0!important
+                width 100%!important
+                &:hover
+                    background-color #131A1F!important
+        .hint
+            &.centered
+                background-color transparent!important
+                color #858585!important
+        .card
+            &.VisualTopicCard
+                box-shadow 0 0 0 1px rgba(102,102,102,0.15) inset!important
+                &:hover
+                    box-shadow 0 0 0 1px #3E4347 inset!important
+            &.SimpleTopicCard
+                border-top-color rgba(200,200,200,0.05)!important
+                &:hover
+                    color #aaa!important
+        &.fx
+            &.fx
+                .ui-Checkbox--label
+                    &::before
+                        background-color rgba(255,255,255,0.05)!important
+                        border 1px solid rgba(255,255,255,0.2)!important
+                .ui-Checkbox--input
+                    &:indeterminate
+                        & + .ui-Checkbox--label
+                            &::before
+                                background-color transparent!important
+                                border-color #2BB24C!important
+                    &:checked
+                        & + .ui-Checkbox--label
+                            &::before
+                                background-color #2BB24C!important
+                                border-color #2BB24C!important
+        .modal-overlay
+            &.is-inline
+                &.is-fading
+                    background-image -webkit-linear-gradient(top,rgba(46,51,55,0.5),#2E3337)!important
+                    background-image -moz-linear-gradient(top,rgba(46,51,55,0.5),#2E3337)!important
+                    background-image -ms-linear-gradient(top,rgba(46,51,55,0.5),#2E3337)!important
+                    background-image -o-linear-gradient(top,rgba(46,51,55,0.5),#2E3337)!important
+                    background-image linear-gradient(to bottom,rgba(46,51,55,0.5),#2E3337)!important
+    .fx .profile-bubble-menu menu,
+    .header.row .right-col .button-dropdown .popover:not([style*="margin"]) .menu,
+    .header.row .right-col .button-dropdown .popover:not([style*="margin"]) menu,
+    .menu.menu-custom,
+    #addContentPlaceholderFX .menu, .discover-search .popover, .form.add-url
+        background-color #212121!important
+    h2:not([data-uri*="category"]),
+    .fx .profile-bubble-menu .user.item-with-visuals div, .fx .profile-bubble-menu menu li,
+    .team-bubble-menu .item-header, table .item-header:not(.selected), .flexLayout .item-header, .container-flex .item-header, .user.item-with-visuals .item-header, .item-header.item-with-visuals,
+    .mark-as-read-button-group.button.secondary .popover .item,
+    .header.row .right-col .button-dropdown .menu .popover .secondary.label-radio, .header.row .right-col .button-dropdown .menu .secondary.label-radio.checked,
+    .menu.menu-custom .item:not(.danger),
+    #addContentPlaceholderFX .menu div, .discover-search .popover div, .popover .form.add-url label, .popover .form.add-url .item-header, #popupPart .popup.picker div
+        color #fff!important
+    .icon[class*="sm-black"], .icon[class*="md-black"],
+    .popover .secondary.label-radio:not(.checked),
+    .u4[class*="density"]:hover button:not(.saved):not(.primary), .u12[class*="density"]:hover button:not(.saved):not(.primary),
+    .board-tag:not(:hover) .icon.delete-tag, .chip:not(:hover)::after,
+    .item .value, .step-indicator .step.unfinished-step, .pageAction,
+    .icon-secondary.icon-fx-search-marker-ios-xs,
+    .home #feedlyPageHolderFX.fx.page-landing .landing-facet-visual img,
+    [src="/images/login-feedly-logo@2x.png"], [src="//feedly.com/images/login-feedly-logo@2x.png"], [src="/images/login-devices@2x.png"],
+    .empty-state.is-medium img:not([src="images/fx/illustrations/caught-up-v0.svg"]), .icon-fx-secured-by-stripe, .modal-notifications .badge.secondary, .modal-notifications .dots:not(.active), .p2-emptyLibrary.libraryPageWidth
+        -webkit-filter grayscale(100%) invert(88%)!important
+        filter grayscale(100%) invert(88%)!important
+    .popover img[alt="Save to boards illustration"], [src="images/pro-upgrade-buffer.png"]
+        -webkit-filter grayscale(100%) invert(88%) opacity(70%) brightness(70%)!important
+        filter grayscale(100%) invert(88%) opacity(70%) brightness(70%)!important
+    .empty-state
+        &.is-medium
+            img[src="images/fx/illustrations/caught-up-v0
+                &.svg"]
+                    -webkit-filter opacity(70%)!important
+                    filter opacity(70%)!important
+            h2
+                color #aaa!important
+            p
+                color #757575!important
+    .modal-notifications img, .SeoSignupModal__illustration
+        -webkit-filter grayscale(100%) invert(100%) opacity(70%)!important
+        filter grayscale(100%) invert(100%) opacity(70%)!important
+    .search-bar-right-col .button-icon-only, .clear-input.button-icon-only
+        background-color transparent!important
+    #searchBoxPlaceholder
+        display inline!important
+    .hercule-search
+        .fx-input
+            &.button-right
+                &.icon-left
+                    input
+                        -webkit-transition width 0.7s, color 0.4s!important
+                        -moz-transition width 0.7s, color 0.4s!important
+                        -ms-transition width 0.7s, color 0.4s!important
+                        -o-transition width 0.7s, color 0.4s!important
+                        transition width 0.7s, color 0.4s!important
+    .hercule-search .fx-input.button-right.icon-left input, #searchBarFX .hercule-search .fx-input.button-right.icon-left input
+        background-color #2E3337!important
+        color #fff!important
+    #searchBarFX .topic-list.menu.popover, #searchBoxPlaceholder .topic-list.menu.popover, .search-list.menu.popover
+        background-color #1E2428!important
+    #searchBarFX .topic-list.menu.popover .item, #searchBoxPlaceholder .topic-list.menu.popover .item, .search-list.menu.popover .item
+        color #fff!important
+    #searchBarFX, #headerBar.fixed-bar
+        background-color #1E2428!important
+        box-shadow 2px 2px 2px 0px rgba(0,0,0,0.5)!important
+    #feedlyPageHeader.discoveryPage.fixedHeader, #headerBarFX, #headerBarFX .header.row, .OrganizeTable__toolbar.sticky.container
+        background-color #3B3D3F!important
+        border-bottom 1px solid #3B3D3F!important
+        box-shadow 1px 0 0 1px transparent!important
+    #headerBarFX .header.row h1, #floatingTitleBar
+        color #fff!important
+    #feedlyPageFX.container.centered .header.row .heading, .home #feedlyTitleBar,
+    .sliderContainer .header.sticky h1,
+    .message.loading, .entriesLoadingMessage
+        color #aaa!important
+    .sliderContainer
+        .header
+            &.row
+                &.kickered
+                    .primary
+                        &.button-icon-only[title="Mark
+                            as
+                                Read"]
+                                    background-color transparent!important
+                                    border none!important
+                                    box-shadow none!important
+        .headerInfo-expanded-img
+            opacity 0.6!important
+        .slideBumper
+            div
+                &:not(:hover)
+                    background-color #F0EDEB!important
+                    opacity 1!important
+                &:hover
+                    background-color #757575!important
+        .container630
+            &.centered
+                h1
+                    .kicker
+                        color #fff!important
+                        font-weight bold!important
+                    .heading
+                        color #249540!important
+        .table-sharing
+            background rgba(0,0,0,0.05)!important
+    .mark-as-read-button-group.button.secondary, .button-dropdown button.no-border.secondary.button-icon-left, .button-dropdown button.secondary.button-icon-left[title=""]
+        border 1px solid rgba(0,0,0,0.3)!important
+    .mark-as-read-button
+        border-radius 0!important
+    .mark-as-read-button, #headerBarFX .mark-as-read-button
+        background-color #1E2428!important
+    #searchBarFX .feedly-logo,
+    .right-col .button-icon-only:not(.danger):not(.accent):not(.small) .icon, .right-col .button-icon-left:not(.danger):not(.accent):not(.small) .icon, .mark-as-read-button .button--label, .icon-toolbar-refresh-secondary.button-icon-only
+        -webkit-filter invert(100%)!important
+        filter invert(100%)!important
+    .mark-as-read-button span, .header.row .count-decoration
+        color #757575!important
+    .feedUnreadCountHint
+        color #555555!important
+        font-weight bold!important
+    h2#post-header, h2.highlight-post-title
+        color rgba(0,0,0,0.8)!important
+    #feedlyTabsHolder
+        background-color #1E2428!important
+        background-image url("https://s3.feedly.com/production/head/images/icon-feedly-white.png")!important
+    #feedlyTabs
+        background-color #1E2428!important
+        &:hover
+            &::-webkit-scrollbar-thumb
+                &:vertical
+                    background-color rgba(255,255,255,0.25)!important
+                    border 3px solid #2A2B2F!important
+        .pinButton
+            color rgba(255,255,255,0.3)!important
+            border-color rgba(255,255,255,0.1)!important
+            &:hover
+                color rgba(255,255,255,0.6)!important
+                border-color rgba(255,255,255,0.2)!important
+        .simpleUnreadCount
+            color rgba(255,255,255,0.45)!important
+        .tab
+            .selected
+                .icon
+                    &:hover
+                        opacity 1!important
+    ::-webkit-scrollbar, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-corner
+        background-color #171717!important
+    #feedlyTabs::-webkit-scrollbar, #feedlyTabs::-webkit-scrollbar-track-piece, #feedlyTabs::-webkit-scrollbar-corner
+        background-color transparent!important
+    :not(#feedlyTabs)::-webkit-scrollbar-button
+        &:vertical
+            background-color rgba(255,255,255,0.1)!important
+            &:hover
+                background-color rgba(255,255,255,0.2)!important
+    :not(#feedlyTabs)::-webkit-scrollbar-thumb
+        background-color rgba(255,255,255,0.25)!important
+        &:hover
+            background-color rgba(255,255,255,0.3)!important
+    #feedlyTabs .label, #feedlyTabs .separator, #feedlyTabs .moreHandle, .leftBarWelcome h1
+        color rgba(255,255,255,0.9)!important
+    #feedlyTabs .tab .header .label.nonEmpty, #feedlyTabs .tab .feedIndex .feedIndexTitleHolder.nonEmpty
+        color rgba(255,255,255,0.85)!important
+    #feedlyTabs .tab .header .label.empty, #feedlyTabs .tab .feedIndex .feedIndexTitleHolder.empty, .leftBarWelcome div
+        color rgba(255,255,255,0.5)!important
+    #feedlyTabs .selectorNewMarker, .empty-state.is-sidebar
+        color rgba(255,255,255,0.7)!important
+        border-color rgba(255,255,255,0.3)!important
+    #feedlyTabs .header:not(.selected):hover, #feedlyTabs .feedIndex:not(.selected):hover,
+    #feedlyTabs #integrationstab_header.tab:not(.selected):hover
+        background rgba(255,255,255,0.15)!important
+        margin-left -9px!important
+        margin-right -40px!important
+        padding-right 35px!important
+        -webkit-transition all 0.2s!important
+        -moz-transition all 0.2s!important
+        -ms-transition all 0.2s!important
+        -o-transition all 0.2s!important
+        transition all 0.2s!important
+    #feedlyTabs .header.selected, #feedlyTabs .feedIndex.selected
+        background #2E3337!important
+        border-left 9px solid #fff!important
+        margin-left -9px!important
+        margin-right -40px!important
+        padding-left 0!important
+        padding-right 40px!important
+    #feedlyTabs .tab .header.selected .label, #feedlyTabs .tab .feedIndex.selected .feedIndexTitleHolder,
+    #feedlyTabs .tab .header.selected .simpleUnreadCount, #feedlyTabs .tab .feedIndex.selected .simpleUnreadCount
+        color #2BB24C!important
+    .light #feedlyTabs .tab .icon, .light #addContentPlaceholderFX .button-icon-left:not(.primary) .icon
+        -webkit-filter invert(100%)!important
+        filter invert(100%)!important
+    .dark
+        .empty-state
+            &.is-sidebar
+                .icon
+                    -webkit-filter invert(0)!important
+                    filter invert(0)!important
+    #addContentPlaceholderFX
+        .button-icon-left
+            &:not(.primary)
+                background #242526!important
+                color #fff!important
+        .menu
+            width 268px!important
+        button
+            &.onboarded
+                border-top-color rgba(255,255,255,0.1)!important
+    .fx .entry.u0.selected, .fx .entry.u100.selected
+        border-color rgba(255,255,255,0.15)!important
+    .fx .entry.u0:hover .icon, .fx .entry.u0 .save-for-later:not(.saved)
+        -webkit-filter invert(50%)!important
+        filter invert(50%)!important
+    .fx .entry.u0 .summary,
+    .fx .entry.u0 .lessThanAnHour, .fx .entry.u0 .ago, .fx .entry.u0 .lastModified,
+    .fx .entry.u0 .source
+        color #b5b5b5!important
+    .fx .entry.u4, .fx .entry.u12
+        background-color transparent!important
+        border-color transparent!important
+    .fx .entry.selected.u4, .fx .entry.selected.u12
+        border-left-color #757575!important
+    .fx .entry.unread.u4 .title, .fx .entry.unread.u12 .title, .u4Entry .title.unread
+        color #ddd!important
+    .fx .entry.read.u4 .title, .fx .entry.read.u12 .title, .u4Entry .title.read,
+    #sideArea .item-header, .col-xl-3.xlarge-only .item-header
+        color #999!important
+    .fx .entry.u4 .summary, .fx .entry.u12 .summary, .u4Entry .summary,
+    .fx .entry.u4 .metadata, .fx .entry.u12 .metadata, .u4Entry .metadata,
+    div .metadata, span.lessThanAnHour, span.ago, span.lastModified,
+    #sideArea .item-meta, .col-xl-3.xlarge-only .item-meta
+        color #656565!important
+    div
+        .metadata
+            a
+                &:hover
+                    color #aaa!important
+    .fx .entry.u5 .metadata, .fx .entry.u5 .summary, .fx .entry.u5 .lessThanAnHour, .fx .entry.u5 .ago, .fx .entry.u5 .lastModified
+        color #656565!important
+    .inlineFrame, .floatingEntryScroller, .entryholder, .floatingEntryScroller .header
+        background-color #1E2428!important
+    .inlineFrame
+        border 1px solid rgba(0,0,0,0.15)!important
+        box-shadow 0 0 3px 0 #0C0206!important
+        .u100Entry
+            margin-left auto!important
+            margin-right auto!important
+        .entryHeader
+            .metadata
+                color #777777!important
+        .entryBody
+            max-width 100%!important
+    .entryHeader
+        a
+            color rgba(255,255,255,0.75)!important
+    .entryHeader .metadata a:hover, .inlineFrame .entryHeader .metadata a:hover, .sliderContainer .entryHeader .metadata a:hover
+        color #80C036!important
+    .entryTitle.title.read, .entryTitle.title.unread, .inlineFrame .title.read, .inlineFrame .title.unread
+        color rgba(255,255,255,0.75)!important
+    .headerInfo, .headerInfo-expanded-scroller
+        background-color #0F1214!important
+    .sliderContainer .headerInfo, .sliderContainer .headerInfo-expanded-scroller
+        border-color #111111!important
+    .headerInfo-expanded-scroller
+        section
+            color #fff!important
+            border-bottom-color #181818!important
+    .headerInfo .headerInfo-expanded-img:hover, .headerInfo-expanded-scroller section:hover
+        background-color #FAFAFA!important
+    .headerInfo-expanded-scroller section:hover, .headerInfo .headerInfo-expanded-img.icon-fx-save--active-ios-md:hover
+        background-color #050505!important
+    .headerInfo-expanded-img
+        opacity 0.8!important
+    .headerInfo-expanded-img:hover, .headerInfo-expanded-scroller section:hover .headerInfo-expanded-img
+        opacity 1!important
+    .inlineFrame .close-button, .headerInfo .headerInfo-expanded-img, .sliderContainer .slideBumper div:not(:hover)
+        -webkit-filter invert(100%)!important
+        filter invert(100%)!important
+    .headerInfo
+        .headerInfo-expanded-img
+            &.icon-fx-save--active-ios-md
+                background-color transparent!important
+    .headerInfo .headerInfo-expanded-img.icon-fx-save--active-ios-md, .headerInfo .headerInfo-expanded-img.icon-fx-save--active-ios-md:hover
+        -webkit-filter invert(0)!important
+        filter invert(0)!important
+    #popupPart
+        .popover
+            background-color #0F1214!important
+    .entryBody div, .entryBody b, .entryBody td, .webfeeds-pro-tips, .draft-editor [role="textbox"], .draft-editor .chip:not(:hover), .FeaturedEntry__sparkline__visual, .mention .keyword, .title .keyword
+        color rgba(255,255,255,0.6)!important
+    figcaption
+        color rgba(255,255,255,0.3)!important
+    .board-tag:not(:hover), .fx.organize-feeds-form .chip:not(.chip-deleteable), .chip.chip-deleteable:not(:hover)
+        color #fff!important
+        box-shadow 0 0 0 1px #404040 inset!important
+    .board-tag
+        .user
+            &.tag-label
+                -webkit-filter invert(100%)!important
+                filter invert(100%)!important
+        &:hover
+            .user
+                &.tag-label
+                    color #0BBCC9!important
+    .highlightedTerm, .mention .keyword, .title .keyword
+        background-color #40494F!important
+        box-shadow 0 -0.15rem 0 #40494F,0 0.1rem 0 #40494F!important
+    .fx-annotation-highlight, .item-highlight span
+        background-color #3F3F00!important
+        box-shadow 0 -0.3rem 0 #4F4F10,0 0.3rem 0 #3F3F00!important
+    .picture
+        &.placeholder
+            &.annotation-highlight-picture
+                color #000000!important
+    ::-moz-selection
+        background #0966D7!important
+        color #fff!important
+    .inlineFrame .u100Entry .entryBody a, .sliderContainer .u100Entry .entryBody a
+        color #FF9900!important
+        border none!important
+    .inlineFrame .entryBody a:visited, .sliderContainer .u100Entry .entryBody a:visited
+        color #FF33FF!important
+    .inlineFrame .entryBody a:hover, .sliderContainer .u100Entry .entryBody a:hover, .inlineFrame .entryBody a:visited:hover, .sliderContainer .u100Entry .entryBody a:visited:hover
+        color #00CCFF!important
+        -webkit-transition background 0.25s cubic-bezier(0.25,0.1,0.25,1) 0s,color 0.25s cubic-bezier(0.25,0.1,0.25,1) 0s!important
+        -moz-transition background 0.25s cubic-bezier(0.25,0.1,0.25,1) 0s,color 0.25s cubic-bezier(0.25,0.1,0.25,1) 0s!important
+        -ms-transition background 0.25s cubic-bezier(0.25,0.1,0.25,1) 0s,color 0.25s cubic-bezier(0.25,0.1,0.25,1) 0s!important
+        -o-transition background 0.25s cubic-bezier(0.25,0.1,0.25,1) 0s,color 0.25s cubic-bezier(0.25,0.1,0.25,1) 0s!important
+        transition background 0.25s cubic-bezier(0.25,0.1,0.25,1) 0s,color 0.25s cubic-bezier(0.25,0.1,0.25,1) 0s!important
+    .inlineFrame .entryBody h1, .sliderContainer .entryBody h1
+        color rgba(255,255,255,0.75)!important
+    .inlineFrame .entryBody h2, .sliderContainer .entryBody h2
+        color rgba(255,255,255,0.75)!important
+    .inlineFrame .entryBody h3, .sliderContainer .entryBody h3, .inlineFrame .entryBody h4, .sliderContainer .entryBody h4
+        color rgba(255,255,255,0.75)!important
+    .inlineFrame .entryBody img, .inlineFrame .entryBody img[style*="display: block;"], .pinable, .youtubePlaceholder, iframe,
+    .sliderContainer .entryBody img, .sliderContainer .entryBody img[style*="display: block;"], .sliderContainer .pinable, .sliderContainer .youtubePlaceholder, .sliderContainer iframe
+        border-color rgba(0,0,0,0.1)!important
+    a.fx-button.secondary.full-width.visitWebsiteButton,
+    .showFullArticleBtn.fx-button.secondary.full-width, .showArticlePreviewBtn.fx-button.secondary.full-width,
+    .fx .Salience__buttons .ButtonToggle.dwYqbp
+        color #a7a7a7!important
+        border-color rgba(255,255,255,0.1)!important
+    a.fx-button.secondary.full-width.visitWebsiteButton:hover,
+    .showFullArticleBtn.fx-button.secondary.full-width:hover, .showArticlePreviewBtn.fx-button.secondary.full-width:hover,
+    .fx .Salience__buttons .ButtonToggle.dwYqbp:hover
+        color #bbb!important
+        border-color rgba(255,255,255,0.3)!important
+    .tabs
+        border-bottom 1px solid rgba(255,255,255,0.04)!important
+        .item
+            &:not(.active):hover
+                color #EEEEEE!important
+                border-bottom 2px solid #555555!important
+    .herculeKicker, .discover .description
+        color #ddd!important
+    .discover .fx-input.button-right.icon-left, .discover .fx-input.button-right.icon-left input, .organize input#filterByFeedName,
+    .TextInput.DeluxeTextInput__TextInput.TextInput--large, .EnterpriseGroupEditor__initial, .field textarea
+        background-color #3B3D3F!important
+        color #fff!important
+        border-color #2E3337!important
+        border-radius 4px!important
+        box-shadow 1px 1px 2px 0 #000000 inset!important
+    .search--bar-button
+        &.full-width
+            &.container-flex
+                &.secondary
+                    &.button-icon-far-right
+                        background-color transparent!important
+                        border-right none!important
+                        border-top none!important
+                        border-bottom none!important
+                        span
+                            color #fff!important
+    .discover .fx-input.button-right.icon-left input:focus, .organize input#filterByFeedName:focus,
+    TextInput.DeluxeTextInput__TextInput.TextInput--large:focus
+        border-color #2BB24C!important
+    .discover-search.with-language h3, .discover-search.with-language .hint, .discover-search.with-language label:not(.label-radio)
+        color #9E9E9E!important
+    #feedlyPageFX.container.centered>div>h1, h3, .stream h4 .label, .form.row .field label, .fx-select .button-dropdown .container-flex span, .popover .menu label:not(.label-radio)
+        color #aaa!important
+        text-shadow none!important
+    .popover
+        .menu
+            .radiogroup
+                label
+                    &.secondary
+                        &.label-radio
+                            &.checked
+                                color #2BB24C!important
+    .discover .sub, .fx .form .fx-select button
+        color #ccc!important
+    .DiscoverFeed
+        background transparent!important
+        border-color rgba(255,255,255,0.09)!important
+        .topic
+            border 1px solid #bbb!important
+            &:hover
+                background-color #000000!important
+                color #fff!important
+                box-shadow 0 1px 15px 0 rgba(0,0,0,0.15), 0 0 100px 0 #2B3034 inset!important
+    .discover .chip, .chip.TopPage__related-topic-chip, .chip.muted.small
+        box-shadow 0 0 0 1px rgba(255,255,255,0.09) inset!important
+    .discover .chip:hover, .chip.TopPage__related-topic-chip:hover
+        box-shadow 0 0 0 1px rgba(255,255,255,0.15) inset!important
+    .discover
+        .search-example
+            border-color rgba(255,255,255,0.12)!important
+            &:hover
+                border-color rgba(255,255,255,0.15)!important
+    .chip.TopPage__related-topic-chip:hover .icon, .topic-card:hover .card-header .icon
+        -webkit-filter invert(100%) brightness(2000%)!important
+        filter invert(100%) brightness(2000%)!important
+    .topic-card, #feedlyPageFX .card[class*="card-"]
+        background-color transparent!important
+        color #aaa!important
+        border 1px solid rgba(255,255,255,0.1)!important
+        border-radius 4px!important
+        box-shadow none!important
+    .topic-card:hover, #feedlyPageFX .card[class*="card-"]:hover
+        background-color #1E2428!important
+        color #fff!important
+        border 1px solid transparent!important
+        box-shadow 0 2px 8px 0 rgba(0,0,0,0.2), 0 0 2px 0 rgba(0,0,0,0.38), 0 0 100px 0 #1E2428 inset!important
+    .topic-card .card-footer div, #feedlyPageFX .card[class*="card-"] .description, #feedlyPageFX .card[class*="card-"] .tag-data
+        color #757575!important
+    .topic-card:hover .card-footer div, .topic-card a, #feedlyPageFX .card[class*="card-"] .item-header, #feedlyPageFX .card[class*="card-"]:hover div,
+    .u2[class*="density"], .training-message p
+        color #ddd!important
+    [class*="DiscoverFeed"] .item-header, .relatedEntryHolder .related-title, .item.feed.feed-large .item-header
+        color #000000!important
+    .FeaturedEntry__meme
+        div
+            &:nth-child(1)
+                border-left 1px solid #404040!important
+        & > div
+            border-right 1px solid #404040!important
+            border-bottom 1px solid #404040!important
+    .u100Header-banner
+        background-color #2E3337!important
+        color #ddd!important
+        border-bottom 1px solid #0F1214!important
+    .popover:not(.dot-popover), #popupPart .popup.picker, #popupPart .popup.picker div:not(.fx-button), .pickable .options.expanded
+        background-color #1E2428!important
+    .popover .item-with-visuals:not(.selected), .popover .item:not(.selected):not(.danger), .popover menu li:not(.danger), .fx.organize-feeds-form .field .item, .fx.organize-feeds-form label.item label, span.pickable
+        color #ddd!important
+    .popover .item-with-visuals.selected, .pickable .options .separator
+        color #2BB24C!important
+    .popover menu li:hover, .pickable .option:hover
+        background-color rgba(0,0,0,0.2)!important
+    .pickable
+        .options
+            &.expanded
+                border 1px solid rgba(0,0,0,0.2)!important
+    .pickable .options .separator, .pickable .option
+        border-bottom 1px solid rgba(0,0,0,0.2)!important
+    .organize
+        .header
+            &.row
+                .sub
+                    .ButtonLink
+                        box-shadow inset 0 -1px 0 0 #333333, inset 0 -2px 0 0 rgba(255, 255, 255, 0.5), inset 0 -2px 0 0 currentColor
+        .ButtonLink__default
+            &:not(:hover)
+                color rgba(255,255,255,0.5)!important
+        .flexLayout
+            thead
+                background #1D2326!important
+        .OrganizeTable__row
+            .BarMetric--chart
+                background-color rgba(0,0,0,0.3)!important
+            .OrganizeMetricCell__actions
+                button
+                    border 1px solid rgba(0,0,0,0.3)!important
+    .opml-file-picker .hint, .page-opml p
+        color #aaa!important
+    .fx-select .button-dropdown .container-flex, span.pickable
+        border 1px solid #333333!important
+    .SortIndicator
+        path[fill="#d9d9d9"]
+            fill #757575!important
+        path[fill="#757575"]
+            fill #d9d9d9!important
+    tr
+        &.OrganizeTable__row
+            &.selected
+                td
+                    background-color rgba(0,0,0,0.1)!important
+    .organize .flexLayout tbody, .organize .OrganizeTable__row, .organize .OrganizeTable__row .item-content::after, .organize .OrganizeTable__row .OrganizeMetricCell__actions
+        background #2B3034!important
+    .organize .OrganizeTable__row.selected .item-content::after, .organize .OrganizeTable__row.selected .OrganizeMetricCell__actions
+        background-color transparent!important
+    .OrganizeTable__toolbar.sticky.container label, .organize .flexLayout thead th, .organize .OrganizeTable__row .item-header, .page-cortex .item-header
+        color #bbb!important
+    .organize .OrganizeTable__row .chip, .organize .OrganizeTable__row .BarMetric--value, .organize .OrganizeTable__row .OrganizeMetricCell__additional-metric, .page-cortex .chip, .page-cortex .source-state
+        color #757575!important
+    .IndexPage__collection-name, .SourceList__name--unread
+        color #bbb!important
+    .page-deleteAccount
+        p
+            color #959595!important
+    .page-account
+        .card
+            background-color #1E2428!important
+            color #fff!important
+            border-top-color #757575!important
+            box-shadow 0 2px 8px 0 rgba(0,0,0,0.2), 0 0 2px 0 rgba(0,0,0,0.38), 0 0 100px 0 #1E2428 inset!important
+            &::before
+                background-color #131A1F!important
+        .list-cards
+            .card
+                .icon
+                    -webkit-filter invert(60%)!important
+                    filter invert(60%)!important
+                &:hover
+                    .icon
+                        -webkit-filter invert(0)!important
+                        filter invert(0)!important
+    .card-green-content
+        &:hover
+            color #fff!important
+            text-shadow 0 0 6px #000000!important
+    .preference-title, .sliderContainer .table-sharing td, .preferencesItemLabel
+        color rgba(255,255,255,0.8)!important
+    .preference-description, .preferencesItemDescription, .preference-sections .radiogroup label.secondary.label-radio, .preferencesItemControl label
+        color rgba(255,255,255,0.3)!important
+    .preference-sections
+        .radiogroup
+            label
+                &.secondary
+                    &.label-radio
+                        &.checked
+                            color #2BB24C!important
+                            font-weight bold!important
+    .sliderContainer input, .popover input, .stripe-payment-modal .StripeElement
+        background-color #1A1A1A!important
+        color #fff!important
+    .theme-panel-color
+        box-shadow 0 0 2px 1px #111111!important
+    .theme-panel-label
+        color #aaa!important
+    .sliderContainer .fx .m-b-2 h1 .sub, .sliderContainer .fx .m-b-2 h2, .sliderContainer .fx .m-b-2 h1 .sub, .sliderContainer .fx .billing section .subscription-status, .billing .subscription-status
+        color rgba(255,255,255,0.8)!important
+    .sliderContainer .fx .m-b-2 h2 .sub, .sliderContainer .fx .billing p
+        color rgba(255,255,255,0.54)!important
+    .apps-content .group-buttons p a, .home *.action:not(.link), .sliderContainer *.action, #categoriesArea .h2Link, #feedlyBanner, body .container .topmessage:not(.error), .container .footer .lnk
+        color #bbb!important
+    .apps-content .group-buttons p a:hover, .home *.action:not(.link):hover, .sliderContainer *.action:hover, #categoriesArea .h2Link:hover, .container .footer .lnk:hover, .landing-old .featureGrid .links a:hover, .fx .AccountPrivacy strong
+        color #ddd!important
+    .fx.page-legal h1, .fx.page-legal h2, .fx.page-legal h3, .fx.page-legal div, .fx.page-legal address, .fx.page-legal p, .fx.page-legal ul, .fx.page-legal li
+        color #ccc!important
+    .onboarding.container630.centered h1, .fx.organize-feeds-form h1
+        color #fff!important
+        text-shadow 1px 1px 3px #000000!important
+    .onboarding.container630.centered .sub, .onboarding.container630.centered table, .onboarding.container630.centered table .label-cell .item-header:not(.selected)
+        color #fff!important
+    section.container630.centered h1, .sliderWidth.floatingEntryContentSlide>h1,
+    section.container630.centered .bordered-box .item-header, section.container630.centered .bordered-box .item-description:not(a), .sliderContainer .fx.account-login .item-header, .sliderContainer .fx .m-b-2 table .item-meta
+        color #aaa!important
+        text-shadow none!important
+    .sliderContainer .u100Header-banner .field label, .sliderContainer .fx .m-b-2 .required, .form.m-b-2 .field label,
+    .onboarding.container630.centered .field label, section.container630.centered .field label,
+    .fx.organize-feeds-form .label, .fx.organize-feeds-form label
+        color #EEEEEE!important
+    .onboarding.container630.centered .skip.tertiary, .onboarding.container630.centered .go-back.tertiary
+        color #B3B7BA!important
+    #feedlySignPart:not(.error), .modal.small, #feedlyHelpSignPart, .stripe-payment-modal, .modal-notifications
+        background-color #0C0A0A!important
+    .modal.SeoSignupModal, .SeoSignupModal__login.button-login.secondary
+        background-color #000000!important
+    .modal.small h3, .modal.small .item-header, .modal-notifications p
+        color #bbb!important
+    #feedlyUndoSign, #quickGoto.quickGoto
+        background #111111!important
+    input#quickGotoInput
+        font-weight bold!important
+    #gotoCategoriesCompletion
+        .entry
+            color #aaa!important
+            font-weight bold!important
+    #gotoCategoriesCompletion .entry.entry1, #gotoCategoriesCompletion .entry.entry0
+        border 2px solid transparent!important
+    #gotoCategoriesCompletion .entry.entry1.selected, #gotoCategoriesCompletion .entry.entry0.selected
+        background #000000!important
+    .verySimpleUnreadCount
+        color #fff!important
+        font-weight bold!important
+    .small.pro.primary, #searchBarFX .accent.primary.small
+        background transparent!important
+        color #666666!important
+        border 1px solid #333333!important
+    .small.pro.primary:hover, #searchBarFX .accent.primary.small:hover
+        color #707070!important
+        border 1px solid #353535!important
+    .button.primary.loud, .leftBarWelcome .primary,
+    .home .price-table-column .primary, .header.row .col-xs-6.col-md-6.right-col>.primary:not(.button-icon-only), .fx-button.primary.pro,
+    .sliderContainer .left.floated.primary, .sliderContainer button.primary:not(.small):not([disabled=""]), .popover button.primary:not(.small):not([disabled=""]), .empty-state-actions button.primary, .apps-content .button.primary.loud.button-icon-left, .page-deleteAccount .danger.primary,
+    .DiscoverFeed .small.follow, .sliderContainer .DiscoverFeed .small.follow, button.follow, .sliderContainer button.follow, .domain-select .primary:not([disabled=""])
+        box-shadow 0 0 2px 1px #222222!important
+    .entryholder .u100Entry .entryBody .webfeeds-actions a, .entryholder .u100Entry .entryBody .webfeeds-actions a:hover,
+    .sliderContainer .entryholder .u100Entry .entryBody .webfeeds-actions a, .sliderContainer .entryholder .u100Entry .entryBody .webfeeds-actions a:hover
+        color #fff!important
+        box-shadow 0 0 2px 1px #222222!important
+    .modal.small .danger.primary, .modal.ConfirmDialog .danger.primary, .stripe-payment-modal .primary
+        box-shadow 0 0 2px 1px #000000!important
+    .OrganizeTable__toolbar-actions
+        button
+            background-color rgba(0,0,0,0.03)!important
+            &:hover
+                background-color rgba(0,0,0,0.07)!important
+    .opml-file-picker .fx-button.primary, .page-opml .button.primary
+        box-shadow 0 0 8px rgba(0,0,0,0.8)!important
+    .secondary.loud,
+    .home .price-table-column .secondary,
+    .following-feed, .card .following.small:not(:hover),
+    .OrganizeTable__toolbar-actions button
+        color rgba(255,255,255,0.4)!important
+        border 1px solid rgba(255,255,255,0.25)!important
+    .secondary.loud:hover,
+    .home .price-table-column .secondary:hover,
+    .OrganizeTable__toolbar-actions button:hover
+        color rgba(255,255,255,0.6)!important
+        border 1px solid rgba(255,255,255,0.3)!important
+    #sideArea .fx.button.secondary, .col-xl-3.xlarge-only .fx.button.secondary,
+    .sliderContainer .secondary:not(label):not(.danger):not(.accent):not(.full-width), .popover .secondary:not(label):not(.danger):not(.accent), .annotationsHolder .secondary
+        border 1px solid rgba(255,255,255,0.08)!important
+    .page-deleteAccount .secondary, .modal.small .secondary, .modal.ConfirmDialog .secondary
+        border 1px solid rgba(255,255,255,0.3)!important
+    a.button.secondary[title*="Continue with"],
+    .leftBarWelcome .secondary, #feedlyChrome #searchBarFX .search-bar-right-col .button-login.secondary,
+    .m-x-auto.secondary,
+    #feedlyChrome .right-col .button-dropdown .secondary.button-icon-left:not(.danger):not(.accent):not(.small),
+    #feedlyChrome .right-col .actions-container button.joined:not(:hover),
+    .organize .actions-container button[data-uri="cortex"], #headerBarFX .header.row button[data-uri="cortex"], .organize .empty-state-actions button.secondary, .organize .OrganizeTable__row .OrganizeMetricCell__actions button, .page-account .actions-container button.secondary, #headerBarFX [href="https://feedly.com/i/pro/account"],
+    .empty-state.is-sidebar .secondary,
+    .flexLayout .secondary:not(label):not(.danger):not(.accent):not(.small), table .secondary:not(label):not(.danger):not(.accent):not(.small), .secondary[title="Organize sources"], .integrations .secondary, .secondary[href*="enterprise"], .billing .secondary:not(label), .field .full-width.container-flex.secondary
+        color #aaa!important
+        border 1px solid #505050!important
+    .leftBarWelcome .secondary:hover, #feedlyChrome #searchBarFX .search-bar-right-col .button-login.secondary:hover,
+    .m-x-auto.secondary:hover,
+    #feedlyChrome .right-col .button-dropdown .secondary.button-icon-left:not(.danger):not(.accent):not(.small):hover,
+    .organize .actions-container button[data-uri="cortex"]:hover, #headerBarFX .header.row button[data-uri="cortex"]:hover, .organize .empty-state-actions button.secondary:hover, .organize .OrganizeTable__row .OrganizeMetricCell__actions button:hover, .page-account .actions-container button.secondary:hover, #headerBarFX [href="https://feedly.com/i/pro/account"]:hover,
+    .empty-state.is-sidebar .secondary:hover,
+    .flexLayout .secondary:not(label):not(.danger):not(.accent):not(.small):hover, table .secondary:not(label):not(.danger):not(.accent):not(.small):hover, .secondary[title="Organize sources"]:hover, .integrations .secondary:hover, .secondary[href*="enterprise"]:hover, .billing .secondary:not(label):hover, .field .full-width.container-flex.secondary:hover
+        color #ccc!important
+        border 1px solid #585858!important
+    a.button.secondary[title*="Continue with"]:hover, a.button.secondary.enterprise:hover
+        border 1px solid #808080!important
+    .billing
+        .danger-hover
+            &.secondary
+                &:hover
+                    color #F44336!important
+                    border 1px solid #F44336!important
