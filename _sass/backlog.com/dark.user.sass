@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name Backlog Dark
  * @namespace StylusThemes
- * @version 2.1.1
+ * @version 2.2.0
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/backlog.com/dark.user.css
  * @license     MIT
@@ -1986,11 +1986,11 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, pink: #c36d
     border-left: 6px solid #7f7f7f
 
   .pill
-    color: #000
+    color: #bbb
     background-color: #444
 
   .pill--primary
-    color: #000
+    color: #bbb
     background-color: #4caf93
     &:hover
       color: #000
@@ -2926,20 +2926,25 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, pink: #c36d
     &::after, &::before
       color: #444
 
-  .status
-    color: #000
+  .status,
+  .status-label
+    color: #ddd
 
-  .status--1
+  .status--1,
+  .status-label--1
     background-color: #127f88
 
-  .status--2
+  .status--2,
+  .status-label--2
     background-color: #bb773a
 
-  .status--3
+  .status--3,
+  .status-label--3
     background-color: #a14a59
 
-  .status--4
-    background-color: #4f41c3
+  .status--4,
+  .status-label--4
+    background-color: #585858
 
   .status--git-1
     background-color: #127f88
@@ -2949,21 +2954,6 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, pink: #c36d
 
   .status--git-3
     background-color: #a14a59
-
-  .status-label
-    color: #000
-
-  .status-label--1
-    background-color: #127f88
-
-  .status-label--2
-    background-color: #bb773a
-
-  .status-label--3
-    background-color: #a14a59
-
-  .status-label--4
-    background-color: #4f41c3
 
   .step-flow.-wiki-cacco-dialog .step-flow__item
     background-color: #141432
@@ -3040,7 +3030,7 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, pink: #c36d
       background-color: #120b0f
 
   .ticket__date-item > span
-    color: #888
+    color: #ababab
 
   .ticket__title
     color: #ccc
@@ -3495,6 +3485,7 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, pink: #c36d
     body
       background-color: #000 !important
     .data-table--default
+      background-color: #222
       &.-no-bottom-border
         border-bottom: 1px solid #3d3d3d !important
       &.-no-top-border
@@ -3722,6 +3713,8 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, pink: #c36d
         color: #ddd !important
       ._week-trigger-text
         color: #c1c1c1
+      .user-icon-set__text
+        color: #ddd
       ._trigger-text, a,
       .sort
         color: $color
@@ -3731,9 +3724,28 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, pink: #c36d
       .sort.-dropdown
         &:hover
           color: $color
+      .dropdown-link, .dropdown-menu__link
+        color: #ccc
       .wiki-page-list
         li a
           color: $color
+      .tab-buttons__link
+        color: #ddd
+        &.is_active
+          color: #ddd
+
+      .user-icon-set__sub-line-anchor
+        color: #b7b7b7
+        &:hover
+          color: #b7b7b7
+      .card--default
+        .user-icon-set__sub-line-anchor
+          color: #b7b7b7
+          &:hover
+            color: #b7b7b7
+      .child-issues-table
+        tbody tr.is_current td
+          background-color: #353535
       @if $code == black
         .project-nav-list__text
           color: #cecece
