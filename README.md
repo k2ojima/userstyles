@@ -1,5 +1,5 @@
 # Userstyles
-This is sets of my styles available at [userstyles.org](https://userstyles.org).
+This is the set of my styles available at [userstyles.org](https://userstyles.org).
 
 ## Usage
 Install Google Chrome Extension [Stylus](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=ja).

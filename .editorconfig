@@ -7,5 +7,9 @@ indent_style = space
 indent_size = 4
 trim_trailing_whitespace = true
 
+[_sass/backlog.com/*.sass]
+indent_style = space
+indent_size = 2
+
 [*.yml]
 indent_size = 2
