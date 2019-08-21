@@ -10,22 +10,25 @@
 
 @charset "utf8"
 
+$foreground-color: #d5d5d5
+
 @-moz-document url-prefix("https://medium.com"), url-prefix("https://posts.specterops.io"), url-prefix("https://hackernoon.com"), url-prefix("https://blog.0day.rocks"), url-prefix("https://blog.discordapp.com/"), url-prefix("https://blog.ettic.ca/"), url-prefix("https://arlogilbert.com"), url-prefix("https://medium.freecodecamp.org"), url-prefix("https://engineering.salesforce.com")
 
     .u-backgroundTransparentWhiteDarkest, .u-backgroundGrayLightest, .u-background--brandSageLighter,.metabar-block, .textInput, .metabar, .h
         background-color: #292929 !important
-        color: #d5d5d5
+        color: $foreground-color
     body, html, article, .cardChromeless, .screenContent, .canvas-renderer, .u-backgroundColorWhite
         background-color: #2f2f2f !important
-        color: #d5d5d5
+        color: $foreground-color
     .overlay--lighter, .overlay
         background-color: #2f2f2fd6
+
     .uiScale .ui-captionStrong, .uiScale .ui-caption, h1, h2, h3, h4, .imageCaption, .button--chromeless:active, .button--chromeless:focus, .button--chromeless:hover, .button--link:active, .button--link:focus, .button--link:hover, .button, p, span, .uiScale .ui-body, .uiScale .ui-brand1, .uiScale .ui-brand2, .markup--mixtapeEmbed-strong, .markup--mixtapeEmbed-em, .u-textColorDark, .uiScale .ui-h2, .uiScale .ui-summary, .uiScale .ui-h4, .u-textColorNormal, .ai, .uiScale .ui-h3
-        color: #d5d5d5 !important
+        color: $foreground-color !important
         background-image: none !important
     blockquote
-        border-color: #d5d5d5 !important
-        color: #d5d5d5 !important
+        border-color: $foreground-color !important
+        color: $foreground-color !important
     a, a:hover
         color: #06e988 !important
     .u-backgroundWhite
@@ -43,8 +46,12 @@
         background-color: #000
     [aria-label="Homepage"]
         filter: invert(1)
+    .dl> svg
+        filter: invert(1)
     .dx
         background-color: #000
     .dv
         margin-top: 0
         padding-top: 40px
+    li[data-selectable-paragraph]
+        color: $foreground-color
