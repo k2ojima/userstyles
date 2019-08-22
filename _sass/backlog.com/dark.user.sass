@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name Backlog Dark
  * @namespace StylusThemes
- * @version 2.2.5
+ * @version 2.2.6
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/backlog.com/dark.user.css
  * @license     MIT
@@ -3723,9 +3723,14 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
       .button--default
         color: $color
         &.is_disabled, &[disabled]
-          color: #a2a2a2;
-          border-color: #1a1a1a;
-          background-color: #3a3a3a;
+          color: #a2a2a2
+          border-color: #1a1a1a
+          background-color: #3a3a3a
+      .button--weak, .button-group__link, .data-list__link
+        color: #ddd
+      .wiki-page-list
+        li a
+          color: $color
       ._trigger-text, a,
       .sort
         color: $color
@@ -3737,9 +3742,9 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
           color: $color
       .dropdown-link, .dropdown-menu__link
         color: #ccc
-      .wiki-page-list
-        li a
-          color: $color
+      .selectbox--multiple__item
+        &.is_selected, &.is_selected:hover
+          background-color: #0b381c
       .tab-buttons__link
         color: #ddd
         &.is_active
