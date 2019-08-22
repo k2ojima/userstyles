@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name Backlog Dark
  * @namespace StylusThemes
- * @version 2.2.0
+ * @version 2.2.1
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/backlog.com/dark.user.css
  * @license     MIT
@@ -92,8 +92,9 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, pink: #c36d
     fill: #000
 
   .project-list.-list-view
-    .project-list__item:hover .project-launch-menu__text
-      color: #000
+    .project-list__item:hover
+      & .project-launch-menu__text, & .project-list__info a
+        color: #ccc
     .project-launch-menu__text:hover, .project-list__item:hover .project-launch-menu__text::after
       background-color: rgba(0, 0, 0, 0.2)
     .project-launch-menu__text
@@ -2018,7 +2019,7 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, pink: #c36d
     background-color: #07261b
 
   .pill--issue-type-1
-    background-color: #15d3ff
+    background-color: #9c290f
 
   .pill--issue-type-2
     background-color: #1788a7
@@ -3112,7 +3113,7 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, pink: #c36d
     &.-files span.Action
       background-color: #1788a7
     &.-git span.Action, &.-svn span.Action
-      background-color: #797348
+      background-color: #bfb256
     &.-pull-request span.Action
       background-color: #1f8465
     &.-project span.Action
@@ -3733,7 +3734,13 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, pink: #c36d
         color: #ddd
         &.is_active
           color: #ddd
+      .tab--primary
+        &__link
+          &.is_active, &:hover
+            color: $color
 
+      .pager__next, .pager__prev
+        color: $color
       .user-icon-set__sub-line-anchor
         color: #b7b7b7
         &:hover
