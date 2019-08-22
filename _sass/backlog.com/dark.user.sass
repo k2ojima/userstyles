@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name Backlog Dark
  * @namespace StylusThemes
- * @version 2.2.4
+ * @version 2.2.5
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/backlog.com/dark.user.css
  * @license     MIT
@@ -1875,7 +1875,7 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
     background-color: #2c9a7a
 
   .modal__title
-    color: #000
+    color: #d0d0d0
     svg.icon
       fill: #120b0f
 
@@ -3651,7 +3651,7 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
 
   @media screen
     .str
-      color: #080
+      color: #2fc12f
     .kwd
       color: #c1983b
     .com
@@ -3675,7 +3675,7 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
 
   @media print, projection
     .str
-      color: #f9f
+      color: #2fc12f
     .kwd
       color: #c1983b
     .com
@@ -3716,6 +3716,16 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
         color: #c1c1c1
       .user-icon-set__text
         color: #ddd
+      .graph--bar__info-item,
+      .graph--bar__info-item:hover,
+      .tab--default__link
+        color: #bbb
+      .button--default
+        color: $color
+        &.is_disabled, &[disabled]
+          color: #a2a2a2;
+          border-color: #1a1a1a;
+          background-color: #3a3a3a;
       ._trigger-text, a,
       .sort
         color: $color
