@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name Backlog Dark
  * @namespace StylusThemes
- * @version 2.2.6
+ * @version 2.2.7
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/backlog.com/dark.user.css
  * @license     MIT
@@ -1581,17 +1581,21 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
         color: #999
         background: #1a1a1a
 
-  .select2-drop.select2-drop-multi
-    border: 1px solid #424242
-    background: #000
-    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.35)
-    .select2-results .select2-result
-      &.select2-result-selectable
-        color: #ddd
-        &.select2-highlighted, &:hover
-          background-color: #1c1117
-      &.select2-result-unselectable .select2-result-label
-        color: #888
+  .select2-drop
+    background: #040404
+    .select2-results .select2-result-selectable
+      color: #ddd
+    &.select2-drop-multi
+      border: 1px solid #424242
+      background: #000
+      box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.35)
+      .select2-results .select2-result
+        &.select2-result-selectable
+          color: #ddd
+          &.select2-highlighted, &:hover
+            background-color: #1c1117
+        &.select2-result-unselectable .select2-result-label
+          color: #888
 
   .form-element__item + .form-element__item.-has-border
     border-top: 1px solid #424242
@@ -3734,6 +3738,12 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
       .wiki-page-list
         li a
           color: $color
+      .jqtree-element
+        .wiki-link, .wiki-link:hover
+          color: $color
+        .not-link, .not-link:hover
+          color: $color
+          filter: brightness(0.8)
       ._trigger-text, a,
       .sort
         color: $color
@@ -3756,6 +3766,15 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
         &__link
           &.is_active, &:hover
             color: $color
+      .dropdown-menu__link.-checkable.is_active,
+      .dropdown-menu__link.-checkable:hover,
+      .select2-drop .select2-results .select2-result-selectable.select2-highlighted,
+      .select2-drop .select2-results .select2-result-selectable:hover
+        background-color: $color
+        filter: opacity(0.9)
+      .Page--git-list-pullRequest
+        .pull-req-number
+          color: $color
 
       .pager__next, .pager__prev
         color: $color
