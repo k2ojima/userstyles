@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name Backlog Dark
  * @namespace StylusThemes
- * @version 2.2.7
+ * @version 2.2.8
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/backlog.com/dark.user.css
  * @license     MIT
@@ -2599,15 +2599,15 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
     background-color: #0f0f0f
 
   .comment-editor__radio-input:checked + .comment-editor__radio-label .comment-editor__radio-text
-    color: #000
+    color: #ddd
     &.-status-1
-      background-color: #127f88
+      background-color: #822e27
     &.-status-2
-      background-color: #bb773a
+      background-color: #154f84
     &.-status-3
-      background-color: #a14a59
+      background-color: #145f52
     &.-status-4
-      background-color: #4f41c3
+      background-color: #4d4e42
 
   .comment-editor__radio-label
     border: 1px solid #666
@@ -3753,8 +3753,15 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
       .sort.-dropdown
         &:hover
           color: $color
-      .dropdown-link, .dropdown-menu__link
+
+      /* input items */
+      .dropdown-link
         color: #ccc
+      .dropdown-menu__link
+        &-checkable
+          &.is_active, &:hover
+            background-color: $color
+            filter: opacity(0.9)
       .selectbox--multiple__item
         &.is_selected, &.is_selected:hover
           background-color: #0b381c
@@ -3766,12 +3773,24 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
         &__link
           &.is_active, &:hover
             color: $color
-      .dropdown-menu__link.-checkable.is_active,
-      .dropdown-menu__link.-checkable:hover,
-      .select2-drop .select2-results .select2-result-selectable.select2-highlighted,
-      .select2-drop .select2-results .select2-result-selectable:hover
-        background-color: $color
-        filter: opacity(0.9)
+      .select2-drop
+        .select2-results
+          .select2-result-selectable
+            &.select2-highlighted, &:hover
+              background-color: $color
+              filter: opacity(0.9)
+      .chosen-wrapper
+        .chzn-container
+          .chzn-results
+            li
+              &.active-result.highlighted,&.active-result.is_selected,&.active-result.result-selected, &.active-result:hover
+                background-color: $color
+                filter: opacity(0.9)
+          &-multi
+            .chzn-choices .search-choice
+              background-color: $color
+              filter: opacity(0.9)
+
       .Page--git-list-pullRequest
         .pull-req-number
           color: $color
