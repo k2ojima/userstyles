@@ -262,17 +262,10 @@
     .tab-size
         tab-size 4 !important
         -moz-tab-size 4 !important
-    @supports
-        (position
-            &:
-                sticky)
-                    .blog-aside {
+    @supports (position: sticky)
+        .blog-aside
             position sticky !important
-                    top 8px !important
-                    .discussion-sidebar {
-            position sticky !important
-                    top 0 !important
-    }
+            top 8px !important
         div[id^="contribution-joined-github"]
             img
                 padding-bottom 20px !important
