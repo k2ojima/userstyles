@@ -1,21 +1,42 @@
 /*! ==UserStyle==
  * @name        Qiita Dark
  * @namespace   StylusThemes
- * @version     2.2.2
+ * @version     2.2.3
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/qiita.com/dark.user.css
  * @license     MIT
- * @author      peaceiris (arranged by xentok)
+ * @author      peaceiris - arranged by xentok
  * ==/UserStyle== */
 
 @charset "utf8"
+
+$box-bg: #2d2d2d
 
 @-moz-document domain("qiita.com")
     /* general */
     body
         background-color: #333333
+        color: #ddd
     a
         color: #8da3b5
+
+    /* Home */
+    .p-home
+        background-color: #0e0e0e
+        &_main
+            background-color: $box-bg
+        .tl-UserInfo
+            background-color: $box-bg
+            &_name, &_statsCount
+                color: #ccc
+        .an-Item
+            background-color: $box-bg
+        .dtf-ItemList, .ra-UserList, .ra-TagList, .ra-OrganizationList, .qzf-ItemList
+            background-color: $box-bg
+        .ra-SponserList_label
+            color: #333
+    .tr-Item_title:visited
+        color: #c7c7c7
 
     /* post */
     .p-items_wrapper
@@ -74,8 +95,14 @@
     /* draft list */
     .draftsPreviewContent_header
         background-color: #333333
-    .draftsPreviewContent_title, .draftsSidebarItems_itemTitle
+    .draftsPreviewContent_title
         color: silver
+    .draftsSidebarItems
+        &_item
+            &.active
+                background-color: #396523
+        &_itemTitle
+            color: silver
     .it-MdContent a:visited
         color: orange
 
@@ -86,7 +113,9 @@
     .editorTitle
         input
             background-color: #3e3e3e
-            color: #bcbcbc;
+            color: #bcbcbc
+    .editorFooter, .editorFooter-onUpdate
+        background-color: #222
 
     .it-MdContent
         h1, h2, h3, h4, h5, h6
@@ -110,6 +139,8 @@
 
     .newUserPageProfile_fullName
         color: silver
+    .c3 text
+        fill: #ddd
 
     .references_header,
     #logly-lift-widget-header > span
