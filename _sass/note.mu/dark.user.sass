@@ -1,0 +1,317 @@
+/*! ==UserStyle==
+ * @name        note.mu dark theme
+ * @namespace   github.com/xentok/userstyles/
+ * @version     1.0.0
+ * @homepageURL https://github.com/xentok/userstyles/
+ * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/note.mu/dark.user.css
+ * @license     MIT
+ * @author      xentok
+ * ==/UserStyle== */
+
+@charset "utf8"
+
+$bg: #1f1f1f
+$foreground: #eee
+$subtext: #d5dedc
+$box-bg: #353535
+$card-bg: #171717
+$card-bg-active: #313131
+
+@-moz-document domain('note.mu')
+    /* Global */
+    a
+        color: #f2f2f2
+    body
+        background-color: $bg !important
+        color: $foreground !important
+        /*  Header Logo*/
+        .m-siteLogo__image
+            filter: invert(1)
+        /* Navigation */
+        .o-navBar
+            background-color: #000 !important
+            border-bottom: 1px solid #848484 !important
+        .a-navItem
+            &__item
+                color: #ced2d1 !important
+        .m-submenu
+            &__link
+                color: #f9f9f9 !important
+        /* Search Header */
+        .p-searchHeader
+            &__pageTitle
+                background-color: #383838 !important
+        /* Category */
+        .p-category
+            &__anchorLink
+                color: $subtext !important
+        /* Tab List */
+        .m-tabMenu
+            &__link
+                color: #d6d9e0 !important
+            &__item
+                &.is--active .m-tabMenu__link
+                    color: #fff !important
+
+        /* Article Card List */
+        .renewal-c-card
+            background-color: $card-bg !important
+        .o-textNote
+            background-color: $card-bg !important
+            &:hover:before
+                background-color: $card-bg-active !important
+        .o-imageNote
+            background-color: $card-bg !important
+            &:hover:before
+                background-color: $card-bg-active !important
+        .o-magazineCard
+            background-color: $card-bg !important
+            &__follower
+                color: $subtext !important
+            &__avatar p
+                color: $subtext !important
+        .o-magazineSmallCard
+            background-color: $card-bg !important
+            &__follower
+                color: $subtext !important
+        .m-categoryCard
+            &__content
+                background-color: $card-bg !important
+            &__authorName
+                color: $subtext !important
+        .o-talkNote
+            background-color: $card-bg !important
+        /* Content Body */
+        .o-noteContentText
+            &__body
+                color: $foreground !important
+                div[data-embed-service=external-article] .external-article-widget-update,
+                div[data-embed-service=attachment] .file-widget__filesize,
+                div[data-embed-service=external-article] .external-article-widget-description
+                    color: $subtext !important
+                div[data-embed-service=attachment] .file-widget__note
+                    color: #54f7d1 !important
+                    font-size: 11px !important
+                blockquote
+                    background-color: #424242 !important
+                a:hover
+                    color: #f39500 !important
+            &__title
+                color: $foreground !important
+        .o-noteReview
+            &__title
+            background-color: $bg !important
+        .m-contentReviewers__label
+            color: #e8efed !important
+        .p-contests
+            background-color: $bg !important
+        .o-categoryList
+            &__more
+                color: $subtext !important
+        /* SideBar */
+        .o-sidebarContests
+            &__header
+                &__readAll
+                    color: #f9fffd !important
+        .o-calendar
+            &__monthLink
+                &.is-active
+                    color: #ececec !important
+        /* Footer */
+        .o-footer
+            &__link
+                color: #d2dad8 !important
+        /* Creator Page */
+        .p-creator
+            &--background
+                background-color: $bg !important
+        .o-creatorProfile
+            background-color: $bg !important
+        .o-creatorMenu
+            background-color: #383838 !important
+            &__nav:before
+                background: linear-gradient(270deg,#000 50%,hsla(0,0%,100%,0)) !important
+        .m-profileStatus
+            &__followCount
+                color: #fff !important
+            &__followLabel
+                color: $subtext !important
+
+        /* Elements */
+        .o-shareBooster
+            background-color: #252525 !important
+            &:before
+                background-color: #252525 !important
+        .m-notificationList
+            background-color: #2d2d2d !important
+            &item .welcomSub
+                color: #e4eae9 !important
+            &item__message
+                color: #eee
+            &item:hover
+                background-color: #434343 !important
+            &__item--empty
+                color: #d9e2e0 !important
+        .a-balloon
+            &__body
+                background-color: #2d2d2d !important
+        .o-usermenuPopover
+            &__profile, &__summary
+                color: #e8f1ee !important
+            &__link
+                color: #eee !important
+                &:hover
+                    background-color: #5d5d5d !important
+                    color: #fff
+        .o-supportAppeal
+            background-color: #3a3a3a !important
+            &__contents
+                background-color: $bg !important
+        .o-commentArea
+            &__inputMessage
+                &:not(:root)
+        .m-contestsCard
+            background-color: #000 !important
+            &__postCount, &__finishDate
+                color: $subtext !important
+        .m-contestListItem
+            &:hover:before
+                background-color: #313131 !important
+            &__description
+                color: #d5dedc !important
+        .o-searchWindow
+            &__item:hover
+                background-color: #505050 !important
+            &__link
+                color: $subtext !important
+        .m-basicBalloonList
+            &__link
+                color: $subtext !important
+            &:hover
+                background-color: #353535 !important
+                color: $subtext !important
+        /* Particles */
+        .a-button
+            background-color: #151515 !important
+            &--type_primary
+                background-color: #2cb696 !important
+            &--type_basic
+                color: #e8e8e8 !important
+        .a-tag
+            background-color: #171717 !important
+            border: 1px solid #828282 !important
+            &__label
+                color: #fff !important
+        .a-input
+            background-color: #404040 !important
+            color: #e6e6e6 !important
+        .a-textarea
+            background-color: #404040 !important
+            color: #e6e6e6 !important
+        .m-magazineInfo__other
+            color: #e0e8e6 !important
+        .renewal-p-cardItem__more
+            color: #5bffd9 !important
+
+    /*  Older pages */
+    .ns-note
+        color: $foreground !important
+        /* General */
+        a
+            color: #eaeaea !important
+        .link-green
+            color: #6effdb !important
+        .table thead th,
+        .table thead td
+            background-color: #232323 !important
+        .bg-white
+            background-color: #000 !important
+        .bg-grey
+            background-color: #232323 !important
+        .txt-grey
+            color: #dee4e3 !important
+        .grey-box
+            background-color: #434343 !important
+        input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="search"],
+        textarea
+            background-color: #0a0a0a !important
+        /* Header */
+        .renewal-l-header
+            &__inner
+                background-color: #000 !important
+            &__logo img
+                filter: invert(1)
+        /* Navigation */
+        .p-globalNavigation__link
+            color: #ced2d1 !important
+        .p-dropNavigation__link
+            color: #ced2d1 !important
+        /* Layout */
+        .renewal-p-galleryLayout
+            background-color: $bg !important
+        /* Content */
+        .p-box
+            &__title
+                color: #eaeaea
+        /* Elements */
+        .btn
+            background-color: #0a0a0a !important
+            color: #ced2d1 !important
+        .button, .c-button
+            background-color: #525252 !important
+        .button-group
+            .is--active
+                background-color: #111 !important
+        .box-light
+            background-color: $box-bg !important
+        .renewal-c-popover
+            background-color: #2d2d2d !important
+            &--mymenu,
+            &--notification,
+            &--search,
+            &--postNote,
+            &--creatorTopEdit,
+            &--sortNavSeries,
+            &--sortNav,
+            &--sortNavAddFooter
+                background-color: #2d2d2d !important
+        .renewal-p-galleryLayout
+            &__header
+                background-color: $bg !important
+        /* Particles */
+        .renewal-p-mymenuList
+            &__span
+                color: $subtext !important
+        .renewal-p-notificationList
+            &__itemInner
+                >a:hover
+                    background-color: #434343 !important
+            &__date
+                color: $subtext !important
+        .c-tags
+            &__link
+                background-color: #171717 !important
+        .p-searchForm--header
+            &__submit
+                background-color: #000 !important
+            .angucomplete-holder input
+                background-color: #252525 !important
+                &:focus
+                    background-color: #000 !important
+        .txt-supplementary
+            color: #d2d2d2 !important
+        .p-reactionList__text
+            color: $subtext !important
+        /* Dashboard */
+        .mod-salesmanage
+            &__attention
+                color: $subtext !important
+        /* Settings */
+        .p-sellList
+            background-color: #000 !important
+            &:hover
+                background-color: #333 !important
+            &__status, &__date
+                color: $subtext !important
+        .mod-credit
+            background-color: #232323 !important
