@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Google Clean Dark Customized
  * @namespace   StylusThemes
- * @version     2.0.0
+ * @version     2.0.1
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/google.com/clean-dark.user.css
  * @license     MIT
@@ -25,7 +25,7 @@ $color_coral_red_approx: #ff2b44
 $color_tundora_approx: #444
 $white: #fff
 $color_curious_blue_approx: #3296c8
-$color_tapa_approx: #777
+$color_tapa_approx: #999
 $color_mountain_mist_approx: #909090
 $color_alto_approx: #dedede
 $color_pumice_approx: #c7c7c7
@@ -316,8 +316,8 @@ $color_chicago_approx: #5a5a5a
         background-image: linear-gradient(top,$color_mine_shaft_approx,$color_masala_approx)!important
         cursor: pointer!important
 
-
-
+    a:link
+        color: #46aadc !important
     body
         background: $color_shark_approx!important
         color: $color_gray_nurse_approx!important
@@ -5459,11 +5459,16 @@ $color_chicago_approx: #5a5a5a
         color: $color_gray_nurse_approx!important
         @extend %extend_5
 
-    #hdtb-msb .hdtb-tl-sel
-        @extend %extend_5
-        &:hover
+    #hdtb-msb
+        .hdtb-tl-sel
             @extend %extend_5
-
+            &:hover
+                @extend %extend_5
+        .hdtb-mitem
+            &.hdtb-msel, &.hdtb-msel-pre
+                color: #9fc2f1 !important
+        #hdtb-more, #hdtb-tls
+            color: #999fa7
 
     #cdrlnk:hover
         background-color: $color_shark_approx!important
@@ -5835,6 +5840,8 @@ $color_chicago_approx: #5a5a5a
     .goog-option-selected .goog-menuitem-content
         color: $color_bon_jour_approx!important
 
+    #tw-target
+        background-color: #232323 !important
     #tw-target-text > span
         color: $color_nobel_approx!important
 
@@ -6222,3 +6229,8 @@ $color_chicago_approx: #5a5a5a
 
     ._RMl .flt-actionblock
         display: none!important
+
+    .SvKTZc
+        color: rgba(216, 216, 216, 0.87)
+    .MaH2Hf
+        color: #ddd
