@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name Medium Dark
  * @namespace StylusThemes
- * @version 2.0.2
+ * @version 2.0.3
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/medium.com/dark.user.css
  * @license     MIT
@@ -42,8 +42,11 @@ $foreground-color: #d5d5d5
             background-color: transparent !important
 
     /* Customize code */
-    .branch-journeys-top
+    /* Header */
+    .c, .branch-journeys-top
         background-color: #000
+    .bv
+        background-color: rgb(53, 46, 134)
     [aria-label="Homepage"]
         filter: invert(1)
     .dl> svg
@@ -53,5 +56,13 @@ $foreground-color: #d5d5d5
     .dv
         margin-top: 0
         padding-top: 40px
+    .al
+        fill: rgba(181, 181, 181, 0.84)
+    /* Contents */
     li[data-selectable-paragraph]
         color: $foreground-color
+    /* Form */
+    .form-page-description,
+    .form-page-form-fields-checkbox label,
+    .form-page-form-fields-opted_in label
+        color: #afafaf
