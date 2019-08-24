@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Feedly dark Customized
 @namespace      github.com/xentok/userstyles
-@version        2.0.0
+@version        2.0.1
 @preprocessor   stylus
 @author         #Ahad - arranged by xentok
 @license        MIT
@@ -85,6 +85,12 @@
                 &.small
                     box-shadow 0 0 2px 1px rgba(0,0,0,0.3)!important
     .fx
+        h4, &-h4
+            color #d6d6d6
+        .item-description
+            color #b3b3b3
+        .color-secondary
+            color #afafaf
         .profile-bubble-menu
             .user
                 &.item-with-visuals
@@ -124,7 +130,7 @@
                 .icon[class*="md-black"]
                     -webkit-filter invert(0)!important
                     filter invert(0)!important
-        button
+        button, .button
             &.giant-mark-as-read
                 background-color #1E2428!important
                 color #aaa!important
@@ -135,6 +141,8 @@
                 width 100%!important
                 &:hover
                     background-color #131A1F!important
+            &.secondary
+                color #afafaf
         .hint
             &.centered
                 background-color transparent!important
@@ -570,6 +578,8 @@
                 background-color #000000!important
                 color #fff!important
                 box-shadow 0 1px 15px 0 rgba(0,0,0,0.15), 0 0 100px 0 #2B3034 inset!important
+        &__featured-entry
+            color #b3b3b3!important
     .discover .chip, .chip.TopPage__related-topic-chip, .chip.muted.small
         box-shadow 0 0 0 1px rgba(255,255,255,0.09) inset!important
     .discover .chip:hover, .chip.TopPage__related-topic-chip:hover
@@ -594,12 +604,12 @@
         border 1px solid transparent!important
         box-shadow 0 2px 8px 0 rgba(0,0,0,0.2), 0 0 2px 0 rgba(0,0,0,0.38), 0 0 100px 0 #1E2428 inset!important
     .topic-card .card-footer div, #feedlyPageFX .card[class*="card-"] .description, #feedlyPageFX .card[class*="card-"] .tag-data
-        color #757575!important
+        color #b5b5b5!important
     .topic-card:hover .card-footer div, .topic-card a, #feedlyPageFX .card[class*="card-"] .item-header, #feedlyPageFX .card[class*="card-"]:hover div,
     .u2[class*="density"], .training-message p
         color #ddd!important
     [class*="DiscoverFeed"] .item-header, .relatedEntryHolder .related-title, .item.feed.feed-large .item-header
-        color #000000!important
+        color #ddd
     .FeaturedEntry__meme
         div
             &:nth-child(1)
@@ -694,7 +704,7 @@
     .preference-title, .sliderContainer .table-sharing td, .preferencesItemLabel
         color rgba(255,255,255,0.8)!important
     .preference-description, .preferencesItemDescription, .preference-sections .radiogroup label.secondary.label-radio, .preferencesItemControl label
-        color rgba(255,255,255,0.3)!important
+        color #aaa!important
     .preference-sections
         .radiogroup
             label
@@ -823,3 +833,5 @@
                 &:hover
                     color #F44336!important
                     border 1px solid #F44336!important
+    .PercentageBar__bar
+        filter invert(1)
