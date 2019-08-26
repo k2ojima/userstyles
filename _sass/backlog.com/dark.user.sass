@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name Backlog Dark
  * @namespace StylusThemes
- * @version 2.2.8
+ * @version 2.2.9
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/backlog.com/dark.user.css
  * @license     MIT
@@ -2612,15 +2612,15 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
   .comment-editor__radio-label
     border: 1px solid #666
     &:hover .comment-editor__radio-text
-      color: #000
+      color: #ddd
       &.-status-1
-        background-color: rgba(18, 127, 136, 0.8)
+        background-color: #822e27
       &.-status-2
-        background-color: rgba(187, 119, 58, 0.8)
+        background-color: #154f84
       &.-status-3
-        background-color: rgba(161, 74, 89, 0.8)
+        background-color: #145f52
       &.-status-4
-        background-color: rgba(79, 65, 195, 0.8)
+        background-color: #4d4e42
 
   .comment-editor__radio-text
     background-color: #000
@@ -3671,7 +3671,7 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
     .atn
       color: #9f9
     .atv
-      color: #080
+      color: #01ce01
     .dec, .var
       color: #9f9
     .fun
@@ -3695,7 +3695,7 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
     .atn
       color: #bfb
     .atv
-      color: #f9f
+      color: #01ce01
 
   pre.prettyprint
     border: 1px solid #777
@@ -3809,6 +3809,8 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
       .child-issues-table
         tbody tr.is_current td
           background-color: #353535
-      @if $code == black
-        .project-nav-list__text
-          color: #cecece
+      .project-nav-list
+        fill: #d2d2d2
+        @if $code == black
+          &__text
+            color: #cecece
