@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Google Clean Dark Customized
  * @namespace   StylusThemes
- * @version     2.0.2
+ * @version     2.0.3
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/google.com/clean-dark.user.css
  * @license     MIT
@@ -6238,3 +6238,16 @@ $color_chicago_approx: #5a5a5a
     .gb_5
         background: -webkit-linear-gradient(top,#0f5ce2,#0e5ada)
         color: #a1d4ec
+
+
+@-moz-document regexp('https?://(www|encrypted|images|translate|accounts|books|photos).google.(com|([a-z]{2}))(.[a-z]{2})?/bookmarks/.*')
+    body
+        color: #ccc
+        a:link
+            color: #76c8f1 !important
+        input, button, td
+            color: #bcbcbc
+    h1, h2, h3, h4, h5
+        color: #ddd
+    .csb
+        filter: invert(1)
