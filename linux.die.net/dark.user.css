@@ -1,0 +1,9 @@
+/*! ==UserStyle==
+ * @name        Linux man page die.net dark theme
+ * @namespace   github.com/xentok/userstyles/
+ * @version     1.0.0
+ * @homepageURL https://github.com/xentok/userstyles/
+ * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/linux.die.net/dark.user.css
+ * @license     MIT
+ * @author       xentok
+ * ==/UserStyle== */@-moz-document domain("die.net"){body,table{background-color:#020610;color:#d3d4d4;font-family:"Open Sans",sans-serif}a{color:#dc7272}#logo{background:#2d0000}#menu{background:#2d0000}#menu input{background-color:#330808;border-color:#5f1818;color:#d3d4d4}.highlight{background-color:#86422e}.shrink{filter:invert(1)}}
