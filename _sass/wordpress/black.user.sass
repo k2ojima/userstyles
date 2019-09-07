@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Wordpress Dark Black Backend Customized
  * @namespace   StylusThemes
- * @version     2.0.1
+ * @version     2.0.2
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/wordpress/black.user.css
  * @license     MIT
@@ -105,20 +105,20 @@ $color_dune_approx: #393535
         border-color: $color_rangoon_green_approx!important
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
-        background-color: $bgcolor_input
+        background-color: $bgcolor_input !important
         //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
             border-bottom-color: $color_rangoon_green_approx!important
             color: $color_bon_jour_approx !important
-            background-color: #8a8a8a
+            background-color: #8a8a8a !important
             transition: all 0.3s ease-in-out
 
     input[type=radio]
         &:checked
             &:before
-                background-color: #93bcd1
+                background-color: #93bcd1 !important
 
     @keyframes autofill
         to
@@ -621,7 +621,7 @@ $color_dune_approx: #393535
         transition: all 0.3s ease-in-out
 
     .description
-        color: $color_storm_dust_approx !important
+        color: #848586 !important
         //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
@@ -651,7 +651,7 @@ $color_dune_approx: #393535
         transition: all 0.3s ease-in-out
 
     p
-        color: $color_storm_dust_approx !important
+        color: #949494 !important
         //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
@@ -714,9 +714,14 @@ $color_dune_approx: #393535
         transition: all 0.3s ease-in-out
 
     .widefat
-        thead tr td
-            color: $color_label !important
-            transition: all 0.3s ease-in-out
+        td
+            color: #949494
+        thead tr
+            th
+                color: #a5a5a5 !important
+            td
+                color: $color_label !important
+                transition: all 0.3s ease-in-out
 
         tbody tr td label
             color: $color_cornflower_blue_approx !important
@@ -2814,10 +2819,10 @@ $color_dune_approx: #393535
 
 
     .button
-        border-color: $color_rangoon_green_approx!important
-        border-bottom-color: $color_rangoon_green_approx!important
-        color: $color_bon_jour_approx !important
-        background-color: $bgcolor_button !important
+        border-color: $color_rangoon_green_approx
+        border-bottom-color: $color_rangoon_green_approx
+        color: $color_bon_jour_approx
+        background-color: $bgcolor_button
         //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
@@ -4708,12 +4713,18 @@ $color_dune_approx: #393535
         background-color: $color_shark_approx !important
         //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
-        button:hover
-            border-color: $color_rangoon_green_approx!important
-            border-bottom-color: $color_rangoon_green_approx!important
-            color: $color_bon_jour_approx !important
-            background-color: $color_cod_gray_approx !important
-            transition: all 0.3s ease-in-out
+        button
+            &:hover
+                border-color: $color_rangoon_green_approx!important
+                border-bottom-color: $color_rangoon_green_approx!important
+                color: $color_bon_jour_approx !important
+                background-color: $color_cod_gray_approx !important
+                transition: all 0.3s ease-in-out
+            &:before
+                color: #b8c0c7
+            &.active
+                &:before
+                    color: #d5d7da
 
 
     .sui-wrap a.sui-button.sui-button-ghost
