@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Wordpress Dark Black Backend Customized
  * @namespace   StylusThemes
- * @version     2.0.2
+ * @version     2.0.3
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/wordpress/black.user.css
  * @license     MIT
@@ -94,31 +94,57 @@ $color_dune_approx: #393535
         background: $black
         color: $red
 
-    input
-        background: $color_shark_approx !important
-        color: $color_pumice_approx !important
-        border-color: $color_rangoon_green_approx !important
+    input[type="text"],
+    input[type="password"],
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"],
+    select,
+    textarea
+        background: $color_shark_approx
+        color: $color_pumice_approx
+        border-color: $color_rangoon_green_approx
         &:-webkit-autofill
-            border-color: $color_rangoon_green_approx !important
+            border-color: $color_rangoon_green_approx
 
     input[type=checkbox]
-        border-color: $color_rangoon_green_approx!important
-        border-bottom-color: $color_rangoon_green_approx!important
-        color: $color_bon_jour_approx !important
-        background-color: $bgcolor_input !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        border-color: $color_rangoon_green_approx
+        border-bottom-color: $color_rangoon_green_approx
+        color: $color_bon_jour_approx
+        background-color: $bgcolor_input
         transition: all 0.3s ease-in-out
         &:hover
-            border-color: $color_rangoon_green_approx!important
-            border-bottom-color: $color_rangoon_green_approx!important
-            color: $color_bon_jour_approx !important
-            background-color: #8a8a8a !important
+            border-color: $color_rangoon_green_approx
+            border-bottom-color: $color_rangoon_green_approx
+            color: $color_bon_jour_approx
+            background-color: #8a8a8a
             transition: all 0.3s ease-in-out
-
-    input[type=radio]
         &:checked
             &:before
-                background-color: #93bcd1 !important
+                color: #93bcd1
+        &:-webkit-autofill
+            border-color: $color_rangoon_green_approx
+
+    input[type=radio]
+        border-color: $color_rangoon_green_approx
+        border-bottom-color: $color_rangoon_green_approx
+        color: $color_bon_jour_approx
+        background-color: $bgcolor_input
+        &:checked
+            &:before
+                background-color: #93bcd1
+        &:-webkit-autofill
+            border-color: $color_rangoon_green_approx
 
     @keyframes autofill
         to
@@ -151,7 +177,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -169,120 +194,100 @@ $color_dune_approx: #393535
             background-color: $color_shark_approx !important
             transition: all 0.3s ease-in-out
 
+    .required
+        background-color: transparent
+        color: #b30f0f
 
     #wfls-option-allow-xml-rpc-label
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wfls-option-xmlrpc-enabled-label
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wfls-option-remember-device-label
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wfls-option-whitelisted-label
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wfls-enable-auth-captcha-label
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wfls-enable-captcha-site-key-label
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wfls-enable-captcha-secret-label
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wfls-option-recaptcha-threshold-label
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wfls-recaptcha-score-history
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wfls-require-2fa-admin-label
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wfls-option-recaptcha-test-mode-label
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wfls-option-delete-deactivation-label
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wfls-block-title
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #section-title-settings
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #section-title-manage
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wfselect2-selection__rendered
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wpfc-optimized-statics-reduction
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wpfc-optimized-statics-optimized
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wpfc-optimized-statics-error
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wpfc-optimized-statics-pending
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wpfc-optimized-statics-total_image_number
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .Select-value-label
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wf-scan-tabs
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         .wf-tab
             border-color: $color_rangoon_green_approx!important
@@ -295,24 +300,20 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
 
     .wf-scan-step-title
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .sui-summary-large
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .no-p
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #panels-settings-page
@@ -325,7 +326,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
                 a
                     color: $color_silver_sand_approx !important
@@ -350,8 +350,11 @@ $color_dune_approx: #393535
 
     .importer-title
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
+
+    #edit-slug-box,
+    #comment-link-box
+        color: #aaa
 
     table
         //If you use compass, instead of the line below you could use + text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
@@ -368,7 +371,6 @@ $color_dune_approx: #393535
             background: $color_woodsmoke_approx!important
             p
                 color: $color_storm_dust_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
                 &.main
                     color: $color_silver_sand_approx !important
@@ -378,7 +380,6 @@ $color_dune_approx: #393535
 
             li
                 color: $color_label !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -393,7 +394,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -421,7 +421,6 @@ $color_dune_approx: #393535
             transition: all 0.3s ease-in-out
             a
                 color: $color_silver_sand_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
             &:hover
@@ -429,12 +428,10 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
             &.ui-tabs-active a
                 color: $color_cornflower_blue_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -488,17 +485,14 @@ $color_dune_approx: #393535
 
     .redux-title
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .redux_field_th
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     label
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         //If you use compass, instead of the line below you could use + text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
         text-shadow: 0 0 0 !important
@@ -507,52 +501,42 @@ $color_dune_approx: #393535
 
     .post-state
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .post-com-count-wrapper
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wpseo-links
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .current
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     h4
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     h5
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     h6
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     h1
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     h2
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     h3
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         //If you use compass, instead of the line below you could use + text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
         text-shadow: 0 0 0 !important
@@ -570,12 +554,10 @@ $color_dune_approx: #393535
         &.wordfence
             td
                 color: $color_storm_dust_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
             li
                 color: $color_storm_dust_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -590,114 +572,92 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
 
     .wfls-option-subtitle
         color: $color_storm_dust_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wf-issue-message
         color: $color_storm_dust_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .sui-summary-detail
         color: $color_storm_dust_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wc-email-settings-table-email_type
         color: $color_storm_dust_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wc-email-settings-table-recipient
         color: $color_storm_dust_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .description
-        color: #848586 !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        color: #bbb
         transition: all 0.3s ease-in-out
 
     .field-desc
         color: $color_storm_dust_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .view
         color: $color_storm_dust_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .trash
         color: $color_storm_dust_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .inline
         color: $color_storm_dust_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .edit
         color: $color_storm_dust_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     p
-        color: #949494 !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        color: #949494
         transition: all 0.3s ease-in-out
 
     .wf-issue-severity-critical
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wf-issue-severity-high
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wf-issue-type
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .smush-pro-feature-title
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .sui-settings-label
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .gaLhzU
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .small
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .titledesc
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .settings
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #post-body
@@ -707,10 +667,12 @@ $color_dune_approx: #393535
             color: $color_label !important
             transition: all 0.3s ease-in-out
 
+    #titlediv
+        #title
+            background-color: #2f2f2f
 
     #cwd
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .widefat
@@ -730,32 +692,26 @@ $color_dune_approx: #393535
 
     .column-date
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .tablenav-paging-text
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .displaying-num
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .yoast_cornerstone
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .count
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .manage-column
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         label
             color: $color_label !important
@@ -764,37 +720,30 @@ $color_dune_approx: #393535
 
     .ftffRk
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wf-issue-time
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wp-smush-stats-percent
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .recommendation
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .qoAkv
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .redux-group-tab-link-a
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wf-issue-severity-medium
         color: $color_yellow_sea_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wf-striped-table
@@ -834,7 +783,6 @@ $color_dune_approx: #393535
 
     .wf-result-success
         color: $color_japanese_laurel_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     svg
@@ -955,7 +903,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -1000,7 +947,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -1015,7 +961,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -1030,7 +975,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -1040,7 +984,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
             &.system-note
@@ -1105,7 +1048,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $bgcolor_input !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
             + label::before
@@ -1126,7 +1068,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $bgcolor_input !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
             &:checked + label
@@ -1134,7 +1075,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -1175,7 +1115,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -1241,7 +1180,11 @@ $color_dune_approx: #393535
 
     .wp-core-ui
         .button
-            //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+            border-color: $color_rangoon_green_approx
+            border-bottom-color: $color_rangoon_green_approx
+            color: $color_bon_jour_approx
+            background-color: $bgcolor_button
+            transition: all 0.3s ease-in-out
             box-shadow: 0 0 0 !important
             &.disabled
                 //If you use compass, instead of the line below you could use + text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
@@ -1250,15 +1193,13 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
-                &:hover
-                    border-color: $color_rangoon_green_approx!important
-                    border-bottom-color: $color_rangoon_green_approx!important
-                    color: $color_bon_jour_approx !important
-                    background-color: $color_shark_approx !important
-                    //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-                    transition: all 0.3s ease-in-out
+            &:hover
+                border-color: $color_rangoon_green_approx!important
+                border-bottom-color: $color_rangoon_green_approx!important
+                color: $color_bon_jour_approx !important
+                background-color: $color_cod_gray_approx !important
+                transition: all 0.3s ease-in-out
 
 
             &:disabled
@@ -1266,13 +1207,11 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
                 border-color: $color_rangoon_green_approx!important
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
             &:hover
@@ -1280,133 +1219,119 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
         .button-primary
-            //If you use compass, instead of the line below you could use + text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-            text-shadow: 0 0 0 !important
-            //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-            box-shadow: 0 0 0 !important
-            border-color: $color_rangoon_green_approx!important
-            border-bottom-color: $color_rangoon_green_approx!important
-            color: $color_bon_jour_approx !important
-            background-color: $bgcolor_button
+            text-shadow: 0 0 0
+            box-shadow: 0 0 0
+            border-color: $color_rangoon_green_approx
+            border-bottom-color: $color_rangoon_green_approx
+            color: $color_bon_jour_approx
+            background-color: #005a7d
             transition: all 0.3s ease-in-out
             &.disabled
-                border-color: $color_rangoon_green_approx!important
-                border-bottom-color: $color_rangoon_green_approx!important
-                color: $color_bon_jour_approx !important
-                background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+                border-color: $color_rangoon_green_approx
+                border-bottom-color: $color_rangoon_green_approx
+                color: $color_bon_jour_approx
+                background-color: $color_shark_approx
                 transition: all 0.3s ease-in-out
                 &:hover
-                    border-color: $color_rangoon_green_approx!important
-                    border-bottom-color: $color_rangoon_green_approx!important
-                    color: $color_bon_jour_approx !important
-                    background-color: $color_cod_gray_approx !important
-                    //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+                    border-color: $color_rangoon_green_approx
+                    border-bottom-color: $color_rangoon_green_approx
+                    color: $color_bon_jour_approx
+                    background-color: $color_cod_gray_approx
                     transition: all 0.3s ease-in-out
 
 
             &:disabled
-                border-color: $color_rangoon_green_approx!important
-                border-bottom-color: $color_rangoon_green_approx!important
-                color: $color_bon_jour_approx !important
-                background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+                border-color: $color_rangoon_green_approx
+                border-bottom-color: $color_rangoon_green_approx
+                color: $color_bon_jour_approx
+                background-color: $color_cod_gray_approx
                 transition: all 0.3s ease-in-out
-                border-color: $color_rangoon_green_approx!important
-                border-bottom-color: $color_rangoon_green_approx!important
-                color: $color_bon_jour_approx !important
-                background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+                border-color: $color_rangoon_green_approx
+                border-bottom-color: $color_rangoon_green_approx
+                color: $color_bon_jour_approx
+                background-color: $color_shark_approx
                 transition: all 0.3s ease-in-out
 
             &:hover
-                border-color: $color_rangoon_green_approx!important
-                border-bottom-color: $color_rangoon_green_approx!important
-                color: $color_bon_jour_approx !important
-                background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+                border-color: $color_rangoon_green_approx
+                border-bottom-color: $color_rangoon_green_approx
+                color: $color_bon_jour_approx
+                background-color: $color_cod_gray_approx
                 transition: all 0.3s ease-in-out
 
 
         #customize-header-actions
             .button-primary[disabled]
-                //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
                 box-shadow: 0 0 0 !important
                 border-color: $color_rangoon_green_approx!important
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
             .button-primary:disabled
-                //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
                 box-shadow: 0 0 0 !important
                 border-color: $color_rangoon_green_approx!important
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
         .button[disabled]
-            border-color: $color_rangoon_green_approx!important
-            border-bottom-color: $color_rangoon_green_approx!important
-            color: $color_bon_jour_approx !important
-            background-color: $color_cod_gray_approx !important
+            border-color: $color_rangoon_green_approx
+            border-bottom-color: $color_rangoon_green_approx
+            color: $color_bon_jour_approx
+            background-color: $color_cod_gray_approx
             transition: all 0.3s ease-in-out
             &:hover
-                border-color: $color_rangoon_green_approx!important
-                border-bottom-color: $color_rangoon_green_approx!important
-                color: $color_bon_jour_approx !important
-                background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+                border-color: $color_rangoon_green_approx
+                border-bottom-color: $color_rangoon_green_approx
+                color: $color_bon_jour_approx
+                background-color: $color_shark_approx
                 transition: all 0.3s ease-in-out
 
 
         .button-primary[disabled]
-            border-color: $color_rangoon_green_approx!important
-            border-bottom-color: $color_rangoon_green_approx!important
-            color: $color_bon_jour_approx !important
-            background-color: $color_shark_approx !important
+            border-color: $color_rangoon_green_approx
+            border-bottom-color: $color_rangoon_green_approx
+            color: $color_bon_jour_approx
+            background-color: $color_shark_approx
             transition: all 0.3s ease-in-out
             &:hover
-                border-color: $color_rangoon_green_approx!important
-                border-bottom-color: $color_rangoon_green_approx!important
-                color: $color_bon_jour_approx !important
-                background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+                border-color: $color_rangoon_green_approx
+                border-bottom-color: $color_rangoon_green_approx
+                color: $color_bon_jour_approx
+                background-color: $color_cod_gray_approx
                 transition: all 0.3s ease-in-out
 
 
         .button-secondary
-            border-color: $color_rangoon_green_approx!important
-            border-bottom-color: $color_rangoon_green_approx!important
-            color: $color_bon_jour_approx !important
-            background-color: $color_shark_approx !important
+            border-color: $color_rangoon_green_approx
+            border-bottom-color: $color_rangoon_green_approx
+            color: $color_bon_jour_approx
+            background-color: $color_shark_approx
             transition: all 0.3s ease-in-out
             &:hover
-                border-color: $color_rangoon_green_approx!important
-                border-bottom-color: $color_rangoon_green_approx!important
-                color: $color_bon_jour_approx !important
-                background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+                border-color: $color_rangoon_green_approx
+                border-bottom-color: $color_rangoon_green_approx
+                color: $color_bon_jour_approx
+                background-color: $color_cod_gray_approx
                 transition: all 0.3s ease-in-out
 
             &.media_upload_button
-                border-color: $color_rangoon_green_approx!important
-                border-bottom-color: $color_rangoon_green_approx!important
-                color: $color_bon_jour_approx !important
-                background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+                border-color: $color_rangoon_green_approx
+                border-bottom-color: $color_rangoon_green_approx
+                color: $color_bon_jour_approx
+                background-color: $color_shark_approx
                 transition: all 0.3s ease-in-out
 
+        .button-link
+            color: #8bcdec
 
         .attachment-preview
             border-color: $color_rangoon_green_approx!important
@@ -1431,7 +1356,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
                 &.selected
                     background-color: transparent !important
@@ -1467,7 +1391,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
                 &.selected
                     //If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
@@ -1521,7 +1444,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -1531,7 +1453,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
             h3.accordion-section-title:hover
@@ -1539,7 +1460,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -1663,7 +1583,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -1708,7 +1627,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -1725,7 +1643,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .int-item
@@ -1735,7 +1652,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -1759,7 +1675,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -1786,7 +1701,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -1822,9 +1736,9 @@ $color_dune_approx: #393535
         border-color: $color_rangoon_green_approx !important
 
     pre
-        background: $color_shark_approx !important
-        color: $color_pumice_approx !important
-        border-color: $color_rangoon_green_approx !important
+        background: $color_shark_approx
+        color: $color_pumice_approx
+        border-color: $color_rangoon_green_approx
 
     .select2-container--default
         .select2-selection--multiple
@@ -1843,7 +1757,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -1968,7 +1881,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -1986,7 +1898,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
             &.wfls-active
@@ -1994,7 +1905,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -2004,7 +1914,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:Hover
             border-color: $color_rangoon_green_approx!important
@@ -2026,7 +1935,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2046,7 +1954,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -2065,7 +1972,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
             &.active
@@ -2073,7 +1979,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
             a
@@ -2086,7 +1991,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2101,7 +2005,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2116,7 +2019,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2131,7 +2033,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2146,7 +2047,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2161,7 +2061,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wf-btn-default
@@ -2169,7 +2068,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2189,7 +2087,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -2211,7 +2108,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2226,7 +2122,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2241,7 +2136,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         border-color: $color_rangoon_green_approx !important
 
@@ -2250,7 +2144,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2265,7 +2158,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2280,7 +2172,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2295,7 +2186,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2310,7 +2200,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2325,7 +2214,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2340,7 +2228,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2355,7 +2242,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .menu-item-handle
@@ -2363,7 +2249,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2378,7 +2263,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2403,7 +2287,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -2413,7 +2296,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2428,7 +2310,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .gBBWok
@@ -2436,7 +2317,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2451,7 +2331,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2466,7 +2345,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wp-mail-smtp-btn-orange
@@ -2474,7 +2352,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2489,7 +2366,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2504,7 +2380,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2519,7 +2394,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2543,7 +2417,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -2553,7 +2426,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2568,7 +2440,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2583,7 +2454,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2598,7 +2468,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2613,7 +2482,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2628,7 +2496,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2643,7 +2510,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2658,7 +2524,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2673,7 +2538,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2688,7 +2552,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2699,18 +2562,19 @@ $color_dune_approx: #393535
 
 
     .nav-tab
-        border-color: $color_rangoon_green_approx!important
-        border-bottom-color: $color_rangoon_green_approx!important
-        color: $color_bon_jour_approx !important
-        background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        border-color: $color_rangoon_green_approx
+        border-bottom-color: $color_rangoon_green_approx
+        color: $color_bon_jour_approx
+        background-color: #484848
         transition: all 0.3s ease-in-out
         &:hover
-            border-color: $color_rangoon_green_approx!important
-            border-bottom-color: $color_rangoon_green_approx!important
-            color: $color_bon_jour_approx !important
-            background-color: $color_cod_gray_approx !important
+            border-color: $color_rangoon_green_approx
+            border-bottom-color: $color_rangoon_green_approx
+            color: $color_bon_jour_approx
+            background-color: #1a1a1a
             transition: all 0.3s ease-in-out
+        &-active
+            background-color: #1a1a1a
 
 
     #order_note_type
@@ -2718,7 +2582,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2733,7 +2596,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2748,7 +2610,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2763,7 +2624,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2778,7 +2638,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2793,7 +2652,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2808,7 +2666,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2823,7 +2680,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx
         color: $color_bon_jour_approx
         background-color: $bgcolor_button
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2831,6 +2687,8 @@ $color_dune_approx: #393535
             color: $color_bon_jour_approx !important
             background-color: $color_cod_gray_approx !important
             transition: all 0.3s ease-in-out
+        &.delete
+            background-color: #823014
 
 
     .media_upload_button
@@ -2838,7 +2696,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2858,7 +2715,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2873,7 +2729,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2888,13 +2743,11 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         border-color: $color_rangoon_green_approx!important
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .redux-main
@@ -2902,7 +2755,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         .customize-control
             border-color: $color_rangoon_green_approx !important
@@ -2923,7 +2775,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -2938,7 +2789,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2953,7 +2803,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2968,7 +2817,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2983,7 +2831,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -2998,7 +2845,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -3013,7 +2859,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -3027,7 +2872,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -3042,7 +2886,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -3057,7 +2900,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -3072,7 +2914,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -3094,7 +2935,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -3109,7 +2949,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -3119,7 +2958,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -3136,7 +2974,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
             > a:hover
@@ -3144,7 +2981,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -3174,7 +3010,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .cf-tabs__item
@@ -3194,7 +3029,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .customize-section-back
@@ -3202,7 +3036,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .customize-controls-close
@@ -3210,7 +3043,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .customize-panel-back
@@ -3218,7 +3050,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .frm_pro_tip
@@ -3226,7 +3057,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_0
@@ -3234,7 +3064,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_1
@@ -3242,7 +3071,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_2
@@ -3250,7 +3078,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_3
@@ -3258,7 +3085,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_4
@@ -3266,7 +3092,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_5
@@ -3274,7 +3099,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_6
@@ -3282,7 +3106,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_7
@@ -3290,7 +3113,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_8
@@ -3298,7 +3120,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_9
@@ -3306,7 +3127,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_10
@@ -3314,7 +3134,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_11
@@ -3322,7 +3141,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_12
@@ -3330,7 +3148,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_13
@@ -3338,7 +3155,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_14
@@ -3346,7 +3162,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_15
@@ -3354,7 +3169,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_16
@@ -3362,7 +3176,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_17
@@ -3370,7 +3183,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_18
@@ -3378,7 +3190,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_19
@@ -3386,7 +3197,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #mceu_20
@@ -3394,7 +3204,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wp-smush-progress-inner
@@ -3402,7 +3211,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .so-panels-contextual-menu
@@ -3423,7 +3231,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -3433,7 +3240,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .color-option
@@ -3455,7 +3261,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .filename
@@ -3463,7 +3268,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .cf-btn--primary
@@ -3471,7 +3275,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_red_berry_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_lonestar_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wf-live-traffic-legend
@@ -4378,62 +4181,50 @@ $color_dune_approx: #393535
 
     .wf-modal-title strong
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wfls-table tbody tr td
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wordfence_activity_report_widget .inside h2
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wf-section-title > h2
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wf-tab a
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .tabs a
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .redirection .form-table th a
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .donation th
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .title strong
         color: $color_silver_sand_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #tinymce li
         color: $color_storm_dust_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .order_notes li
         color: $color_storm_dust_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wp-mail-smtp-wpforms a
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .woocommerce table.form-table
@@ -4448,7 +4239,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -4459,7 +4249,6 @@ $color_dune_approx: #393535
 
     .inside ul li blockquote
         color: $color_label !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .sui-2-3-16 .sui-wrap
@@ -4469,7 +4258,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_red_berry_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_lonestar_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
                 &:disabled
                     border-color: $color_rangoon_green_approx!important
@@ -4485,7 +4273,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -4497,7 +4284,6 @@ $color_dune_approx: #393535
             transition: all 0.3s ease-in-out
             a
                 color: $color_cornflower_blue_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -4507,52 +4293,42 @@ $color_dune_approx: #393535
 
     .permalink-structure tbody tr td code
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .form-table th
-        color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        color: #b9cafd
         transition: all 0.3s ease-in-out
 
     .user-sessions-wrap th
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .user-profile-picture th
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .show-admin-bar th
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .user-comment-shortcuts-wrap th
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .user-admin-color-wrap th
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .user-syntax-highlighting-wrap th
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .user-rich-editing-wrap th
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .links-table tbody tr th
         color: $color_cornflower_blue_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .tma-block-toolbar-wrap div.components-toolbar
@@ -4613,7 +4389,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -4630,7 +4405,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         .select2-arrow
             background-color: transparent !important
@@ -4645,7 +4419,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -4665,7 +4438,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wf-pagination > li > a
@@ -4673,7 +4445,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -4688,7 +4459,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .unused .tadvmodule .tadvitem
@@ -4696,7 +4466,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -4711,7 +4480,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         button
             &:hover
@@ -4732,7 +4500,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -4754,7 +4521,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -4771,7 +4537,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -4786,7 +4551,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -4801,7 +4565,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -4816,7 +4579,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -4868,7 +4630,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -4883,7 +4644,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -4898,7 +4658,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .tmce-active .switch-tmce
@@ -4906,7 +4665,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_cod_gray_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -4921,7 +4679,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -4936,7 +4693,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
         &:hover
             border-color: $color_rangoon_green_approx!important
@@ -4951,7 +4707,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wfls-switch > li
@@ -4981,7 +4736,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     [role=treeitem].hover
@@ -4989,7 +4743,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .classic-active .settings-toggle.classic
@@ -4997,7 +4750,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .block-active .settings-toggle.block
@@ -5005,7 +4757,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .contextual-help-tabs .active a
@@ -5013,7 +4764,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .redux-sidebar .redux-group-menu li
@@ -5024,7 +4774,6 @@ $color_dune_approx: #393535
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
-                //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
                 transition: all 0.3s ease-in-out
 
 
@@ -5037,7 +4786,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     .wp-submenu li:hover
@@ -5045,7 +4793,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wp-admin-bar-new-content-default li:hover
@@ -5053,7 +4800,6 @@ $color_dune_approx: #393535
         border-bottom-color: $color_rangoon_green_approx!important
         color: $color_bon_jour_approx !important
         background-color: $color_shark_approx !important
-        //If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
         transition: all 0.3s ease-in-out
 
     #wfcolorbox.wf-modal
@@ -5295,23 +5041,40 @@ $color_dune_approx: #393535
     .filter-links li > a
         border-color: $color_red_berry_approx !important
 
-    /* Editor Markdown style */
-    .editormd-html-preview,
+    /* Editor Markdown Preview Area style */
     .editormd-preview-container
         background-color: #272727
+        pre
+            background-color: #171717
+        code
+            background-color: #171717
+            color: #bbb
+        table
+            thead
+                tr
+                    background-color: #1d1d1d
     .editormd-preview
         background-color: #101010
-    .editormd-toolbar
-        background: #151515
-    .editormd-menu
-        > li > a
-            > .fa
-                filter: invert(1)
-    /* code on Editor */
+    .editormd-container-mask
+        background-color: #101010
+    .markdown-body
+        color: #d8d9da
+        p
+            color: #d8d9da
+        a
+            color: #93bcd1
+        pre
+            background-color: #171717
+        table
+            tr
+                background-color: #060606
+            tr:nth-child(2n)
+                background-color: #292929
     .pln
-        color: #cacaca
-    .cm-s-default
-        .cm-tag
-            color: #6ab55d
-    .CodeMirror
-        color: #d6d6d6
+        color: #99a5e8
+    .kwd
+        color: #7e90f7
+    .clo, .opn, .pun
+        color: #808080
+    .typ
+        color: #ad2cad
