@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Wordpress Dark Black Backend Customized
  * @namespace   StylusThemes
- * @version     2.0.3
+ * @version     2.0.4
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/wordpress/black.user.css
  * @license     MIT
@@ -562,10 +562,10 @@ $color_dune_approx: #393535
 
 
         .page-title-action
-            border-color: $color_rangoon_green_approx!important
-            border-bottom-color: $color_rangoon_green_approx!important
-            color: $color_bon_jour_approx !important
-            background-color: $color_shark_approx !important
+            border-color: $color_rangoon_green_approx
+            border-bottom-color: $color_rangoon_green_approx
+            color: #71c2e8
+            background-color: #464646
             transition: all 0.3s ease-in-out
             &:hover
                 border-color: $color_rangoon_green_approx!important
@@ -597,7 +597,7 @@ $color_dune_approx: #393535
         transition: all 0.3s ease-in-out
 
     .description
-        color: #bbb
+        color: #bbb !important
         transition: all 0.3s ease-in-out
 
     .field-desc
@@ -676,6 +676,8 @@ $color_dune_approx: #393535
         transition: all 0.3s ease-in-out
 
     .widefat
+        p, ol, ul
+            color: #b9b9b9
         td
             color: #949494
         thead tr
@@ -1186,40 +1188,20 @@ $color_dune_approx: #393535
             background-color: $bgcolor_button
             transition: all 0.3s ease-in-out
             box-shadow: 0 0 0 !important
-            &.disabled
-                //If you use compass, instead of the line below you could use + text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-                text-shadow: 0 0 0 !important
-                border-color: $color_rangoon_green_approx!important
-                border-bottom-color: $color_rangoon_green_approx!important
-                color: $color_bon_jour_approx !important
-                background-color: $color_cod_gray_approx !important
-                transition: all 0.3s ease-in-out
-            &:hover
-                border-color: $color_rangoon_green_approx!important
-                border-bottom-color: $color_rangoon_green_approx!important
-                color: $color_bon_jour_approx !important
-                background-color: $color_cod_gray_approx !important
-                transition: all 0.3s ease-in-out
-
-
             &:disabled
-                border-color: $color_rangoon_green_approx!important
-                border-bottom-color: $color_rangoon_green_approx!important
-                color: $color_bon_jour_approx !important
-                background-color: $color_cod_gray_approx !important
-                transition: all 0.3s ease-in-out
                 border-color: $color_rangoon_green_approx!important
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_shark_approx !important
                 transition: all 0.3s ease-in-out
-
             &:hover
                 border-color: $color_rangoon_green_approx!important
                 border-bottom-color: $color_rangoon_green_approx!important
                 color: $color_bon_jour_approx !important
                 background-color: $color_cod_gray_approx !important
                 transition: all 0.3s ease-in-out
+            &.active
+                background-color: #4a4a4a
 
 
         .button-primary
@@ -2012,6 +1994,11 @@ $color_dune_approx: #393535
             color: $color_bon_jour_approx !important
             background-color: $color_shark_approx !important
             transition: all 0.3s ease-in-out
+        .badge
+            color: #b9bfc5
+            &.blue
+                border: 1px solid #5f8894
+                color: #98a6b1!important
 
 
     .draftJsMentionPlugin__mention__29BEd
@@ -3546,6 +3533,17 @@ $color_dune_approx: #393535
         border-color: $color_rangoon_green_approx!important
         background: $color_cod_gray_approx!important
         color: $color_silver_sand_approx!important
+    .widgets-chooser
+        ul
+            border: 1px solid #696969
+        li
+            background-color: #212121
+            border-bottom: 1px solid #666
+        .widgets-chooser-button
+            color: #aaa
+    #available-widgets
+        .widget-description
+            color: #aaa
 
     .so-builder-toolbar
         border-color: $color_rangoon_green_approx!important
@@ -4298,6 +4296,10 @@ $color_dune_approx: #393535
     .form-table th
         color: #b9cafd
         transition: all 0.3s ease-in-out
+
+    .form-wrap
+        p
+            color: #aaa
 
     .user-sessions-wrap th
         color: $color_cornflower_blue_approx !important
