@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Wordpress Dark Black Backend Customized
  * @namespace   StylusThemes
- * @version     2.0.4
+ * @version     2.0.5
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/wordpress/black.user.css
  * @license     MIT
@@ -36,6 +36,8 @@
  * WP Fastest Cache Pro
  * Force Regenerate Thumbnails
  * Wordfence
+ * WP Githuber md
+ * AIO WP Security
  *
  * block-editor not supported.
  *
@@ -188,10 +190,10 @@ $color_dune_approx: #393535
             transition: all 0.3s ease-in-out
 
         &.ab-item:hover
-            border-color: $color_rangoon_green_approx!important
-            border-bottom-color: $color_rangoon_green_approx!important
-            color: $color_bon_jour_approx !important
-            background-color: $color_shark_approx !important
+            border-color: $color_rangoon_green_approx
+            border-bottom-color: $color_rangoon_green_approx
+            color: $color_bon_jour_approx
+            background-color: $color_shark_approx
             transition: all 0.3s ease-in-out
 
     .required
@@ -621,7 +623,7 @@ $color_dune_approx: #393535
         transition: all 0.3s ease-in-out
 
     p
-        color: #949494
+        color: #bbb
         transition: all 0.3s ease-in-out
 
     .wf-issue-severity-critical
@@ -2758,12 +2760,31 @@ $color_dune_approx: #393535
             background-color: $color_shark_approx !important
             transition: all 0.3s ease-in-out
             &:hover
-                border-color: $color_rangoon_green_approx!important
-                border-bottom-color: $color_rangoon_green_approx!important
-                color: $color_bon_jour_approx !important
-                background-color: $color_cod_gray_approx !important
+                border-color: $color_rangoon_green_approx
+                border-bottom-color: $color_rangoon_green_approx
+                color: $color_bon_jour_approx
+                background-color: $color_cod_gray_approx
                 transition: all 0.3s ease-in-out
 
+        #wp-admin-bar-site-name
+            >a.ab-item
+                color: transparent
+                visibility: hidden
+                width: 17px
+                &:before
+                    visibility: visible
+            &:hover, &.hover
+                >a.ab-item
+                    color: transparent
+                    visibility: hidden
+                    &:before
+                        visibility: visible
+        #wp-admin-bar-my-account
+            >a
+                color: transparent
+                visibility: hidden
+                img
+                    visibility: visible
 
         .menupop .ab-sub-wrapper
             border-color: $color_rangoon_green_approx!important
@@ -5080,3 +5101,20 @@ $color_dune_approx: #393535
         color: #808080
     .typ
         color: #ad2cad
+
+    /* WP Security */
+    .aiowps_dashboard_widget_footer
+        background-color: #252424
+    .aio_blue_box
+        background-color: #253746
+        border-color: #082848
+    .aio_yellow_box
+        background-color: #464605
+        border-color: #847a0b
+    .aio_green_box
+        background-color: #08230e
+    .aio_grey_box
+        background-color: #2b2a2a
+    .aiowps_more_info_body
+        background-color: #151511
+        border-color: #524e1d
