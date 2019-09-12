@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        ChatWork Dark
  * @namespace   StylusThemes
- * @version     2.0.2
+ * @version     2.0.3
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/chatwork.com/dark.user.css
  * @license     MIT
@@ -287,6 +287,7 @@ $color-list-hover: #216473
             background: $color-list-hover !important
     .TKgKC
         color: #eee !important
+        fill: #eee
 
     /* チャット人数 */
 
@@ -305,9 +306,9 @@ $color-list-hover: #216473
         color: #ededed !important
 
     .button
-        background-color: #676765
+        background-color: #353535
         &:hover
-            background-color: #aaa
+            background-color: #666
 
     .roomListBadges__unreadBadge
         background-color: #fba641
@@ -386,6 +387,11 @@ $color-list-hover: #216473
     .selectboxDefault, .selectboxContent, .chatSettingDialog__headerTabItem--selected, .memberDetailDialog__headerTabItem--selected, .dropDownTooltip
         background-color: #000
 
+    .selectboxContent
+        li
+            &:hover
+                background-color: $color-list-hover
+
     .dropDownTooltip__item:hover
         background-color: #007cdd
 
@@ -421,6 +427,20 @@ $color-list-hover: #216473
             background-color: #444 !important
         &__closeButtonIcon
             fill: #eee
+
+    /* グループチャット新規作成 */
+    .roomMemberSelect
+        &__memberSelectTableContainer
+            background-color: #060606
+    .roomMemberTable
+        &:hover
+            background-color: $color-list-hover
+        &__orgNameText
+            color: #aaa
+    .cVFdwt
+        color: $color-subtitle !important
+    .ezDUqE
+        background-color: #333
 
     /* グループチャット設定 */
     .roomMuteSettingDialog
