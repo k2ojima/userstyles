@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        ChatWork Dark
  * @namespace   StylusThemes
- * @version     2.0.3
+ * @version     2.0.4
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/chatwork.com/dark.user.css
  * @license     MIT
@@ -428,7 +428,7 @@ $color-list-hover: #216473
         &__closeButtonIcon
             fill: #eee
 
-    /* グループチャット新規作成 */
+    /* グループチャット新規作成 & 編集 */
     .roomMemberSelect
         &__memberSelectTableContainer
             background-color: #060606
@@ -441,6 +441,16 @@ $color-list-hover: #216473
         color: $color-subtitle !important
     .ezDUqE
         background-color: #333
+
+    .memberEdit
+        &__memberTableContainer
+            background-color: #060606
+        &__memberTableFooter
+            background-color: #000
+
+    .roomMemberEditDialog
+        &__headerTabItem--selected
+            background-color: #000
 
     /* グループチャット設定 */
     .roomMuteSettingDialog
