@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        ChatWork Dark
  * @namespace   StylusThemes
- * @version     2.0.4
+ * @version     2.0.5
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/chatwork.com/dark.user.css
  * @license     MIT
@@ -10,6 +10,7 @@
 
 @charset "utf8"
 
+$color-main: #eee
 $color-subtitle: #ddd
 $color-list-hover: #216473
 
@@ -48,6 +49,11 @@ $color-list-hover: #216473
         border-bottom: 0px solid #000000
         background: #4F5151
         color: #B1B1B1
+
+    .roomListHeader
+        &__myChatButton
+            color: $color-main
+            fill: $color-main
 
     /*プロフィールのとこ*/
 
