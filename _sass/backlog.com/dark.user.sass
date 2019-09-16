@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name Backlog Dark
  * @namespace StylusThemes
- * @version 2.3.1
+ * @version 2.3.2
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/backlog.com/dark.user.css
  * @license     MIT
@@ -10,7 +10,7 @@
 
 @charset "utf8"
 
-$theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8ff, pink: #c36d80, orange: #d89380, purple: #cd88fd, black: #70bfb1)
+$theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #aec6ff, aqua: #20c8ff, pink: #c36d80, orange: #d89380, purple: #cd88fd, black: #70bfb1)
 
 @-moz-document domain("backlog.com")
   body
@@ -1934,7 +1934,7 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
     background-color: #2c9a7a
 
   .slide-in__title
-    color: #000
+    color: #ddd
     svg.icon
       fill: #1c1117
 
@@ -3774,6 +3774,11 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #7e9de4, aqua: #20c8
         &__link
           &.is_active, &:hover
             color: $color
+      .select2-wrapper
+        .select2-container
+          &.select2-container-multi
+            .select2-choices .select2-search-choice
+              background-color: darken($color, 60%)
       .select2-drop
         .select2-results
           .select2-result-selectable
