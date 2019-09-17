@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name Wunderlist Dark Theme Customized
  * @namespace github.com/xentok/userstyles/
- * @version 1.0.1
+ * @version 1.1.0
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/wunderlist.com/dark.user.css
  * @license     MIT
@@ -40,6 +40,16 @@
         .comments-add .input-fake
             background: #333 !important
 
+        #detail
+            .section-item
+                .section-title
+                    color: #c8cbd0 !important
+
+        .listOptions
+            .content-people
+                li .content-people-email
+                    color: #bfbfbf !important
+
     #lists
         background-color: #222222 !important
 
@@ -61,17 +71,19 @@
                 background: rgba(74, 81, 156, 0.75) !important
 
     .taskItem-body
-        background: #222222 !important
+        background: #222 !important
 
     .taskItem-titleWrapper
-        color: #dddddd !important
+        color: #ddd !important
 
     .taskItem-duedate
-        color: gray !important
+        color: #55a8ef !important
+        &.overdue
+            color: #d6433f !important
 
     span
         &.user-name
-            color: green !important
+            color: #eee !important
 
         &.overdue-count:not(:empty)
             display: block !important
@@ -137,6 +149,9 @@
 
     .sidebarFolder.expanded
         background-color: #111 !important
+
+    .dialog
+        background: #2d2d2d !important
 
     #fullscreen-note
         background: #424242 !important
