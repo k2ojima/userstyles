@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name Backlog Dark
  * @namespace StylusThemes
- * @version 2.3.2
+ * @version 2.3.3
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/backlog.com/dark.user.css
  * @license     MIT
@@ -3778,7 +3778,7 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #aec6ff, aqua: #20c8
         .select2-container
           &.select2-container-multi
             .select2-choices .select2-search-choice
-              background-color: darken($color, 60%)
+              background-color: darken(adjust-hue($color, 20%), 70%)
       .select2-drop
         .select2-results
           .select2-result-selectable
@@ -3796,6 +3796,11 @@ $theme-colors: (army: #6fada1, azuki: #d28f9a, ultramarine: #aec6ff, aqua: #20c8
             .chzn-choices .search-choice
               background-color: $color
               filter: opacity(0.9)
+
+      .ticket__header.-pull-request
+        .merge-direction
+          &__branch
+            background-color: darken(adjust-hue($color, 20%), 70%)
 
       .Page--git-list-pullRequest
         .pull-req-number
