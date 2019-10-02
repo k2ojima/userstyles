@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Wordpress Dark Black Backend Customized
  * @namespace   StylusThemes
- * @version     2.0.6
+ * @version     2.0.7
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/wordpress/black.user.css
  * @license     MIT
@@ -3515,10 +3515,22 @@ $color_dune_approx: #393535
     .CodeMirror
         border-color: $color_rangoon_green_approx!important
         background: $color_hunter_green_approx!important
+        color: #ddd
         &.widget-inside#nav-menu-footer
             border-color: $color_rangoon_green_approx!important
             background: $color_cod_gray_approx!important
             color: $color_silver_sand_approx!important
+        &-activeline-background
+            background: #34373a
+    .cm-s-default
+        .cm-attribute
+            color: #609bf3
+        .cm-string
+            color: #dc1b1b
+        .cm-keyword
+            color: #ff1fe4
+        .cm-meta, .cm-qualifier
+            color: #aaa
 
 
     #nav-menu-header
@@ -3794,8 +3806,8 @@ $color_dune_approx: #393535
 
 
     .notice
-        border-color: $color_rangoon_green_approx!important
-        background: $color_cod_gray_approx!important
+        border-color: #820000
+        background: #480000
         color: $color_silver_sand_approx!important
 
     .select2-drop
