@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GithubDarkTheme() Customized - Stylus
 @namespace      github.com/xentok/userstyles
-@version        2.1.0
+@version        2.1.1
 @author         Snazzie - arranged by xentok
 @license        MIT
 @updateURL      https://raw.githubusercontent.com/xentok/userstyles/master/github.com/githubdarktheme.user.css
@@ -7238,6 +7238,10 @@
         color: #eee !important;
     }
 
+    .btn-link:disabled, .btn-link:disabled:hover {
+        color: rgba(243, 243, 243, 0.5);
+    }
+
     #readme .Box-header,
     .commit-tease {
         background: #313131 !important;
@@ -7582,5 +7586,9 @@
 
     div[style="background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));"] {
         background: linear-gradient(to right, rgb(93, 106, 119), rgba(255, 255, 255, 0)) !important;
+    }
+
+    .TimelineItem-body {
+        color: #aaa;
     }
 }
