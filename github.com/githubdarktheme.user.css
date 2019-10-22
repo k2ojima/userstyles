@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GithubDarkTheme() Customized - Stylus
 @namespace      github.com/xentok/userstyles
-@version        2.1.1
+@version        2.1.2
 @author         Snazzie - arranged by xentok
 @license        MIT
 @updateURL      https://raw.githubusercontent.com/xentok/userstyles/master/github.com/githubdarktheme.user.css
@@ -7590,5 +7590,9 @@
 
     .TimelineItem-body {
         color: #aaa;
+    }
+
+    .hljs {
+        color: #dedede;
     }
 }
