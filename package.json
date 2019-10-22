@@ -10,7 +10,7 @@
 	"private": true,
 	"license": "MIT",
 	"scripts": {
-        "sass:compile": "node-sass ./_sass/ -x -r -o ./ --output-style compressed",
+        "sass:build": "node-sass ./_sass/ -x -r -o ./ --output-style compressed",
         "sass:watch": "node-sass ./_sass/ -w -x -r -o ./ --output-style compressed"
     },
 	"devDependencies": {
