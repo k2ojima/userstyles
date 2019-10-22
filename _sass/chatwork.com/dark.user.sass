@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        ChatWork Dark
  * @namespace   StylusThemes
- * @version     2.0.5
+ * @version     2.0.6
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/chatwork.com/dark.user.css
  * @license     MIT
@@ -14,7 +14,7 @@ $color-main: #eee
 $color-subtitle: #ddd
 $color-list-hover: #216473
 
-@-moz-document domain("chatwork.com")
+@-moz-document regexp("https://chatwork.com/#.+")
     /*リンク色*/
     a
         color: #00afaf !important
@@ -313,6 +313,7 @@ $color-list-hover: #216473
 
     .button
         background-color: #353535
+        color: #ddd
         &:hover
             background-color: #666
 
@@ -433,6 +434,14 @@ $color-list-hover: #216473
             background-color: #444 !important
         &__closeButtonIcon
             fill: #eee
+
+    /* TaskWindow */
+    .taskWindowContainer
+        background-color: #060606
+        &__headerTabItem
+            background-color: #444
+        .floatTabSelect
+            background-color: #111
 
     /* グループチャット新規作成 & 編集 */
     .roomMemberSelect
