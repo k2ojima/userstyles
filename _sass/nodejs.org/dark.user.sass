@@ -1,0 +1,40 @@
+/*! ==UserStyle==
+ * @name        NodeJS Docs Dark Mode
+ * @namespace   StylusThemes
+ * @version     1.0.0
+ * @homepageURL https://github.com/xentok/userstyles/
+ * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/nodejs.org/dark.user.css
+ * @license     MIT
+ * @author       xentok
+ * ==/UserStyle== */
+
+@charset "utf8"
+
+@-moz-document url-prefix("https://nodejs.org/api")
+    ::-webkit-scrollbar
+        background-color: #555
+    ::-webkit-scrollbar-thumb
+        background-color: #000
+
+    body
+        color: #eee
+        background-color: #252525
+    pre
+        background-color: #121212
+    tt, code
+        color: #f2f2f2
+        background-color: #121212
+    .sh_sourceCode
+        .sh_keyword
+            color: #9b9bff
+        .sh_symbol, .sh_cbracket
+            color: #bbb
+        .sh_comment
+            color: #999
+    a, a:link, a:active
+        color: #86d47f
+
+    .api_stability_1
+        background-color: #752200
+    .api_stability_2
+        background-color: #1f5401
