@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Laravel Docs Dark Mode
  * @namespace   StylusThemes
- * @version     1.3.0
+ * @version     1.3.1
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/laravel.com/dark.user.css
  * @license     MIT
@@ -32,6 +32,9 @@ $head-color: #f5f5f5
         .footer_bg
             background: #272727
 
+    .tt-dropdown-menu
+        color: #333
+
     .footer_nav
         .footer_nav_contain
             ul li a
@@ -49,6 +52,11 @@ $head-color: #f5f5f5
             color: #ececec
         .content-list ul li, ul:not(:first-of-type) li
             color: rgba(255, 255, 255, 0.7)
+
+    .custom_select
+        color: $fore-color
+    .input_group.search input[type=submit]
+        filter: invert(1)
 
     .token.class-name, .token.function
         color: #f5554b
