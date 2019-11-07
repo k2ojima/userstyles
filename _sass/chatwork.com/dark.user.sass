@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        ChatWork Dark
  * @namespace   StylusThemes
- * @version     2.0.7
+ * @version     2.0.8
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/chatwork.com/dark.user.css
  * @license     MIT
@@ -13,11 +13,13 @@
 $color-main: #eee
 $color-subtitle: #ddd
 $color-list-hover: #216473
+$color-reply-bg: #143800
+$color-link: #00afaf
 
 @-moz-document regexp("https://(?:www\.)?chatwork\.com/#.*")
     /*リンク色*/
     a
-        color: #00afaf !important
+        color: $color-link !important
 
     div
         color: #aaa !important
@@ -68,7 +70,7 @@ $color-list-hover: #216473
     /*背景*/
 
     .roomTask, .roomTask__header, .roomDescription__header, .timeLine, .roomInformationContent, .roomListItem
-        background: #343434
+        background: #222
 
     .timelineMessage:hover, ._message:hover, .chatTimeLineMessageHover:hover, .timelineMessage.chatTimeLineMessageHover, .timelineMessage--jumpMessage
         background: #414141
@@ -481,3 +483,16 @@ $color-list-hover: #216473
     .roomPermissionSettingDialog
         &__title
             color: $color-subtitle !important
+
+    // reply to yourself
+    .joRshk, .bLQsCD
+        background-color: $color-reply-bg !important
+        border-top-color: $color-reply-bg !important
+        border-bottom-color: $color-reply-bg !important
+
+    // name
+    .gbhkWR
+        color: $color-link !important
+    // org name
+    .hDJybe
+        color: $color-subtitle !important
