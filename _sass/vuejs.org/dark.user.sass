@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Vue.js Docs Dark Mode
  * @namespace   StylusThemes
- * @version     1.1.0
+ * @version     1.1.1
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/vuejs.org/dark.user.css
  * @license     MIT
@@ -34,6 +34,15 @@ $link-color: #c8d5e2
                 color: #408dd4
     code, pre
         background-color: $bg-info-color
+    .theme-default-content
+        code
+            color: $fore-sub-color
+    .content
+        code
+            color: $fore-sub-color
+
+    tr:nth-child(2n)
+        background-color: #343434
 
     a, a:link, a:active,
     p a code
@@ -66,7 +75,8 @@ $link-color: #c8d5e2
             a, button
                 color: $link-color
         p.tip,
-        p.success
+        p.success,
+        .custom-block.tip
             background-color: $bg-info-color
 
     .sidebar
