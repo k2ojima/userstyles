@@ -1,0 +1,35 @@
+/*! ==UserStyle==
+ * @name        Vue.js Docs Dark Mode
+ * @namespace   StylusThemes
+ * @version     0.1.0
+ * @homepageURL https://github.com/xentok/userstyles/
+ * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/vuejs.org/dark.user.css
+ * @license     MIT
+ * @author       xentok
+ * ==/UserStyle== */
+
+@charset "utf8"
+
+$bg-color: #111
+$fore-color: #efefef
+$fore-sub-color: #bbb
+$head-color: #f5f5f5
+$link-color: #58f1ac
+
+@-moz-document domain("vuejs.org")
+    ::-webkit-scrollbar
+        background-color: #000
+    ::-webkit-scrollbar-thumb
+        background-color: #555
+
+    body
+        color: $fore-color
+        background-color: $bg-color
+    pre
+        background-color: $bg-color
+    tt, code
+        color: $fore-color
+        background-color: $bg-color
+    a, a:link, a:active,
+    p a code
+        color: $link-color
