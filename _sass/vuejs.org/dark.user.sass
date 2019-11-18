@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Vue.js Docs Dark Mode
  * @namespace   StylusThemes
- * @version     1.0.0
+ * @version     1.1.0
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/vuejs.org/dark.user.css
  * @license     MIT
@@ -17,7 +17,7 @@ $fore-sub-color: #bdd4d4
 $head-color: #f5f5f5
 $link-color: #c8d5e2
 
-@-moz-document domain("vuejs.org")
+@-moz-document regexp("^https://(.*?\.)?vuejs.org/.*?/guide/.*$"), regexp("^https://(cli|router|vuex|ssr).vuejs.org/.*$")
     ::-webkit-scrollbar
         background-color: #000
     ::-webkit-scrollbar-thumb
@@ -44,6 +44,12 @@ $link-color: #c8d5e2
 
     #header
         background-color: #1f1f1f
+    .navbar
+        background-color: #1f1f1f
+        .links
+            background-color: #1f1f1f
+        .site-name
+            color: $link-color
     #nav
         .nav-dropdown
             background-color: $bg-info-color
@@ -64,6 +70,7 @@ $link-color: #c8d5e2
             background-color: $bg-info-color
 
     .sidebar
+        background-color: #1f1f1f
         .sidebar-link
             color: $fore-sub-color
 
