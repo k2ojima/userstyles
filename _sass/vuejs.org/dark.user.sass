@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Vue.js Docs Dark Mode
  * @namespace   StylusThemes
- * @version     0.2.0
+ * @version     1.0.0
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/vuejs.org/dark.user.css
  * @license     MIT
@@ -26,9 +26,14 @@ $link-color: #c8d5e2
     body
         color: $fore-color
         background-color: $bg-color
-    pre code
-        color: $fore-color
-        background-color: $bg-color
+    pre
+        code
+            color: $fore-color
+            background-color: $bg-color
+            .hljs-tag, .hljs-tag .hljs-title, .hljs-change, .hljs-winutils, .hljs-flow, .hljs-tex .hljs-special
+                color: #408dd4
+    code, pre
+        background-color: $bg-info-color
 
     a, a:link, a:active,
     p a code
@@ -39,6 +44,11 @@ $link-color: #c8d5e2
 
     #header
         background-color: #1f1f1f
+    #nav
+        .nav-dropdown
+            background-color: $bg-info-color
+            a
+                color: $link-color
 
     h1, h2, h3, h4, strong
         color: $fore-color
