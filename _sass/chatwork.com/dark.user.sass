@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        ChatWork Dark
  * @namespace   StylusThemes
- * @version     2.1.2
+ * @version     2.1.3
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/chatwork.com/dark.user.css
  * @license     MIT
@@ -100,6 +100,11 @@ $color-link: #00afaf
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
         cursor: pointer
 
+    .moreActionTooltip
+        &__item
+            color: $color-main
+            fill: $color-main
+
     .addTaskContainer__formContainer
         background: #999999
 
@@ -193,6 +198,9 @@ $color-link: #00afaf
     .roomList
         background-color: #000000
 
+    #_chatContent
+        background-color: #252525
+
     /* ~~~未読~~~ */
 
     .timeLine__unreadLineBody
@@ -250,7 +258,7 @@ $color-link: #00afaf
     .actionNav
         height: 25px
         padding: 0 5px
-        background: #000000
+        background: #555 !important
         border-right: 1px solid #AAAAAA
         border-bottom: 1px solid #FFFFFF
         border-left: 1px solid #FFFFFF
