@@ -1,9 +1,9 @@
 /*! ==UserStyle==
- * @name        My bookmarks
+ * @name        My Bookmarks
  * @namespace   StylusThemes
- * @version     1.0.0
+ * @version     1.1.0
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/bookmarks/dark.user.css
  * @license     MIT
  * @author     xentok
- * ==/UserStyle== */
+ * ==/UserStyle== */@-moz-document url-prefix("https://tech-camp.in/note"){.header-banner-link,.BottomFixedBanner,#sticky-wrapper{display:none !important}}
