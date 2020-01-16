@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           GithubDarkTheme() Customized - Stylus
 @namespace      github.com/xentok/userstyles
-@version        2.1.2
+@version        2.2.0
 @author         Snazzie - arranged by xentok
 @license        MIT
 @updateURL      https://raw.githubusercontent.com/xentok/userstyles/master/github.com/githubdarktheme.user.css
@@ -7578,6 +7578,10 @@
 
     div[style="background: linear-gradient(#ffffff, #fcfcfc);"] {
         background: none !important;
+    }
+
+    div[style="background-color: #fcfdfd;"] {
+        background-color: #34383c !important;
     }
 
     div[style="background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));"] {
