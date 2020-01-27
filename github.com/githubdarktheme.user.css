@@ -1,14 +1,14 @@
 /* ==UserStyle==
 @name           GithubDarkTheme() Customized - Stylus
 @namespace      github.com/xentok/userstyles
-@version        2.2.0
+@version        2.2.1
 @author         Snazzie - arranged by xentok
 @license        MIT
 @updateURL      https://raw.githubusercontent.com/xentok/userstyles/master/github.com/githubdarktheme.user.css
 @homepageURL    https://github.com/xentok/userstyles/
 ==/UserStyle== */
 
-@-moz-document regexp("^https?://((gist|guides|help|raw|status|developer).)?github.com((?!generated_pages/preview).)*$")
+@-moz-document regexp("^https?://((gist|guides|help|raw|status|developer).)?github.com((?!generated_pages/preview|munity).)*$")
 {
     body {
         background-color: #222 !important;
