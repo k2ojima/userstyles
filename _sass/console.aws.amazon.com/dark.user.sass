@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name AWS Console Dark mode
  * @namespace StylusThemes
- * @version 1.0.0
+ * @version 1.1.0
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/console.aws.amazon.com/dark.user.css
  * @license     MIT
@@ -23,44 +23,121 @@ $content-bg: #222
 $input-bg: #343434
 $border-color: #627373
 
+/* Mixins */
+@mixin button-normal
+    background-color: #0d0d0d !important
+    color: #dfe1e4 !important
+
+@mixin button-primary
+    background-color: #b85a0d !important
+    color: #dcdcdc !important
+
+
 @-moz-document regexp("https://(.*\.)?console\.aws\.amazon\.com/.*")
+    ::root
+        --awsui-color-text-body-default: $fore
+        --awsui-color-background-container-header: $content-bg
+        --awsui-color-border-divider-default: $border-color
+    input
+        background-color: $input-bg
+        color: $fore
     #b
         >#cc
             background-color: $wrapper-bg
         >#f
             background-color: $wrapper-bg
+    .ui-widget-content
+        background-color: $content-bg
+        color: $fore
     .awsui
         color: $fore
+        a
+            color: $active-link-fore !important
         .awsui-util-container
             background-color: $content-bg
             border-color: $border-color
             .awsui-util-container-header
                 background-color: $header-bg
+                border-bottom-color: $border-color
                 .awsui-util-container-header-description
                     color: $note-fore
+        awsui-app-layout
+            color: $fore !important
+        awsui-column-layout
+            color: $fore !important
         .awsui-app-layout
+            color: $fore
             &__content
                 background-color: $content-bg
+            &__navigation
+                background-color: $content-bg !important
+            &__tools
+                background-color: $content-bg !important
             &__toggle--tools
                 background-color: $content-bg
+            &__toggle--navigation,
+            &__toggle--tools
+                background-color: $content-bg !important
+        .awsui-side-navigation
+            &__header-link
+                color: $link-fore !important
+            &__link
+                color: $note-fore !important
         .awsui-select-dropdown
             background-color: $content-bg
             color: $note-fore
         .awsui-select-dropdown-option
             color: $fore
+        .awsui-select-trigger
+            background-color: $input-bg !important
+            color: $fore
+        .awsui-table-regions-container
+            background-color: $content-bg !important
         awsui-table
             .awsui-table-inner
                 background-color: $content-bg
                 color: $fore
+            .awsui-table-container
+                > table
+                    background-color: $content-bg !important
+                    color: $fore !important
+                    & thead > tr
+                        > *
+                            background-color: $content-bg !important
+                        > .awsui-table-column-sortable
+                            &.awsui-table-column-sortable-enabled
+                                .awsui-table-header-content
+                                    color: $nav-fore !important
+            .awsui-table-header-copy
+                background-color: $content-bg !important
+                color: $fore !important
         .awsui-input
             background-color: $input-bg
             color: $fore
+        .awsui-form-field-description,
+        .awsui-form-field-hint
+            color: $note-fore
+        .awsui-icon
+            filter: invert(1)
         .awsui-expandable-section-header-default,
         .awsui-expandable-section-header-borderless
             color: $note-fore
             &:hover
                 color: $fore
-
+        .awsui-button
+            &.awsui-button-variant-normal
+                @include button-normal
+                &:hover
+                    @include button-normal
+            &.awsui-button-variant-primary
+                @include button-primary
+                &:hover
+                    @include button-primary
+            &.awsui-button-variant-link
+                color: $note-fore !important
+                &:hover
+                    background-color: $content-bg !important
+                    color: $note-fore !important
         .awsui-alert-type-success
             background-color: #376125
             color: $fore
@@ -75,8 +152,30 @@ $border-color: #627373
             color: $fore
 
     #awsgnav
+        color: $nav-fore
         .nav-menu-content
             background-color: $content-bg
+        .nav-menu-right-content
+            a, span
+                color: #cacaca
+        .nav-menu-content-close
+            background-color: $content-bg
+        #navmenu-phd-website-link
+            color: $active-link-fore
+        .service-link a,
+        a.nav-menu,
+        .service-category-link
+            color: $active-link-fore !important
+        .awsc-services-search
+            .awsc-services-search-filter a
+                color: $active-link-fore !important
+        ul.ui-autocomplete
+            background-color: $content-bg
+            color: $note-fore
+    #usernameMenuContent
+        &.awsc-switch-role-support
+            a
+                color: #cacaca
 
     .home-content
         #aws-services
@@ -92,6 +191,10 @@ $border-color: #627373
             #recent-services
                 .service-name
                     color: $active-link-fore
+        #search-box.focus-first-item
+            .awsui-select-dropdown-option:first-of-type
+                background-color: $content-bg
+                color: $note-fore
         .itemCard
             .item-title
                 background: rgba(5, 5, 5, 0.9)
