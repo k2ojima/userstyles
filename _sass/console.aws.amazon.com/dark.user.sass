@@ -1,0 +1,101 @@
+/*! ==UserStyle==
+ * @name AWS Console Dark mode
+ * @namespace StylusThemes
+ * @version 1.0.0
+ * @homepageURL https://github.com/xentok/userstyles/
+ * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/console.aws.amazon.com/dark.user.css
+ * @license     MIT
+ * @author     xentok
+ * ==/UserStyle== */
+
+@charset "utf8"
+
+/* Colors */
+$fore: #e9ebef
+$nav-fore: #e3e3e3
+$link-fore: #d6d9e2
+$note-fore: #a3a9b1
+$active-link-fore: #64a4f7
+
+$wrapper-bg: #1f1f1f
+$header-bg: #0f0f0f
+$content-bg: #222
+$input-bg: #343434
+$border-color: #627373
+
+@-moz-document regexp("https://(.*\.)?console\.aws\.amazon\.com/.*")
+    #b
+        >#cc
+            background-color: $wrapper-bg
+        >#f
+            background-color: $wrapper-bg
+    .awsui
+        color: $fore
+        .awsui-util-container
+            background-color: $content-bg
+            border-color: $border-color
+            .awsui-util-container-header
+                background-color: $header-bg
+                .awsui-util-container-header-description
+                    color: $note-fore
+        .awsui-app-layout
+            &__content
+                background-color: $content-bg
+            &__toggle--tools
+                background-color: $content-bg
+        .awsui-select-dropdown
+            background-color: $content-bg
+            color: $note-fore
+        .awsui-select-dropdown-option
+            color: $fore
+        awsui-table
+            .awsui-table-inner
+                background-color: $content-bg
+                color: $fore
+        .awsui-input
+            background-color: $input-bg
+            color: $fore
+        .awsui-expandable-section-header-default,
+        .awsui-expandable-section-header-borderless
+            color: $note-fore
+            &:hover
+                color: $fore
+
+        .awsui-alert-type-success
+            background-color: #376125
+            color: $fore
+        .awsui-alert-type-warning
+            background-color: #8b770f
+            color: $fore
+        .awsui-alert-type-error
+            background-color: #6e2b2b
+            color: $fore
+        .awsui-alert-type-info
+            background-color: #195776
+            color: $fore
+
+    #awsgnav
+        .nav-menu-content
+            background-color: $content-bg
+
+    .home-content
+        #aws-services
+            .services, #awsgnav
+                .service-group-heading
+                    color: $nav-fore
+                a
+                    color: $link-fore
+                    &:hover, &:focus
+                        color: $active-link-fore !important
+                .service-group-icon
+                    filter: invert(1)
+            #recent-services
+                .service-name
+                    color: $active-link-fore
+        .itemCard
+            .item-title
+                background: rgba(5, 5, 5, 0.9)
+                li
+                    color: $note-fore
+        .sideBarCard
+            color: $fore
