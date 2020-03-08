@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name AWS Console Dark mode
  * @namespace StylusThemes
- * @version 1.1.1
+ * @version 1.1.2
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/console.aws.amazon.com/dark.user.css
  * @license     MIT
@@ -157,6 +157,8 @@ $border-color: #627373
                     & thead > tr
                         > *
                             background-color: $content-bg !important
+                            .awsui-table-header-content
+                                color: $nav-fore !important
                         > .awsui-table-column-sortable
                             &.awsui-table-column-sortable-enabled
                                 .awsui-table-header-content
@@ -170,6 +172,7 @@ $border-color: #627373
         .awsui-form-field-description,
         .awsui-form-field-hint
             color: $note-fore
+        awsui-icon,
         .awsui-icon
             filter: invert(1)
         .awsui-expandable-section-header-default,
@@ -177,6 +180,8 @@ $border-color: #627373
             color: $note-fore
             &:hover
                 color: $fore
+        .awsui-util-label
+            color: $nav-fore !important
         .awsui-button
             &.awsui-button-variant-normal
                 @include button-normal
@@ -191,6 +196,8 @@ $border-color: #627373
                 &:hover
                     background-color: $content-bg !important
                     color: $note-fore !important
+        .awsui-util-status-positive
+            color: #2aba03
         .awsui-alert-type-success
             background-color: #376125
             color: $fore
@@ -248,10 +255,18 @@ $border-color: #627373
         #nav-history
             .service-label
                 color: $note-fore
+    #resourceGroupsMenuContent
+        a
+            color: #cacaca
     #usernameMenuContent
         &.awsc-switch-role-support
             a
                 color: #cacaca
+    .CC
+        color:  #dcdee1
+    .NB
+        > div > span:first-child > span
+            color: #dcdee1 !important
 
     .home-content
         #aws-services
