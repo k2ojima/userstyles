@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name AWS Console Dark mode
  * @namespace StylusThemes
- * @version 1.1.2
+ * @version 1.1.3
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/console.aws.amazon.com/dark.user.css
  * @license     MIT
@@ -34,12 +34,10 @@ $border-color: #627373
 
 
 @-moz-document regexp("https://(.*\.)?console\.aws\.amazon\.com/.*")
-    ::root
-        --awsui-color-text-body-default: $fore
-        --awsui-color-background-container-header: $content-bg
-        --awsui-color-border-divider-default: $border-color
     body
         background-color: $wrapper-bg
+        .plutonium
+            color: $fore
     input
         background-color: $input-bg
         border-color: $border-color
@@ -93,9 +91,17 @@ $border-color: #627373
         color: $active-link-fore
         &:link, &:hover
             color: $active-link-fore
+    .gwt-SplitLayoutPanel-VDragger
+        background-color: #374040 !important
+        border-bottom-color: #525252 !important
     .ui-widget-content
         background-color: $content-bg
         color: $fore
+    .awsui-v1
+        background-color: $content-bg !important
+        .awsui-select-target
+            background-color: $input-bg !important
+            color: $fore !important
     .awsui
         background-color: $wrapper-bg
         color: $fore
@@ -116,7 +122,7 @@ $border-color: #627373
         .awsui-app-layout
             color: $fore
             &__content
-                background-color: $content-bg
+                background-color: $content-bg !important
             &__navigation
                 background-color: $content-bg !important
             &__tools
@@ -146,6 +152,14 @@ $border-color: #627373
             background-color: $input-bg
         .awsui-table-regions-container
             background-color: $content-bg !important
+        awsui-form
+            color: $fore !important
+        awsui-form-section
+            color: $fore !important
+        awsui-form-field
+            color: $fore !important
+        .awsui-form-field-label
+            color: $fore !important
         awsui-table
             .awsui-table-inner
                 background-color: $content-bg
@@ -210,7 +224,8 @@ $border-color: #627373
         .awsui-alert-type-info
             background-color: #195776
             color: $fore
-
+    .awsui-flash
+        color: rgb(96, 181, 255) !important
     .aws-modal
         .modal-frame
             .modal-header
@@ -221,6 +236,11 @@ $border-color: #627373
             background-color: #2f3d45
             .footer-divider
                 border-color: $border-color
+
+    #app
+        .cs-NavShell
+            &__link
+                color: $fore
 
     #awsgnav
         color: $nav-fore
@@ -262,11 +282,24 @@ $border-color: #627373
         &.awsc-switch-role-support
             a
                 color: #cacaca
+    #bills-page-antelope
+        color: $fore
+        .bill-details
+            .taxes-header
+                color: $nav-fore
+        .awsui-expandable-section-header
+            &:hover, &:hover+.awsui-expandable-section-content
+                background: #002a51
+        .awsui-row
+            &:hover
+                background-color: #002a51
     .CC
         color:  #dcdee1
     .NB
         > div > span:first-child > span
             color: #dcdee1 !important
+    .fgCppO
+        background-color: $content-bg !important
 
     .home-content
         #aws-services
@@ -293,3 +326,37 @@ $border-color: #627373
                     color: $note-fore
         .sideBarCard
             color: $fore
+    .plutonium
+        h1, h2, h3, h4, h5, h6
+            color: $fore
+        a
+            color: $active-link-fore
+            &:hover, &:focus
+                filter: brightness(1.6)
+    .gradient
+        background: #2f2f2f !important
+    .column-headers
+        text-shadow: none !important
+    .account-region-warning-message
+        background-color: $content-bg !important
+    [class^="navHeader--"]
+        color: $nav-fore !important
+    [class^="navLink--"]
+        color: $link-fore !important
+
+    /* ELB */
+    .elb-HV
+        background-color: $content-bg
+    .elb-LKC
+        background: -webkit-linear-gradient(top, #111 0%, #262626)
+    .elb-OQ
+        background: -webkit-linear-gradient(top, #111 0%, #262626)
+        border-top-color: $border-color
+    .elb-PDC
+        span.elb-BEC
+            background-color: $input-bg
+    .elb-DJ,
+    .elb-IJ,
+    .elb-GJ,
+    .elb-EJ
+        filter: invert(1)
