@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name AWS Console Dark mode
  * @namespace StylusThemes
- * @version 1.1.3
+ * @version 1.1.4
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/console.aws.amazon.com/dark.user.css
  * @license     MIT
@@ -33,9 +33,12 @@ $border-color: #627373
     color: #dcdcdc !important
 
 
-@-moz-document regexp("https://(.*\.)?console\.aws\.amazon\.com/.*")
+@-moz-document regexp("https://(.*\.)?console\.aws\.amazon\.com/(ec2|ecr|s3|rds).*")
     body
         background-color: $wrapper-bg
+        color: $fore
+        a
+            color: $active-link-fore
         .plutonium
             color: $fore
     input
@@ -343,6 +346,18 @@ $border-color: #627373
         color: $nav-fore !important
     [class^="navLink--"]
         color: $link-fore !important
+
+    .GINSA1BCH2E
+        background: $content-bg
+        ul
+            li
+                color: $nav-fore !important
+                a
+                    color: $link-fore
+    .GINSA1BCKBF, .GINSA1BCHBF, .GINSA1BCNAF
+        color: $fore
+    .GINSA1BCPAF
+        background: $content-bg
 
     /* ELB */
     .elb-HV
