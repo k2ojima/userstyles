@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Qiita Dark
  * @namespace   StylusThemes
- * @version     2.2.3
+ * @version     2.2.4
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/qiita.com/dark.user.css
  * @license     MIT
@@ -10,15 +10,27 @@
 
 @charset "utf8"
 
+$main-bg: #333
 $box-bg: #2d2d2d
+$input-bg: #3e3e3e
+
+$input-color: #bcbcbc
 
 @-moz-document domain("qiita.com")
     /* general */
+    ::-webkit-scrollbar
+        background-color: #222
+        width: 13px
+    ::-webkit-scrollbar-thumb
+        background-color: #444
     body
-        background-color: #333333
+        background-color: $main-bg
         color: #ddd
     a
         color: #8da3b5
+    .form-control
+        background-color: $input-bg
+        color: $input-color
 
     /* Home */
     .p-home
@@ -34,7 +46,7 @@ $box-bg: #2d2d2d
         .dtf-ItemList, .ra-UserList, .ra-TagList, .ra-OrganizationList, .qzf-ItemList
             background-color: $box-bg
         .ra-SponserList_label
-            color: #333
+            color: $main-bg
     .tr-Item_title:visited
         color: #c7c7c7
 
@@ -42,7 +54,7 @@ $box-bg: #2d2d2d
     .p-items_wrapper
         background-color: #444444
         .p-items_article
-            background-color: #333333
+            background-color: $main-bg
 
     .it-Header_authorName, .it-Header_title
         color: white
@@ -94,7 +106,7 @@ $box-bg: #2d2d2d
 
     /* draft list */
     .draftsPreviewContent_header
-        background-color: #333333
+        background-color: $main-bg
     .draftsPreviewContent_title
         color: silver
     .draftsSidebarItems
@@ -107,15 +119,36 @@ $box-bg: #2d2d2d
         color: orange
 
     /* editor */
-    .editorMarkdown_textarea, .editorPreview_article
-        background-color: #333333
-        color: silver
+    .publicEditor
+        background-color: #232323
+    .editorMarkdown
+        &_header
+            background-color: #111
+        &_tab
+            background-color: #111
+            color: #ccc
+        &.active
+            background-color: $main-bg
+        &_textarea
+            background-color: $main-bg
+            color: silver
+    .editorPreview
+        background-color: #111
+        &_article
+            background-color: $main-bg
+            color: silver
     .editorTitle
         input
-            background-color: #3e3e3e
-            color: #bcbcbc
+            background-color: $input-bg
+            color: $input-color
     .editorFooter, .editorFooter-onUpdate
         background-color: #222
+    .editorTag
+        .textoverlay
+            background-color: $input-bg !important
+            span
+                background-color: #1a5ba9 !important
+                box-shadow: 0 0 0 1px #2e67ab
 
     .it-MdContent
         h1, h2, h3, h4, h5, h6
@@ -123,7 +156,7 @@ $box-bg: #2d2d2d
 
     /* user page */
     .st-Header
-        background-color: #3e3e3e
+        background-color: $input-bg
         &_stock-label
             color: white
 
