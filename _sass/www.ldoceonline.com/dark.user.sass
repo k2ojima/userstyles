@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Longman Dictionary Dark Mode
  * @namespace   StylusThemes
- * @version     1.0.0
+ * @version     1.0.1
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/www.ldoceonline.com/dark.user.css
  * @license     MIT
@@ -29,6 +29,17 @@ $fore-green: rgb(0, 182, 0)
         color: $fore-color
     .pagetitle
         color: $fore-title
+
+    .home
+        .content
+            #tcotw span.box_title
+                background-color: #695b00
+    .carousel
+        background-color: #333 !important
+        .icon
+            filter: invert(1)
+    .right_box
+        background-color: #695b00
 
     .pos
         color: $fore-green
@@ -78,6 +89,7 @@ $fore-green: rgb(0, 182, 0)
     .entry_content
         margin-top: 20px
 
+    span[id^="ad_"][class^="am-"],
     #ad_topslot,
     .ac_leftslot.sticky
         display: none !important
