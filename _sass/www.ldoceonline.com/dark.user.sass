@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Longman Dictionary Dark Mode
  * @namespace   StylusThemes
- * @version     1.0.1
+ * @version     1.0.2
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/www.ldoceonline.com/dark.user.css
  * @license     MIT
@@ -27,6 +27,9 @@ $fore-green: rgb(0, 182, 0)
     body
         background: $bg-color
         color: $fore-color
+    h1
+        span
+            color: $fore-blue
     .pagetitle
         color: $fore-title
 
@@ -59,14 +62,22 @@ $fore-green: rgb(0, 182, 0)
             color: $fore-green
         .neutral
             color: $fore-color
-        .heading, .HEADING
+        .heading,
+        .HEADING
             color: $fore-blue
         .sensenum
             color: $fore-title
+        .REGISTERLAB
+            color: rgb(204, 0, 204)
+        .RELATEDWD
+            color: $fore-blue
     .bussdictEntry
         .POS,
         .GRAM
             color: $fore-green
+    .Entry
+        .related_topics
+            color: $fore-color
 
     .GramBox
         background-color: #222
