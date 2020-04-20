@@ -1,0 +1,84 @@
+/*! ==UserStyle==
+ * @name        Longman Dictionary Dark Mode
+ * @namespace   StylusThemes
+ * @version     1.0.0
+ * @homepageURL https://github.com/xentok/userstyles/
+ * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/www.ldoceonline.com/dark.user.css
+ * @license     MIT
+ * @author       xentok
+ * ==/UserStyle== */
+
+@charset "utf8"
+
+$bg-color: #111
+$fore-color: #ededed
+$fore-title: #efefef
+$fore-sub-color: rgb(168, 168, 168)
+$fore-blue: #a2adee
+$fore-green: rgb(0, 182, 0)
+
+%yellow_tag
+    border-color: #b09d06
+    background-color: #85770b
+    color: #ededed
+
+
+@-moz-document domain('www.ldoceonline.com')
+    body
+        background: $bg-color
+        color: $fore-color
+    .pagetitle
+        color: $fore-title
+
+    .pos
+        color: $fore-green
+    .Crossrefto
+        color: $fore-blue
+
+    .ldoceEntry
+        .EXAMPLE
+            color: $fore-sub-color
+        .GLOSS
+            color: $fore-blue
+        .AC,
+        .synopp
+            @extend %yellow_tag
+        .POS,
+        .GRAM
+            color: $fore-green
+        .neutral
+            color: $fore-color
+        .heading, .HEADING
+            color: $fore-blue
+        .sensenum
+            color: $fore-title
+    .bussdictEntry
+        .POS,
+        .GRAM
+            color: $fore-green
+
+    .GramBox
+        background-color: #222
+        color: $fore-color
+
+    .exaGroup
+        .title
+            color: $fore-title
+        .exa
+            color: $fore-sub-color
+
+    .assets_intro,
+    .asset_intro
+        @extend %yellow_tag
+
+    .dictionary_intro,
+    .topic_intro
+        background-color: #096aba
+
+    .entry_content
+        margin-top: 20px
+
+    #ad_topslot,
+    .ac_leftslot.sticky
+        display: none !important
+        visibility: hidden !important
