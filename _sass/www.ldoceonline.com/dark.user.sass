@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Longman Dictionary Dark Mode
  * @namespace   StylusThemes
- * @version     1.0.2
+ * @version     1.0.3
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/www.ldoceonline.com/dark.user.css
  * @license     MIT
@@ -71,6 +71,8 @@ $fore-green: rgb(0, 182, 0)
             color: rgb(204, 0, 204)
         .RELATEDWD
             color: $fore-blue
+        .GEO
+            color: $fore-blue
     .bussdictEntry
         .POS,
         .GRAM
@@ -89,6 +91,10 @@ $fore-green: rgb(0, 182, 0)
         .exa
             color: $fore-sub-color
 
+    .searches li,
+    .didyoumean li
+        background: rgb(51, 54, 56)
+
     .assets_intro,
     .asset_intro
         @extend %yellow_tag
@@ -97,7 +103,8 @@ $fore-green: rgb(0, 182, 0)
     .topic_intro
         background-color: #096aba
 
-    .entry_content
+    .entry_content,
+    .page_content
         margin-top: 20px
 
     span[id^="ad_"][class^="am-"],
