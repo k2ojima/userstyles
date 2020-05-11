@@ -1,0 +1,112 @@
+/*! ==UserStyle==
+ * @name        DEVHINTS Dark Mode
+ * @namespace   StylusThemes
+ * @version     1.0.0
+ * @homepageURL https://github.com/xentok/userstyles/
+ * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/devhints.io/dark.user.css
+ * @license     MIT
+ * @author       xentok
+ * ==/UserStyle== */
+
+@charset "utf8"
+
+$bg-color: #111
+$bg-code: #000
+$fore-color: #dae5f0
+$fore-title: #efefef
+$fore-sub-color: rgb(168, 168, 168)
+$fore-blue: #a2adee
+$fore-purple: #ae9aee
+$fore-green: rgb(0, 182, 0)
+
+
+@-moz-document domain('devhints.io')
+    ::selection
+        background-color: #3d67a7
+        color: $fore-color
+    body
+        background: $bg-color
+        color: $fore-color
+    a
+        color: $fore-blue
+    input, input[type="text"]
+        color: $fore-color
+
+    .MarkdownBody
+        h3
+            color: $fore-purple
+        a
+            color: $fore-blue
+        a:visited
+            color: $fore-purple
+        a:hover
+            color: $fore-color
+        pre
+            background: $bg-code
+            > code
+                color: $fore-color
+        code
+            color: $fore-blue
+        em
+            color: $fore-blue
+        table
+            td:first-child
+                > code
+                    color: #95aeec
+
+    .token
+        &.tag, &.keyword
+            color: #67b3e7
+        &.function, &.attr-name
+            color: #52b6d5
+        &.value, &.string, &.number, &.attr-value, &.boolean, &.regex
+            color: #37ddae
+        &.comment, &.punctuation, &.operator
+            color: #b4b4b4
+
+    .h3-section
+        > .body
+            background: $bg-code
+            > h4
+                background: $bg-color
+                color: $fore-blue
+            > pre~p, > ul~p, > iframe~p, > table~p
+                background: #010101
+                color: $fore-color
+                a
+                    color: $fore-blue
+                a:visited
+                    color: $fore-purple
+                a:hover
+                    color: $fore-color
+
+    .search-footer
+        background-color: $bg-color
+    .search-box
+        background-color: #1c1c1c
+        > .prefix
+            background-color: #292929
+            color: #ccc
+        > input
+            color: $fore-color
+
+    .related-posts-area
+        background: $bg-color
+    .related-post-item
+        > a, > a:visited
+            background: $bg-code
+            color: $fore-blue
+            strong
+                color: $fore-purple
+        > a:hover
+            strong
+                color: $fore-purple
+
+    .page-actions
+        > .facebook, > .twitter, > .github
+            > a
+                &::before
+                    filter: invert(1)
+    .back-button
+        &::before
+            filter: invert(1)
