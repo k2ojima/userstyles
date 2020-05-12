@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        DEVHINTS Dark Mode
  * @namespace   StylusThemes
- * @version     1.0.1
+ * @version     1.0.2
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/devhints.io/dark.user.css
  * @license     MIT
@@ -27,10 +27,22 @@ $fore-green: rgb(0, 182, 0)
     body
         background: $bg-color
         color: $fore-color
+    pre
+        background: $bg-code
+        > code
+            color: $fore-color
+    @media (min-width: 768px)
+        pre
+            border-top: solid 1px #676b70
+            border-bottom: solid 1px #768294
     a
         color: $fore-blue
     input, input[type="text"]
         color: $fore-color
+    h3
+        color: $fore-color
+        a, a:visited
+            color: $fore-color
 
     .MarkdownBody
         h3
@@ -53,6 +65,8 @@ $fore-green: rgb(0, 182, 0)
             td:first-child
                 > code
                     color: #95aeec
+        pre.-setup, p.-setup, ul.-setup, p.-crosslink
+            background: #1f1f1f
 
     .token
         &.tag, &.keyword
@@ -63,6 +77,10 @@ $fore-green: rgb(0, 182, 0)
             color: #37ddae
         &.comment, &.punctuation, &.operator
             color: #b4b4b4
+    .hljs-keyword, .hljs-constant
+        color: #ebebeb
+    .hljs-literal, .hljs-number, .hljs-string, .hljs-symbol, .hljs-value
+        color: #65c0ff
 
     .h3-section
         > .body
