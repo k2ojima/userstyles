@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        DEVHINTS Dark Mode
  * @namespace   StylusThemes
- * @version     1.0.0
+ * @version     1.0.1
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/devhints.io/dark.user.css
  * @license     MIT
@@ -80,6 +80,16 @@ $fore-green: rgb(0, 182, 0)
                 a:hover
                     color: $fore-color
 
+    .pages-list
+        > .article
+            > .info
+                > .slug
+                    color: $fore-color
+            &:visited
+                > .info
+                    > .slug
+                        color: $fore-blue
+
     .search-footer
         background-color: $bg-color
     .search-box
@@ -110,3 +120,7 @@ $fore-green: rgb(0, 182, 0)
     .back-button
         &::before
             filter: invert(1)
+
+    .missing-message.missing-message
+        >h3
+            color: $fore-blue
