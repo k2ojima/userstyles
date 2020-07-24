@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Google Clean Dark Customized
  * @namespace   StylusThemes
- * @version     2.2.9
+ * @version     2.3.0
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/google.com/clean-dark.user.css
  * @license     MIT
@@ -109,12 +109,7 @@ $color_fuscous_gray_35_approx: rgba(85, 85, 85, 0.35)
 $color_chicago_approx: #5a5a5a
 
 
-@-moz-document regexp("https?://(www|encrypted|images|translate|accounts|books|photos|docs).google.(com|([a-z]{2}))(.[a-z]{2})?/(?!mobile|travel|flights|intl|alerts|finance|calendar|nexus|contacts|services|voice|business|maps|dashboard|settings|android|adsense|analytics|doodles|chrome|fonts|patents|translate_p|recaptcha|u/\d/recaptcha).*")
-
-    /* Invert the whole website */
-    html
-        filter: invert(90%) hue-rotate(180deg) !important
-        background: rgb(25, 25, 25) !important
+@-moz-document regexp("https?://(www|encrypted|images|translate|accounts|books|photos).google.(com|([a-z]{2}))(.[a-z]{2})?/(?!mobile|travel|flights|intl|alerts|finance|calendar|nexus|contacts|services|voice|business|maps|dashboard|settings|android|adsense|analytics|doodles|chrome|fonts|patents|translate_p|recaptcha|u/\d/recaptcha).*")
 
     /* Invertion of images, svg graphics (avatars, icons) */
     *:not([data-date]):before, img, svg
