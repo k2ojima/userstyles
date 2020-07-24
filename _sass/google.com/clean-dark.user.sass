@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Google Clean Dark Customized
  * @namespace   StylusThemes
- * @version     2.2.8
+ * @version     2.2.9
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/google.com/clean-dark.user.css
  * @license     MIT
@@ -109,7 +109,17 @@ $color_fuscous_gray_35_approx: rgba(85, 85, 85, 0.35)
 $color_chicago_approx: #5a5a5a
 
 
-@-moz-document regexp("https?://(www|encrypted|images|translate|accounts|books|photos).google.(com|([a-z]{2}))(.[a-z]{2})?/(?!mobile|travel|flights|intl|alerts|finance|calendar|nexus|contacts|services|voice|business|maps|dashboard|settings|android|adsense|analytics|doodles|chrome|fonts|patents|translate_p|recaptcha|u/\d/recaptcha).*")
+@-moz-document regexp("https?://(www|encrypted|images|translate|accounts|books|photos|docs).google.(com|([a-z]{2}))(.[a-z]{2})?/(?!mobile|travel|flights|intl|alerts|finance|calendar|nexus|contacts|services|voice|business|maps|dashboard|settings|android|adsense|analytics|doodles|chrome|fonts|patents|translate_p|recaptcha|u/\d/recaptcha).*")
+
+    /* Invert the whole website */
+    html
+        filter: invert(90%) hue-rotate(180deg) !important
+        background: rgb(25, 25, 25) !important
+
+    /* Invertion of images, svg graphics (avatars, icons) */
+    *:not([data-date]):before, img, svg
+        filter: invert(100%) hue-rotate(180deg) brightness(1.1) contrast(105%)!important
+
     //@extend-elements
     //original selectors
     //.jhp input[type="submit"], .sbdd_a input, .gbqfba, .gb_Fa, .ab_button, #smb, #gbw >div >div >div.gb_yc.gb_xg.gb_R >div.gb_hb.gb_3c.gb_xg.gb_R.gb_g >div.gb_rb.gb_fa.gb_g >div.gb_Eb >div:nth-child(1) >a, #gb_71, .gb_Fa, #gb a.gb_Fa.gb_Fa, .gb_Ha
@@ -461,11 +471,11 @@ $color_chicago_approx: #5a5a5a
     .sbsb_a
         background: $color_rangoon_green_approx!important
 
-    .RNNXgb
-        background: $color_rangoon_green_approx!important
-        border-color: transparent!important
-        //If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
-        border-radius: 2px!important
+    /* Search input */
+    .RNNXgb, .zthhpf
+        background: $color_rangoon_green_approx !important
+        border-color: transparent !important
+        border-radius: 2px !important
 
     .aajZCb
         background: $color_rangoon_green_approx!important
@@ -486,6 +496,8 @@ $color_chicago_approx: #5a5a5a
     .gsfi
         color: $color_gray_nurse_approx!important
         background: $color_rangoon_green_approx!important
+    .JSAgYe
+        color: $color_gray_nurse_approx!important
 
     .lst
         color: $color_gray_nurse_approx!important
@@ -667,7 +679,8 @@ $color_chicago_approx: #5a5a5a
     .flyr-w
         background-color: transparent!important
 
-    #hdtb
+    /* Header top navi */
+    #hdtb, .jZWadf
         background: $color_shark_approx!important
         border-bottom: 1px solid $color_shark_approx!important
         &.hdtba #hdtbMenus
@@ -679,9 +692,15 @@ $color_chicago_approx: #5a5a5a
             &:hover
                 color: $color_gray_nurse_approx!important
 
-
         &.notl div
             color: $color_tapa_approx !important
+
+        .tAcEof
+            color: $color_tapa_approx !important
+            a
+                color: $color_tapa_approx!important
+                &:hover
+                    color: $color_gray_nurse_approx!important
 
 
     #hdtbSum
@@ -6320,6 +6339,23 @@ $color_chicago_approx: #5a5a5a
         color: #ddd
     .KA4pGd
         color: #cacbd0
+
+    /* Images Search */
+    .WGvvNb
+        color: #ddd
+    .fxgdke
+        color: #bbb
+    .gadasb
+        color: #ccc !important
+    .W8wzH
+        color: #bbb !important
+    .F9PbJd
+        background-color: #222
+        border: 1px solid #3b3c3e
+    .cEW58
+        background-color: #000
+        svg
+            filter: invert(0.9)
 
     /* Search Header */
     .gb_ge:not(.gb_4)
