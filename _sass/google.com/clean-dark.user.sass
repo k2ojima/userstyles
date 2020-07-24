@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Google Clean Dark Customized
  * @namespace   StylusThemes
- * @version     2.3.0
+ * @version     2.3.1
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/google.com/clean-dark.user.css
  * @license     MIT
@@ -110,10 +110,6 @@ $color_chicago_approx: #5a5a5a
 
 
 @-moz-document regexp("https?://(www|encrypted|images|translate|accounts|books|photos).google.(com|([a-z]{2}))(.[a-z]{2})?/(?!mobile|travel|flights|intl|alerts|finance|calendar|nexus|contacts|services|voice|business|maps|dashboard|settings|android|adsense|analytics|doodles|chrome|fonts|patents|translate_p|recaptcha|u/\d/recaptcha).*")
-
-    /* Invertion of images, svg graphics (avatars, icons) */
-    *:not([data-date]):before, img, svg
-        filter: invert(100%) hue-rotate(180deg) brightness(1.1) contrast(105%)!important
 
     //@extend-elements
     //original selectors
@@ -6387,6 +6383,14 @@ $color_chicago_approx: #5a5a5a
             color: #c0c6ce
     .BHzsHc, .VRMoVc, .vwtvsf
         color: #c3d0da
+    .gb_Db
+        background-color: #2f2f2f !important
+        &:hover
+            background-color: #444 !important
+    .gb_zb
+        background-color: #2f2f2f !important
+        &:hover
+            background-color: #444 !important
 
     // Caucus results
     /* wrapper */
@@ -6447,3 +6451,13 @@ $color_chicago_approx: #5a5a5a
         color: #ddd
     .csb
         filter: invert(1)
+
+
+/* Widgets */
+@-moz-document url-prefix('https://ogs.google.com/u/0/widget/app')
+    html
+        filter: invert(90%) hue-rotate(180deg) !important
+        background: rgb(25, 25, 25) !important
+    /* Invertion of images, svg graphics (avatars, icons) */
+    *:not([data-date]):before, img, svg
+        filter: invert(100%) hue-rotate(180deg) brightness(1.1) contrast(105%) !important
