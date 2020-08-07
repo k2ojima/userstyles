@@ -8,11 +8,12 @@ This is a collection of my dark userstyles.
         - [Google Search](#google-search)
         - [Laravel Docs](#laravel-docs)
         - [Node.js API Docs](#nodejs-api-docs)
-        - [Vue.js, Vuex, Vue CLI or Vue SSR](#vuejs-vuex-vue-cli-or-vue-ssr)
+        - [Docs for Vue.js, Vuex, Vue CLI or Vue SSR](#vuejs-vuex-vue-cli-or-vue-ssr)
         - [WordPress Dashboard](#wordpress-dashboard)
         - [other trivial styles](#other-trivial-styles)
     - [Contribution](#contribution)
         - [How to contribute](#how-to-contribute)
+    - [License](#license)
 
 ## Usage
 Install [Stylus](https://add0n.com/stylus.html) for either Firefox, Chrome or Opera then install any styles by clicking on them below. Once installed, the themes will update automatically, according to your Stylus settings.
@@ -38,7 +39,7 @@ Install [Stylus](https://add0n.com/stylus.html) for either Firefox, Chrome or Op
 
 ![Node.js API](image/nodejs.org.png)
 
-### Vue.js, Vuex, Vue CLI or Vue SSR
+### Docs for Vue.js, Vuex, Vue CLI or Vue SSR
 📦 [Install this style](https://github.com/xentok/userstyles/raw/master/build/vuejs.org/dark.user.css)
 
 ![Vue](image/vuejs.org.png)
@@ -70,3 +71,6 @@ If you're reporting an issue with a current style, screenshots and URLs are help
 4. Edit some style (in the `sass` directory) and then bump up version (on the line 4).
 5. Run `yarn build`. You can also run `yarn watch` to compile on edit.
 6. Push the branch and make a pull request.
+
+## License
+[Under MIT license](https://opensource.org/licenses/MIT).
