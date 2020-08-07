@@ -1,19 +1,10 @@
 {
-	"name": "userstyles",
-	"description": "",
-	"authors": "xentok",
-	"version": "1.0.0",
-	"repository": {
-		"type": "git",
-		"url": "git@github.com:xentok/userstyles.git"
-	},
-	"private": true,
-	"license": "MIT",
-	"scripts": {
-		"sass:build": "node-sass ./_sass/ -x -r -o ./ --output-style compressed",
-		"sass:watch": "node-sass ./_sass/ -w -x -r -o ./ --output-style compressed"
-	},
-	"devDependencies": {
-		"node-sass": "^4.12.0"
-	}
+    "private": true,
+    "scripts": {
+        "build": "node-sass ./_sass/ -x -r -o ./ --output-style compressed",
+        "watch": "node-sass ./_sass/ -w -x -r -o ./ --output-style compressed"
+    },
+    "devDependencies": {
+        "node-sass": "^4.12.0"
+    }
 }
