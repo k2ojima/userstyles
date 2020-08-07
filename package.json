@@ -1,8 +1,8 @@
 {
     "private": true,
     "scripts": {
-        "build": "node-sass ./_sass/ -x -r -o ./ --output-style compressed",
-        "watch": "node-sass ./_sass/ -w -x -r -o ./ --output-style compressed"
+        "build": "node-sass ./sass/ -x -r -o ./build/ --output-style compressed",
+        "watch": "node-sass ./sass/ -w -x -r -o ./build/ --output-style compressed"
     },
     "devDependencies": {
         "node-sass": "^4.12.0"
