@@ -51,14 +51,9 @@ Install [Stylus](https://add0n.com/stylus.html) for either Firefox, Chrome or Op
 
 ![WordPress](image/wordpress.png)
 
-
 ### other trivial styles
 * [Qiita](https://github.com/xentok/userstyles/raw/master/build/qiita.com/dark.user.css)
 * [linux manpage](https://github.com/xentok/userstyles/raw/master/build/linux.die.net/dark.user.css)
-* [ethereum docs](https://github.com/xentok/userstyles/raw/master/build/book.ethereum-jp.net/dark.user.css)
-* [longman online](https://github.com/xentok/userstyles/raw/master/build/www.ldoceonline.com/dark.user.css)
-
-[some styles for myself](https://github.com/xentok/userstyles/raw/master/build/bookmarks/dark.user.css)
 
 ## Contribution
 I'm welcome to pull request and issues including feature requests.

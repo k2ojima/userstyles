@@ -1,9 +1,0 @@
-/*! ==UserStyle==
- * @name        Longman Dictionary Dark Mode
- * @namespace   StylusThemes
- * @version     1.0.3
- * @homepageURL https://github.com/xentok/userstyles/
- * @updateURL   https://github.com/xentok/userstyles/raw/master/build/www.ldoceonline.com/dark.user.css
- * @license     MIT
- * @author       xentok
- * ==/UserStyle== */.ldoceEntry .AC,.ldoceEntry .synopp,.assets_intro,.asset_intro{border-color:#b09d06;background-color:#85770b;color:#ededed}@-moz-document domain('www.ldoceonline.com'){body{background:#111;color:#ededed}h1 span{color:#a2adee}.pagetitle{color:#efefef}.home .content #tcotw span.box_title{background-color:#695b00}.carousel{background-color:#333 !important}.carousel .icon{filter:invert(1)}.right_box{background-color:#695b00}.pos{color:#00b600}.Crossrefto{color:#a2adee}.ldoceEntry .EXAMPLE{color:#a8a8a8}.ldoceEntry .GLOSS{color:#a2adee}.ldoceEntry .POS,.ldoceEntry .GRAM{color:#00b600}.ldoceEntry .neutral{color:#ededed}.ldoceEntry .heading,.ldoceEntry .HEADING{color:#a2adee}.ldoceEntry .sensenum{color:#efefef}.ldoceEntry .REGISTERLAB{color:#c0c}.ldoceEntry .RELATEDWD{color:#a2adee}.ldoceEntry .GEO{color:#a2adee}.bussdictEntry .POS,.bussdictEntry .GRAM{color:#00b600}.Entry .related_topics{color:#ededed}.GramBox{background-color:#222;color:#ededed}.exaGroup .title{color:#efefef}.exaGroup .exa{color:#a8a8a8}.searches li,.didyoumean li{background:#333638}.dictionary_intro,.topic_intro{background-color:#096aba}.entry_content,.page_content{margin-top:20px}span[id^="ad_"][class^="am-"],#ad_topslot,.ac_leftslot.sticky{display:none !important;visibility:hidden !important}}

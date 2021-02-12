@@ -1,9 +1,0 @@
-/*! ==UserStyle==
- * @name        Ethereum Book Dark
- * @namespace   StylusThemes
- * @version     1.0.1
- * @homepageURL https://github.com/xentok/userstyles/
- * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/book.ethereum-jp.net/dark.user.css
- * @license     MIT
- * @author      xentok
- * ==/UserStyle== */@-moz-document domain("book.ethereum-jp.net"){.book-body{background-color:#222;color:#fff}.book-summary{background-color:#364149;color:#fafafa}.book-summary ul.summary li a,.book-summary ul.summary li span{color:#fafafa}#book-search-input{background-color:#111}.markdown-section{color:#ddd}.markdown-section pre{background-color:#121212}.markdown-section code{background-color:#000}}
