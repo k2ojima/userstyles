@@ -67,5 +67,8 @@ If you're reporting an issue with a current style, screenshots and URLs are help
 5. Run `yarn build`. You can also run `yarn watch` to compile on edit.
 6. Push the branch and make a pull request.
 
+#### Notes:
+* Your commit messages need to meet conventional commit format. See [here](https://github.com/conventional-changelog/commitlint#what-is-commitlint).
+
 ## License
 [Under MIT license](https://opensource.org/licenses/MIT).
