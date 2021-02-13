@@ -3,7 +3,7 @@
  * @namespace   StylusThemes
  * @version     1.2.1
  * @homepageURL https://github.com/xentok/userstyles/
- * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/master/bookmarks/dark.user.css
+ * @updateURL   https://raw.githubusercontent.com/xentok/userstyles/main/bookmarks/dark.user.css
  * @license     MIT
  * @author     xentok
  * ==/UserStyle== */@-moz-document url-prefix("https://tech-camp.in/note"){.header-banner-link,.BottomFixedBanner,#sticky-wrapper{display:none !important}}@-moz-document url-prefix("https://landing.google.com/sre/sre-book"){html{background-color:#111;color:#efefef}.header{background:#265298}.footer{background:#265298}.content,.exponent{color:#efefef}.collapses{background:#000}.dropdown-content a{color:#eee}.dropdown-content li.active{background:#222}.highlight{background:#343434}.heading{color:#f2f2f2}.subheaders{color:#e2e2e2}.dt-heading{color:#f2f2f2}th{color:#eee}th,tr{background:#333;border-bottom:1px solid #191919}tr:nth-of-type(even){background-color:#252525}pre,code{color:#00ab00}}
