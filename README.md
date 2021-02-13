@@ -20,40 +20,40 @@ Install [Stylus](https://add0n.com/stylus.html) for either Firefox, Chrome or Op
 
 ## Main themes
 ### Devhints
-📦 [Install this style](https://github.com/xentok/userstyles/raw/master/build/devhints.io/dark.user.css)
+📦 [Install this style](https://github.com/xentok/userstyles/raw/main/build/devhints.io/dark.user.css)
 
 ![Devhints](image/devhints.io.png)
 
 ### Google Search
-📦 [Install this style](https://github.com/xentok/userstyles/raw/master/build/google.com/clean-dark.user.css)
+📦 [Install this style](https://github.com/xentok/userstyles/raw/main/build/google.com/clean-dark.user.css)
 
 ![Google](image/google.com.png)
 
 ### Laravel Docs
-📦 [Install this style](https://github.com/xentok/userstyles/raw/master/build/laravel.com/dark.user.css)
+📦 [Install this style](https://github.com/xentok/userstyles/raw/main/build/laravel.com/dark.user.css)
 
 ![Laravel](image/laravel.com.png)
 
 ### Node.js API Docs
-📦 [Install this style](https://github.com/xentok/userstyles/raw/master/build/nodejs.org/dark.user.css)
+📦 [Install this style](https://github.com/xentok/userstyles/raw/main/build/nodejs.org/dark.user.css)
 
 ![Node.js API](image/nodejs.org.png)
 
 ### Docs for Vue.js, Vuex, Vue CLI or Vue SSR
-📦 [Install this style](https://github.com/xentok/userstyles/raw/master/build/vuejs.org/dark.user.css)
+📦 [Install this style](https://github.com/xentok/userstyles/raw/main/build/vuejs.org/dark.user.css)
 
 ![Vue](image/vuejs.org.png)
 
 * TODO: fix search preview and alert color
 
 ### WordPress Dashboard
-📦 [Install this style](https://github.com/xentok/userstyles/raw/master/build/wordpress/black.user.css)
+📦 [Install this style](https://github.com/xentok/userstyles/raw/main/build/wordpress/black.user.css)
 
 ![WordPress](image/wordpress.png)
 
 ### other trivial styles
-* [Qiita](https://github.com/xentok/userstyles/raw/master/build/qiita.com/dark.user.css)
-* [linux manpage](https://github.com/xentok/userstyles/raw/master/build/linux.die.net/dark.user.css)
+* [Qiita](https://github.com/xentok/userstyles/raw/main/build/qiita.com/dark.user.css)
+* [linux manpage](https://github.com/xentok/userstyles/raw/main/build/linux.die.net/dark.user.css)
 
 ## Contribution
 I'm welcome to pull request and issues including feature requests.
