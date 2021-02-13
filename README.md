@@ -63,10 +63,9 @@ If you're reporting an issue with a current style, screenshots and URLs are help
 ## Contribution
 1. Fork this repository.
 2. Install node.js and yarn if you haven't.
-3. Run `yarn install`
-4. Edit some style (in the `sass` directory) and then bump up version (on the line 4).
-5. Run `yarn build`. You can also run `yarn watch` to compile on edit.
-6. Push the branch and make a pull request.
+3. Run `$ yarn` in Terminal
+4. Edit some style (in the `sass/` directory).
+5. Commit, push the branch and make a pull request.
 
 ### Notes:
 * Your commit messages need to meet conventional commit format. See [here](https://github.com/conventional-changelog/commitlint#what-is-commitlint).
