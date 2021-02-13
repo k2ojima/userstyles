@@ -8,11 +8,12 @@ This is a collection of my dark userstyles.
         - [Google Search](#google-search)
         - [Laravel Docs](#laravel-docs)
         - [Node.js API Docs](#nodejs-api-docs)
-        - [Docs for Vue.js, Vuex, Vue CLI or Vue SSR](#vuejs-vuex-vue-cli-or-vue-ssr)
+        - [Docs for Vue.js, Vuex, Vue CLI or Vue SSR](#docs-for-vuejs-vuex-vue-cli-or-vue-ssr)
         - [WordPress Dashboard](#wordpress-dashboard)
         - [other trivial styles](#other-trivial-styles)
+    - [Bug report and requests](#bug-report-and-requests)
     - [Contribution](#contribution)
-        - [How to contribute](#how-to-contribute)
+        - [Notes:](#notes)
     - [License](#license)
 
 ## Usage
@@ -55,11 +56,11 @@ Install [Stylus](https://add0n.com/stylus.html) for either Firefox, Chrome or Op
 * [Qiita](https://github.com/xentok/userstyles/raw/main/build/qiita.com/dark.user.css)
 * [linux manpage](https://github.com/xentok/userstyles/raw/main/build/linux.die.net/dark.user.css)
 
-## Contribution
-I'm welcome to pull request and issues including feature requests.
+## Bug report and requests
+I'm welcome to issues including feature requests.
 If you're reporting an issue with a current style, screenshots and URLs are helpful.
 
-### How to contribute
+## Contribution
 1. Fork this repository.
 2. Install node.js and yarn if you haven't.
 3. Run `yarn install`
@@ -67,8 +68,10 @@ If you're reporting an issue with a current style, screenshots and URLs are help
 5. Run `yarn build`. You can also run `yarn watch` to compile on edit.
 6. Push the branch and make a pull request.
 
-#### Notes:
+### Notes:
 * Your commit messages need to meet conventional commit format. See [here](https://github.com/conventional-changelog/commitlint#what-is-commitlint).
+    * conventional commit format: `type(scope?): subject`
+    * `(scope)` needs to be directory names under `sass/`. e.g. `fix(google.com): fix some white color`
 
 ## License
 [Under MIT license](https://opensource.org/licenses/MIT).
