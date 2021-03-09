@@ -62,8 +62,8 @@ If you're reporting an issue with a current style, screenshots and URLs are help
 
 ## Contribution
 1. Fork this repository.
-2. Install node.js and yarn if you haven't.
-3. Run `$ yarn` in Terminal
+2. Install node.js, yarn and Docker if you haven't.
+3. Run `$ docker run --rm -v /absolute-path-to-current-directory:/root/userstyles -w /root/userstyles node:12.21.0-buster-slim yarn` in Terminal
 4. Edit some style (in the `sass/` directory).
 5. Commit, push the branch and make a pull request.
 
