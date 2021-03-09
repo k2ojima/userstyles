@@ -1,7 +1,7 @@
 /*! ==UserStyle==
  * @name        Qiita Dark
  * @namespace   StylusThemes
- * @version     2.2.4
+ * @version     2.2.6
  * @homepageURL https://github.com/xentok/userstyles/
  * @updateURL   https://github.com/xentok/userstyles/raw/main/build/qiita.com/dark.user.css
  * @license     MIT
@@ -10,11 +10,14 @@
 
 @charset "utf8"
 
-$main-bg: #333
+$main-bg: #212121
 $box-bg: #2d2d2d
 $input-bg: #3e3e3e
+$active-bg: #423e3e
+$code-frame-bg: #212b2d
 
 $input-color: #bcbcbc
+$silver-link-color: #adaa9e
 
 @-moz-document domain("qiita.com")
     /* general */
@@ -28,9 +31,22 @@ $input-color: #bcbcbc
         color: #ddd
     a
         color: #8da3b5
+    [class^="css-"]
+        color: #e0e2e2
+        background-color: #252525
+        border-color: #868888
+
+    .allWrapper
+        background-color: $main-bg
+
     .form-control
         background-color: $input-bg
         color: $input-color
+
+    .ad-300x250
+        display: none !important
+        visibility: hidden !important
+        z-index: 0 !important
 
     /* Home */
     .p-home
@@ -52,12 +68,19 @@ $input-color: #bcbcbc
 
     /* post */
     .p-items_wrapper
-        background-color: #444444
+        background-color: $main-bg
         .p-items_article
             background-color: $main-bg
 
     .it-Header_authorName, .it-Header_title
         color: white
+
+    .it-Toc
+        a
+            color: $silver-link-color
+            &.focus
+                background-color: $active-bg
+                color: $silver-link-color
 
     .it-MdContent
         color: #ddd
@@ -66,9 +89,12 @@ $input-color: #bcbcbc
         p, td
             color: silver
         tr:nth-child(odd)
-            background-color: #444444
+            background-color: #333
         img
             background-color: #aaa
+        .code-frame,
+        .highlight
+            background-color: $code-frame-bg
 
     .p-items_wrapper
         h1, h2
@@ -97,12 +123,21 @@ $input-color: #bcbcbc
         a:visited
             color: orange
 
+    .it-Reference
+        color: $silver-link-color
+
     span.logly-lift-ad-title
         color: silver !important
     .comment_content
-        background-color: #444444
+        background-color: #333
     .ai-User_name, .ai-User_urlname, .ai-Organization_name
         color: silver
+
+    /* comment area */
+    .css-1umj3dl
+        background-color: #333 !important
+    .css-8on2ni
+        background-color: $main-bg !important
 
     /* draft list */
     .draftsPreviewContent_header
