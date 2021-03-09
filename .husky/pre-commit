@@ -4,7 +4,7 @@
 # Replace version with bumped one
 if [[ -n $(git diff --cached --name-only "*.sass") ]]; then
     git diff --cached --name-only "*.sass" | xargs -I% node $(dirname "$0")/bump.js %
-    cd $(dirname "$0"); yarn build; git reset .;
-    echo "The userstyles version bumped. Please stage files again."
-    exit 1;
+    cd $(dirname "$0")/../; docker run --name node-sass-build --rm -v  $(pwd):/root/userstyles -w /root/userstyles node:12.21.0-buster-slim yarn build; git reset .;
+    git add *.sass; git add *.css
+    echo "The userstyles version bumped."
 fi
